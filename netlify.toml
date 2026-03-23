@@ -2,10 +2,8 @@
   publish = "."
   functions = "netlify/functions"
 
-[[redirects]]
-  from = "/go"
-  to = "/go.html"
-  status = 200
+[functions]
+  node_bundler = "esbuild"
 
 [[headers]]
   for = "/*"
