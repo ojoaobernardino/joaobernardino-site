@@ -4,7 +4,12 @@ const LIST_ID = 4;
 
 const VOXUY_URL   = 'https://sistema.voxuy.com/api/b23a12fa-f4e2-4324-841c-433687aa86ae/webhooks/voxuy/transaction';
 const VOXUY_TOKEN = '0e7d0660-a981-4973-b8b5-657ae28cd559';
-const VOXUY_PLAN  = '1156467'; // Funil API "Carrinho Abandonado - Zero Nóia"
+/* planId por produto — preço cheio vs desconto */
+const VOXUY_PLAN_MAP = {
+  'zero-noia':       '1156473', // Funil API preço cheio
+  'zero-noia-50off': '1156467', // Funil API 70% off (mesmo funil — desconto)
+  'zero-noia-70off': '1156467'  // Funil API 70% off
+};
 
 /* Produtos que disparam carrinho abandonado no WhatsApp */
 const VOXUY_PRODUTOS = ['zero-noia', 'zero-noia-50off', 'zero-noia-70off'];
@@ -33,7 +38,7 @@ async function applyTag(contactId, tagName) {
   });
 }
 
-async function triggerVoxuy(nome, email, wpp) {
+async function triggerVoxuy(nome, email, wpp, planId) {
   const digits = wpp.replace(/\D/g, '');
   const phone  = digits.startsWith('55') ? `+${digits}` : `+55${digits}`;
   if (phone.length < 13) return;
@@ -43,7 +48,7 @@ async function triggerVoxuy(nome, email, wpp) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       apiToken:          VOXUY_TOKEN,
-      planId:            VOXUY_PLAN,
+      planId:            planId,
       clientPhoneNumber: phone,
       name:              nome,
       email:             email,
@@ -98,7 +103,8 @@ exports.handler = async function(event) {
 
     // 4. Disparar WhatsApp carrinho abandonado via Voxuy (só Zero Nóia)
     if (wpp && VOXUY_PRODUTOS.includes(produto)) {
-      await triggerVoxuy(nome, email, wpp).catch(() => {});
+      const planId = VOXUY_PLAN_MAP[produto];
+      await triggerVoxuy(nome, email, wpp, planId).catch(() => {});
     }
 
     return { statusCode: 200, headers, body: JSON.stringify({ success: true, contactId }) };
