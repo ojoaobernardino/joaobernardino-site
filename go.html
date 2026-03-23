@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>João Bêrnardino · Quase lá!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red: #C8102E;
+      --red-dark: #a50d25;
+      --bg: #111111;
+      --surface: #1a1a1a;
+      --border: #2a2a2a;
+      --text: #f0f0f0;
+      --muted: #999;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Barlow', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      min-height: 100dvh;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px 32px 32px;
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      border: 2px solid var(--red);
+      margin: 0 auto 20px;
+      display: block;
+      object-fit: cover;
+      background: #222;
+    }
+
+    .card-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    .card-title span { color: var(--red); }
+
+    .card-sub {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .field {
+      margin-bottom: 12px;
+      text-align: left;
+    }
+
+    .field input {
+      width: 100%;
+      background: #222;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      color: var(--text);
+      font-family: 'Barlow', sans-serif;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .field input:focus { border-color: var(--red); }
+    .field input.erro { border-color: #e53935; }
+    .field input::placeholder { color: #555; }
+
+    .field-err {
+      font-size: 12px;
+      color: #e53935;
+      margin-top: 4px;
+      display: none;
+      padding-left: 4px;
+    }
+    .field-err.visivel { display: block; }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--red);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 16px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      margin-top: 8px;
+    }
+
+    .btn-submit:hover { background: var(--red-dark); }
+    .btn-submit:active { transform: scale(0.98); }
+    .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    .privacy {
+      font-size: 11px;
+      color: #555;
+      margin-top: 16px;
+      line-height: 1.5;
+    }
+
+    .privacy a { color: #777; text-decoration: underline; }
+
+    /* Tela de sucesso */
+    .success-screen {
+      display: none;
+      text-align: center;
+      padding: 8px 0;
+    }
+
+    .success-icon { font-size: 52px; margin-bottom: 16px; }
+
+    .success-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #4caf50;
+      margin-bottom: 10px;
+    }
+
+    .success-msg {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .countdown {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px;
+      color: var(--muted);
+    }
+
+    .countdown span {
+      color: var(--red);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+<div class="card">
+
+  <!-- FORMULÁRIO -->
+  <div id="form-screen">
+    <img class="avatar" src="https://joaobernardino.com.br/favicon.png" alt="João Bêrnardino" onerror="this.style.display='none'">
+    <h1 class="card-title">Só mais <span>um passo</span></h1>
+    <p class="card-sub" id="card-sub">Me diz onde te envio os conteúdos exclusivos enquanto você está na jornada.</p>
+
+    <div class="field">
+      <input type="text" id="inp-nome" placeholder="Seu primeiro nome" autocomplete="given-name" maxlength="50">
+      <div class="field-err" id="err-nome">Digite apenas letras</div>
+    </div>
+    <div class="field">
+      <input type="email" id="inp-email" placeholder="Seu melhor e-mail" autocomplete="email" maxlength="100">
+      <div class="field-err" id="err-email">E-mail inválido</div>
+    </div>
+    <div class="field">
+      <input type="tel" id="inp-wpp" placeholder="(11) 99999-9999" autocomplete="tel" maxlength="15">
+      <div class="field-err" id="err-wpp">WhatsApp com DDD — Ex: (11) 98222-2297</div>
+    </div>
+
+    <button class="btn-submit" id="btn-submit" onclick="enviar()">🔓 Acessar agora</button>
+
+    <p class="privacy">
+      Ao continuar, você concorda com nossa
+      <a href="https://joaobernardino.com.br" target="_blank">Política de Privacidade</a>
+      e aceita receber conteúdos por e-mail e WhatsApp.
+      🔒 Seus dados estão seguros.
+    </p>
+  </div>
+
+  <!-- SUCESSO + REDIRECT -->
+  <div class="success-screen" id="success-screen">
+    <div class="success-icon">✅</div>
+    <div class="success-title">Perfeito!</div>
+    <p class="success-msg">Anotei tudo.<br>Redirecionando você para o próximo passo...</p>
+    <div class="countdown">Aguarde <span id="timer">3</span>s</div>
+  </div>
+
+</div>
+
+<script>
+(function() {
+
+  /* ── Destinos ── */
+  var DESTINOS = {
+    'zero-noia':      'https://pay.kiwify.com.br/rgbGj6q',
+    'zero-noia-50off':'https://pay.kiwify.com.br/XEbdhk2',
+    'zero-noia-70off':'https://pay.kiwify.com.br/y0iIDtj',
+    '21-leis':        'https://pay.kiwify.com.br/PYMIDla'
+  };
+
+  /* ── Ler params da URL ── */
+  var params  = new URLSearchParams(window.location.search);
+  var dest    = params.get('dest') || 'zero-noia';
+  var baseUrl = DESTINOS[dest] || DESTINOS['zero-noia'];
+
+  /* Preservar UTMs para o Kiwify */
+  var utmKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+  var utmStr  = utmKeys
+    .filter(function(k){ return params.get(k); })
+    .map(function(k){ return k + '=' + encodeURIComponent(params.get(k)); })
+    .join('&');
+
+  var destFinal = utmStr ? baseUrl + '?' + utmStr : baseUrl;
+
+  /* Sub-título dinâmico por produto */
+  var subs = {
+    'zero-noia':       'Antes de liberar o acesso ao <strong>Zero Nóia</strong>, me diz onde te envio os conteúdos exclusivos da jornada.',
+    'zero-noia-50off': 'Antes de liberar seu <strong>desconto de 50%</strong>, me diz onde te envio os conteúdos exclusivos.',
+    'zero-noia-70off': 'Antes de liberar seu <strong>desconto de 70%</strong>, me diz onde te envio os conteúdos exclusivos.',
+    '21-leis':         'Antes de liberar o acesso às <strong>21 Leis</strong>, me diz onde te envio os conteúdos exclusivos.'
+  };
+  document.getElementById('card-sub').innerHTML = subs[dest] || subs['zero-noia'];
+
+  /* ── Máscara WPP ── */
+  document.getElementById('inp-wpp').addEventListener('input', function() {
+    var v = this.value.replace(/\D/g,'').slice(0,11);
+    if (v.length > 6)      v = '(' + v.slice(0,2) + ') ' + v.slice(2,7) + '-' + v.slice(7);
+    else if (v.length > 2) v = '(' + v.slice(0,2) + ') ' + v.slice(2);
+    else if (v.length > 0) v = '(' + v;
+    this.value = v;
+  });
+
+  /* ── Validação ── */
+  function mostrarErro(id, errId, msg) {
+    document.getElementById(id).classList.add('erro');
+    var el = document.getElementById(errId);
+    if (msg) el.textContent = msg;
+    el.classList.add('visivel');
+  }
+  function limparErro(id, errId) {
+    document.getElementById(id).classList.remove('erro');
+    document.getElementById(errId).classList.remove('visivel');
+  }
+
+  function validar() {
+    var ok = true;
+    var nome  = document.getElementById('inp-nome').value.trim();
+    var email = document.getElementById('inp-email').value.trim();
+    var wpp   = document.getElementById('inp-wpp').value.replace(/\D/g,'');
+
+    limparErro('inp-nome','err-nome');
+    limparErro('inp-email','err-email');
+    limparErro('inp-wpp','err-wpp');
+
+    if (!nome || !/^[a-zA-ZÀ-ú\s]+$/.test(nome)) {
+      mostrarErro('inp-nome','err-nome','Digite seu primeiro nome'); ok = false;
+    }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      mostrarErro('inp-email','err-email','E-mail inválido'); ok = false;
+    }
+    if (wpp.length < 10) {
+      mostrarErro('inp-wpp','err-wpp','WhatsApp com DDD — Ex: (11) 98222-2297'); ok = false;
+    }
+    return ok;
+  }
+
+  /* ── Envio ── */
+  window.enviar = function() {
+    if (!validar()) return;
+
+    var btn = document.getElementById('btn-submit');
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+
+    var nome  = document.getElementById('inp-nome').value.trim();
+    var email = document.getElementById('inp-email').value.trim();
+    var wpp   = document.getElementById('inp-wpp').value.replace(/\D/g,'');
+
+    fetch('/.netlify/functions/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ nome: nome, email: email, wpp: wpp })
+    })
+    .then(function() { iniciarRedirect(); })
+    .catch(function() { iniciarRedirect(); }); /* Redireciona mesmo se AC falhar */
+  };
+
+  /* ── Countdown + redirect ── */
+  function iniciarRedirect() {
+    document.getElementById('form-screen').style.display = 'none';
+    document.getElementById('success-screen').style.display = 'block';
+
+    var t = 3;
+    document.getElementById('timer').textContent = t;
+    var iv = setInterval(function() {
+      t--;
+      document.getElementById('timer').textContent = t;
+      if (t <= 0) {
+        clearInterval(iv);
+        window.location.href = destFinal;
+      }
+    }, 1000);
+  }
+
+})();
+</script>
+</body>
+</html>
