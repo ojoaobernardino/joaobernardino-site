@@ -304,7 +304,7 @@
     fetch('/.netlify/functions/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ nome: nome, email: email, wpp: wpp })
+      body: JSON.stringify({ nome: nome, email: email, wpp: wpp, produto: dest })
     })
     .then(function() { iniciarRedirect(); })
     .catch(function() { iniciarRedirect(); }); /* Redireciona mesmo se AC falhar */

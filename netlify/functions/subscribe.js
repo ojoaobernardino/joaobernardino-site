@@ -2,6 +2,33 @@ const AC_URL = 'https://vendraminijoao.api-us1.com';
 const AC_KEY = '3a78b93545a9cbb6bc48e8781b8cf50ea4a6b962b7a2bb89cab36f2aabe1032eb39664a6';
 const LIST_ID = 4;
 
+/* Mapeia dest → tag de interesse no AC */
+const TAG_MAP = {
+  'zero-noia':       'interesse:zero-noia',
+  'zero-noia-50off': 'interesse:zero-noia',
+  'zero-noia-70off': 'interesse:zero-noia',
+  '21-leis':         'interesse:21-leis'
+};
+
+async function applyTag(contactId, tagName) {
+  /* 1. Cria/recupera a tag */
+  const tagRes = await fetch(`${AC_URL}/api/3/tags`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Api-Token': AC_KEY },
+    body: JSON.stringify({ tag: { tag: tagName, tagType: 'contact', description: '' } })
+  });
+  const tagData = await tagRes.json();
+  const tagId = tagData.tag?.id;
+  if (!tagId) return;
+
+  /* 2. Aplica ao contato */
+  await fetch(`${AC_URL}/api/3/contactTags`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Api-Token': AC_KEY },
+    body: JSON.stringify({ contactTag: { contact: contactId, tag: tagId } })
+  });
+}
+
 exports.handler = async function(event) {
   // Só aceita POST
   if (event.httpMethod !== 'POST') {
@@ -16,7 +43,7 @@ exports.handler = async function(event) {
   };
 
   try {
-    const { nome, email, wpp } = JSON.parse(event.body);
+    const { nome, email, wpp, produto } = JSON.parse(event.body);
 
     if (!nome || !email) {
       return { statusCode: 400, headers, body: JSON.stringify({ error: 'Campos obrigatórios ausentes' }) };
@@ -60,6 +87,12 @@ exports.handler = async function(event) {
         }
       })
     });
+
+    /* 3. Aplicar tag de interesse se vier da máscara */
+    const tagName = TAG_MAP[produto];
+    if (tagName) {
+      await applyTag(contactId, tagName).catch(() => {}); // silencia erro de tag
+    }
 
     return {
       statusCode: 200,
