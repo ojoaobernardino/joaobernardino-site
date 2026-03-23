@@ -23,14 +23,26 @@ const TAG_MAP = {
 };
 
 async function applyTag(contactId, tagName) {
-  const tagRes = await fetch(`${AC_URL}/api/3/tags`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Api-Token': AC_KEY },
-    body: JSON.stringify({ tag: { tag: tagName, tagType: 'contact', description: '' } })
+  // Busca tag existente pelo nome
+  const searchRes = await fetch(`${AC_URL}/api/3/tags?search=${encodeURIComponent(tagName)}`, {
+    headers: { 'Api-Token': AC_KEY }
   });
-  const tagData = await tagRes.json();
-  const tagId = tagData.tag?.id;
+  const searchData = await searchRes.json();
+  let tagId = searchData.tags?.find(t => t.tag === tagName)?.id;
+
+  // Se não existe, cria
+  if (!tagId) {
+    const createRes = await fetch(`${AC_URL}/api/3/tags`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Api-Token': AC_KEY },
+      body: JSON.stringify({ tag: { tag: tagName, tagType: 'contact', description: '' } })
+    });
+    const createData = await createRes.json();
+    tagId = createData.tag?.id;
+  }
+
   if (!tagId) return;
+
   await fetch(`${AC_URL}/api/3/contactTags`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Api-Token': AC_KEY },
