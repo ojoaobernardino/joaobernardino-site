@@ -75,8 +75,8 @@ exports.handler = async function(event) {
       return { statusCode: 400, headers, body: JSON.stringify({ error: 'Campos obrigatórios ausentes' }) };
     }
 
-    // 1. Criar/atualizar contato no AC
-    const contactRes = await fetch(`${AC_URL}/api/3/contacts`, {
+    // 1. Criar/atualizar contato no AC (sync faz upsert — funciona para novos e existentes)
+    const contactRes = await fetch(`${AC_URL}/api/3/contact/sync`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Api-Token': AC_KEY },
       body: JSON.stringify({ contact: { firstName: nome, email, phone: wpp || '' } })
