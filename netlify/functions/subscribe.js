@@ -2,11 +2,11 @@ const AC_URL = 'https://vendraminijoao.api-us1.com';
 const AC_KEY = '3a78b93545a9cbb6bc48e8781b8cf50ea4a6b962b7a2bb89cab36f2aabe1032eb39664a6';
 const LIST_ID = 4;
 
-/* Mapeia dest → tag de interesse no AC */
+/* Mapeia dest → tag no AC (dispara automação de carrinho abandonado) */
 const TAG_MAP = {
-  'zero-noia':       'interesse:zero-noia',
-  'zero-noia-50off': 'interesse:zero-noia',
-  'zero-noia-70off': 'interesse:zero-noia',
+  'zero-noia':       'carrinho-abandonado-zeronoia',
+  'zero-noia-50off': 'carrinho-abandonado-zeronoia',
+  'zero-noia-70off': 'carrinho-abandonado-zeronoia',
   '21-leis':         'interesse:21-leis'
 };
 
