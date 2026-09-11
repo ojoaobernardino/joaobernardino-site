@@ -6,7 +6,7 @@ cluster: zero-noia
 date: 2026-09-11
 updated: 2026-09-11
 tags: [zero-noia, parar-de-fumar, habito, neurociencia]
-summary: "Fumei tabaco por 11 anos. Parei a maconha em 01/01/2024 e o cigarro em 07/01/2024, com a câmera ligada todo dia. Gravei 91 vídeos sem resultado e o 92º viralizou (175 mil seguidores). Disso nasceu o Zero Nóia, um produto de R$ 19,90 que 688 pessoas compraram."
+summary: "Fumei tabaco por 11 anos. Parei a maconha em 01/01/2024 e o cigarro em 07/01/2024, com a câmera ligada todo dia. Gravei 91 vídeos sem resultado e o 92º viralizou (175 mil seguidores). Disso nasceu o Zero Nóia, um produto de R$ 19,90 que mais de mil pessoas já compraram."
 checkout:
   label: "Zero Nóia"
   button: "Quero o Zero Nóia por R$ 19,90"
@@ -53,17 +53,27 @@ O 92º viralizou. Eu não sei te dizer exatamente o que ele tinha de diferente, 
 
 O reframe que eu tirei disso é o mesmo que uso em vendas hoje: 91 vídeos não foram fracasso, viraram ramp. Ninguém fecha no primeiro follow-up.
 
+## Por que o nome Zero Nóia
+
+Nóia é a palavra que a rua usa pra duas coisas ao mesmo tempo: a paranoia que a droga dá e a pessoa que a droga levou. "Fulano tá de nóia." "Ficou nóia." Eu cresci ouvindo isso como piada e passei 11 anos com medo de virar a frase. Não a paranoia de um dia, a outra: a de olhar pra trás e ver que a vida inteira girou em volta de acender alguma coisa.
+
+Quando eu liguei a câmera em janeiro de 2024, eu falava "zero nóia" no fim de quase todo vídeo. Era o meu jeito de dizer três coisas numa expressão só. Zero paranoia: eu não ia mais viver com a cabeça ocupada pela próxima vez. Zero drama: não ia transformar parar de fumar em sofrimento público, ia tratar como problema de engenharia, com processo. E zero julgamento: eu não estava pregando pra ninguém, estava contando o que eu fazia, porque quem fuma já ouviu sermão demais.
+
+A expressão pegou nos comentários antes de eu perceber. Gente escrevendo "zero nóia, João" quando completava uma semana. Gente usando como senha entre eles. Quando o processo virou produto, o nome já existia. Não fui eu que escolhi, foi quem estava do outro lado da câmera.
+
+Hoje "zero nóia" significa pra mim uma coisa mais simples: cabeça limpa pra decidir. É o estado em que você para de negociar com a vontade e volta a mandar no próprio dia. Não é sobre ser radical com nada. É sobre não ser refém de nada.
+
 ## O que virou o Zero Nóia
 
 A pergunta "como" eu respondi por mensagem tantas vezes que virou texto decorado. Então organizei o que eu tinha feito, na ordem que fiz, e coloquei na Kiwify por R$ 19,90. O nome veio da expressão que eu mais dizia nos vídeos: zero nóia.
 
-O que tem dentro, sem rodeio: um manual em PDF (33 páginas) dividido em parte teórica e parte prática. A teórica explica o que eu aprendi na pós sobre por que a vontade volta: o loop de gatilho, rotina e recompensa, a dopamina que busca alívio, o cortisol que empurra de volta, o contexto (lugar, horário, gente) que dispara o hábito sem você decidir. A prática é o que eu fiz, na ordem: mapear os meus gatilhos, trocar a rotina que vinha depois de cada um, tirar as pistas do ambiente, montar o compromisso diário e ter um plano pra vontade antes de ela virar ação. São os cinco pilares que eu usei, com ferramentas de PNL pra mexer nas associações que o cérebro fez em 11 anos. E tem a comunidade, porque não estar sozinho foi metade do resultado.
+O que tem dentro, sem rodeio: um manual em PDF (33 páginas) dividido em parte teórica e parte prática, e videoaulas em que eu explico cada parte com a minha cara, do jeito que eu explicava nos vídeos que viralizaram. A teórica explica o que eu aprendi na pós sobre por que a vontade volta: o loop de gatilho, rotina e recompensa, a dopamina que busca alívio, o cortisol que empurra de volta, o contexto (lugar, horário, gente) que dispara o hábito sem você decidir. A prática é o que eu fiz, na ordem: mapear os meus gatilhos, trocar a rotina que vinha depois de cada um, tirar as pistas do ambiente, montar o compromisso diário e ter um plano pra vontade antes de ela virar ação. São os cinco pilares que eu usei, com ferramentas de PNL pra mexer nas associações que o cérebro fez em 11 anos. E tem a comunidade, porque não estar sozinho foi metade do resultado.
 
 O foco é o vício comportamental, não o químico. A nicotina sai do corpo em poucos dias. O que faz a maioria recair semanas depois é o circuito, e é nele que o Zero Nóia trabalha.
 
 Pra quem é: quem fuma, já tentou parar sozinho pelo menos uma vez e não segurou. Pra quem não é: quem quer parar "um dia". O produto pressupõe que você já decidiu, ele só organiza o depois.
 
-Até hoje, 688 pessoas compraram. Eu sei porque a base de compradores está na minha conta da Kiwify, com nome e data, não porque alguém me contou.
+Até hoje, mais de mil pessoas compraram, somando a Kiwify (688 na minha base, com nome e data) e as outras plataformas por onde o Zero Nóia passou. Não é número de vitrine: é gente que decidiu.
 
 ## Por que eu não te prometo o mesmo
 

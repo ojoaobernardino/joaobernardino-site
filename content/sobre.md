@@ -57,7 +57,7 @@ O erro que sobrou foi outro, menor: delegava a tarefa e revisava tudo, até ouvi
 
 ## O experimento número 1: Zero Nóia
 
-Fumei tabaco por 11 anos. Parei a maconha, que era esporádica, em 01/01/2024. Em 07/01/2024 decidi parar o cigarro e liguei a câmera, todo dia, pra me obrigar a contar. Gravei 91 vídeos em cerca de dois meses sem resultado nenhum. O 92º viralizou. O perfil chegou a 175 mil seguidores, e daquilo nasceu o Zero Nóia, um produto de R$ 19,90 com o que eu fiz pra parar, comprado por 688 pessoas até hoje.
+Fumei tabaco por 11 anos. Parei a maconha, que era esporádica, em 01/01/2024. Em 07/01/2024 decidi parar o cigarro e liguei a câmera, todo dia, pra me obrigar a contar. Gravei 91 vídeos em cerca de dois meses sem resultado nenhum. O 92º viralizou. O perfil chegou a 175 mil seguidores, e daquilo nasceu o Zero Nóia, um produto de R$ 19,90 com o que eu fiz pra parar, comprado por mais de mil pessoas até hoje.
 
 Lembra do moleque de 12 anos com a webcam? Mesma teimosia, dezesseis anos depois. A história inteira está em [Zero Nóia](/blog/zero-noia/).
 
