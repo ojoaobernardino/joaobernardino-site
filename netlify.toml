@@ -37,3 +37,12 @@
   for = "/img/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/blog/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600"
+[[headers]]
+  for = "/img/og/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="post">
+  <nav class="crumbs" aria-label="Você está em">
+    {% for c in page.crumbs %}{% if not loop.last %}<a href="{{ c.url }}">{{ c.name }}</a><span aria-hidden="true"> › </span>{% else %}<span aria-current="page">{{ c.name }}</span>{% endif %}{% endfor %}
+  </nav>
+  {% if page.cluster_name %}<p class="kicker"><a href="{{ page.cluster_url }}">{{ page.cluster_name }}</a></p>{% endif %}
+  <h1>{{ page.title }}</h1>
+  <p class="byline">
+    <img src="/img/avatar-192.webp" width="32" height="32" alt="" loading="lazy" decoding="async">
+    <span>por <a href="/blog/sobre/">João Bêrnardino</a></span>
+    <span>·</span>
+    <time datetime="{{ page.date }}">{{ page.date_br }}</time>
+    {% if page.updated != page.date %}<span>· atualizado em <time datetime="{{ page.updated }}">{{ page.updated_br }}</time></span>{% endif %}
+    <span>· {{ page.reading }} min de leitura</span>
+  </p>
+  {% if page.summary %}<div class="resumo"><p class="resumo-label">Em resumo</p><p>{{ page.summary }}</p></div>{% endif %}
+  {% if page.cover %}<figure class="cover"><img src="{{ page.cover }}" width="{{ page.cover_w }}" height="{{ page.cover_h }}" alt="{{ page.cover_alt }}" decoding="async"></figure>{% endif %}
+  {% if page.toc and page.toc|length > 3 %}
+  <details class="toc"><summary>Neste texto</summary><ol>{% for h in page.toc %}<li><a href="#{{ h.id }}">{{ h.text }}</a></li>{% endfor %}</ol></details>
+  {% endif %}
+  <div class="prose">
+{{ page.html|safe }}
+  </div>
+  {% if page.cta %}
+  <div class="cta-box">
+    <p class="cta-label">Próximo passo</p>
+    <a class="cta" href="{{ page.cta.url }}" data-track="cta:{{ page.slug }}">{{ page.cta.label }}</a>
+  </div>
+  {% endif %}
+  <aside class="author-box">
+    <img src="/img/avatar-192.webp" width="64" height="64" alt="João Bêrnardino" loading="lazy" decoding="async">
+    <div>
+      <p class="author-name"><a href="/blog/sobre/">João Bêrnardino</a>, Vendedor &amp; Neurotreinador</p>
+      <p class="author-cred">Vendas B2B na Heineken, Stone/Pagar.me, Closecare, Pessoalize e Koin. Pós em Neurociências e Comportamento (PUCRS), Master Trainer em PNL (SBPNL). Engenheiro de Produção (Mackenzie).</p>
+      <p class="author-links"><a href="https://instagram.com/ojoaobernardino" rel="me noopener">Instagram</a> · <a href="https://www.linkedin.com/in/ojoaobernardino" rel="me noopener">LinkedIn</a> · <a href="https://youtube.com/@ojoaobernardino" rel="me noopener">YouTube</a></p>
+    </div>
+  </aside>
+  {% if page.related %}
+  <section class="related">
+    <h2>Leia também</h2>
+    <ul>{% for r in page.related %}<li><a href="{{ r.url }}">{{ r.title }}</a><span class="meta">{{ r.cluster_name }} · {{ r.reading }} min</span></li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+</article>
+{% endblock %}

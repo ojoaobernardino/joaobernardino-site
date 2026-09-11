@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="blog-home">
+  <h1>Meu blog</h1>
+  <p class="lead">Minha maneira de ver o mundo escrevendo.</p>
+  <nav class="menu" aria-label="Seções do blog">
+    {% for h in page.menu %}<a class="menu-card" href="{{ h.url }}">{{ h.label }}</a>{% endfor %}
+  </nav>
+  <h2>Todos os textos</h2>
+  <ul class="post-list">
+    {% for p in page.posts %}
+    <li>
+      <a class="post-card" href="{{ p.url }}">
+        <span class="kicker">{{ p.cluster_name }}</span>
+        <span class="card-title">{{ p.title }}</span>
+        <span class="card-desc">{{ p.description }}</span>
+        <span class="card-meta"><time datetime="{{ p.date }}">{{ p.date_br }}</time> · {{ p.reading }} min</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

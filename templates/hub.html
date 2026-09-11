@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="post hub">
+  <nav class="crumbs" aria-label="Você está em">
+    {% for c in page.crumbs %}{% if not loop.last %}<a href="{{ c.url }}">{{ c.name }}</a><span aria-hidden="true"> › </span>{% else %}<span aria-current="page">{{ c.name }}</span>{% endif %}{% endfor %}
+  </nav>
+  <p class="kicker">Seção</p>
+  <h1>{{ page.title }}</h1>
+  <p class="byline"><img src="/img/avatar-192.webp" width="32" height="32" alt="" loading="lazy" decoding="async"><span>por <a href="/blog/sobre/">João Bêrnardino</a></span><span>·</span><span>atualizado em <time datetime="{{ page.updated }}">{{ page.updated_br }}</time></span></p>
+  {% if page.summary %}<div class="resumo"><p class="resumo-label">Em resumo</p><p>{{ page.summary }}</p></div>{% endif %}
+  <div class="prose">
+{{ page.html|safe }}
+  </div>
+  {% if page.checkout %}
+  <div class="cta-box checkout">
+    <p class="cta-label">{{ page.checkout.label }}</p>
+    <a class="btn-checkout" href="{{ page.checkout.url }}" rel="noopener" data-track="checkout:{{ page.slug }}">{{ page.checkout.button }}</a>
+    <p class="cta-note">{{ page.checkout.note }}</p>
+  </div>
+  {% endif %}
+  <section class="children">
+    <h2>Os textos desta seção</h2>
+    {% if page.children %}
+    <ul class="post-list">
+      {% for p in page.children %}
+      <li>
+        <a class="post-card" href="{{ p.url }}">
+          <span class="card-title">{{ p.title }}</span>
+          <span class="card-desc">{{ p.description }}</span>
+          <span class="card-meta"><time datetime="{{ p.date }}">{{ p.date_br }}</time> · {{ p.reading }} min</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="muted">Os primeiros textos desta seção estão sendo escritos. Volte em breve.</p>
+    {% endif %}
+  </section>
+  {% if page.cta %}
+  <div class="cta-box">
+    <p class="cta-label">Próximo passo</p>
+    <a class="cta" href="{{ page.cta.url }}" data-track="cta:{{ page.slug }}">{{ page.cta.label }}</a>
+  </div>
+  {% endif %}
+</article>
+{% endblock %}

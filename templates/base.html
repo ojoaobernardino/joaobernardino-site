@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title_tag }}</title>
+<meta name="description" content="{{ page.description }}">
+<meta name="robots" content="{{ 'noindex, nofollow' if page.draft else 'index, follow' }}">
+<meta name="theme-color" content="#111111">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="{{ 'article' if page.type == 'post' else 'website' }}">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="João Bêrnardino">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:image" content="{{ site.url }}{{ page.og_image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{% if page.type == 'post' %}<meta property="article:published_time" content="{{ page.date }}">
+<meta property="article:modified_time" content="{{ page.updated }}">
+<meta property="article:author" content="{{ site.url }}/blog/sobre/">{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.description }}">
+<meta name="twitter:image" content="{{ site.url }}{{ page.og_image }}">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="João Bêrnardino" href="/blog/feed.xml">
+<link rel="preload" href="/fonts/barlow-condensed-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>{{ css|safe }}</style>
+<script type="application/ld+json">{{ page.jsonld|safe }}</script>
+</head>
+<body class="blog">
+<header class="site-head">
+  <div class="wrap">
+    <a class="wordmark" href="/blog/" aria-label="João Bêrnardino, início do blog">JOÃO <span>BÊRNARDINO</span></a>
+    <nav class="site-nav" aria-label="Seções">
+      {% for item in site.nav %}<a href="{{ item.url }}"{% if item.url == page.url or (item.url != '/blog/' and page.url.startswith(item.url)) %} aria-current="page"{% endif %}>{{ item.label }}</a>{% endfor %}
+    </nav>
+  </div>
+</header>
+<main class="wrap main">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <nav class="foot-nav" aria-label="Rodapé">
+      <a href="/blog/">Blog</a>
+      <a href="/">Todos os meus links</a>
+      <a href="/blog/sobre/">Sobre</a>
+      <a href="/blog/zero-noia/">Zero Nóia</a>
+      <a href="/blog/a-obra/">Comunidade A Obra</a>
+      <a href="/blog/parceiros/">Cupom JB</a>
+    </nav>
+    <nav class="foot-social" aria-label="Redes">
+      <a href="https://instagram.com/ojoaobernardino" rel="me noopener">Instagram</a>
+      <a href="https://youtube.com/@ojoaobernardino" rel="me noopener">YouTube</a>
+      <a href="https://tiktok.com/@ojoaobernardino" rel="me noopener">TikTok</a>
+      <a href="https://www.linkedin.com/in/ojoaobernardino" rel="me noopener">LinkedIn</a>
+    </nav>
+    <p class="copy">© {{ site.year }} João Bêrnardino</p>
+  </div>
+</footer>
+<script>
+var GA4_ID = 'G-5MSB6QLXN0';
+function track(nome, extra) {
+  var p = Object.assign({ botao: nome, pagina: location.pathname }, extra || {});
+  try { if (window.fbq) fbq('trackCustom', 'ClickBlog', p); } catch (e) {}
+  try { if (window.gtag) gtag('event', 'click_blog', p); } catch (e) {}
+}
+document.addEventListener('click', function (e) {
+  var el = e.target.closest('a[data-track], a[rel~="sponsored"], a.cta, a.btn-checkout');
+  if (el) track(el.getAttribute('data-track') || el.getAttribute('href'));
+});
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];f._fbqSrc=v}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1374672797442818'); fbq('track', 'PageView');
+window.addEventListener('load', function () {
+  setTimeout(function () {
+    var s = document.createElement('script'); s.async = true; s.src = window._fbqSrc; document.head.appendChild(s);
+    var g = document.createElement('script'); g.async = true; g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID; document.head.appendChild(g);
+    window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer.push(arguments); };
+    gtag('js', new Date()); gtag('config', GA4_ID);
+  }, 2000);
+});
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1374672797442818&ev=PageView&noscript=1"></noscript>
+</body>
+</html>
