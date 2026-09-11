@@ -8,7 +8,7 @@
   {% if page.cover %}<figure class="cover"><img src="{{ page.cover }}" width="{{ page.cover_w }}" height="{{ page.cover_h }}" alt="{{ page.cover_alt }}" decoding="async"></figure>{% endif %}
   {% if page.summary %}<div class="resumo"><p class="resumo-label">Em resumo</p><p>{{ page.summary }}</p></div>{% endif %}
   <div class="prose">
-{{ page.html }}
+{{ page.html|safe }}
   </div>
   {% if page.cta %}
   <div class="cta-box">

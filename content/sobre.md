@@ -21,7 +21,7 @@ Meu nome completo é João Pedro Vendramini Bernardino de Souza, tenho 28 anos, 
 
 ## O menino da câmera
 
-Com 12 anos eu já gravava vídeo pro YouTube. Gravava com o RezendeEvil, antes de ele virar o RezendeEvil, quando era só mais um moleque com um canal e uma webcam parecida com a minha. Eu não sabia editar, o áudio estourava, e eu postava mesmo assim. Guarda esse detalhe. Ele volta lá na frente.
+Com 12 anos eu já gravava vídeo pro YouTube. Gravava com o RezendeEvil, o youtuber, quando os dois eram só moleques com um canal. <!-- CONFIRMAR: como era a parceria com o Rezende aos 12 anos --> Eu não sabia editar, o áudio estourava, e eu postava mesmo assim. Guarda esse detalhe. Ele volta lá na frente.
 
 Sou filho de militares. Isso explica a cama arrumada, o horário e a mania de processo. Não explica o resto. O resto eu fui buscar.
 
@@ -29,7 +29,7 @@ Sou filho de militares. Isso explica a cama arrumada, o horário e a mania de pr
 
 Fiz Engenharia de Produção no Mackenzie (2016 a 2022). A faculdade me deu método: fluxo, gargalo, medir antes de mexer.
 
-Minha primeira escola de vendas não foi uma empresa. Foi uma rede de multinível, a RenoD. Aprendi ali o que nenhuma aula ensina: ouvir "não" trinta vezes num dia e ligar pra trigésima primeira pessoa com a mesma voz. Não fiquei rico com aquilo. Fiquei treinado.
+Minha primeira escola de vendas não foi uma empresa. Foi uma rede de multinível, a RenoD. Aprendi ali o que nenhuma aula ensina: ouvir "não" o dia inteiro e ligar pra próxima pessoa com a mesma voz. Não fiquei rico com aquilo. Fiquei treinado.
 
 ## Heineken, e depois a Stone
 
@@ -53,17 +53,17 @@ Na Koin (mar a mai/2026), fintech de BNPL do grupo Prosus, montei do zero o pipe
 
 A correção do erro da Stone tem nome: pós-graduação em Neurociências e Comportamento na PUCRS (2024 a 2025) e Master em PNL pela SBPNL, onde fui Anjo (2024 a 2025), o voluntário que acompanha a turma de dentro da sala. <!-- CONFIRMAR: descrição do papel de Anjo na SBPNL -->
 
-Depois disso, por anos, fui o líder com menos turnover da operação. Não era mais "pessoas mentem, números não". Virou: números não mentem, mas só gente desenvolvida entrega número.
+Virei a chave e virei o líder com menos turnover da operação. Não era mais "pessoas mentem, números não". Virou: números não mentem, mas só gente desenvolvida entrega número.
 
 ## O experimento número 1: Zero Nóia
 
-Fumei tabaco por 11 anos. Em 07/01/2024 decidi parar e liguei a câmera, todo dia, pra me obrigar a contar. Gravei 91 vídeos em cerca de dois meses sem resultado nenhum. O 92º viralizou. O perfil chegou a 175 mil seguidores, e daquilo nasceu o Zero Nóia, um produto de R$ 19,90 com o que eu fiz pra parar, comprado por 688 pessoas até hoje.
+Fumei tabaco por 11 anos. Parei a maconha, que era esporádica, em 01/01/2024. Em 07/01/2024 decidi parar o cigarro e liguei a câmera, todo dia, pra me obrigar a contar. Gravei 91 vídeos em cerca de dois meses sem resultado nenhum. O 92º viralizou. O perfil chegou a 175 mil seguidores, e daquilo nasceu o Zero Nóia, um produto de R$ 19,90 com o que eu fiz pra parar, comprado por 688 pessoas até hoje.
 
 Lembra do moleque de 12 anos com a webcam? Mesma teimosia, dezesseis anos depois. A história inteira está em [Zero Nóia](/blog/zero-noia/).
 
 ## A Iza
 
-Tem também a Iza, border collie de apartamento. Criei o @izabordercollie no TikTok pra registrar a educação dela: 54,8 mil seguidores, 417,9 mil curtidas, 159 vídeos, bio "Como educar seu cão em 14 dias". Foi o segundo perfil meu que viralizou, e eu não apareço em nenhum vídeo. Cachorro treinado é a mesma ciência de hábito, com mais pelo.
+Tem também a Iza, border collie de apartamento. Criei o @izabordercollie no TikTok pra registrar a educação dela: 54,8 mil seguidores, 417,9 mil curtidas, 159 vídeos, bio "Como educar seu cão em 14 dias". Foi o segundo perfil meu que viralizou, e a protagonista nem sou eu. Cachorro treinado é a mesma ciência de hábito, com mais pelo.
 
 ## Corpo
 

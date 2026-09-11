@@ -79,7 +79,14 @@ def parse(path):
     return {**fm, 'body': body, 'url': url, 'slug': slug, 'cluster': cluster, 'src': str(rel)}
 
 
+PENDING = []
+
+
 def render_md(body, page):
+    # marcações <!-- CONFIRMAR: ... --> ficam no Markdown, saem do HTML e vão pro relatório
+    for m in re.findall(r'<!--\s*CONFIRMAR:?\s*(.*?)-->', body, re.S):
+        PENDING.append((page['url'], ' '.join(m.split())))
+    body = re.sub(r'\s*<!--\s*CONFIRMAR.*?-->', '', body, flags=re.S)
     # callouts: linha começando com "!!! "
     lines = []
     for line in body.split('\n'):
@@ -258,9 +265,12 @@ def main():
     idx = {'title': 'Textos de João Bêrnardino', 'title_tag': 'Textos · João Bêrnardino', 'description': 'Vendas, neurociência, liderança, treino e o Zero Nóia. Os textos de João Bernardino, com número e em primeira pessoa.',
            'url': '/blog/', 'type': 'page', 'slug': 'blog', 'draft': False, 'og_image': '/og-image.jpg', 'hubs': hubs, 'posts': latest,
            'crumbs': [{'name': 'Início', 'url': '/'}, {'name': 'Textos', 'url': '/blog/'}], 'date': datetime.date.today(), 'updated': datetime.date.today()}
-    idx['jsonld'] = json.dumps({'@context': 'https://schema.org', '@type': 'Blog', '@id': SITE['url'] + '/blog/#blog', 'name': 'Textos de João Bêrnardino',
-                                'url': SITE['url'] + '/blog/', 'inLanguage': 'pt-BR', 'author': {'@id': PERSON_ID},
-                                'blogPost': [{'@type': 'BlogPosting', 'headline': c['title'], 'url': SITE['url'] + c['url'], 'datePublished': str(c['date'])} for c in latest]}, ensure_ascii=False)
+    idx['jsonld'] = json.dumps({'@context': 'https://schema.org', '@graph': [
+        {'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Início', 'item': SITE['url'] + '/'}, {'@type': 'ListItem', 'position': 2, 'name': 'Textos', 'item': SITE['url'] + '/blog/'}]},
+        {'@type': 'Blog', '@id': SITE['url'] + '/blog/#blog', 'name': 'Textos de João Bêrnardino',
+         'url': SITE['url'] + '/blog/', 'inLanguage': 'pt-BR', 'author': {'@id': PERSON_ID},
+         'blogPost': [{'@type': 'BlogPosting', 'headline': c['title'], 'url': SITE['url'] + c['url'], 'datePublished': str(c['date'])} for c in latest]},
+        {'@type': 'Person', '@id': PERSON_ID, 'name': 'João Bernardino', 'alternateName': ['João Bêrnardino'], 'url': SITE['url'] + '/blog/sobre/'}]}, ensure_ascii=False)
     (OUT / 'index.html').write_text(env.get_template('index.html').render(page=idx, site=SITE, css=CSS), encoding='utf-8')
     # feed
     items = ''.join(f"<item><title>{html.escape(c['title'])}</title><link>{SITE['url']}{c['url']}</link><guid>{SITE['url']}{c['url']}</guid><pubDate>{datetime.datetime.fromisoformat(str(c['date'])).strftime('%a, %d %b %Y 08:00:00 -0300')}</pubDate><description>{html.escape(c['description'])}</description></item>" for c in latest)
@@ -274,6 +284,9 @@ def main():
     print(f'ok: {len(pages)} páginas + índice + feed + sitemap ({len(urls)} URLs)')
     for p in pages:
         print(f"  {p['type']:4s} {p['url']:55s} {p['words']:5d} palavras  {len((OUT / p['url'][6:] / 'index.html').read_bytes())//1024} KB")
+    if PENDING:
+        (ROOT / '.cache' / 'CONFIRMAR.md').write_text('# Fatos a confirmar com o João (saem do HTML, ficam no Markdown)\n\n' + '\n'.join(f'- `{u}`: {t}' for u, t in PENDING), encoding='utf-8')
+        print(f'  {len(PENDING)} marcações CONFIRMAR removidas do HTML e listadas em .cache/CONFIRMAR.md')
 
 
 if __name__ == '__main__':

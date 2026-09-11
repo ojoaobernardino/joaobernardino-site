@@ -19,13 +19,12 @@ def warn(m): warns.append(m)
 htmls = sorted(OUT.rglob('index.html'))
 if not htmls:
     err('nenhum HTML em blog/')
-existing = {'/'} | {'/blog/' + str(h.parent.relative_to(OUT)).replace('\\', '/').rstrip('.') + '/' for h in htmls}
-existing = {u.replace('/./', '/') for u in existing}
-existing.add('/blog/')
+def url_of(h):
+    rel = str(h.parent.relative_to(OUT)).replace('\\', '/')
+    return '/blog/' if rel == '.' else '/blog/' + rel + '/'
+existing = {'/', '/blog/'} | {url_of(h) for h in htmls}
 for h in htmls:
-    url = '/blog/' + str(h.parent.relative_to(OUT)) + '/'
-    url = url.replace('/./', '/')
-    if url == '/blog/./': url = '/blog/'
+    url = url_of(h)
     s = h.read_text(encoding='utf-8')
     kb = len(s.encode()) / 1024
     if kb > MAX_HTML_KB: err(f'{url}: HTML com {kb:.0f} KB (máx {MAX_HTML_KB})')
@@ -72,12 +71,12 @@ for h in htmls:
     if s.count('<h1') > 1: err(f'{url}: mais de um H1')
 # hubs listam todos os filhos do disco
 for h in htmls:
-    url = '/blog/' + str(h.parent.relative_to(OUT)) + '/'
-    if url == '/blog/./': continue
+    url = url_of(h)
+    if url == '/blog/': continue
     s = h.read_text(encoding='utf-8')
     if 'class="post hub"' in s:
         cluster_dir = h.parent
-        kids = [('/blog/' + str(k.parent.relative_to(OUT)) + '/') for k in cluster_dir.rglob('index.html') if k != h]
+        kids = [url_of(k) for k in cluster_dir.rglob('index.html') if k != h]
         for k in kids:
             if f'href="{k}"' not in s: err(f'{url}: hub não lista o filho {k} (Lei da Árvore)')
 # sitemap cobre tudo

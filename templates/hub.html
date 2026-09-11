@@ -9,7 +9,7 @@
   <p class="byline"><img src="/img/avatar-192.webp" width="32" height="32" alt="" loading="lazy" decoding="async"><span>por <a href="/blog/sobre/">João Bêrnardino</a></span><span>·</span><span>atualizado em <time datetime="{{ page.updated }}">{{ page.updated_br }}</time></span></p>
   {% if page.summary %}<div class="resumo"><p class="resumo-label">Em resumo</p><p>{{ page.summary }}</p></div>{% endif %}
   <div class="prose">
-{{ page.html }}
+{{ page.html|safe }}
   </div>
   {% if page.checkout %}
   <div class="cta-box checkout">
