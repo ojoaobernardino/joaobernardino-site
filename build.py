@@ -258,7 +258,8 @@ def main():
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(env.get_template(tpl).render(page=p, site=SITE, css=CSS), encoding='utf-8')
     # índice /blog/
-    hubs = sorted([p for p in pages if p['type'] == 'hub'], key=lambda h: h['title'])
+    order = ['zero-noia', 'vendas', 'lideranca', 'neurociencia', 'treino', 'dieta', 'livros', 'uso', 'a-obra', 'wjr', 'parceiros']
+    hubs = sorted([p for p in pages if p['type'] == 'hub'], key=lambda h: order.index(h['cluster']) if h['cluster'] in order else 99)
     for h in hubs:
         h['count'] = len(h.get('children', []))
     latest = sorted(posts, key=lambda c: str(c['date']), reverse=True)[:20]
