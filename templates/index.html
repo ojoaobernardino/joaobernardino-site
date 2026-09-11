@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="blog-home">
+  <h1>Textos</h1>
+  <p class="lead">Vendas, cérebro, liderança e o que eu testo na própria vida. Escritos por mim, com número.</p>
+  <nav class="hubs" aria-label="Seções do blog">
+    {% for h in page.hubs %}
+    <a class="hub-card" href="{{ h.url }}">
+      <span class="card-title">{{ h.title }}</span>
+      <span class="card-desc">{{ h.description }}</span>
+      <span class="card-meta">{{ h.count }} {{ 'texto' if h.count == 1 else 'textos' }}</span>
+    </a>
+    {% endfor %}
+  </nav>
+  <h2>Mais recentes</h2>
+  <ul class="post-list">
+    {% for p in page.posts %}
+    <li>
+      <a class="post-card" href="{{ p.url }}">
+        <span class="kicker">{{ p.cluster_name }}</span>
+        <span class="card-title">{{ p.title }}</span>
+        <span class="card-desc">{{ p.description }}</span>
+        <span class="card-meta"><time datetime="{{ p.date }}">{{ p.date_br }}</time> · {{ p.reading }} min</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}
