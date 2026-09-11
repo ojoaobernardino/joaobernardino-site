@@ -1,12 +1,12 @@
 ---
 title: "Liderança comercial: gente, número e método"
-description: "Liderança comercial em primeira pessoa: turnover, rotina, PDI, meta e sucessão. João Bernardino foi o 4º líder de uma estrutura que cresceu pra 20 times."
+description: "Liderança comercial em primeira pessoa: turnover, rotina, PDI, meta e sucessão. João Bernardino liderou times de inside sales e errou antes de acertar."
 type: hub
 cluster: lideranca
 date: 2026-09-11
 updated: 2026-09-11
 tags: [lideranca, gestao-comercial, turnover, pdi, sucessao]
-summary: "Fui o 4º líder de um comercial que cresceu pra 20 times. Comecei tratando gente como número e o turnover me cobrou. Este hub é o método que veio depois: diagnóstico por dado, mediana como padrão (3 times, 400 clientes), PDI com fase e sucessão."
+summary: "Comecei a liderar tratando gente como número e o turnover me cobrou. Este hub é o método que veio depois: diagnóstico por dado, mediana como padrão, plano de reversão (3 meses, marco mensal), PDI com fase e sucessão."
 cta:
   label: "Comunidade A Obra"
   url: "/blog/a-obra/"
@@ -17,9 +17,9 @@ draft: false
 
 ## O que este hub cobre
 
-Em julho de 2022 eu virei coordenador na Stone/Pagar.me. O comercial digital tinha 3 líderes. Eu fui o quarto. Quando saí, em abril de 2025, a estrutura tinha crescido pra 20 times e eu liderava o time de especialistas. <!-- CONFIRMAR: a estrutura de 20 times era do comercial digital inteiro ou da expansão que o João ajudou a montar? -->
+Em julho de 2022 eu virei coordenador na Stone/Pagar.me. Quando saí, em abril de 2025, eu liderava o time de especialistas.
 
-Este hub é o que aprendi nesse caminho e no que veio depois, gerenciando gestores na Pessoalize (7 empresas no meu time) e reestruturando o comercial da Closecare. Cinco temas:
+Este hub é o que aprendi nesse caminho e no que veio depois, gerenciando gestores na Pessoalize e reestruturando o comercial da Closecare. Cinco temas:
 
 - Turnover: por que vendedor sai, o que o dado mostra antes da carta, e o erro que me fez estudar o cérebro.
 - Rotina: segunda é planejamento, terça é o "papo de previsibilidade", só dado na mesa. O resto da semana é campo.
@@ -27,13 +27,13 @@ Este hub é o que aprendi nesse caminho e no que veio depois, gerenciando gestor
 - Meta e comissão: como eu distribuo meta sem matar o time no dia 20.
 - Sucessão: sênior acompanha decisão de desligamento e PDI antes de ter o cargo. Quando o cargo chega, ele já decidiu vinte vezes.
 
-## A história do 4º líder
+## O erro do primeiro ano
 
 Cheguei na liderança do jeito que a engenharia me formou: processo, gargalo, medir antes de mexer. Filho de militar, ainda por cima. Cama arrumada e planilha aberta.
 
 Deu resultado rápido e deu errado rápido. A frase que eu repetia era "pessoas mentem, números não". Cobrava alto, o time entregava alto, e o turnover subia junto. Meus pares pegavam as pessoas que eu perdia, e elas iam bem lá. O número estava certo. Eu estava errado.
 
-A correção foi estudar gente a sério: Master em PNL pela SBPNL e pós em Neurociências e Comportamento na PUCRS (2024 a 2025). Não foi curso pra colocar no LinkedIn. Foi a prova de que eu tinha entendido o erro. Depois disso, por anos, fui o líder com menos turnover da operação, e o time de especialistas fechou novembro de 2024 com R$50 milhões de TPV e R$1 milhão de receita líquida.
+A correção foi estudar gente a sério: Master em PNL pela SBPNL e pós em Neurociências e Comportamento na PUCRS (2024 a 2025). Não foi curso pra colocar no LinkedIn. Foi a prova de que eu tinha entendido o erro. Depois disso, por anos, fui o líder com menos turnover da operação, e o time entregava número junto.
 
 O que mudou não foi abandonar o número. Foi entender que o número é resultado de gente, e gente não se gerencia por planilha. Não era mais "pessoas mentem, números não". Virou: números não mentem, mas só gente desenvolvida entrega número.
 

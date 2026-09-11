@@ -1,23 +1,23 @@
 ---
 title: "Meu contador: por que eu confio na WJR"
-description: "João Bernardino conta por que a WJR, contabilidade na Mooca, cuida da empresa dele desde 2024: amigo de 20 anos, cliente e hoje consultor deles."
+description: "João Bernardino conta por que a WJR, contabilidade na Mooca, cuida da empresa dele desde 2024. Cliente e amigo do Lucas Brito há mais de 20 anos."
 type: hub
 cluster: wjr
 date: 2026-09-11
 updated: 2026-09-11
 tags: [wjr, contabilidade, pj, lucas-brito]
-summary: "Sou cliente da WJR desde 05/03/2024. O Lucas Brito, que toca a WJR, é meu amigo há mais de 20 anos. E desde 27/08/2026 a WJR é cliente da minha consultoria, a Work of Sales. As três relações estão aqui em cima pra você saber de onde eu falo."
+summary: "Sou cliente da WJR desde 05/03/2024. O Lucas Brito, que toca a WJR, é meu amigo há mais de 20 anos. As duas relações estão aqui em cima pra você saber de onde eu falo."
 cta:
   label: "Falar com a WJR no WhatsApp"
-  url: "https://wa.me/5511999999999?text=Vim%20pelo%20site%20do%20Jo%C3%A3o"
+  url: "https://wa.me/5511933335961?text=Vim%20pelo%20site%20do%20Jo%C3%A3o"
 cover: ""
 cover_alt: ""
 draft: false
 ---
 
-## As três relações, antes de qualquer coisa
+## As duas relações, antes de qualquer coisa
 
-Sou cliente da WJR desde 05/03/2024. O Lucas Brito, que toca a WJR, é meu amigo há mais de 20 anos, de antes de qualquer um de nós dois ter empresa. E desde 27/08/2026 a WJR é cliente da minha consultoria comercial, a Work of Sales. Três relações, uma página. Você lê o resto sabendo de onde eu falo.
+Sou cliente da WJR desde 05/03/2024. O Lucas Brito, que toca a WJR, é meu amigo há mais de 20 anos, de antes de qualquer um de nós dois ter empresa. Duas relações, uma página. Você lê o resto sabendo de onde eu falo.
 
 Nenhum número da WJR aparece aqui. Não é porque não existe, é porque o número é deles e eu só publico o que tenho autorização por escrito pra publicar.
 
@@ -29,7 +29,7 @@ Em vendas eu sempre soube ler um funil. Sei quantos leads viram reunião, quanta
 
 Aí você abre uma empresa. No meu caso a JB Treinamento e Desenvolvimento, aberta porque o Zero Nóia começou a vender e vender sem CNPJ não é opção. <!-- CONFIRMAR: motivo e data da abertura da JB Treinamento e Desenvolvimento, e se foi a WJR que abriu --> De repente aparecem palavras que ninguém te ensinou no comercial: DAS, Simples Nacional, pró-labore, distribuição de lucro, nota fiscal de serviço. Cada uma com data. Cada uma com multa se a data passar.
 
-Eu, engenheiro de produção, coordenador de três times com Salesforce e forecast semanal, não sabia quando a nota de serviço tem que sair. Não sabia que o DAS vence todo dia 20. Não sabia que pró-labore e retirada de lucro são dinheiro do mesmo bolso com tratamento diferente na Receita. Meu primeiro contato com o portal do Simples deu morno: li duas telas e fechei a aba.
+Eu, engenheiro de produção, coordenador de time comercial com Salesforce e forecast semanal, não sabia quando a nota de serviço tem que sair. Não sabia que o DAS vence todo dia 20. Não sabia que pró-labore e retirada de lucro são dinheiro do mesmo bolso com tratamento diferente na Receita. Meu primeiro contato com o portal do Simples deu morno: li duas telas e fechei a aba.
 
 ## O que um contador faz de verdade
 
@@ -45,12 +45,10 @@ O Lucas pegou a minha empresa e colocou em ordem: enquadramento certo, calendár
 
 O que mais pesou não foi técnico. Foi eu poder voltar a pensar em pipeline. Não virou "menos uma tarefa", virou uma área inteira que sai da minha lista.
 
-E desde 27/08/2026 a relação inverteu: a WJR virou cliente da Work of Sales. O Lucas cuida do meu fiscal, eu cuido do comercial dele. Como consultor, eu ganho quando a WJR cresce, e você já sabe disso desde a primeira dobra desta página.
-
 ## Onde a WJR está
 
-A WJR fica na Mooca, em São Paulo. O site é [wjr.com.br](https://wjr.com.br). <!-- CONFIRMAR URL -->
+A WJR fica na Mooca, em São Paulo. O site é [wjrcontabilidade.com.br](https://wjrcontabilidade.com.br).
 
-Se quiser falar com eles, o caminho mais curto é o WhatsApp, no botão abaixo. <!-- CONFIRMAR número da WJR --> Diz que veio pelo meu site. Não muda o preço nem o atendimento, mas o Lucas gosta de saber de onde a pessoa chegou, e eu também.
+Se quiser falar com eles, o caminho mais curto é o WhatsApp, no botão abaixo. Diz que veio pelo meu site. Não muda o preço nem o atendimento, mas o Lucas gosta de saber de onde a pessoa chegou, e eu também.
 
 !!! Regra: o que não é o seu jogo, você delega pra quem joga ele todo dia, e vai acompanhar só o placar.

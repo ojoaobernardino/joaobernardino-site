@@ -45,7 +45,7 @@ A correção teve nome e matrícula. Master em PNL pela SBPNL, começando pelo P
 
 O que mudou primeiro foi a escuta. PNL me deu calibração: perceber quando a pessoa muda de estado na conversa, e parar de falar ali. A pós me deu o motivo pelo qual isso importa.
 
-O resultado: por anos fui o líder com menos turnover da operação. Estruturei times mistos, depois coordenei vendedores, depois o time de especialistas, que fechou novembro de 2024 com R$50 milhões de TPV e R$1 milhão de receita líquida no mesmo mês.
+O resultado: por anos fui o líder com menos turnover da operação. Estruturei times mistos, depois coordenei vendedores, depois o time de especialistas. O turnover caiu e o número não caiu junto, que era o medo de todo mundo, inclusive o meu.
 
 Não era mais "pessoas mentem, números não". Virou: números não mentem, mas só gente desenvolvida entrega número.
 

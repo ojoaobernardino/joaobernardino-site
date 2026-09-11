@@ -17,19 +17,16 @@ SITE = {
     'url': 'https://joaobernardino.com.br',
     'year': datetime.date.today().year,
     'nav': [
-        {'label': 'Textos', 'url': '/blog/'},
-        {'label': 'Vendas', 'url': '/blog/vendas/'},
-        {'label': 'Liderança', 'url': '/blog/lideranca/'},
-        {'label': 'Neurociência', 'url': '/blog/neurociencia/'},
-        {'label': 'Zero Nóia', 'url': '/blog/zero-noia/'},
-        {'label': 'Sobre', 'url': '/blog/sobre/'},
+        {'label': 'Blog', 'url': '/blog/'},
+        {'label': 'Todos os meus links', 'url': '/'},
     ],
 }
 CLUSTERS = {
-    'vendas': 'Vendas', 'lideranca': 'Liderança', 'neurociencia': 'Neurociência', 'treino': 'Treino',
-    'zero-noia': 'Zero Nóia', 'livros': 'Livros', 'uso': 'O que eu uso', 'parceiros': 'Parceiros',
-    'wjr': 'Meu contador', 'dieta': 'Dieta', 'a-obra': 'A Obra',
+    'vendas': 'Vendas', 'lideranca': 'Liderança', 'gestao': 'Gestão', 'neurociencia': 'Neurociência', 'treino': 'Treino',
+    'dieta': 'Dieta', 'zero-noia': 'Zero Nóia', 'livros': 'Livros', 'uso': 'O que eu uso', 'parceiros': 'Parceiros',
+    'wjr': 'WJR', 'a-obra': 'Comunidade A Obra',
 }
+MENU_ORDER = ['vendas', 'lideranca', 'gestao', 'neurociencia', 'treino', 'dieta', 'zero-noia', 'livros', 'uso', 'a-obra', 'wjr', 'parceiros']
 PERSON_ID = SITE['url'] + '/#pessoa'
 MESES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
 INCLUDE_DRAFTS = '--drafts' in sys.argv
@@ -226,7 +223,7 @@ def main():
     by_url = {p['url']: p for p in pages}
     # crumbs
     for p in pages:
-        crumbs = [{'name': 'Início', 'url': '/'}, {'name': 'Textos', 'url': '/blog/'}]
+        crumbs = [{'name': 'Início', 'url': '/'}, {'name': 'Blog', 'url': '/blog/'}]
         if p['cluster'] and p['type'] == 'post' and p['cluster_url'] in by_url:
             crumbs.append({'name': p['cluster_name'], 'url': p['cluster_url']})
         crumbs.append({'name': p['title'], 'url': p['url']})
@@ -241,6 +238,10 @@ def main():
             same.sort(key=lambda c: len(set(c.get('tags') or []) & set(p.get('tags') or [])), reverse=True)
             other = [c for c in posts if c['cluster'] != p['cluster']]
             p['related'] = (same[:2] + other[:1])[:3]
+    # menu (hubs em ordem fixa + Sobre), usado no índice e no rodapé de todas as páginas
+    hubs = sorted([p for p in pages if p['type'] == 'hub'], key=lambda h: MENU_ORDER.index(h['cluster']) if h['cluster'] in MENU_ORDER else 99)
+    menu = [{'label': CLUSTERS.get(h['cluster'], h['title']), 'url': h['url']} for h in hubs] + [{'label': 'Sobre', 'url': '/blog/sobre/'}]
+    SITE['menu'] = menu
     # render
     for p in pages:
         p['html'], p['toc'] = render_md(p['body'], p)
@@ -258,23 +259,19 @@ def main():
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(env.get_template(tpl).render(page=p, site=SITE, css=CSS), encoding='utf-8')
     # índice /blog/
-    order = ['zero-noia', 'vendas', 'lideranca', 'neurociencia', 'treino', 'dieta', 'livros', 'uso', 'a-obra', 'wjr', 'parceiros']
-    hubs = sorted([p for p in pages if p['type'] == 'hub'], key=lambda h: order.index(h['cluster']) if h['cluster'] in order else 99)
-    for h in hubs:
-        h['count'] = len(h.get('children', []))
-    latest = sorted(posts, key=lambda c: str(c['date']), reverse=True)[:20]
-    idx = {'title': 'Textos de João Bêrnardino', 'title_tag': 'Textos · João Bêrnardino', 'description': 'Vendas, neurociência, liderança, treino e o Zero Nóia. Os textos de João Bernardino, com número e em primeira pessoa.',
-           'url': '/blog/', 'type': 'page', 'slug': 'blog', 'draft': False, 'og_image': '/og-image.jpg', 'hubs': hubs, 'posts': latest,
-           'crumbs': [{'name': 'Início', 'url': '/'}, {'name': 'Textos', 'url': '/blog/'}], 'date': datetime.date.today(), 'updated': datetime.date.today()}
+    latest = sorted(posts, key=lambda c: str(c['date']), reverse=True)
+    idx = {'title': 'Meu blog', 'title_tag': 'Blog · João Bêrnardino', 'description': 'Vendas, neurociência, liderança, treino e o Zero Nóia. Os textos de João Bernardino, com número e em primeira pessoa.',
+           'url': '/blog/', 'type': 'page', 'slug': 'blog', 'draft': False, 'og_image': '/og-image.jpg', 'hubs': hubs, 'menu': menu, 'posts': latest,
+           'crumbs': [{'name': 'Início', 'url': '/'}, {'name': 'Blog', 'url': '/blog/'}], 'date': datetime.date.today(), 'updated': datetime.date.today()}
     idx['jsonld'] = json.dumps({'@context': 'https://schema.org', '@graph': [
-        {'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Início', 'item': SITE['url'] + '/'}, {'@type': 'ListItem', 'position': 2, 'name': 'Textos', 'item': SITE['url'] + '/blog/'}]},
+        {'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Início', 'item': SITE['url'] + '/'}, {'@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': SITE['url'] + '/blog/'}]},
         {'@type': 'Blog', '@id': SITE['url'] + '/blog/#blog', 'name': 'Textos de João Bêrnardino',
          'url': SITE['url'] + '/blog/', 'inLanguage': 'pt-BR', 'author': {'@id': PERSON_ID},
-         'blogPost': [{'@type': 'BlogPosting', 'headline': c['title'], 'url': SITE['url'] + c['url'], 'datePublished': str(c['date'])} for c in latest]},
+         'blogPost': [{'@type': 'BlogPosting', 'headline': c['title'], 'url': SITE['url'] + c['url'], 'datePublished': str(c['date'])} for c in latest[:50]]},
         {'@type': 'Person', '@id': PERSON_ID, 'name': 'João Bernardino', 'alternateName': ['João Bêrnardino'], 'url': SITE['url'] + '/blog/sobre/'}]}, ensure_ascii=False)
     (OUT / 'index.html').write_text(env.get_template('index.html').render(page=idx, site=SITE, css=CSS), encoding='utf-8')
     # feed
-    items = ''.join(f"<item><title>{html.escape(c['title'])}</title><link>{SITE['url']}{c['url']}</link><guid>{SITE['url']}{c['url']}</guid><pubDate>{datetime.datetime.fromisoformat(str(c['date'])).strftime('%a, %d %b %Y 08:00:00 -0300')}</pubDate><description>{html.escape(c['description'])}</description></item>" for c in latest)
+    items = ''.join(f"<item><title>{html.escape(c['title'])}</title><link>{SITE['url']}{c['url']}</link><guid>{SITE['url']}{c['url']}</guid><pubDate>{datetime.datetime.fromisoformat(str(c['date'])).strftime('%a, %d %b %Y 08:00:00 -0300')}</pubDate><description>{html.escape(c['description'])}</description></item>" for c in latest[:30])
     (OUT / 'feed.xml').write_text(f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>João Bêrnardino</title><link>{SITE["url"]}/blog/</link><description>Vendas, cérebro e hábito, em primeira pessoa.</description><language>pt-BR</language>{items}</channel></rss>', encoding='utf-8')
     # sitemap (home + blog)
     urls = [('/', datetime.date(2026, 9, 10), '1.0'), ('/blog/', max(str(p['updated']) for p in pages) if pages else '2026-09-11', '0.9')]

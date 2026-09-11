@@ -23,7 +23,7 @@ Onze anos de cigarro. Comecei na adolescência, como quase todo mundo que começ
 
 Maconha eu fumava de vez em quando. Não era todo dia, mas era sempre que a cabeça pedia pra desligar. Fato e data: parei a maconha em 01/01/2024. Isso aqui não é isca, é linha do tempo. Sem ela o resto não fecha.
 
-Esse era o cenário no fim de 2023: coordenando três times de inside sales na Stone (cerca de 400 clientes ativos), pós em Neurociências marcada pra começar em março, e um vício que eu sabia explicar melhor do que sabia largar.
+Esse era o cenário no fim de 2023: liderando time de inside sales na Stone, pós em Neurociências marcada pra começar em março, e um vício que eu sabia explicar melhor do que sabia largar.
 
 ## 01/01/2024
 
@@ -57,7 +57,9 @@ O reframe que eu tirei disso é o mesmo que uso em vendas hoje: 91 vídeos não 
 
 A pergunta "como" eu respondi por mensagem tantas vezes que virou texto decorado. Então organizei o que eu tinha feito, na ordem que fiz, e coloquei na Kiwify por R$ 19,90. O nome veio da expressão que eu mais dizia nos vídeos: zero nóia.
 
-O que tem dentro: o meu processo do dia 1 em diante, o que eu fiz com a vontade quando ela chegava, como montei o compromisso diário e o que mudei na rotina pra tirar as pistas do caminho. <!-- CONFIRMAR: conteúdo exato do Zero Nóia (módulos, formato, duração) --> É curto de propósito. Quem está parando de fumar não precisa de um curso de quarenta horas, precisa de um mapa que cabe no bolso.
+O que tem dentro, sem rodeio: um manual em PDF (33 páginas) dividido em parte teórica e parte prática. A teórica explica o que eu aprendi na pós sobre por que a vontade volta: o loop de gatilho, rotina e recompensa, a dopamina que busca alívio, o cortisol que empurra de volta, o contexto (lugar, horário, gente) que dispara o hábito sem você decidir. A prática é o que eu fiz, na ordem: mapear os meus gatilhos, trocar a rotina que vinha depois de cada um, tirar as pistas do ambiente, montar o compromisso diário e ter um plano pra vontade antes de ela virar ação. São os cinco pilares que eu usei, com ferramentas de PNL pra mexer nas associações que o cérebro fez em 11 anos. E tem a comunidade, porque não estar sozinho foi metade do resultado.
+
+O foco é o vício comportamental, não o químico. A nicotina sai do corpo em poucos dias. O que faz a maioria recair semanas depois é o circuito, e é nele que o Zero Nóia trabalha.
 
 Pra quem é: quem fuma, já tentou parar sozinho pelo menos uma vez e não segurou. Pra quem não é: quem quer parar "um dia". O produto pressupõe que você já decidiu, ele só organiza o depois.
 
@@ -75,7 +77,7 @@ Voltei porque a minha história continuou sendo contada, e quem conta são os ou
 
 ## O que eu faço hoje
 
-Não fumo desde 07/01/2024. Sou Vendedor & Neurotreinador, faço consultoria comercial pela Work of Sales e treino pra primeira maratona, em dezembro de 2026. A lente que apliquei no cigarro (pista, rotina, recompensa, compromisso público) é a mesma que aplico num time de vendas que precisa mudar de comportamento. O resto da minha história está em [quem eu sou](/blog/sobre/).
+Não fumo desde 07/01/2024. Sou Vendedor & Neurotreinador: estruturo vendas, estudo o cérebro, escrevo aqui e treino pra primeira maratona, em dezembro de 2026. A lente que apliquei no cigarro (pista, rotina, recompensa, compromisso público) é a mesma que aplico num time de vendas que precisa mudar de comportamento. O resto da minha história está em [quem eu sou](/blog/sobre/).
 
 !!! Regra: hábito não se vence com força de vontade, se vence com um compromisso que custa mais quebrar do que cumprir.
 

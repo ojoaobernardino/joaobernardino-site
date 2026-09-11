@@ -6,15 +6,15 @@ cluster: a-obra
 date: 2026-09-11
 updated: 2026-09-11
 tags: [a-obra, vendas, comunidade]
-summary: "A Obra é a comunidade onde eu ensino a máquina comercial que levo pros meus clientes (contrato, funil, rotina, número). A primeira turma está em formação. Deixa seu nome e WhatsApp e você é avisado antes de todo mundo."
+summary: "A Obra é a comunidade onde eu ensino a máquina comercial que montei em empresa grande e em negócio pequeno (funil, rotina, número). A primeira turma está em formação. Deixa seu nome e WhatsApp e você é avisado antes de todo mundo."
 draft: false
 ---
 
 ## O que é
 
-Eu passei cinco anos montando máquina de vendas pra empresa grande (Stone, Pessoalize, Koin). Em 2026 comecei a montar pra empresa pequena, como consultor. O que eu vi: o dono sabe do produto e não sabe de pipeline. Vende no talento e não no processo. Fecha mês bom e mês ruim sem saber por quê.
+Eu passei cinco anos montando máquina de vendas pra empresa grande (Stone, Pessoalize, Koin). Em 2026 comecei a montar pra quem vende sozinho. O que eu vi: o dono sabe do produto e não sabe de pipeline. Vende no talento e não no processo. Fecha mês bom e mês ruim sem saber por quê.
 
-A Obra é onde eu ensino o processo. Não é curso gravado e esquecido. É comunidade, com rotina semanal, e o método que eu uso nos clientes: diagnóstico por número, funil desenhado, cadência de contato, meta por atividade, e o cérebro por trás de cada decisão de compra.
+A Obra é onde eu ensino o processo. Não é curso gravado e esquecido. É comunidade, com rotina semanal, e o método que eu uso: diagnóstico por número, funil desenhado, cadência de contato, meta por atividade, e o cérebro por trás de cada decisão de compra.
 
 ## Pra quem é
 

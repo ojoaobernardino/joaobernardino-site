@@ -6,7 +6,7 @@ cluster:
 date: 2026-09-11
 updated: 2026-09-11
 tags: [sobre, joao-bernardino, vendas, neurociencia]
-summary: "Comecei gravando vídeo aos 12 anos. Virei vendedor, depois líder de vendas na Stone (o 4º líder de uma estrutura que cresceu pra 20 times). Errei com gente, fui estudar o cérebro. Hoje sou Vendedor & Neurotreinador."
+summary: "Comecei gravando vídeo aos 12 anos. Virei vendedor, depois líder de vendas na Stone. Errei com gente, fui estudar o cérebro. Hoje sou Vendedor & Neurotreinador."
 cta:
   label: "Comunidade A Obra"
   url: "/blog/a-obra/"
@@ -35,9 +35,7 @@ Minha primeira escola de vendas não foi uma empresa. Foi uma rede de multiníve
 
 Estagiei na Heineken (jan/2020 a fev/2021), no off premise, o canal de bar e mercado. Vi de perto como uma marca gigante briga por cada metro de gôndola.
 
-Em fevereiro de 2021 entrei na Stone/Pagar.me como vendedor júnior no digital. Subi a sênior dentro da casa, com uma carteira B2B de médio porte (cerca de 50 clientes, faturamento de até R$50 milhões por ano). Em julho de 2022 virei coordenador. Quando assumi, o comercial tinha 3 líderes, eu fui o quarto. Ajudei a construir a estrutura que cresceu pra 20 times e terminei liderando o time de especialistas: 3 equipes de inside sales, cerca de 400 clientes ativos, executivos convertendo acima de 40%.
-
-O melhor mês foi novembro de 2024: R$50 milhões de TPV e R$1 milhão de receita líquida no mesmo mês, com esse time.
+Em fevereiro de 2021 entrei na Stone/Pagar.me como vendedor júnior no digital. Subi a sênior dentro da casa, com uma carteira B2B de médio porte. Em julho de 2022 virei coordenador. Liderei times de inside sales e terminei à frente do time de especialistas. O time entregava. Guarda isso também, porque o parágrafo seguinte é sobre o preço disso.
 
 Só que eu errei feio no começo da liderança. Minha frase da época era "pessoas mentem, números não". Cobrava alto, entregava alto, e o turnover do meu time subiu. Meus pares pegavam as pessoas que eu perdia. O número estava certo. Eu estava errado. Fui estudar gente a sério por causa disso.
 
@@ -45,9 +43,9 @@ Só que eu errei feio no começo da liderança. Minha frase da época era "pesso
 
 Saí da Stone quando o degrau seguinte, gerir uma operação comercial inteira, já não existia lá pra mim. Fui Gerente Comercial na Closecare (mar a ago/2025), reestruturando Enterprise, SMB, outbound e inbound. Saí num corte de estrutura, numa reestruturação da carteira.
 
-Na Pessoalize (jul a dez/2025) fui Gerente de Negócios B2B, gerente de gestores, com 7 empresas no meu time. Trouxe a Vivo e o Grupo Ipiranga. A operação da Vivo foi de 9 pra 40 cadeiras, com e-mail, chat e WhatsApp por áudio, entregando 13 a 14% de receita líquida contra 7 a 8% da média. A empresa foi vendida, o CEO mudou, o projeto mudou. Saí bem com todo mundo.
+Na Pessoalize (jul a dez/2025) fui Gerente de Negócios B2B, gerente de gestores. Montei operações de atendimento e venda por e-mail, chat e WhatsApp por áudio, e aprendi que liderar quem lidera é outro ofício. A empresa foi vendida, o CEO mudou, o projeto mudou. Saí bem com todo mundo.
 
-Na Koin (mar a mai/2026), fintech de BNPL do grupo Prosus, montei do zero o pipeline enterprise: ICP, mais de 20 target accounts, battlecards, deck. A operação foi reestruturada e a posição, descontinuada.
+Na Koin (mar a mai/2026), fintech de BNPL do grupo Prosus, montei do zero o pipeline enterprise: ICP, battlecards, deck. A operação foi reestruturada e a posição, descontinuada.
 
 ## O cérebro
 
@@ -71,7 +69,7 @@ Jiu-jitsu, boxe, corrida e treino híbrido. A primeira maratona é em dezembro d
 
 ## O que eu faço hoje
 
-Sou Vendedor & Neurotreinador. Minha empresa é a JB Treinamento e Desenvolvimento. Por ela atendo consultoria comercial pela Work of Sales, estruturando a área de vendas de empresas que já vendem mas não sabem explicar por quê. Estou à frente da aquisição da Altive AI, uma startup. <!-- CONFIRMAR: pode citar Altive? -->
+Sou Vendedor & Neurotreinador. Minha empresa é a JB Treinamento e Desenvolvimento. Estruturo vendas, estudo o cérebro e escrevo aqui. O que aprendo no campo vira texto, e o que aprendo escrevendo volta pro campo.
 
 ## O que este blog é
 

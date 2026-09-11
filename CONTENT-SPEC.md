@@ -57,11 +57,15 @@ draft: false
 9. Nenhuma promessa terapêutica, nenhum "segredo", nenhum "método infalível". Saúde: fonte com autor e ano, e "por que eu não te prometo o mesmo".
 10. Nome: "João Bêrnardino" só no title das páginas de identidade; "João Bernardino" (sem acento) na description e no corpo quando citar em 3ª pessoa. Nome completo (João Pedro Vendramini Bernardino de Souza) só no `/blog/sobre/`, na 1ª frase.
 
+## Regra de exclusividade (Altive)
+
+**NUNCA** escrever que o João presta consultoria, tem clientes de consultoria, "Work of Sales", "consultor comercial", nem citar a Altive. Motivo: contrato de exclusividade. O que ele faz hoje, em texto público: "Vendedor & Neurotreinador. Estruturo vendas, estudo o cérebro e escrevo aqui." Números de entrevista (TPV, receita, % de conversão, tamanho de carteira, cadeiras, nomes de clientes de empregadores) também ficam FORA do blog: empresas e cargos em uma linha, prova por vivência.
+
 ## Regras de link e produto
 
 - Artigo nunca linka checkout. CTA de artigo = nome do produto sem preço, apontando para a página do produto (`/blog/a-obra/`, `/blog/zero-noia/`, `/blog/neurociencia/21-leis/`).
 - Exceção decidida pelo João: o HUB `/blog/zero-noia/` linka direto o checkout `https://pay.kiwify.com.br/y0iIDtj` (R$ 19,90) porque não há página de vendas.
 - Afiliado (Mercado Livre, Growth, Ultra Mel, Apex, Padrão Puro) só DEPOIS do primeiro CTA, sempre `{sponsored}`, com uma linha de disclosure no início da seção: "Alguns links são de parceiros. Se comprar por eles, eu ganho uma comissão e você paga o mesmo."
 - Nunca afiliado nas filhas do Zero Nóia.
-- Selva Club: link externo com UTM completa `?utm_source=joaobernardino&utm_medium=blog&utm_campaign=<cluster>&utm_content=<slug>` e disclosure "sou coprodutor e consultor do Lucas".
-- WJR: as três relações na 1ª dobra (cliente desde 05/03/2024; amigo do Lucas Brito há mais de 20 anos; consultor da WJR desde 27/08/2026). Nenhum número da WJR sem autorização escrita.
+- Selva Club: link externo com UTM completa `?utm_source=joaobernardino&utm_medium=blog&utm_campaign=<cluster>&utm_content=<slug>` e disclosure "sou coprodutor do Selva Club".
+- WJR: DUAS relações na 1ª dobra (cliente desde 05/03/2024; amigo do Lucas Brito há mais de 20 anos). Nenhum número da WJR sem autorização escrita.

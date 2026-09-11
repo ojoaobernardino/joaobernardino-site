@@ -6,7 +6,7 @@ cluster: neurociencia
 date: 2026-09-11
 updated: 2026-09-11
 tags: [neurotreinador, neurociencia, pnl, vendas, lideranca, habito]
-summary: "Neurotreinador é um treinador que só ensina o que consegue explicar com mecanismo e provar com número. Não é coach, não é terapeuta. O termo nasceu de cinco anos vendendo (3 times, 400 clientes) e de uma pós em Neurociências na PUCRS."
+summary: "Neurotreinador é um treinador que só ensina o que consegue explicar com mecanismo e provar com número. Não é coach, não é terapeuta. O termo nasceu de cinco anos vendendo e liderando times de inside sales, e de uma pós em Neurociências na PUCRS."
 cta:
   label: "Comunidade A Obra"
   url: "/blog/a-obra/"
@@ -17,7 +17,7 @@ draft: false
 
 ## A palavra não existia. Eu precisei dela.
 
-Em 2024 eu tinha duas credenciais que não conversavam. Uma era de vendedor, com número: 3 times de inside sales na Stone, cerca de 400 clientes ativos, executivos convertendo acima de 40%. A outra era de estudante: pós em Neurociências e Comportamento na PUCRS e Master em PNL pela SBPNL. Quando alguém perguntava "o que você faz", eu dava duas respostas e a pessoa guardava nenhuma.
+Em 2024 eu tinha duas credenciais que não conversavam. Uma era de vendedor, com campo: cinco anos vendendo e liderando times de inside sales na Stone. A outra era de estudante: pós em Neurociências e Comportamento na PUCRS e Master em PNL pela SBPNL. Quando alguém perguntava "o que você faz", eu dava duas respostas e a pessoa guardava nenhuma.
 
 Neurotreinador foi o nome que eu dei pra junção. Não é título de curso, não é registro em conselho. É a descrição mais curta que encontrei pro ofício: treinar gente pra performar, em vendas, em liderança, no treino físico e no hábito, usando o que se sabe sobre o cérebro. E só o que se sabe.
 
@@ -60,7 +60,7 @@ A formação não é o que me define. É a prova de que eu corrigi o erro. Depoi
 
 ## Como eu aplico
 
-Em vendas. Na Pessoalize, a operação da Vivo saiu de 9 pra 40 cadeiras, vendendo por e-mail, chat e WhatsApp por áudio. O time entregou 13 a 14% de receita líquida contra 7 a 8% da média da operação. O que mudou não foi script. Foi critério de escuta e rotina de feedback nos líderes que eu gerenciava. <!-- CONFIRMAR: o que exatamente o João mudou na operação da Vivo (escuta? rotina? perfil de contratação?) -->
+Em vendas. Na Pessoalize, numa operação de atendimento e venda que montei, o time vendia por e-mail, chat e WhatsApp por áudio. O que mudou não foi script. Foi critério de escuta e rotina de feedback nos líderes que eu gerenciava. <!-- CONFIRMAR: o que exatamente o João mudou nessa operação (escuta? rotina? perfil de contratação?) -->
 
 Em liderança. Cada pessoa abaixo da mediana ganha um PDI com fase e data, não um "melhora aí". Delegação com decisão de verdade, porque líder que revisa tudo ensina o time a não decidir. Eu aprendi isso ouvindo de uma pessoa do meu time: "parece que você não confia em mim".
 
@@ -70,7 +70,7 @@ No hábito. Liguei a câmera todo dia pra me obrigar a contar que tinha parado d
 
 ## Os limites
 
-Eu não prometo resultado. Os números acima são meus, num contexto específico, com times específicos. O que eu ensino é o método de chegar neles, não a garantia.
+Eu não prometo resultado. Os casos acima são meus, num contexto específico, com times específicos. O que eu ensino é o método de chegar neles, não a garantia.
 
 Os efeitos que a ciência valida são modestos. Rapport aumenta chance, não fecha venda. Quem te vender "técnica que fecha 90%" está vendendo palco.
 

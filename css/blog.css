@@ -111,6 +111,9 @@ h1{font-family:var(--cond);font-weight:900;font-size:44px;line-height:1.05;lette
 .muted{color:var(--ink3);font-size:16px}
 
 /* blog home */
+.menu{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-bottom:36px}
+.menu-card{display:block;padding:12px 14px;border:1px solid var(--rule);border-radius:8px;background:#fff;color:var(--ink);font-family:var(--cond);font-weight:700;font-size:20px;line-height:1.15;text-align:center}
+.menu-card:hover{text-decoration:none;border-color:var(--red);color:var(--red)}
 .blog-home h1{margin-bottom:6px}
 .lead{font-size:19px;color:var(--ink2);margin-bottom:26px}
 .hubs{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:36px}

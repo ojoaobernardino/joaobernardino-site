@@ -17,7 +17,7 @@ draft: false
 
 ## O que este hub cobre
 
-Em novembro de 2024 meu time fechou R$50 milhões de TPV e R$1 milhão de receita líquida no mesmo mês. Eu sabia o que tinha feito. Não sabia por que funcionava. Este hub existe pra responder o "por quê".
+Liderei times de inside sales por anos sabendo o que fazia. Não sabia por que funcionava. Este hub existe pra responder o "por quê".
 
 Aqui entram quatro assuntos que na minha cabeça são um só:
 

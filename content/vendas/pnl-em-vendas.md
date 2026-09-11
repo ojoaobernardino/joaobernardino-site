@@ -60,11 +60,11 @@ Linguagem sensorial, do jeito certo. Não classifico cliente como "visual". Uso 
 
 Reframe. "Taxa" vira "custo de não vender à vista o que o cliente quer parcelar". "Reestruturar o time" vira "parar de pagar salário por resultado que não vem". O fato não muda, o enquadre muda, e o enquadre é o que o cérebro avalia primeiro.
 
-## Dois casos com número
+## Dois casos de campo
 
-Stone, 2022 a 2025. Liderei 3 times de inside sales, cerca de 400 clientes ativos. Os executivos convertiam acima de 40%. A parte de PNL disso não foi truque em reunião. Foi modelagem: peguei o padrão de quem convertia mais (a ordem das perguntas antes da proposta, o silêncio depois do preço) e transformei em rotina de treino semanal. <!-- CONFIRMAR: quais padrões específicos o João extraiu dos top performers na Stone --> O melhor mês desse time foi novembro de 2024, R$50 milhões de TPV e R$1 milhão de receita líquida.
+Stone, 2022 a 2025. Liderei times de inside sales. A parte de PNL disso não foi truque em reunião. Foi modelagem: peguei o padrão de quem convertia mais (a ordem das perguntas antes da proposta, o silêncio depois do preço) e transformei em rotina de treino semanal. <!-- CONFIRMAR: quais padrões específicos o João extraiu dos top performers na Stone --> Quem treinava o padrão convertia mais do que quem só sabia de produto.
 
-Vivo, na Pessoalize, 2025. A operação saiu de 9 pra 40 cadeiras vendendo por e-mail, chat e WhatsApp com áudio. Áudio de WhatsApp é onde rapport e calibração ficam nus: não tem rosto, só ritmo, pausa e palavra. O time entregou 13 a 14% de receita líquida contra 7 a 8% da média da operação. <!-- CONFIRMAR: o João atribui parte desse resultado ao treino de linguagem no áudio, ou foi estrutura/rotina? -->
+Pessoalize, 2025. Numa operação de atendimento e venda que montei, o time vendia por e-mail, chat e WhatsApp com áudio. Áudio de WhatsApp é onde rapport e calibração ficam nus: não tem rosto, só ritmo, pausa e palavra. Quem escutava o ritmo do cliente antes de responder fechava mais do que quem despejava script. <!-- CONFIRMAR: o João atribui parte desse resultado ao treino de linguagem no áudio, ou foi estrutura/rotina? -->
 
 Nos dois casos, o mecanismo foi o mesmo: observar quem faz bem, extrair o padrão, ensinar o padrão, medir. Bandler e Grinder chamariam de modelagem. Eu chamo de gestão.
 
