@@ -6,7 +6,7 @@ cluster:
 date: 2026-09-11
 updated: 2026-09-11
 tags: [sobre, joao-bernardino, vendas, neurociencia]
-summary: "Comecei gravando vídeo aos 12 anos. Virei vendedor, depois líder de vendas na Stone. Errei com gente, fui estudar o cérebro. Hoje sou Vendedor & Neurotreinador."
+summary: "Comecei gravando vídeo aos 12 anos. Virei vendedor, depois líder de vendas na Stone. Vi os pares perdendo gente e fui estudar o cérebro antes de perder. Hoje sou Vendedor & Neurotreinador."
 cta:
   label: "Comunidade A Obra"
   url: "/blog/a-obra/"
@@ -27,31 +27,33 @@ Sou filho de militares. Isso explica a cama arrumada, o horário e a mania de pr
 
 ## Engenharia e a primeira escola de vendas
 
-Fiz Engenharia de Produção no Mackenzie (2016 a 2022). A faculdade me deu método: fluxo, gargalo, medir antes de mexer.
+Fiz Engenharia de Produção no Mackenzie. A faculdade me deu método: fluxo, gargalo, medir antes de mexer.
 
-Minha primeira escola de vendas não foi uma empresa. Foi uma rede de multinível, a RenoD. Aprendi ali o que nenhuma aula ensina: ouvir "não" o dia inteiro e ligar pra próxima pessoa com a mesma voz. Não fiquei rico com aquilo. Fiquei treinado.
+Minha primeira escola de vendas não foi uma empresa. Foi uma rede de multinível, a Hinode. Aprendi ali o que nenhuma aula ensina: ouvir "não" o dia inteiro e ligar pra próxima pessoa com a mesma voz. Não fiquei rico com aquilo. Fiquei treinado.
 
 ## Heineken, e depois a Stone
 
-Estagiei na Heineken (jan/2020 a fev/2021), no off premise, o canal de bar e mercado. Vi de perto como uma marca gigante briga por cada metro de gôndola.
+Estagiei na Heineken, no off premise, o canal de bar e mercado. Vi de perto como uma marca gigante briga por cada metro de gôndola.
 
-Em fevereiro de 2021 entrei na Stone/Pagar.me como vendedor júnior no digital. Subi a sênior dentro da casa, com uma carteira B2B de médio porte. Em julho de 2022 virei coordenador. Liderei times de inside sales e terminei à frente do time de especialistas. O time entregava. Guarda isso também, porque o parágrafo seguinte é sobre o preço disso.
+Entrei na Stone/Pagar.me como vendedor júnior no digital. Subi a sênior dentro da casa, com uma carteira B2B de médio porte. Virei coordenador. Liderei times de inside sales e terminei à frente do time de especialistas. O time entregava e ficava. Guarda isso também, porque o parágrafo seguinte é sobre o motivo.
 
-Só que eu errei feio no começo da liderança. Minha frase da época era "pessoas mentem, números não". Cobrava alto, entregava alto, e o turnover do meu time subiu. Meus pares pegavam as pessoas que eu perdia. O número estava certo. Eu estava errado. Fui estudar gente a sério por causa disso.
+No começo da liderança a frase que circulava era "pessoas mentem, números não". Eu olhava pro lado e via meus pares perdendo gente: cobravam alto, entregavam alto, e as pessoas pediam pra ir pro time vizinho. O número estava certo. O líder estava errado. Entendi que o próximo era eu e fui estudar gente a sério antes de perder gente.
 
 ## Closecare, Pessoalize, Koin
 
-Saí da Stone quando o degrau seguinte, gerir uma operação comercial inteira, já não existia lá pra mim. Fui Gerente Comercial na Closecare (mar a ago/2025), reestruturando Enterprise, SMB, outbound e inbound. Saí num corte de estrutura, numa reestruturação da carteira.
+Na Closecare fui Gerente Comercial. Assumi Enterprise, SMB, outbound e inbound ao mesmo tempo, uma operação comercial inteira na minha mão pela primeira vez, e estruturei as quatro frentes.
 
-Na Pessoalize (jul a dez/2025) fui Gerente de Negócios B2B, gerente de gestores. Montei operações de atendimento e venda por e-mail, chat e WhatsApp por áudio, e aprendi que liderar quem lidera é outro ofício. A empresa foi vendida, o CEO mudou, o projeto mudou. Saí bem com todo mundo.
+Na Pessoalize fui Gerente de Negócios B2B, gerente de gestores. Montei operações de atendimento e venda por e-mail, chat e WhatsApp por áudio, e aprendi que liderar quem lidera é outro ofício.
 
-Na Koin (mar a mai/2026), fintech de BNPL do grupo Prosus, montei do zero o pipeline enterprise: ICP, battlecards, deck. A operação foi reestruturada e a posição, descontinuada.
+Na Koin, fintech de BNPL do grupo Prosus, montei do zero o pipeline enterprise: ICP, battlecards, deck.
 
 ## O cérebro
 
-A correção do erro da Stone tem nome: pós-graduação em Neurociências e Comportamento na PUCRS (2024 a 2025) e Master em PNL pela SBPNL, onde fui Anjo (2024 a 2025), o voluntário que acompanha a turma de dentro da sala. <!-- CONFIRMAR: descrição do papel de Anjo na SBPNL -->
+O estudo tem nome: pós-graduação em Neurociências e Comportamento na PUCRS e Master Trainer em PNL pela SBPNL, onde fui Anjo, o voluntário que acompanha a turma de dentro da sala. <!-- CONFIRMAR: descrição do papel de Anjo na SBPNL -->
 
-Virei a chave e virei o líder com menos turnover da operação. Não era mais "pessoas mentem, números não". Virou: números não mentem, mas só gente desenvolvida entrega número.
+Não esperei perder gente pra estudar gente, e virei o líder com menos turnover da operação. Não era mais "pessoas mentem, números não". Virou: números não mentem, mas só gente desenvolvida entrega número.
+
+O erro que sobrou foi outro, menor: delegava a tarefa e revisava tudo, até ouvir de uma pessoa do meu time "parece que você não confia em mim". Parei.
 
 ## O experimento número 1: Zero Nóia
 

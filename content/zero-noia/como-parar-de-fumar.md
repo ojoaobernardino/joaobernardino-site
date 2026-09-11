@@ -102,7 +102,7 @@ Procure médico se: já tentou parar mais de uma vez e voltou, fuma mais de um m
 
 ## Por que eu não te prometo o mesmo
 
-Sou uma pessoa (1). Não tinha doença associada, não tinha depressão diagnosticada, tinha treino diário e um trabalho que me deixava filmar à noite. O que funcionou comigo é um dado de amostra 1, e amostra 1 não é evidência, é história. A pós na PUCRS e o Master em PNL me ajudam a explicar o que aconteceu. Não me dão o direito de prescrever.
+Sou uma pessoa (1). Não tinha doença associada, não tinha depressão diagnosticada, tinha treino diário e um trabalho que me deixava filmar à noite. O que funcionou comigo é um dado de amostra 1, e amostra 1 não é evidência, é história. A pós na PUCRS e o Master Trainer em PNL me ajudam a explicar o que aconteceu. Não me dão o direito de prescrever.
 
 ## O que virou o Zero Nóia
 

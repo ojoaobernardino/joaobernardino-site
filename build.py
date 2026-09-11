@@ -152,7 +152,7 @@ def jsonld(page, pages):
             'alternateName': ['João Bêrnardino', 'João Pedro Vendramini Bernardino de Souza', 'ojoaobernardino', 'JB'],
             'url': SITE['url'] + '/', 'image': SITE['url'] + '/apple-touch-icon.png',
             'jobTitle': 'Vendedor & Neurotreinador',
-            'description': 'Vendedor enterprise (Heineken, Stone/Pagar.me, Closecare, Pessoalize, Koin), Engenheiro de Produção (Mackenzie), pós em Neurociências e Comportamento (PUCRS), Master em PNL (SBPNL). Criador do Zero Nóia e da Comunidade A Obra.',
+            'description': 'Vendedor enterprise (Heineken, Stone/Pagar.me, Closecare, Pessoalize, Koin), Engenheiro de Produção (Mackenzie), pós em Neurociências e Comportamento (PUCRS), Master Trainer em PNL (SBPNL). Criador do Zero Nóia e da Comunidade A Obra.',
             'alumniOf': [{'@type': 'CollegeOrUniversity', 'name': 'Universidade Presbiteriana Mackenzie'}, {'@type': 'CollegeOrUniversity', 'name': 'PUCRS'}],
             'knowsAbout': ['Vendas B2B', 'Inside sales', 'Liderança comercial', 'PNL', 'Neurociência do hábito', 'Treinamento híbrido'],
             'worksFor': {'@type': 'Organization', 'name': 'JB Treinamento e Desenvolvimento'},

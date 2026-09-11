@@ -6,7 +6,7 @@ cluster: vendas
 date: 2026-09-11
 updated: 2026-09-11
 tags: [pnl, vendas, rapport, neurociencia, inside-sales]
-summary: "Sou Master em PNL e digo: metade do que vendem como PNL em vendas não tem suporte. Ler o olho do cliente é lenda (Wiseman et al., 2012). Rapport, calibração e reframe funcionam, com efeito modesto. Aqui está o que eu uso e o que eu larguei."
+summary: "Sou Master Trainer em PNL e digo: metade do que vendem como PNL em vendas não tem suporte. Ler o olho do cliente é lenda (Wiseman et al., 2012). Rapport, calibração e reframe funcionam, com efeito modesto. Aqui está o que eu uso e o que eu larguei."
 cta:
   label: "Comunidade A Obra"
   url: "/blog/a-obra/"
@@ -19,7 +19,7 @@ draft: false
 
 Cliente que olha pra cima e pra direita está inventando. Pra cima e pra esquerda, lembrando. Foi assim que eu ouvi pela primeira vez, num treinamento, e acreditei. Levei pra reunião. Cheguei a anotar "olhou pra direita no preço" numa oportunidade do Salesforce como se fosse sinal de objeção escondida. <!-- CONFIRMAR: o João de fato usou eye-accessing cues em reunião antes de estudar? --> Não era. Era um cara procurando a calculadora do celular.
 
-Hoje sou Master em PNL pela SBPNL e tenho pós em Neurociências e Comportamento pela PUCRS. Este texto é o que eu diria pra mim mesmo naquele treinamento.
+Hoje sou Master Trainer em PNL pela SBPNL e tenho pós em Neurociências e Comportamento pela PUCRS. Este texto é o que eu diria pra mim mesmo naquele treinamento.
 
 ## O que PNL é de verdade
 

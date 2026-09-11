@@ -17,7 +17,7 @@ draft: false
 
 ## A palavra não existia. Eu precisei dela.
 
-Em 2024 eu tinha duas credenciais que não conversavam. Uma era de vendedor, com campo: cinco anos vendendo e liderando times de inside sales na Stone. A outra era de estudante: pós em Neurociências e Comportamento na PUCRS e Master em PNL pela SBPNL. Quando alguém perguntava "o que você faz", eu dava duas respostas e a pessoa guardava nenhuma.
+Em 2024 eu tinha duas credenciais que não conversavam. Uma era de vendedor, com campo: cinco anos vendendo e liderando times de inside sales na Stone. A outra era de estudante: pós em Neurociências e Comportamento na PUCRS e Master Trainer em PNL pela SBPNL. Quando alguém perguntava "o que você faz", eu dava duas respostas e a pessoa guardava nenhuma.
 
 Neurotreinador foi o nome que eu dei pra junção. Não é título de curso, não é registro em conselho. É a descrição mais curta que encontrei pro ofício: treinar gente pra performar, em vendas, em liderança, no treino físico e no hábito, usando o que se sabe sobre o cérebro. E só o que se sabe.
 
@@ -50,13 +50,13 @@ Não é "neurovendas" de palco, aquele que fala em cérebro reptiliano e em 95% 
 
 Vem de uma sequência, e a ordem importa.
 
-Primeiro eu vendi. Multinível na RenoD, estágio na Heineken (2020 a 2021), depois Stone/Pagar.me de fevereiro de 2021 a abril de 2025, de vendedor júnior a coordenador comercial sênior. Cinco anos de campo antes de qualquer sala de aula sobre cérebro.
+Primeiro eu vendi. Multinível na Hinode, estágio na Heineken, depois Stone/Pagar.me, de vendedor júnior a coordenador comercial sênior. Cinco anos de campo antes de qualquer sala de aula sobre cérebro.
 
-Depois eu errei. No começo da liderança eu tratava pessoa como número. Minha frase era "pessoas mentem, números não". O turnover do meu time subiu e meus pares levavam quem eu perdia. O número não estava errado. Eu estava. A história inteira está em [turnover em vendas](/blog/lideranca/turnover-em-vendas/).
+Depois eu vi. No começo da liderança a frase da operação era "pessoas mentem, números não". Meus pares cobravam por ela, e o time deles entregava e ia embora, pro time do lado, onde performava. O número não estava errado. O líder estava. Entendi que o próximo era eu. A história inteira está em [turnover em vendas](/blog/lideranca/turnover-em-vendas/).
 
-Só então fui estudar. Pós em Neurociências e Comportamento na PUCRS (março de 2024 a abril de 2025). Practitioner, Trainer Training e Master em PNL na SBPNL, onde fui Anjo, o voluntário que acompanha a turma de dentro da sala. <!-- CONFIRMAR: papel de Anjo e período (CV registra out/2024 a nov/2025) -->
+Então fui estudar, antes de perder gente. Pós em Neurociências e Comportamento na PUCRS. Practitioner, Trainer Training e Master Trainer em PNL na SBPNL, onde fui Anjo, o voluntário que acompanha a turma de dentro da sala. <!-- CONFIRMAR: papel de Anjo e período (CV registra out/2024 a nov/2025) -->
 
-A formação não é o que me define. É a prova de que eu corrigi o erro. Depois dela, por anos, fui o líder com menos turnover da operação.
+A formação não é o que me define. É a prova de que eu não esperei perder gente pra estudar gente. Depois dela, por anos, fui o líder com menos turnover da operação.
 
 ## Como eu aplico
 

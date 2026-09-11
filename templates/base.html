@@ -47,29 +47,24 @@
 {% block content %}{% endblock %}
 </main>
 <footer class="site-foot">
-  <div class="wrap foot-grid">
-    <div>
-      <p class="foot-title">Blog</p>
-      {% for item in site.menu %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}
-    </div>
-    <div>
-      <p class="foot-title">Páginas</p>
-      <a href="/">Todos os meus links</a>
+  <div class="wrap">
+    <nav class="foot-nav" aria-label="Rodapé">
       <a href="/blog/">Blog</a>
+      <a href="/">Todos os meus links</a>
       <a href="/blog/sobre/">Sobre</a>
-      <a href="/blog/a-obra/">Comunidade A Obra</a>
       <a href="/blog/zero-noia/">Zero Nóia</a>
-      <a href="/blog/feed.xml">RSS</a>
-    </div>
-    <div>
-      <p class="foot-title">Redes</p>
+      <a href="/blog/a-obra/">Comunidade A Obra</a>
+      <a href="/blog/parceiros/">Cupom JB</a>
+    </nav>
+    <nav class="foot-social" aria-label="Redes">
       <a href="https://instagram.com/ojoaobernardino" rel="me noopener">Instagram</a>
       <a href="https://youtube.com/@ojoaobernardino" rel="me noopener">YouTube</a>
       <a href="https://tiktok.com/@ojoaobernardino" rel="me noopener">TikTok</a>
       <a href="https://www.linkedin.com/in/ojoaobernardino" rel="me noopener">LinkedIn</a>
-    </div>
+      <a href="/blog/feed.xml">RSS</a>
+    </nav>
+    <p class="copy">© {{ site.year }} João Bêrnardino</p>
   </div>
-  <p class="wrap copy">© {{ site.year }} João Bêrnardino · Vendedor &amp; Neurotreinador</p>
 </footer>
 <script>
 var GA4_ID = 'G-5MSB6QLXN0';

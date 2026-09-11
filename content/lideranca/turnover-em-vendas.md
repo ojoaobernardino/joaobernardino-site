@@ -1,12 +1,12 @@
 ---
-title: "Turnover em vendas: o erro que me fez estudar o cérebro"
-description: "Turnover em vendas por quem causou o próprio: João Bernardino tratava gente como número, perdeu time, estudou o cérebro e virou o líder com menos turnover."
+title: "Turnover em vendas: como eu não perdi gente enquanto os pares perdiam"
+description: "Turnover em vendas por quem estudou antes de perder: João Bernardino viu os pares perdendo gente, estudou o cérebro e virou o líder com menos turnover."
 type: post
 cluster: lideranca
 date: 2026-09-11
 updated: 2026-09-11
 tags: [turnover, lideranca, vendas, pdi, neurociencia, pnl]
-summary: "No começo da liderança eu dizia 'pessoas mentem, números não'. O time batia meta e saía. Fui estudar o cérebro (PUCRS + Master em PNL) e virei o líder com menos turnover da operação. O método que veio depois: dado, mediana, 3 meses de reversão."
+summary: "No começo da liderança eu ouvia 'pessoas mentem, números não' e via meus pares perdendo gente pro time do lado. Entendi que o próximo era eu. Fui estudar o cérebro antes (PUCRS + Master Trainer em PNL) e virei o líder com menos turnover da operação. O método: dado, mediana, 3 meses de reversão."
 cta:
   label: "Comunidade A Obra"
   url: "/blog/a-obra/"
@@ -15,37 +15,37 @@ cover_alt: ""
 draft: false
 ---
 
-## O time batia meta e pedia pra sair
+## O time do lado batia meta e pedia pra sair
 
-O mês fechou acima da meta e dois vendedores pediram transferência na mesma semana. Não pediram demissão. Pediram pra ir pro time do lado, com o mesmo produto, a mesma meta e outro líder. Foi em 2022, meu primeiro ano como coordenador na Stone/Pagar.me. <!-- CONFIRMAR: o número de pessoas e o momento exato das primeiras saídas -->
+O mês fechou acima da meta e dois vendedores de um par meu pediram transferência na mesma semana. Não pediram demissão. Pediram pra ir pra outro time, com o mesmo produto, a mesma meta e outro líder. Foi no meu primeiro ano como coordenador na Stone/Pagar.me. <!-- CONFIRMAR: o número de pessoas e o momento das primeiras saídas nos times dos pares -->
 
-Eu li aquilo como fraqueza deles. Demorei pra ler como diagnóstico meu.
+Eu vi aquilo de perto e li como diagnóstico. Não do vendedor. Do líder. E o próximo líder podia ser eu.
 
-## De onde vinha o erro
+## De onde vinha o risco
 
 Sou filho de militares e engenheiro de produção pelo Mackenzie. A combinação dá um líder que acorda cedo, mede tudo e acha que processo resolve gente. Cheguei na liderança com o Receita Previsível do Aaron Ross debaixo do braço: separar SDR de closer, lead qualificado como métrica-mãe, funil desenhado antes de contratar. Isso funcionou. O time entregava.
 
-O problema era a frase que eu repetia em reunião: "pessoas mentem, números não".
+A frase que circulava na operação era "pessoas mentem, números não". No começo eu pensava igual.
 
-Na prática, isso virava o seguinte. Vendedor dizia que o cliente tinha pedido prazo, eu abria o Salesforce e mostrava que ele não tinha ligado. Vendedor dizia que estava cansado, eu mostrava a curva de atividade caindo desde terça. Eu estava certo em todas. E o time foi embora mesmo assim.
+Na prática, isso virava o seguinte. Vendedor dizia que o cliente tinha pedido prazo, o líder abria o Salesforce e mostrava que ele não tinha ligado. Vendedor dizia que estava cansado, o líder mostrava a curva de atividade caindo desde terça. O líder estava certo em todas. E o time ia embora mesmo assim.
 
-Meus pares recebiam as pessoas que eu perdia e elas performavam lá. Isso doeu mais do que a saída. Se o problema fosse a pessoa, ela não performaria no time do lado.
+Quem saía de um time performava no time vizinho. Se o problema fosse a pessoa, ela não performaria com outro líder. Eu tinha o mesmo perfil, a mesma planilha e a mesma frase na cabeça. Era questão de tempo.
 
 ## O que a pressão faz com o cérebro
 
-Só entendi o mecanismo depois. Arnsten (2009) descreve como o estresse sustentado desliga o córtex pré-frontal, a região que cuida de flexibilidade, escuta e decisão. Exatamente o que vendedor mais usa numa reunião. Eu estava cobrando desempenho de um cérebro que a minha cobrança tinha colocado em modo de defesa.
+Só entendi o mecanismo depois. Arnsten (2009) descreve como o estresse sustentado desliga o córtex pré-frontal, a região que cuida de flexibilidade, escuta e decisão. Exatamente o que vendedor mais usa numa reunião. Cobrar desempenho de um cérebro que a própria cobrança colocou em modo de defesa não fecha conta.
 
-E tem o outro lado: Kahneman e Tversky (1979) mostraram que perda pesa mais que ganho do mesmo tamanho. Cada reunião minha era uma lista de perdas apontadas. Nenhum ganho reconhecido. O saldo emocional do time ficava negativo mesmo com meta batida.
+E tem o outro lado: Kahneman e Tversky (1979) mostraram que perda pesa mais que ganho do mesmo tamanho. Reunião que é só lista de perda apontada, sem nenhum ganho reconhecido, deixa o saldo emocional do time negativo mesmo com meta batida.
 
-Não sabia disso na época. Sabia que o número estava certo e o time estava indo embora.
+Não sabia disso na época. Sabia que o número dos pares estava certo e as pessoas deles estavam indo embora.
 
-## A virada
+## Estudar antes de perder
 
-A correção teve nome e matrícula. Master em PNL pela SBPNL, começando pelo Practitioner, e pós-graduação em Neurociências e Comportamento na PUCRS (março de 2024 a abril de 2025). Não fui estudar por curiosidade. Fui porque o método puro tinha parado de funcionar e eu não sabia por quê.
+Não esperei perder gente pra estudar gente. Master Trainer em PNL pela SBPNL, começando pelo Practitioner, e pós-graduação em Neurociências e Comportamento na PUCRS. Não fui estudar por curiosidade. Fui porque tinha visto o método puro parar de funcionar nos times do lado e não queria descobrir o porquê perdendo os meus.
 
 O que mudou primeiro foi a escuta. PNL me deu calibração: perceber quando a pessoa muda de estado na conversa, e parar de falar ali. A pós me deu o motivo pelo qual isso importa.
 
-O resultado: por anos fui o líder com menos turnover da operação. Estruturei times mistos, depois coordenei vendedores, depois o time de especialistas. O turnover caiu e o número não caiu junto, que era o medo de todo mundo, inclusive o meu.
+O resultado: por anos fui o líder com menos turnover da operação. Estruturei times mistos, depois coordenei vendedores, depois o time de especialistas. O turnover não subiu e o número não caiu, que era o medo de todo mundo, inclusive o meu.
 
 Não era mais "pessoas mentem, números não". Virou: números não mentem, mas só gente desenvolvida entrega número.
 
@@ -53,7 +53,7 @@ Não era mais "pessoas mentem, números não". Virou: números não mentem, mas 
 
 Turnover não começa no pedido de demissão. Começa umas seis semanas antes, e o CRM conta se você olhar. A curva de atividade cai numa terça e não volta na quarta. O vendedor para de registrar o motivo da perda, só marca "perdido". Some da reunião de previsibilidade com uma desculpa boa. Deixa de puxar o líder no corredor pra perguntar de um caso.
 
-Antes da virada eu via esses sinais e lia como "está relaxando". Chamava, mostrava a planilha, apertava. Hoje leio como "está indo embora" e faço o contrário: chamo, pergunto o que mudou e fico calado. A resposta quase nunca é sobre meta.
+Os pares viam esses sinais e liam como "está relaxando". Chamavam, mostravam a planilha, apertavam. Eu leio como "está indo embora" e faço o contrário: chamo, pergunto o que mudou e fico calado. A resposta quase nunca é sobre meta.
 
 ## O método de hoje
 
@@ -69,7 +69,7 @@ Plano de reversão de 3 meses. Quem está abaixo ganha 3 meses com marco mensal 
 
 ## O caso Rafaela
 
-A Rafaela chegou abaixo da mediana. <!-- CONFIRMAR: contexto da Rafaela (time, período, etapa do funil onde perdia) --> Antes da virada, eu teria mostrado o dashboard e dado 30 dias. Fiz diferente: PDI em 3 fases.
+A Rafaela chegou abaixo da mediana. <!-- CONFIRMAR: contexto da Rafaela (time, período, etapa do funil onde perdia) --> Sem a pós, eu teria mostrado o dashboard e dado 30 dias. Fiz diferente: PDI em 3 fases.
 
 Fase 1, diagnóstico: uma semana só de escuta de ligação, dela e dos melhores do time, com ela do meu lado apontando a diferença. Não eu apontando. Ela.
 
@@ -81,13 +81,13 @@ Fase 3, autonomia: ela passou a escutar as próprias ligações e trazer o diagn
 
 ## A delegação que eu fazia errado
 
-Mesmo depois da pós, errei de novo, de outro jeito. Delegava a tarefa e revisava tudo. Uma sênior do meu time me disse, na frente de outra pessoa: "parece que você não confia em mim". <!-- CONFIRMAR: quem disse e em que contexto -->
+Onde eu errei foi em outro lugar. Delegava a tarefa e revisava tudo. Uma sênior do meu time me disse, na frente de outra pessoa: "parece que você não confia em mim". <!-- CONFIRMAR: quem disse e em que contexto -->
 
 Ela tinha razão. Delegar tarefa sem delegar decisão é só distribuir trabalho. Mudei o formato: sênior passou a acompanhar decisão de desligamento e de PDI antes de ter cargo pra isso. Quando a cadeira de líder chegava, a pessoa já tinha decidido vinte vezes com rede embaixo. Isso virou o meu plano de sucessão.
 
 ## Por que eu não te prometo o mesmo
 
-Meu turnover caiu num contexto: Stone, inside sales, times de até 10, produto que eu conhecia de dentro por ter vendido. O seu time não é esse. O método é o mesmo, o número que vai sair é seu.
+O turnover baixo veio num contexto: Stone, inside sales, times de até 10, produto que eu conhecia de dentro por ter vendido. O seu time não é esse. O método é o mesmo, o número que vai sair é seu.
 
 E eu continuo errando. O último erro foi achar que um plano de 3 meses cabia em qualquer cadeira. Em operação enterprise com ciclo de 6 meses de venda, não cabe, e eu descobri na prática, na Closecare, antes de ajustar o marco pra ciclo. <!-- CONFIRMAR: o ajuste do plano de reversão pra ciclo enterprise aconteceu na Closecare? -->
 

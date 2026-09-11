@@ -17,21 +17,21 @@ draft: false
 
 ## O que este hub cobre
 
-Minha primeira venda de verdade foi num multinível, a RenoD. Trinta "não" num dia e a trigésima primeira ligação com a mesma voz. Tudo que veio depois foi variação disso com CRM.
+Minha primeira venda de verdade foi num multinível, a Hinode. Trinta "não" num dia e a trigésima primeira ligação com a mesma voz. Tudo que veio depois foi variação disso com CRM.
 
 Este hub é sobre vender B2B: como ser um bom vendedor, inside sales, PNL aplicada na reunião, vender pelo WhatsApp, vender no Instagram, a divisão entre SDR e closer, objeção. Cada texto tem um número meu e o contexto em que ele aconteceu. Nenhum tem receita pronta, porque eu não acredito em receita pronta e nunca vi uma bater meta dois trimestres seguidos.
 
 ## A trajetória em cinco linhas
 
-Heineken (jan/2020 a fev/2021): estágio no off premise, o canal de bar e mercado. Aprendi que uma marca gigante briga por cada centímetro de gôndola e que o vendedor no ponto de venda é quem ganha ou perde esse centímetro.
+Heineken: estágio no off premise, o canal de bar e mercado. Aprendi que uma marca gigante briga por cada centímetro de gôndola e que o vendedor no ponto de venda é quem ganha ou perde esse centímetro.
 
-Stone/Pagar.me (fev/2021 a abr/2025): entrei vendedor júnior no digital, subi a sênior com uma carteira B2B de médio porte e em julho de 2022 virei coordenador. Liderei times de inside sales e terminei à frente do time de especialistas.
+Stone/Pagar.me: entrei vendedor júnior no digital, subi a sênior com uma carteira B2B de médio porte e virei coordenador. Liderei times de inside sales e terminei à frente do time de especialistas.
 
-Closecare (mar a ago/2025): Gerente Comercial, reestruturando Enterprise, SMB, outbound e inbound ao mesmo tempo. Saí num corte de estrutura, numa reestruturação da carteira.
+Closecare: Gerente Comercial, com Enterprise, SMB, outbound e inbound na mão ao mesmo tempo. Uma operação comercial inteira pra estruturar, e eu estruturei.
 
-Pessoalize (jul a dez/2025): Gerente de Negócios B2B, gerente de gestores. Montei operações de venda por e-mail, chat e WhatsApp por áudio, e aprendi que liderar líder é outro ofício.
+Pessoalize: Gerente de Negócios B2B, gerente de gestores. Montei operações de venda por e-mail, chat e WhatsApp por áudio, e aprendi que liderar líder é outro ofício.
 
-Koin (mar a mai/2026): fintech de BNPL do grupo Prosus. Montei do zero o pipeline enterprise: ICP, battlecards, deck. A operação foi reestruturada e a posição, descontinuada.
+Koin: fintech de BNPL do grupo Prosus. Montei do zero o pipeline enterprise: ICP, battlecards, deck.
 
 ## O que eu errei primeiro
 

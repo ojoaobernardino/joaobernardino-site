@@ -28,9 +28,9 @@ Aqui entram quatro assuntos que na minha cabeça são um só:
 
 ## Por que fui estudar o cérebro depois de vender
 
-A ordem importa. Eu não li neurociência e depois fui vender. Vendi por cinco anos (Heineken, Stone/Pagar.me, Closecare, Pessoalize, Koin) e só depois entrei na pós de Neurociências e Comportamento da PUCRS (2024 a 2025) e no Master em PNL da SBPNL.
+A ordem importa. Eu não li neurociência e depois fui vender. Vendi por cinco anos (Heineken, Stone/Pagar.me, Closecare, Pessoalize, Koin) e só depois entrei na pós de Neurociências e Comportamento da PUCRS e no Master Trainer em PNL da SBPNL.
 
-O motivo foi um erro. No começo da liderança na Stone eu tratava gente como planilha. A frase da época era "pessoas mentem, números não". O número subia e o turnover do time subia junto. Meus pares ficavam com quem eu perdia. Fui estudar gente porque o método puro tinha parado de funcionar comigo, não por curiosidade acadêmica. A história inteira está em [turnover em vendas](/blog/lideranca/turnover-em-vendas/).
+O motivo foi o que eu vi nos times do lado. No começo da liderança na Stone a frase da operação era "pessoas mentem, números não". Nos times dos meus pares o número subia e as pessoas iam embora, pro time vizinho, onde performavam. Entendi que ia acontecer comigo se eu não mudasse. Fui estudar gente antes de perder gente, não por curiosidade acadêmica. A história inteira está em [turnover em vendas](/blog/lideranca/turnover-em-vendas/).
 
 Depois da pós, o que era intuição virou mecanismo com nome. Rapport deixou de ser "simpatia" e virou espelhamento que dá pra treinar. Objeção deixou de ser briga e virou cortisol subindo na hora errada. Não é mágica, é anatomia com aplicação.
 
