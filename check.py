@@ -16,7 +16,8 @@ def err(m): errors.append(m)
 def warn(m): warns.append(m)
 
 
-htmls = sorted(OUT.rglob('index.html'))
+# /blog/altive/ = seção privada (regra no netlify.toml): fora do blog, do sitemap e dos hubs
+htmls = sorted(h for h in OUT.rglob('index.html') if 'altive' not in h.relative_to(OUT).parts[:1])
 if not htmls:
     err('nenhum HTML em blog/')
 def url_of(h):
