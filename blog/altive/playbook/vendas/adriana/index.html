@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai">
+<meta name="referrer" content="no-referrer">
+<title>Playbook GERA Adriana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --azul:#3A7BD5; --azul-escuro:#2A5FA8; --menta:#8FD6B3; --laranja:#FFA85C;
+  --paper:#F5F8FC; --card:#FFFFFF; --soft:#EAF1FA; --ink:#14202E; --mute:#5A6B7F; --line:#DCE5EF;
+  --band:#13294A; --bandink:#EAF1FA;
+  --chat:#EEF2EC; --me:#D7F2E3; --me-line:#8FD6B3; --them:#FFFFFF; --ph:#FFE7D1; --ph-ink:#8A4A0E;
+  --ok:#1E8A5A; --no:#C0392B; --okbg:#E3F5EC; --nobg:#FCE9E6;
+  --shadow:0 1px 2px rgba(20,32,46,.05),0 8px 24px -14px rgba(20,32,46,.25);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --azul:#6FA4E8; --azul-escuro:#9CC0F0; --paper:#0D141D; --card:#152030; --soft:#1B2A3D; --ink:#E7EEF7; --mute:#9AAABD; --line:#26364A;
+  --band:#0A1422; --bandink:#DCE8F5;
+  --chat:#101A14; --me:#1C3A2B; --me-line:#3F8E67; --them:#1B2733; --ph:#4A3016; --ph-ink:#FFC894;
+  --ok:#63C396; --no:#F0877A; --okbg:#143023; --nobg:#3A1C19;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.7);
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --azul:#6FA4E8; --azul-escuro:#9CC0F0; --paper:#0D141D; --card:#152030; --soft:#1B2A3D; --ink:#E7EEF7; --mute:#9AAABD; --line:#26364A;
+  --band:#0A1422; --bandink:#DCE8F5;
+  --chat:#101A14; --me:#1C3A2B; --me-line:#3F8E67; --them:#1B2733; --ph:#4A3016; --ph-ink:#FFC894;
+  --ok:#63C396; --no:#F0877A; --okbg:#143023; --nobg:#3A1C19;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.7);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:17.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px}
+h1,h2,h3{font-family:'Sora',system-ui,sans-serif;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+a{color:var(--azul)}
+
+/* header */
+header.hero{background:var(--band);color:var(--bandink);padding-block:28px 26px;border-bottom:4px solid var(--menta)}
+.brand{font-family:'Sora',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--menta)}
+header.hero h1{color:#fff;font-size:clamp(1.7rem,6vw,2.3rem);margin-top:8px}
+header.hero p.sub{color:#B9CEE6;margin-top:6px;font-size:.98rem}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}
+.fact{background:rgba(255,255,255,.07);border:1px solid rgba(143,214,179,.3);border-radius:12px;padding:10px 12px}
+.fact b{display:block;font-family:'Sora',sans-serif;font-size:1.25rem;color:#fff;line-height:1.1}
+.fact span{font-size:.78rem;color:#B9CEE6}
+.fact small{display:block;font-size:.72rem;font-weight:700;letter-spacing:.03em;color:var(--menta);margin-bottom:4px}
+.fact.hi b{color:var(--menta)}
+
+/* nav */
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+nav.tabs .wrap{display:flex;gap:6px;overflow-x:auto;padding-block:10px;scrollbar-width:none}
+nav.tabs .wrap::-webkit-scrollbar{display:none}
+nav.tabs a{flex:none;text-decoration:none;color:var(--ink);font-weight:600;font-size:.86rem;padding:7px 12px;border-radius:999px;background:var(--soft);border:1px solid var(--line)}
+nav.tabs a:hover,nav.tabs a:focus-visible{border-color:var(--azul);outline:none}
+
+main{display:grid;gap:34px;padding-block:24px 40px}
+section h2{font-size:1.35rem;display:flex;align-items:center;gap:10px}
+section h2 .n{font-size:.8rem;background:var(--azul);color:#fff;border-radius:999px;padding:3px 9px;font-weight:700}
+.lead{color:var(--mute);margin-top:6px}
+
+.link{overflow-wrap:anywhere;word-break:break-word}
+.bubble p{white-space:pre-line;overflow-wrap:anywhere}
+.mylink{margin-top:14px;padding:12px 14px;border-radius:12px;background:var(--soft);border:2px solid var(--azul)}
+.mylink small{display:block;font-weight:700;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--azul)}
+.mylink p{margin-top:4px;font-size:.9rem}
+/* como usar */
+.howto{background:var(--card);border:2px solid var(--azul);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+.howto h2{font-size:1.3rem}
+.howto ol{list-style:none;counter-reset:h;margin:12px 0 0;padding:0;display:grid;gap:10px}
+.howto li{counter-increment:h;display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:center;font-size:1.02rem}
+.howto li::before{content:counter(h);width:38px;height:38px;border-radius:50%;background:var(--azul);color:#fff;display:grid;place-items:center;font-family:'Sora',sans-serif;font-weight:800}
+.howto .demo-btn{display:inline-block;background:var(--azul);color:#fff;font-weight:700;border-radius:8px;padding:1px 8px;font-size:.9rem}
+.pick{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.pick a{display:block;text-decoration:none;text-align:center;font-weight:700;color:#fff;background:var(--band);border-radius:14px;padding:14px 10px;font-size:1rem;line-height:1.3}
+.pick a span{display:block;font-weight:500;font-size:.85rem;color:#B9CEE6;margin-top:2px}
+
+/* caminho */
+.starts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.start{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
+.start .tag{display:inline-block;font-family:'Sora',sans-serif;font-weight:700;font-size:.78rem;color:#fff;background:var(--azul);border-radius:8px;padding:2px 8px}
+.start h3{font-size:1rem;margin-top:8px}
+.start p{font-size:.88rem;color:var(--mute);margin-top:4px}
+.start a.go{display:inline-block;margin-top:8px;font-weight:700;font-size:.85rem;text-decoration:none}
+.merge{height:26px;position:relative}
+.merge::before{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:2px solid var(--line)}
+.steps{display:grid;gap:0}
+.step{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
+.step+.step{margin-top:22px;position:relative}
+.step+.step::before{content:"";position:absolute;left:50%;top:-23px;height:22px;border-left:2px solid var(--line)}
+.step .num{width:40px;height:40px;border-radius:12px;background:var(--soft);color:var(--azul);display:grid;place-items:center;font-family:'Sora',sans-serif;font-weight:800}
+.step h3{font-size:1rem}
+.step p{font-size:.9rem;color:var(--mute);margin-top:2px}
+.step.win{border:2px solid var(--menta);background:linear-gradient(0deg,color-mix(in srgb,var(--menta) 14%,var(--card)),color-mix(in srgb,var(--menta) 14%,var(--card)))}
+.step.win .num{background:var(--menta);color:#0E3B27}
+.glossary{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.glossary span{font-size:.82rem;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 10px}
+.glossary b{color:var(--azul)}
+
+/* o gera */
+.gera{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);margin-top:14px}
+.gera ul{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:8px}
+.gera li{display:flex;gap:10px;align-items:baseline}
+.gera li::before{content:"✓";color:var(--ok);font-weight:800}
+.quote{margin-top:14px;padding:12px 14px;border-radius:12px;background:color-mix(in srgb,var(--laranja) 16%,var(--card));border:1px solid color-mix(in srgb,var(--laranja) 45%,var(--line))}
+.quote small{display:block;font-weight:700;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ph-ink)}
+.quote p{font-family:'Sora',sans-serif;font-weight:600;margin-top:4px}
+.who{margin-top:12px;font-size:.92rem}
+.who b{color:var(--azul)}
+
+/* checklist */
+.todo{list-style:none;counter-reset:t;margin:14px 0 0;padding:0;display:grid;gap:8px}
+.todo li{counter-increment:t;display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:.93rem}
+.todo li::before{content:counter(t);width:30px;height:30px;border-radius:9px;background:var(--azul);color:#fff;display:grid;place-items:center;font-family:'Sora',sans-serif;font-weight:700;font-size:.85rem}
+.goal{display:inline-flex;align-items:center;gap:8px;margin-top:12px;font-weight:700;background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:.9rem}
+.goal b{color:var(--azul)}
+
+/* chat */
+.phone{margin-top:16px;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--chat)}
+.phone-top{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--card);border-bottom:1px solid var(--line)}
+.avatar{width:34px;height:34px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-weight:700;color:var(--azul);font-family:'Sora',sans-serif}
+.phone-top b{display:block;font-size:.95rem}
+.phone-top span{font-size:.76rem;color:var(--mute)}
+.thread{padding:14px 12px 18px;display:flex;flex-direction:column;gap:10px}
+.day{align-self:center;font-size:.78rem;font-weight:700;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 12px;color:var(--ink);margin-top:6px;text-align:center}
+.day em{font-style:normal;font-weight:500;color:var(--mute)}
+.bubble{max-width:88%;border-radius:14px;padding:12px 14px;font-size:1.02rem;position:relative}
+.bubble.me{align-self:flex-end;background:var(--me);border:1px solid var(--me-line);border-top-right-radius:4px}
+.bubble.them{align-self:flex-start;background:var(--them);border:1px solid var(--line);border-top-left-radius:4px}
+.bubble .who-l{display:block;font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mute);margin-bottom:2px}
+.ph{background:var(--ph);color:var(--ph-ink);border-radius:5px;padding:0 4px;font-weight:700}
+.copy{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:10px;font:inherit;font-size:1rem;font-weight:700;color:#fff;background:var(--azul);border:0;border-radius:12px;padding:12px 14px;cursor:pointer;min-height:48px}
+.copy:hover{background:var(--azul-escuro)}
+.copy:focus-visible{outline:3px solid color-mix(in srgb,var(--azul) 45%,transparent);outline-offset:2px}
+.copy.done{background:var(--ok)}
+.after{margin-top:12px;font-size:.9rem;color:var(--mute);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.after b{color:var(--ink)}
+.tip{margin-top:12px;font-size:.88rem;background:var(--soft);border-left:4px solid var(--azul);border-radius:0 10px 10px 0;padding:10px 12px}
+
+/* faq */
+.faq{margin-top:14px;display:grid;gap:8px}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px}
+summary{cursor:pointer;list-style:none;padding:13px 14px;font-weight:700;display:flex;justify-content:space-between;gap:10px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:'Sora',sans-serif;color:var(--azul);font-size:1.2rem;line-height:1}
+details[open] summary::after{content:"–"}
+summary:focus-visible{outline:3px solid color-mix(in srgb,var(--azul) 45%,transparent);border-radius:12px}
+.ans{padding:0 14px 14px}
+.ans p{font-size:.95rem}
+
+/* regras */
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.rulebox{border-radius:14px;padding:14px;border:1px solid var(--line);background:var(--card)}
+.rulebox h3{font-size:.95rem;display:flex;align-items:center;gap:8px}
+.rulebox ul{margin:8px 0 0;padding:0;list-style:none;display:grid;gap:7px;font-size:.9rem}
+.rulebox.yes h3{color:var(--ok)} .rulebox.no h3{color:var(--no)}
+.rulebox.yes li::before{content:"✓ ";color:var(--ok);font-weight:800}
+.rulebox.no li::before{content:"✕ ";color:var(--no);font-weight:800}
+.money{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.money div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+.money b{display:block;font-family:'Sora',sans-serif;font-size:1.3rem;color:var(--azul)}
+.money div.hi b{color:var(--ok)}
+.money span{font-size:.82rem;color:var(--mute)}
+.money small{display:block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);margin-bottom:4px}
+.money div.big{grid-column:1 / -1;border:2px solid var(--menta);background:color-mix(in srgb,var(--menta) 14%,var(--card))}
+
+footer{background:var(--band);color:#9FB4CC;font-size:.8rem;padding-block:16px}
+
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);font-weight:700;font-size:.9rem;padding:10px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.show{opacity:1}
+
+@media (max-width:560px){
+  .starts,.rules{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr 1fr 1fr}
+  .fact small{font-size:.64rem}
+  .fact b{font-size:1.05rem}
+  .bubble{max-width:92%}
+}
+</style>
+</head>
+<body>
+
+
+<header class="hero"><div class="wrap">
+  <div class="brand">Altive · Playbook de vendas · Adriana</div>
+  <h1>Como vender o GERA</h1>
+  <p class="sub">O passo a passo para levar o cliente do primeiro "oi" até o pagamento. Copie as mensagens e siga a ordem.</p>
+  <div class="facts">
+    <div class="fact"><small>Quanto custa</small><b>R$ 199</b><span>por mês</span></div>
+    <div class="fact"><small>Quantos dias de trial</small><b>14 dias</b><span>grátis, sem cartão</span></div>
+    <div class="fact hi"><small>Quanto ganho por venda</small><b>R$ 80</b><span>sua comissão</span></div>
+  </div>
+</div></header>
+
+<nav class="tabs" aria-label="Seções"><div class="wrap">
+  <a href="#caminho">O caminho</a>
+  <a href="#gera">O que é o GERA</a>
+  <a href="#voce">Você encontra</a>
+  <a href="#lista">Lista do João</a>
+  <a href="#teste">Depois do cadastro</a>
+  <a href="#duvidas">Dúvidas</a>
+  <a href="#regras">Boas práticas</a>
+</div></nav>
+
+<div class="wrap"><main>
+
+<section class="howto" aria-labelledby="como-usar">
+  <h2 id="como-usar">Como usar esta página</h2>
+  <ol>
+    <li>Escolha a conversa certa (botões abaixo).</li>
+    <li><span>Toque em <span class="demo-btn">Copiar mensagem</span>.</span></li>
+    <li>Abra o WhatsApp do cliente e cole.</li>
+    <li><span>Troque o que está em <span class="ph">[laranja]</span> pelo nome certo.</span></li>
+    <li>Envie.</li>
+  </ol>
+  <div class="pick">
+    <a href="#voce">Eu achei o cliente<span>Google Maps ou Instagram</span></a>
+    <a href="#lista">O cliente veio da lista do João<span>Lista pronta</span></a>
+  </div>
+  <div class="pick" style="grid-template-columns:1fr">
+    <a href="#teste" style="background:var(--azul)">O cliente já fez o cadastro<span style="color:#E3EEFB">Mensagens do teste grátis</span></a>
+  </div>
+</section>
+
+<section id="caminho">
+  <h2>O caminho</h2>
+  <p class="lead">Duas formas de começar. Depois, o caminho é o mesmo até o cliente pagar.</p>
+  <div class="starts">
+    <div class="start"><span class="tag">A</span><h3>Você encontra o lead</h3><p>Comece pelas pessoas que você conhece que têm negócio. Depois, procure no Google Maps e no Instagram.</p><a class="go" href="#voce">Ver a conversa →</a></div>
+    <div class="start"><span class="tag">B</span><h3>Lead da lista do João</h3><p>Nome, empresa e telefone já vêm prontos. É só chamar, na ordem da lista.</p><a class="go" href="#lista">Ver a conversa →</a></div>
+  </div>
+  <div class="merge" aria-hidden="true"></div>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><div><h3>Mande as mensagens</h3><p>Dia 1: apresentação. Dias 2, 4 e 8: follow-up (lembrete curto), só se não respondeu.</p></div></div>
+    <div class="step"><div class="num">2</div><div><h3>Disse sim? Faça o cadastro junto, por ligação</h3><p>Use o seu link de cadastro · leva 5 minutos</p></div></div>
+    <div class="step"><div class="num">3</div><div><h3>Trial (teste grátis) de 14 dias</h3><p>Mande mensagem no 2º, 8º e 13º dia do teste.</p></div></div>
+    <div class="step win"><div class="num">4</div><div><h3>Cliente paga R$ 199 por mês</h3><p>Você ganha R$ 80 de comissão, uma vez.</p></div></div>
+  </div>
+  <div class="glossary" aria-label="Palavras que você vai ouvir">
+    <span><b>Lead</b> = cliente em potencial</span>
+    <span><b>Trial</b> = teste grátis de 14 dias</span>
+    <span><b>Follow-up</b> = mensagem de lembrete</span>
+    <span><b>Cliente ativo</b> = cliente que já pagou</span>
+  </div>
+</section>
+
+<section id="gera">
+  <h2>O que é o GERA</h2>
+  <div class="gera">
+    <p><b>O GERA posta nas redes sociais da empresa todo dia, sozinho.</b></p>
+    <ul>
+      <li><span>Faz <b>3 posts por dia</b> sobre o negócio do cliente.</span></li>
+      <li><span>Posta no <b>Instagram, Facebook, LinkedIn e X</b>.</span></li>
+      <li><span>Custa <b>R$ 199 por mês</b>. Sem fidelidade, sem custo extra.</span></li>
+      <li><span>O cliente testa <b>14 dias de graça</b>, sem cartão.</span></li>
+      <li><span>O cliente se cadastra pelo <b>seu link</b> (abaixo).</span></li>
+    </ul>
+    <p class="who"><b>Para quem oferecer:</b> dono de negócio pequeno que não tem tempo de postar. Salão, barbearia, clínica, loja, restaurante, corretor.</p>
+    <div class="mylink"><small>Seu link de cadastro</small><p class="link"><b>https://app.altive-ai.com/cadastro-inicial?plan=master&amp;plan_name=agencia-marketing&amp;ref=ADRIANA</b></p><div id="linkbtn"></div><p>Use sempre este link. É por ele que o cliente conta como venda sua.</p></div>
+    <div class="quote"><small>Frase para decorar</small><p>"O GERA posta pela sua empresa todo dia, e você testa 14 dias de graça."</p></div>
+  </div>
+</section>
+
+<section id="voce">
+  <h2><span class="n">A</span> Clientes que você mesmo encontra</h2>
+  <div class="goal"><b>Fale com no mínimo 30 pessoas por dia!</b></div>
+  <ol class="todo">
+    <li><span><b>Comece por quem você conhece.</b> Família que tem negócio, amigos, conhecidos, ex-colegas de trabalho, ex-chefes. Quem confia em você responde mais.</span></li>
+    <li>Depois, procure na internet: Google Maps ou Instagram. Ex.: "salão de beleza Mooca".</li>
+    <li>Abra o Instagram da empresa. Bom sinal: o último post tem mais de 15 dias.</li>
+    <li>Anote na planilha: nome, empresa e telefone.</li>
+    <li>Mande a mensagem. Uma pessoa por vez, nunca em massa.</li>
+  </ol>
+  <div class="phone" data-chat="voce"></div>
+  <p class="after">Na ligação, faça o cadastro junto com ele pelo <b>seu link</b> (está em <a href="#gera">O que é o GERA</a>). Se ele tiver dúvida, veja <a href="#duvidas">Dúvidas</a>.</p>
+</section>
+
+<section id="lista">
+  <h2><span class="n">B</span> Clientes da lista do João</h2>
+  <p class="lead">O João entrega a lista pronta: nome, empresa e telefone. Você não precisa procurar, só chamar.</p>
+  <ol class="todo">
+    <li>Chame a lista na ordem, de cima para baixo.</li>
+    <li>Anote na planilha cada resposta no mesmo dia.</li>
+  </ol>
+  <div class="phone" data-chat="lista"></div>
+  <p class="after"><b>Se a lista vier com erro</b> (telefone errado, empresa fechada): marque na planilha e avise o João.</p>
+</section>
+
+<section id="teste">
+  <h2>Depois do cadastro</h2>
+  <p class="lead">Vale para todo cliente que entrou no teste, venha de onde vier.</p>
+  <div class="phone" data-chat="teste"></div>
+</section>
+
+<section id="duvidas">
+  <h2>Dúvidas e objeções</h2>
+  <p class="lead">Se a pergunta não estiver aqui, não invente: diga "vou confirmar e já te respondo" e pergunte ao João.</p>
+  <div class="faq" id="faq"></div>
+</section>
+
+<section id="regras">
+  <h2>Boas práticas</h2>
+  <div class="money">
+    <div><small>Objetivo do dia</small><b>30</b><span>Fale com no mínimo 30 pessoas por dia!</span></div>
+    <div><small>Meta do mês, por vendedor</small><b>10</b><span>clientes pagando</span></div>
+    <div class="hi"><small>Por cliente que pagar</small><b>R$ 80</b><span>de comissão, uma vez</span></div>
+    <div class="hi"><small>Bateu a meta do mês</small><b>+ R$ 200</b><span>de bônus</span></div>
+    <div class="hi big"><small>Bateu a meta = você ganha</small><b>R$ 1.000</b><span>10 clientes × R$ 80 + R$ 200 de bônus</span></div>
+  </div>
+  <div class="rules">
+    <div class="rulebox yes"><h3>Sempre</h3><ul>
+      <li><b>Quanto mais rápido responder, mais chance tem de fechar!</b></li>
+      <li>Mande mensagem em horário comercial.</li>
+      <li>Anote tudo na planilha de acompanhamento, no mesmo dia. O João passa o link.</li>
+      <li>Ofereça fazer o cadastro junto, por ligação.</li>
+    </ul></div>
+    <div class="rulebox no"><h3>Nunca</h3><ul>
+      <li>Mandar a mesma mensagem para muita gente de uma vez. O número pode ser bloqueado.</li>
+      <li>Prometer seguidores, vendas ou resultado.</li>
+      <li>Dar desconto que não esteja aqui.</li>
+      <li>Inventar resposta. Na dúvida, pergunte ao João.</li>
+    </ul></div>
+  </div>
+  <p class="tip">A comissão é paga quando o pagamento do cliente cai.</p>
+</section>
+
+</main></div>
+
+<footer><div class="wrap">Altive · Playbook de vendas do GERA · atualizado em 28/09/2026</div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite">Copiado!</div>
+
+<script>
+(function(){
+  var CHATS = {
+    voce: [
+      {day:'Dia 1'},
+      {me:'Oi, [nome], tudo bem? Aqui é a Adriana, da Altive. Vi o Instagram da [empresa]. A gente tem o GERA, que posta pela sua empresa todo dia, sozinho. Dá pra testar 14 dias de graça. Posso te mostrar?'},
+      {day:'Dia 2', note:'só se não respondeu'},
+      {me:'[nome], viu minha mensagem? Te mostro em 5 minutos, sem compromisso.'},
+      {day:'Dia 4', note:'só se não respondeu'},
+      {me:'[nome], o teste é de graça por 14 dias, sem cartão:\nhttps://app.altive-ai.com/cadastro-inicial?plan=master&plan_name=agencia-marketing&ref=ADRIANA'},
+      {day:'Dia 8', note:'última mensagem'},
+      {me:'[nome], não vou mais te incomodar. Se quiser testar um dia, o link é esse:\nhttps://app.altive-ai.com/cadastro-inicial?plan=master&plan_name=agencia-marketing&ref=ADRIANA\nAbraço!'},
+      {day:'Quando o cliente responder'},
+      {them:'Oi! Como funciona?'},
+      {me:'É simples: o GERA cria e publica 3 posts por dia nas redes da [empresa]. São R$ 199 por mês, mas você testa 14 dias de graça. Quer fazer o cadastro juntos agora? Leva 5 minutos. Posso te ligar?'},
+      {them:'Pode sim!'},
+      {me:'Ótimo! Te ligo em 1 minuto.'}
+    ],
+    lista: [
+      {day:'Dia 1'},
+      {me:'Oi, [nome], tudo bem? Aqui é a Adriana, da Altive. A gente tem o GERA, que posta pela sua empresa todo dia, sozinho. Dá pra testar 14 dias de graça. Posso te mostrar?'},
+      {day:'Dia 2', note:'só se não respondeu'},
+      {me:'[nome], viu minha mensagem? Te mostro em 5 minutos, sem compromisso.'},
+      {day:'Dia 4', note:'só se não respondeu'},
+      {me:'[nome], o teste é de graça por 14 dias, sem cartão:\nhttps://app.altive-ai.com/cadastro-inicial?plan=master&plan_name=agencia-marketing&ref=ADRIANA'},
+      {day:'Dia 8', note:'última mensagem'},
+      {me:'[nome], não vou mais te incomodar. Se quiser testar um dia, o link é esse:\nhttps://app.altive-ai.com/cadastro-inicial?plan=master&plan_name=agencia-marketing&ref=ADRIANA\nAbraço!'},
+      {day:'Quando o cliente responder'},
+      {them:'Oi! Como funciona?'},
+      {me:'É simples: o GERA cria e publica 3 posts por dia nas redes da [empresa]. São R$ 199 por mês, mas você testa 14 dias de graça. Quer fazer o cadastro juntos agora? Leva 5 minutos. Posso te ligar?'},
+      {them:'Pode sim!'},
+      {me:'Ótimo! Te ligo em 1 minuto.'}
+    ],
+    teste: [
+      {day:'2º dia do teste'},
+      {me:'[nome], conseguiu conectar o Instagram? Os posts já começaram a sair?'},
+      {them:'Ainda não consegui conectar.'},
+      {me:'Sem problema! Te ligo agora e a gente conecta junto em 5 minutos.'},
+      {day:'8º dia do teste'},
+      {me:'[nome], como estão os posts? Está gostando?'},
+      {day:'13º dia do teste'},
+      {me:'[nome], seu teste acaba amanhã. Pra continuar são R$ 199 por mês, sem fidelidade. Quer ativar agora? Posso fazer junto com você.'},
+      {them:'Quero!'},
+      {me:'É só entrar no GERA, em Perfil > Assinatura, e ativar. Te ligo pra gente fazer junto?'}
+    ]
+  };
+  var FAQ = [
+    ['Quanto custa?','R$ 199 por mês. Os primeiros 14 dias são de graça, sem cartão.'],
+    ['Está caro.','São 3 posts por dia, todo dia, por R$ 199 no mês. Sai mais barato que uma diária de social media. E você testa de graça antes.'],
+    ['Não tenho tempo.','É por isso que o GERA existe: ele posta sozinho. O cadastro leva 5 minutos e eu faço junto com você.'],
+    ['Não entendo de tecnologia.','Não precisa. A gente configura junto com você pelo WhatsApp.'],
+    ['Precisa de cartão?','Não. O teste de 14 dias é sem cartão.'],
+    ['Os posts vão ficar genéricos?','Não. A IA aprende sobre o seu negócio e fala dele. No teste você vê antes de pagar.'],
+    ['E se eu não gostar de um post?','Você pode aprovar cada post antes de sair, ou deixar sair sozinho. Você escolhe.'],
+    ['Já tenho alguém que posta.','Que bom! O GERA pode ajudar nos dias em que essa pessoa não posta. Se você está satisfeito, tudo bem, obrigada pela atenção.'],
+    ['Vou pensar.','Sem problema. Como o teste é de graça, dá pra pensar usando. Quer que eu deixe cadastrado pra você?'],
+    ['Quem são vocês? É confiável?','Somos a Altive, uma empresa brasileira. O site é altive-ai.com e o suporte atende todo dia, das 8h às 19h.'],
+    ['Em quais redes ele posta?','Instagram, Facebook, LinkedIn e X.'],
+    ['Tem fidelidade ou multa pra cancelar?','Não. Pode cancelar quando quiser, sem multa.'],
+    ['Tem algum custo além dos R$ 199?','Não. É só R$ 199 por mês.']
+  ];
+
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  function mark(s){return esc(s).replace(/\[[^\]]+\]/g,function(m){return '<span class="ph">'+m+'</span>';});}
+
+  var toast=document.getElementById('toast'), tt;
+  function flash(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show');},1600);}
+  function selectText(el){try{var r=document.createRange();r.selectNodeContents(el);var s=window.getSelection();s.removeAllRanges();s.addRange(r);}catch(e){}}
+  function copyBtn(text, target, label){
+    label=label||'Copiar mensagem';
+    var b=document.createElement('button');b.type='button';b.className='copy';b.textContent=label;
+    b.addEventListener('click',function(){
+      var ok=function(){b.textContent='Copiado ✓';b.classList.add('done');flash('Copiado! Agora é só colar no WhatsApp.');setTimeout(function(){b.textContent=label;b.classList.remove('done');},1800);};
+      var fail=function(){selectText(target);flash('Texto selecionado: segure e toque em Copiar.');};
+      try{ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(ok,fail);} else {fail();} }catch(e){fail();}
+    });
+    return b;
+  }
+
+  document.querySelectorAll('[data-chat]').forEach(function(box){
+    var key=box.getAttribute('data-chat');
+    var top=document.createElement('div');top.className='phone-top';
+    top.innerHTML='<div class="avatar" aria-hidden="true">C</div><div><b>[nome do cliente]</b><span>verde = você · branco = cliente</span></div>';
+    var th=document.createElement('div');th.className='thread';
+    CHATS[key].forEach(function(m){
+      if(m.day){var d=document.createElement('div');d.className='day';d.innerHTML=esc(m.day)+(m.note?' <em>· '+esc(m.note)+'</em>':'');th.appendChild(d);return;}
+      var b=document.createElement('div');
+      if(m.me){b.className='bubble me';var t=document.createElement('div');t.innerHTML='<span class="who-l">Você</span>';var p=document.createElement('p');p.innerHTML=mark(m.me);t.appendChild(p);b.appendChild(t);b.appendChild(copyBtn(m.me,p));}
+      else{b.className='bubble them';b.innerHTML='<span class="who-l">Cliente</span><p>'+esc(m.them)+'</p>';}
+      th.appendChild(b);
+    });
+    box.appendChild(top);box.appendChild(th);
+  });
+
+  var lb=document.getElementById('linkbtn'); if(lb){var lp=lb.previousElementSibling; lb.appendChild(copyBtn('https://app.altive-ai.com/cadastro-inicial?plan=master&plan_name=agencia-marketing&ref=ADRIANA', lp, 'Copiar meu link'));}
+  var faq=document.getElementById('faq');
+  FAQ.forEach(function(q,i){
+    var d=document.createElement('details');if(i===0)d.open=true;
+    var s=document.createElement('summary');s.textContent=q[0];
+    var a=document.createElement('div');a.className='ans';var p=document.createElement('p');p.textContent=q[1];a.appendChild(p);a.appendChild(copyBtn(q[1],p));
+    d.appendChild(s);d.appendChild(a);faq.appendChild(d);
+  });
+})();
+</script>
+
+</body>
+</html>
