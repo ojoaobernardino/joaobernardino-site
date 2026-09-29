@@ -10,9 +10,10 @@ summary: "Todos os livros que eu tenho em casa, eu resumo aqui, um por um: o que
 card: "A minha estante, um por um: resumo, o que eu apliquei e pra quem cada livro serve."
 art_books: [spin-selling, prospeccao-fanatica, flow, responsabilidade-extrema]
 estantes:
-  Vendas: [spin-selling, prospeccao-fanatica, objecoes, a-biblia-de-vendas, os-segredos-do-lobo, como-fazer-amigos-e-influenciar-pessoas]
-  Mente e hábito: [flow, 12-regras-para-a-vida, nada-pode-me-ferir, a-estrutura-da-magia, o-milagre-da-manha, em-busca-de-sentido, os-segredos-da-mente-milionaria]
-  Liderança: [pipeline-de-lideranca, responsabilidade-extrema, gestao-de-alta-performance, o-monge-e-o-executivo, legado-15-licoes-sobre-lideranca]
+  Vendas: [spin-selling, prospeccao-fanatica, objecoes, a-biblia-de-vendas, storytelling, do-fracasso-ao-sucesso-na-arte-de-vender, bora-vender, a-linguagem-do-corpo, os-segredos-do-lobo, como-fazer-amigos-e-influenciar-pessoas]
+  Mente e hábito: [flow, maestria, 12-regras-para-a-vida, nada-pode-me-ferir, a-estrutura-da-magia, o-milagre-da-manha, vire-o-jogo, em-busca-de-sentido]
+  Liderança: [pipeline-de-lideranca, responsabilidade-extrema, equipes-brilhantes, o-lado-dificil-das-situacoes-dificeis, gestao-de-alta-performance, o-monge-e-o-executivo, legado-15-licoes-sobre-lideranca]
+  Dinheiro e carreira: [o-homem-mais-rico-da-babilonia, os-segredos-da-mente-milionaria, fora-de-serie]
 unit: "livros"
 kicker: "Só os que recomendo"
 ---
