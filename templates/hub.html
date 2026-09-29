@@ -15,7 +15,10 @@
   {% if page.start %}<h2 class="sec-h">Comece por aqui</h2>
   <div class="pgrid">{% with c=page.start, dest=true %}{% include "_pcard.html" %}{% endwith %}</div>{% endif %}
 
-  {% if page.mode == 'cards' %}
+  {% if page.mode == 'secoes' %}
+    {% for sc in page.secoes %}{% if sc.posts %}<h2 class="sec-h" id="{{ sc.id }}">{{ sc.nome }}</h2>
+    <div class="pgrid">{% for c in sc.posts %}{% include "_pcard.html" %}{% endfor %}</div>{% endif %}{% endfor %}
+  {% elif page.mode == 'cards' %}
     {% if page.posts %}<h2 class="sec-h">{{ page.list_title or 'Textos' }}</h2>
     <div class="pgrid">{% for c in page.posts %}{% include "_pcard.html" %}{% endfor %}</div>{% endif %}
   {% else %}

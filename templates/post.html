@@ -16,6 +16,13 @@
     <div><dl><dt>Livro</dt><dd>{{ page.book.titulo }}</dd><dt>Autor</dt><dd>{{ page.book.autor }}</dd><dt>Editora</dt><dd>{{ page.book.editora }}</dd><dt>Pra quem</dt><dd>{{ page.book.pra_quem }}</dd></dl>
       <div class="buy"><a class="btn k go" href="{{ page.book.afiliado }}" rel="sponsored noopener" data-track="livro-topo:{{ page.slug }}">Ver no Mercado Livre</a><small>Link de parceiro. Se comprar por ele, eu ganho uma comissão e você paga o mesmo.</small></div></div>
   </div>{% endif %}
+  {% if page.produto %}<div class="prod">
+    <div class="ph"><img src="{{ page.produto.imagem }}" alt="{{ page.produto.alt }}" width="{{ page.prod_w }}" height="{{ page.prod_h }}" fetchpriority="high"></div>
+    <div class="pi"><span class="k">{{ page.produto.marca }} · {{ page.produto.categoria }}</span><b class="nm">{{ page.produto.nome }}</b>
+      {% if page.produto.ficha %}<dl>{% for k, v in page.produto.ficha.items() %}<dt>{{ k }}</dt><dd>{{ v }}</dd>{% endfor %}</dl>{% endif %}
+    </div>
+  </div>
+  {{ page.buybox_top|safe }}{% endif %}
   {% if page.summary %}<div class="resumo"><b>Em resumo</b><p>{{ page.summary }}</p></div>{% endif %}
   {% if page.cover %}<figure class="cover"><img src="{{ page.cover }}" width="{{ page.cover_w }}" height="{{ page.cover_h }}" alt="{{ page.cover_alt }}" decoding="async"></figure>{% endif %}
   {% if page.toc and page.toc|length > 3 %}<nav class="toc" aria-label="Neste texto"><b>Neste texto</b><ol>{% for h in page.toc %}<li><a href="#{{ h.id }}">{{ h.text }}</a></li>{% endfor %}</ol></nav>{% endif %}
@@ -28,6 +35,7 @@
     <div><b><a href="/sobre/">João Bêrnardino</a></b><p>{{ site.author_bio }}</p></div>
   </aside>
 </article>
+{% if page.produto %}<div class="buybar" aria-hidden="true"><span><b>{{ page.produto.nome }}</b><small>Cupom {{ page.produto.cupom }} no site da {{ page.produto.marca }}</small></span><a class="btn w go" href="{{ page.produto.loja_url }}" rel="sponsored noopener" tabindex="-1" data-track="produto-barra:loja:{{ page.slug }}">Comprar</a></div>{% endif %}
 <section class="after">
   {% if page.book and page.shelf %}<h2 class="sec-h">Outros livros de {{ page.group|lower }}</h2>
   <div class="shelf">{% for c in page.shelf %}<a class="bk" href="{{ c.url }}"><span class="cv"><img src="{{ c.book.capa }}" alt="Capa do livro {{ c.book.titulo }}" width="{{ c.cover_w }}" height="{{ c.cover_h }}" loading="lazy" decoding="async"></span><span class="t"><b>{{ c.short_title }}</b><span>{{ c.book.autor }}</span></span><span class="go">Ler a resenha</span></a>{% endfor %}</div>

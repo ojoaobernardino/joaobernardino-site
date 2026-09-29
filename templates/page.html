@@ -16,6 +16,13 @@
     <div><dl><dt>Livro</dt><dd>{{ page.book.titulo }}</dd><dt>Autor</dt><dd>{{ page.book.autor }}</dd><dt>Editora</dt><dd>{{ page.book.editora }}</dd><dt>Pra quem</dt><dd>{{ page.book.pra_quem }}</dd></dl>
       <div class="buy"><a class="btn k go" href="{{ page.book.afiliado }}" rel="sponsored noopener" data-track="livro-topo:{{ page.slug }}">Ver no Mercado Livre</a><small>Link de parceiro. Se comprar por ele, eu ganho uma comissão e você paga o mesmo.</small></div></div>
   </div>{% endif %}
+  {% if page.produto %}<div class="prod">
+    <div class="ph"><img src="{{ page.produto.imagem }}" alt="{{ page.produto.alt }}" width="{{ page.prod_w }}" height="{{ page.prod_h }}" fetchpriority="high"></div>
+    <div class="pi"><span class="k">{{ page.produto.marca }} · {{ page.produto.categoria }}</span><b class="nm">{{ page.produto.nome }}</b>
+      {% if page.produto.ficha %}<dl>{% for k, v in page.produto.ficha.items() %}<dt>{{ k }}</dt><dd>{{ v }}</dd>{% endfor %}</dl>{% endif %}
+    </div>
+  </div>
+  {{ page.buybox_top|safe }}{% endif %}
   {% if page.summary %}<div class="resumo"><b>Em resumo</b><p>{{ page.summary }}</p></div>{% endif %}
   {% if page.cover %}<figure class="cover"><img src="{{ page.cover }}" width="{{ page.cover_w }}" height="{{ page.cover_h }}" alt="{{ page.cover_alt }}" decoding="async"></figure>{% endif %}
   {% if page.toc and page.toc|length > 3 %}<nav class="toc" aria-label="Neste texto"><b>Neste texto</b><ol>{% for h in page.toc %}<li><a href="#{{ h.id }}">{{ h.text }}</a></li>{% endfor %}</ol></nav>{% endif %}

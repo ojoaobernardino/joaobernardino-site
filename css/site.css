@@ -265,3 +265,47 @@ h2.sec-h{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppe
 @media (max-width:360px){.f-nav{gap:10px}.f-nav a{font-size:13px}}
 .next .k.red{color:var(--red-on-dark)}
 .hub-prose{max-width:680px;margin:64px auto 0;padding-top:48px;border-top:1px solid var(--border)}
+
+/* produto indicado (parceiro com cupom): foto, ficha, duas opções de compra */
+.prod{display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:24px;margin:28px 0 16px}
+.prod .ph{background:#fff;border-radius:12px;display:grid;place-items:center;padding:8px}
+.prod .ph img{width:100%;height:auto;display:block}
+.prod .k,.buy2 .k{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:600}
+.prod .nm{display:block;font-size:24px;letter-spacing:-.02em;margin:6px 0 14px}
+.prod dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:15px}
+.prod dt{color:var(--fg-2)}.prod dd{margin:0;font-weight:600}
+.buy2{background:#000;color:#fff;border-radius:18px;padding:26px;margin:0 0 32px;display:grid;gap:10px}
+.buy2 h3{font-size:24px;letter-spacing:-.02em;margin:0;color:#fff}
+.buy2 .k{color:var(--red-on-dark)}
+.buy2 .preco{margin:0;color:#bdbdbd}.buy2 .preco b{color:#fff;font-size:22px}.buy2 .preco s{color:#8a8a8a}
+.buy2 .bts{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.buy2 .cupom{margin:0;color:#bdbdbd;font-size:14px}.buy2 .cupom b{color:#fff;background:var(--red);padding:2px 8px;border-radius:6px;letter-spacing:.06em}
+.buy2 small{color:#a3a3a3;font-size:12.5px;line-height:1.45;max-width:62ch}
+.prose .buy2 h3{color:#fff}.prose .buy2 p{color:#bdbdbd}
+.buybar{display:none}
+.pcard.pprod .pimg{background:#fff;border-radius:12px;display:grid;place-items:center;height:180px;margin-bottom:6px}
+.pcard.pprod .pimg img{max-height:160px;width:auto;height:auto}
+@media (max-width:600px){
+  .prod{grid-template-columns:1fr;padding:18px}.prod .ph img{max-width:280px;margin:0 auto}
+  .buy2 .bts .btn{width:100%;justify-content:center}
+  .buybar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;gap:12px;align-items:center;justify-content:space-between;background:rgba(0,0,0,.94);backdrop-filter:blur(10px);color:#fff;padding:10px 16px calc(10px + env(safe-area-inset-bottom));border-top:1px solid #222}
+  .buybar span{display:grid;min-width:0}.buybar b{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.buybar small{color:#a3a3a3;font-size:12px}
+  .buybar .btn{height:42px;flex:none}
+  body:has(.buybar) .foot{padding-bottom:70px}
+}
+.fig-w{margin:24px 0}.fig-w img{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;background:#fff;border-radius:14px}.fig-w figcaption{text-align:center;font-size:13px;color:var(--fg-2);margin-top:8px}
+@media (max-width:600px){.prod .ph img{max-width:200px}.prod .nm{font-size:21px}}
+.fig-p{margin:28px 0}.fig-p img{width:100%;max-width:420px;height:auto;display:block;margin:0 auto;border-radius:14px}.fig-p figcaption{text-align:center;font-size:13px;color:var(--fg-2);margin-top:8px}
+/* perguntas frequentes e fontes: botões que abrem */
+.prose details.faq{border:1px solid var(--border);border-radius:14px;background:var(--surface);margin:10px 0;overflow:hidden}
+.prose details.faq summary{cursor:pointer;list-style:none;padding:16px 48px 16px 18px;font-weight:600;font-size:17px;line-height:1.4;position:relative}
+.prose details.faq summary::-webkit-details-marker,.prose details.fontes summary::-webkit-details-marker{display:none}
+.prose details.faq summary::after,.prose details.fontes summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:22px;font-weight:400;color:var(--red);line-height:1}
+.prose details[open] > summary::after{content:"\2212"}
+.prose details.faq > div{padding:0 18px 4px;color:var(--fg-2)}
+.prose details.faq > div p{margin:0 0 14px}
+.prose details.fontes{border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.prose details.fontes summary{cursor:pointer;list-style:none;padding:14px 40px 14px 0;font-weight:600;font-size:15px;position:relative}
+.prose details.fontes summary::after{right:4px}
+.prose details.fontes ul{font-size:15px;color:var(--fg-2);line-height:1.6;margin:0 0 16px}
+.buy2 .preco b{font-size:inherit}.buy2 .preco b:first-child{font-size:22px}
