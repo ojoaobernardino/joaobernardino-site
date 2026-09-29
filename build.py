@@ -191,7 +191,7 @@ def buybox(page, onde):
     """Onde comprar: site da marca com cupom JB e Mercado Livre, lado a lado (regra do João p/ parceiro com cupom)."""
     pr = page['produto']
     # sem preço na página: a marca muda preço e promoção toda hora; o que não muda é o cupom (João, 29/09)
-    preco = f'<p class="preco"><b>{html.escape(pr["desconto"])}</b> com o cupom {pr["cupom"]} no site da {html.escape(pr["marca"])}</p>'
+    preco = f'<p class="preco"><b>{html.escape(pr["desconto"])}</b> com o cupom <b>{pr["cupom"]}</b> no site da {html.escape(pr["marca"])}</p>'
     nome = '' if onde == 'topo' else f'<h3>{html.escape(pr["nome"])}</h3>'
     return (f'<div class="buy2"><span class="k">Onde comprar</span>{nome}{preco}'
             f'<div class="bts"><a class="btn w go" href="{pr["loja_url"]}" rel="sponsored noopener" data-track="produto-{onde}:loja:{page["slug"]}">Comprar com cupom {pr["cupom"]}</a>'

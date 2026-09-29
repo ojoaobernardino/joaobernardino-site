@@ -308,3 +308,4 @@ h2.sec-h{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppe
 .prose details.fontes summary{cursor:pointer;list-style:none;padding:14px 40px 14px 0;font-weight:600;font-size:15px;position:relative}
 .prose details.fontes summary::after{right:4px}
 .prose details.fontes ul{font-size:15px;color:var(--fg-2);line-height:1.6;margin:0 0 16px}
+.buy2 .preco b{font-size:inherit}.buy2 .preco b:first-child{font-size:22px}
