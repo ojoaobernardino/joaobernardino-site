@@ -195,7 +195,7 @@ def buybox(page, onde):
     nome = '' if onde == 'topo' else f'<h3>{html.escape(pr["nome"])}</h3>'
     return (f'<div class="buy2"><span class="k">Onde comprar</span>{nome}{preco}'
             f'<div class="bts"><a class="btn w go" href="{pr["loja_url"]}" rel="sponsored noopener" data-track="produto-{onde}:loja:{page["slug"]}">Comprar com cupom {pr["cupom"]}</a>'
-            f'<a class="btn g go" href="{pr["ml_url"]}" rel="sponsored noopener" data-track="produto-{onde}:ml:{page["slug"]}">Ver no Mercado Livre</a></div>'
+            + (f'<a class="btn g go" href="{pr["ml_url"]}" rel="sponsored noopener" data-track="produto-{onde}:ml:{page["slug"]}">Ver no Mercado Livre</a>' if pr.get('ml_url') else '') + '</div>'
             f'<p class="cupom">Cupom <b>{pr["cupom"]}</b>: digite no checkout do site da {html.escape(pr["marca"])}.</p>'
             f'<small>{html.escape(pr["aviso"])}</small></div>')
 
@@ -250,7 +250,10 @@ def jsonld(page):
                       'image': [SITE['url'] + pr['imagem']] + [SITE['url'] + i for i in pr.get('imagens', [])], 'description': page['description'],
                       'category': pr.get('categoria'), 'sku': pr.get('sku'),
                       'additionalProperty': [{'@type': 'PropertyValue', 'name': k, 'value': str(v)} for k, v in (pr.get('ficha') or {}).items()],
-                      'url': pr['loja_url'].split('?')[0]})
+                      'url': pr['loja_url'].split('?')[0],
+                      **({'review': {'@type': 'Review', 'author': {'@id': PERSON_ID}, 'datePublished': str(page['date']),
+                                     'reviewRating': {'@type': 'Rating', 'ratingValue': pr['nota'], 'bestRating': 10, 'worstRating': 0},
+                                     'reviewBody': page['summary']}} if pr.get('nota') else {})})
     if t == 'post' and page.get('produto'):
         graph.append({'@type': 'BlogPosting', '@id': SITE['url'] + page['url'] + '#artigo', 'headline': page['title'], 'description': page['description'],
                       'datePublished': str(page['date']), 'dateModified': str(page['updated']), 'inLanguage': 'pt-BR',
@@ -431,7 +434,7 @@ def main():
         h['direct_count'] = len(direct) + (1 if start else 0)
         if h.get('secoes'):
             h['mode'], h['posts'] = 'secoes', direct
-            h['secoes'] = [dict(s, posts=[c for c in direct if c.get('indicacao') == s['tipo']]) for s in h['secoes']]
+            h['secoes'] = [dict(s, posts=[c for c in direct if s.get('tipo') and c.get('indicacao') == s['tipo']]) for s in h['secoes']]
         elif len(direct) <= CARDS_MAX:
             h['mode'], h['posts'] = 'cards', direct
         else:
@@ -464,6 +467,12 @@ def main():
                 for b in g['books']:
                     b['shelf'] = [x for x in g['books'] if x is not b][:3]
             h['art_covers'] = [{'src': kids[x]['book']['capa'], 'w': kids[x]['cover_w'], 'h': kids[x]['cover_h']} for x in (h.get('art_books') or []) if x in kids]
+    # seções que puxam de outro índice (ex.: Indicações > Livros vem da estante de /blog/livros/, na ordem das prateleiras)
+    for h in hubs_by_folder.values():
+        for sc in h.get('secoes') or []:
+            if isinstance(sc, dict) and sc.get('fonte') in by_url:
+                src = by_url[sc['fonte']]
+                sc['posts'] = [b for g in src.get('shelves', []) for b in g['books']] or src.get('all_posts', [])
     # relacionados: mesmo tema primeiro (por tags em comum), depois 1 de outro tema
     for p in posts:
         same = [c for c in posts if c['parent'] is p['parent'] and c is not p]

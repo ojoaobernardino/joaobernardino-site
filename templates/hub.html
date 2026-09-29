@@ -16,8 +16,8 @@
   <div class="pgrid">{% with c=page.start, dest=true %}{% include "_pcard.html" %}{% endwith %}</div>{% endif %}
 
   {% if page.mode == 'secoes' %}
-    {% for sc in page.secoes %}{% if sc.posts %}<h2 class="sec-h" id="{{ sc.id }}">{{ sc.nome }}</h2>
-    <div class="pgrid">{% for c in sc.posts %}{% include "_pcard.html" %}{% endfor %}</div>{% endif %}{% endfor %}
+    {% for sc in page.secoes %}{% if sc.posts %}<div class="rowh" id="{{ sc.id }}"><h2 class="sec-h">{{ sc.nome }} <small>{{ sc.posts|length }}</small></h2><div class="arrows">{% if sc.fonte %}<a class="ver" href="{{ sc.fonte }}">Ver todos</a>{% endif %}<button type="button" class="arr" data-dir="-1" aria-label="Voltar">‹</button><button type="button" class="arr" data-dir="1" aria-label="Avançar">›</button></div></div>
+    <div class="shelf rail">{% for c in sc.posts %}{% include "_rcard.html" %}{% endfor %}</div>{% endif %}{% endfor %}
   {% elif page.mode == 'cards' %}
     {% if page.posts %}<h2 class="sec-h">{{ page.list_title or 'Textos' }}</h2>
     <div class="pgrid">{% for c in page.posts %}{% include "_pcard.html" %}{% endfor %}</div>{% endif %}
@@ -36,4 +36,10 @@
   {% if page.cta %}<h2 class="sec-h">O método</h2>
   <div class="pgrid"><a class="pcard dest" href="{{ page.cta.url }}" data-track="cta:{{ page.slug }}"><span class="meta">{{ page.cta.meta or 'Produto' }}</span><h3>{{ page.cta.label }}</h3>{% if page.cta.text %}<p>{{ page.cta.text }}</p>{% endif %}<span class="go-link">{{ page.cta.button or 'Conhecer' }}</span></a></div>{% endif %}
 </div></section>
+{% if page.mode == 'secoes' %}<script>
+document.querySelectorAll('.rowh').forEach(function(h){var r=h.nextElementSibling,bs=h.querySelectorAll('.arr');
+function upd(){bs[0].disabled=r.scrollLeft<=4;bs[1].disabled=r.scrollLeft+r.clientWidth>=r.scrollWidth-4;}
+bs.forEach(function(b){b.addEventListener('click',function(){r.scrollBy({left:(+b.dataset.dir)*r.clientWidth,behavior:'smooth'});});});
+r.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd();});
+</script>{% endif %}
 {% endblock %}

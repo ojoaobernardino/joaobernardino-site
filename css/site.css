@@ -309,3 +309,16 @@ h2.sec-h{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppe
 .prose details.fontes summary::after{right:4px}
 .prose details.fontes ul{font-size:15px;color:var(--fg-2);line-height:1.6;margin:0 0 16px}
 .buy2 .preco b{font-size:inherit}.buy2 .preco b:first-child{font-size:22px}
+.prod .nota{margin:-6px 0 14px;font-size:14px;color:var(--fg-2)}.prod .nota b{display:inline-block;background:var(--red);color:#fff;border-radius:8px;padding:3px 10px;margin-right:6px;font-size:15px}
+/* fileiras de indicações (produtos, serviços, livros) */
+.rowh{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:40px 0 14px;scroll-margin-top:90px}
+.rowh .sec-h{margin:0}.rowh .sec-h small{color:var(--fg-2);font-weight:500;letter-spacing:0;margin-left:6px}
+.rowh .arrows{display:flex;align-items:center;gap:8px}
+.rowh .ver{font-size:14px;font-weight:600;margin-right:6px}.rowh .ver:hover{color:var(--red)}
+.bk .cv.cv-w{background:#fff}
+.bk .mk{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.bk .cv.cv-t{background:#000;color:#fff;flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:8px;padding:18px}
+.bk .cv.cv-t b{font-size:20px;line-height:1.2;letter-spacing:-.01em}.bk .cv.cv-t .mk{color:var(--red-on-dark)}
+.prose .buy2 a.btn{text-decoration:none}
+.bk .cv.cv-w img{filter:none}.bk .cv.cv-t b{overflow-wrap:anywhere;hyphens:auto}@media (max-width:600px){.bk .cv.cv-t b{font-size:17px}}
+.bk .cv.cv-logo{align-items:center;justify-content:center}.bk .cv.cv-logo img{width:78%;height:auto;filter:none}

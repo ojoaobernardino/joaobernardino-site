@@ -14,16 +14,5 @@ summary: "Só entra aqui o que eu uso de verdade: os produtos do meu treino e da
 secoes:
   - {nome: "Produtos", id: produtos, tipo: produto}
   - {nome: "Serviços", id: servicos, tipo: servico}
-extra_title: "Livros e marcas"
-extra_links:
-  - meta: "18 resenhas"
-    title: "Livros que eu indico"
-    text: "A minha estante, um por um: resumo, o que eu apliquei e pra quem cada livro serve."
-    url: "/blog/livros/"
-    go: "Ver a estante"
-  - meta: "Cupom JB"
-    title: "Marcas com o meu cupom"
-    text: "Growth Suplementos, Ultramel, Apex e Padrão Puro: compre com o cupom JB e tenha desconto."
-    url: "/linktree/"
-    go: "Ver os cupons"
+  - {nome: "Livros", id: livros, fonte: /blog/livros/}
 ---
