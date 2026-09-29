@@ -159,11 +159,29 @@ def render_md(body, page):
                f'<p>{html.escape(bk.get("pra_quem",""))}: este é o livro.</p><a class="btn w go" href="{bk["afiliado"]}" rel="sponsored noopener" data-track="livro-fim:{page["slug"]}">Comprar o livro</a>'
                '<small>Link de parceiro: eu ganho uma comissão e você paga o mesmo.</small></div>\n')
         out = out.replace('<h2 id="perguntas-frequentes">', buy + '<h2 id="perguntas-frequentes">', 1)
+    if page.get('produto'):
+        out = out.replace('<h2 id="perguntas-frequentes">', buybox(page, 'fim') + '\n<h2 id="perguntas-frequentes">', 1)
     out = out.replace('<h2 id="fontes">', '<h2 id="fontes" class="fontes-h">')
     out = out.replace('src="img/', 'src="/img/blog/')
     out = re.sub(r'<a href="(https?://[^"]+)">', r'<a href="\1" rel="noopener">', out)
     out = out.replace('rel="noopener" rel="sponsored noopener"', 'rel="sponsored noopener"')
     return out, toc
+
+
+def brl(v):
+    v = float(v); return ('R$ ' + f'{v:,.2f}'.replace(',', 'X').replace('.', ',').replace('X', '.')).replace(',00', '')
+
+
+def buybox(page, onde):
+    """Onde comprar: site da marca com cupom JB e Mercado Livre, lado a lado (regra do João p/ parceiro com cupom)."""
+    pr = page['produto']
+    preco = f'<p class="preco"><b>{brl(pr["preco"])}</b>' + (f' <s>{brl(pr["preco_de"])}</s>' if pr.get('preco_de') else '') + f' no site da {html.escape(pr["marca"])}</p>'
+    nome = '' if onde == 'topo' else f'<h3>{html.escape(pr["nome"])}</h3>'
+    return (f'<div class="buy2"><span class="k">Onde comprar</span>{nome}{preco}'
+            f'<div class="bts"><a class="btn w go" href="{pr["loja_url"]}" rel="sponsored noopener" data-track="produto-{onde}:loja:{page["slug"]}">Comprar com cupom {pr["cupom"]}</a>'
+            f'<a class="btn g go" href="{pr["ml_url"]}" rel="sponsored noopener" data-track="produto-{onde}:ml:{page["slug"]}">Ver no Mercado Livre</a></div>'
+            f'<p class="cupom">Cupom <b>{pr["cupom"]}</b>: digite no checkout do site da {html.escape(pr["marca"])}.</p>'
+            f'<small>{html.escape(pr["aviso"])}</small></div>')
 
 
 def person_full():
@@ -210,6 +228,20 @@ def jsonld(page):
                       'itemReviewed': {'@type': 'Book', 'name': bk['titulo'], 'author': {'@type': 'Person', 'name': bk['autor']},
                                        'publisher': {'@type': 'Organization', 'name': str(bk.get('editora', ''))}, 'inLanguage': 'pt-BR',
                                        'image': SITE['url'] + bk['capa']}})
+    if page.get('produto'):
+        pr = page['produto']
+        graph.append({'@type': 'Product', '@id': SITE['url'] + page['url'] + '#produto', 'name': pr['nome'], 'brand': {'@type': 'Brand', 'name': pr['marca']},
+                      'image': [SITE['url'] + pr['imagem']] + [SITE['url'] + i for i in pr.get('imagens', [])], 'description': page['description'],
+                      'category': pr.get('categoria'), 'sku': pr.get('sku'),
+                      'additionalProperty': [{'@type': 'PropertyValue', 'name': k, 'value': str(v)} for k, v in (pr.get('ficha') or {}).items()],
+                      'offers': {'@type': 'Offer', 'url': pr['loja_url'].split('?')[0], 'price': f"{float(pr['preco']):.2f}", 'priceCurrency': 'BRL',
+                                 'availability': 'https://schema.org/InStock', 'itemCondition': 'https://schema.org/NewCondition',
+                                 'seller': {'@type': 'Organization', 'name': pr['marca']}}})
+    if t == 'post' and page.get('produto'):
+        graph.append({'@type': 'BlogPosting', '@id': SITE['url'] + page['url'] + '#artigo', 'headline': page['title'], 'description': page['description'],
+                      'datePublished': str(page['date']), 'dateModified': str(page['updated']), 'inLanguage': 'pt-BR',
+                      'mainEntityOfPage': SITE['url'] + page['url'], 'image': SITE['url'] + page['og_image'], 'about': {'@id': SITE['url'] + page['url'] + '#produto'},
+                      'author': {'@id': PERSON_ID}, 'publisher': {'@id': PERSON_ID}, 'keywords': ', '.join(page.get('tags') or []), 'wordCount': page['words']})
     elif t == 'post':
         graph.append({'@type': 'BlogPosting', '@id': SITE['url'] + page['url'] + '#artigo', 'headline': page['title'], 'description': page['description'],
                       'datePublished': str(page['date']), 'dateModified': str(page['updated']), 'inLanguage': 'pt-BR',
@@ -256,7 +288,7 @@ def og_image(page):
     ogdir = ROOT / 'img' / 'og'; ogdir.mkdir(parents=True, exist_ok=True)
     out = ogdir / f'{name}.jpg'
     bold, reg = _inter(700), _inter(500)
-    if page.get('book'):
+    if page.get('book') or page.get('produto'):
         return og_book(page, out, name, bold, reg)
     im = Image.new('RGB', (1200, 630), '#000000'); d = ImageDraw.Draw(im)
     kicker = (page.get('cluster_name') or page.get('kicker') or 'João Bêrnardino').upper()
@@ -286,12 +318,13 @@ def og_image(page):
 def og_book(page, out, name, bold, reg):
     """Imagem de compartilhamento da resenha: título à esquerda, capa do livro à direita."""
     from PIL import Image, ImageDraw
-    bk = page['book']
+    pr = page.get('produto')
+    bk = page.get('book') or {'capa': pr['imagem'], 'autor': pr['marca']}
     im = Image.new('RGB', (1200, 630), '#000000'); d = ImageDraw.Draw(im)
-    d.rounded_rectangle([760, 60, 1140, 570], radius=24, fill='#F1EEE8')
-    cv = Image.open(ROOT / bk['capa'].lstrip('/')).convert('RGBA'); cv.thumbnail((260, 440))
+    d.rounded_rectangle([760, 60, 1140, 570], radius=24, fill='#FFFFFF' if pr else '#F1EEE8')
+    cv = Image.open(ROOT / bk['capa'].lstrip('/')).convert('RGBA'); cv.thumbnail((340, 440) if pr else (260, 440))
     im.paste(cv, (950 - cv.width // 2, 315 - cv.height // 2), cv)
-    d.text((80, 90), 'LIVROS · RESENHA', font=reg(24), fill='#BF1E2D')
+    d.text((80, 90), 'INDICAÇÃO · CUPOM ' + pr['cupom'] if pr else 'LIVROS · RESENHA', font=reg(24), fill='#BF1E2D')
     font = bold(58); lines = []; cur = ''
     for w in page['title'].split():
         t = (cur + ' ' + w).strip()
@@ -301,7 +334,7 @@ def og_book(page, out, name, bold, reg):
     y = 140
     for l in lines[:5]:
         d.text((80, y), l, font=font, fill='#ffffff'); y += 68
-    d.text((80, y + 10), f"{bk['autor']} · nota {bk['nota']} de 5".replace('.5 de', ',5 de'), font=reg(24), fill='#a3a3a3')
+    d.text((80, y + 10), f"{pr['marca']} · {brl(pr['preco'])}" if pr else f"{bk['autor']} · nota {bk['nota']} de 5".replace('.5 de', ',5 de'), font=reg(24), fill='#a3a3a3')
     try:
         av = Image.open(ROOT / 'img' / 'avatar-216.webp').convert('RGB').resize((72, 72))
         m = Image.new('L', (72, 72), 0); ImageDraw.Draw(m).ellipse([0, 0, 71, 71], fill=255); im.paste(av, (80, 510), m)
@@ -336,6 +369,10 @@ def main():
             bk = p['book']
             p['cover_w'], p['cover_h'] = Image.open(ROOT / bk['capa'].lstrip('/')).size
             p['short_title'] = bk.get('curto') or SHORT_TITLES.get(bk['titulo']) or bk['titulo'].split(':')[0].strip()
+        if p.get('produto'):
+            from PIL import Image
+            p['prod_w'], p['prod_h'] = Image.open(ROOT / p['produto']['imagem'].lstrip('/')).size
+            p['buybox_top'] = buybox(p, 'topo')
         parent = hubs_by_folder.get(p['folder']) if p['type'] != 'hub' else hubs_by_folder.get(p['folder'])
         p['parent'] = parent
         if p['type'] == 'post' and parent:
@@ -378,7 +415,10 @@ def main():
         h['all_posts'] = newest(under(h))
         h['total'] = len(h['all_posts'])
         h['direct_count'] = len(direct) + (1 if start else 0)
-        if len(direct) <= CARDS_MAX:
+        if h.get('secoes'):
+            h['mode'], h['posts'] = 'secoes', direct
+            h['secoes'] = [dict(s, posts=[c for c in direct if c.get('indicacao') == s['tipo']]) for s in h['secoes']]
+        elif len(direct) <= CARDS_MAX:
             h['mode'], h['posts'] = 'cards', direct
         else:
             feat_urls = [f if f.startswith('/') else h['url'] + f + '/' for f in (h.get('featured') or [])]

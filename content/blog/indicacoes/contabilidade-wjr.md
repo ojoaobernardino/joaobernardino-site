@@ -2,6 +2,7 @@
 title: "Meu contador: por que eu confio na WJR Contabilidade"
 description: "Por que João Bernardino abriu uma LTDA e confia a contabilidade à WJR, na Mooca: notas, impostos, pró-labore, imposto de renda e holding."
 type: page
+indicacao: servico
 kicker: "Contabilidade"
 card_title: "WJR Contabilidade"
 card: "A contabilidade que cuida da minha empresa desde 2024, na Mooca, em São Paulo."

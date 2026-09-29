@@ -1,6 +1,6 @@
 ---
 title: "O que João Bêrnardino indica: serviços, livros e marcas"
-description: "Os serviços, livros e marcas que João Bernardino usa de verdade e indica: contabilidade, a estante de livros e as marcas com cupom JB."
+description: "Os produtos, serviços e livros que João Bernardino usa e indica: banheira de gelo, contabilidade, a estante de livros e as marcas com cupom JB."
 type: hub
 name: "Indicações"
 unit: "indicações"
@@ -10,8 +10,10 @@ aliases: [/indicacoes/]
 kicker: "O que eu indico"
 date: 2026-09-29
 updated: 2026-09-29
-summary: "Só entra aqui o que eu uso de verdade: o serviço que cuida da minha empresa, os livros que mudaram o meu jeito de trabalhar e as marcas que eu consumo."
-list_title: "Serviços"
+summary: "Só entra aqui o que eu uso de verdade: os produtos do meu treino e da minha recuperação, o serviço que cuida da minha empresa, os livros que mudaram o meu jeito de trabalhar e as marcas com o meu cupom."
+secoes:
+  - {nome: "Produtos", id: produtos, tipo: produto}
+  - {nome: "Serviços", id: servicos, tipo: servico}
 extra_title: "Livros e marcas"
 extra_links:
   - meta: "18 resenhas"
