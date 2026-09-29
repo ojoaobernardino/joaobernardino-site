@@ -295,3 +295,4 @@ h2.sec-h{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppe
 }
 .fig-w{margin:24px 0}.fig-w img{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;background:#fff;border-radius:14px}.fig-w figcaption{text-align:center;font-size:13px;color:var(--fg-2);margin-top:8px}
 @media (max-width:600px){.prod .ph img{max-width:200px}.prod .nm{font-size:21px}}
+.fig-p{margin:28px 0}.fig-p img{width:100%;max-width:420px;height:auto;display:block;margin:0 auto;border-radius:14px}.fig-p figcaption{text-align:center;font-size:13px;color:var(--fg-2);margin-top:8px}

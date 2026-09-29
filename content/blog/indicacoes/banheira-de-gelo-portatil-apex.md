@@ -23,7 +23,7 @@ produto:
   cupom: "JB"
   loja_url: "https://apx.com.br/products/apex-recovery-tub?utm_source=joaobernardino&utm_medium=site&utm_campaign=indicacoes&utm_content=banheira-de-gelo"
   ml_url: "https://meli.la/2KSvsVz"
-  aviso: "Sou patrocinado pela Apex. Se você comprar com o cupom JB ou pelo meu link do Mercado Livre, eu ganho uma comissão e você não paga nada a mais por isso."
+  aviso: "Sou patrocinado pela Apex e ganhei a minha banheira deles. Se você comprar com o cupom JB ou pelo meu link do Mercado Livre, eu ganho uma comissão e você não paga nada a mais por isso."
   ficha:
     Diâmetro: "85 cm"
     Altura: "75 cm"
@@ -37,7 +37,9 @@ draft: false
 
 A banheira de gelo vale a pena se você treina forte, principalmente corrida e esporte de resistência, e quer chegar menos dolorido no treino seguinte. O que os estudos sustentam: 10 a 15 minutos em água entre 10 e 15 °C reduzem a dor muscular tardia e melhoram a sensação de recuperação nas 24 a 72 horas seguintes (Machado, 2016; Moore, 2022). O que eles não sustentam: que gelo emagrece, e que gelo logo depois da musculação é bom pra quem quer ganhar massa. Nesse caso, atrapalha (Piñero, 2024).
 
-Eu treino pra maratona e sou patrocinado pela Apex. Por isso esta página tem duas regras: todo benefício vem com estudo, e todo "quando não usar" também está aqui.
+Eu uso banheira de gelo desde 2024, treino pra maratona e sou patrocinado pela Apex. Por isso esta página tem duas regras: todo benefício vem com estudo, e todo "quando não usar" também está aqui.
+
+<figure class="fig-p"><img src="/img/indicacoes/joao-banheira-de-gelo-apex.webp" alt="João Bêrnardino dentro de uma banheira de gelo da Apex, com boné e óculos escuros, com gelo até o peito" width="1000" height="1333" loading="lazy" decoding="async"><figcaption>Eu no gelo com o time da Apex, na imersão da roça, em 31/08/2025.</figcaption></figure>
 
 ## O que é a Apex Recovery Tub
 
@@ -98,7 +100,11 @@ Tradução pra rotina de quem faz treino híbrido: gelo depois da corrida longa,
 
 ## Por que eu indico a Apex
 
-Sou patrocinado pela Apex, e você precisa saber disso antes de qualquer outra coisa. Indico porque ela resolve o que faz a maioria desistir da banheira de gelo em casa: é portátil, leve (3,1 kg vazia), tem marcação interna de nível pra acertar a mistura de gelo e água e vem com tampa.
+Sou patrocinado pela Apex, e você precisa saber disso antes de qualquer outra coisa. A história começou em 2024: quando um vídeo meu viralizou, o Gabriel, fundador da Apex, passou a me seguir e me mandou uma banheira. Desde então ela faz parte da minha recuperação. Em 31/08/2025, na imersão da roça, entrei no gelo com ele e com o time da Apex.
+
+<figure class="fig-p"><img src="/img/indicacoes/gabriel-apex-banheira-de-gelo.webp" alt="Gabriel, fundador da Apex, apoiado na borda de uma banheira de gelo, de boné da Apex" width="1000" height="1333" loading="lazy" decoding="async"><figcaption>Gabriel, fundador da Apex, na mesma imersão, em 31/08/2025.</figcaption></figure>
+
+Indico porque ela resolve o que faz a maioria desistir da banheira de gelo em casa: é portátil, leve (3,1 kg vazia), tem marcação interna de nível pra acertar a mistura de gelo e água e vem com tampa.
 
 Você tem duas opções de compra. No site da Apex, com o cupom JB, sai por R$ 679 com frete grátis. No Mercado Livre, pelo meu link, você compra com a garantia e o prazo de entrega do Mercado Livre.
 
