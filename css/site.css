@@ -296,3 +296,15 @@ h2.sec-h{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppe
 .fig-w{margin:24px 0}.fig-w img{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;background:#fff;border-radius:14px}.fig-w figcaption{text-align:center;font-size:13px;color:var(--fg-2);margin-top:8px}
 @media (max-width:600px){.prod .ph img{max-width:200px}.prod .nm{font-size:21px}}
 .fig-p{margin:28px 0}.fig-p img{width:100%;max-width:420px;height:auto;display:block;margin:0 auto;border-radius:14px}.fig-p figcaption{text-align:center;font-size:13px;color:var(--fg-2);margin-top:8px}
+/* perguntas frequentes e fontes: botões que abrem */
+.prose details.faq{border:1px solid var(--border);border-radius:14px;background:var(--surface);margin:10px 0;overflow:hidden}
+.prose details.faq summary{cursor:pointer;list-style:none;padding:16px 48px 16px 18px;font-weight:600;font-size:17px;line-height:1.4;position:relative}
+.prose details.faq summary::-webkit-details-marker,.prose details.fontes summary::-webkit-details-marker{display:none}
+.prose details.faq summary::after,.prose details.fontes summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:22px;font-weight:400;color:var(--red);line-height:1}
+.prose details[open] > summary::after{content:"\2212"}
+.prose details.faq > div{padding:0 18px 4px;color:var(--fg-2)}
+.prose details.faq > div p{margin:0 0 14px}
+.prose details.fontes{border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.prose details.fontes summary{cursor:pointer;list-style:none;padding:14px 40px 14px 0;font-weight:600;font-size:15px;position:relative}
+.prose details.fontes summary::after{right:4px}
+.prose details.fontes ul{font-size:15px;color:var(--fg-2);line-height:1.6;margin:0 0 16px}

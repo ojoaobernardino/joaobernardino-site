@@ -162,10 +162,25 @@ def render_md(body, page):
     if page.get('produto'):
         out = out.replace('<h2 id="perguntas-frequentes">', buybox(page, 'fim') + '\n<h2 id="perguntas-frequentes">', 1)
     out = out.replace('<h2 id="fontes">', '<h2 id="fontes" class="fontes-h">')
+    out = collapse(out)
     out = out.replace('src="img/', 'src="/img/blog/')
     out = re.sub(r'<a href="(https?://[^"]+)">', r'<a href="\1" rel="noopener">', out)
     out = out.replace('rel="noopener" rel="sponsored noopener"', 'rel="sponsored noopener"')
     return out, toc
+
+
+def collapse(out):
+    """Perguntas frequentes e fontes viram botões que abrem (details/summary). O texto continua no HTML: Google e IA leem igual."""
+    def faq(m):
+        body = re.sub(r'<h3 id="([^"]+)">(.*?)</h3>\s*(.*?)(?=<h3 id=|\Z)',
+                      lambda q: f'<details class="faq" id="{q.group(1)}"><summary>{q.group(2)}</summary><div>{q.group(3).strip()}</div></details>\n', m.group(2), flags=re.S)
+        return m.group(1) + '\n' + body
+    out = re.sub(r'(<h2 id="perguntas-frequentes">.*?</h2>)(.*?)(?=<h2 |\Z)', faq, out, count=1, flags=re.S)
+    def fontes(m):
+        n = m.group(2).count('<li>')
+        return (m.group(1) + f'\n<details class="fontes"><summary>Ver {"as " + str(n) + " fontes" if n > 1 else "a fonte"}</summary>'
+                + m.group(2).strip() + '</details>\n')
+    return re.sub(r'(<h2 id="fontes" class="fontes-h">.*?</h2>)(.*?)(?=<h2 |\Z)', fontes, out, count=1, flags=re.S)
 
 
 def brl(v):
