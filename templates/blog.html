@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="ix-hero"><div class="wrap">
+  {% include "_crumbs.html" %}
+  <p class="kicker red">Meu blog</p>
+  <h1 class="h1">Minha maneira de ver o mundo, escrevendo<span class="dot">.</span></h1>
+  <p class="lead">{{ page.summary }}</p>
+  {% include "_tabs.html" %}
+</div></section>
+<section class="ix-body"><div class="wrap">
+  <h2 class="sec-h">Mais recentes</h2>
+  <div class="pgrid">{% for c in page.latest %}{% with dest=loop.first %}{% include "_pcard.html" %}{% endwith %}{% endfor %}</div>
+  <h2 class="sec-h">Temas</h2>
+  <div class="tgrid">{% for h in site.blog_hubs %}<a class="tcard" href="{{ h.url }}">
+    {% if h.art %}<div class="art" role="img" aria-label="{{ h.name }}" style="background-image:url('{{ h.art }}');background-position:{{ h.art_pos or 'center' }}"></div>
+    {% elif h.art_covers %}<div class="art books">{% for cv in h.art_covers %}<img src="{{ cv.src }}" alt="" width="{{ cv.w }}" height="{{ cv.h }}" loading="lazy" decoding="async">{% endfor %}</div>
+    {% else %}<div class="art txt"><span>{{ h.name }}<b class="dot">.</b></span></div>{% endif %}
+    <div class="tb"><span class="meta">{{ h.total }} {{ h.unit or ('texto' if h.total == 1 else 'textos') }}</span><h3>{{ h.name }}</h3><p>{{ h.card or h.description }}</p></div></a>{% endfor %}</div>
+  <div class="nlbox" style="margin-top:48px"><h3>Receba o que eu aprendo</h3><p>Cadastre seu melhor e-mail para ter acesso ao meu conhecimento.</p>{% with origem='blog' %}{% include "_signup.html" %}{% endwith %}</div>
+</div></section>
+{% endblock %}

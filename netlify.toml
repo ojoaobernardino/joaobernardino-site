@@ -38,6 +38,26 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+[[headers]]
+  for = "/sobre/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600"
+[[headers]]
+  for = "/produtos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600"
+[[headers]]
+  for = "/linktree/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+[[headers]]
+  for = "/blog/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600"
+[[headers]]
+  for = "/img/og/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 # ─────────────────────────────────────────────────────────────────────
 # PÁGINAS PRIVADAS · /blog/altive/**  (regra do João, 28/09/2026)
 # Material interno (playbooks de vendas por vendedor). Padrão de caminho:

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="post">
+  {% include "_crumbs.html" %}
+  {% if page.cluster_name %}<p class="kicker red"><a href="{{ page.cluster_url }}">{{ page.cluster_name }}</a></p>{% endif %}
+  <h1 class="h1">{{ page.title }}</h1>
+  <p class="byline">
+    <img src="/img/avatar-192.webp" width="32" height="32" alt="" loading="lazy" decoding="async">
+    <span>por <a href="/sobre/">João Bêrnardino</a></span><span>·</span>
+    <time datetime="{{ page.date }}">{{ page.date_br }}</time>
+    {% if page.updated != page.date %}<span>· atualizado em <time datetime="{{ page.updated }}">{{ page.updated_br }}</time></span>{% endif %}
+    {% if page.type == 'post' %}<span>· {{ page.reading }} min de leitura</span>{% endif %}
+  </p>
+  {% if page.book %}<div class="book">
+    <div class="cv"><img src="{{ page.book.capa }}" alt="Capa do livro {{ page.book.titulo }}, de {{ page.book.autor }}" width="{{ page.cover_w }}" height="{{ page.cover_h }}" fetchpriority="high"></div>
+    <div><dl><dt>Livro</dt><dd>{{ page.book.titulo }}</dd><dt>Autor</dt><dd>{{ page.book.autor }}</dd><dt>Editora</dt><dd>{{ page.book.editora }}</dd><dt>Pra quem</dt><dd>{{ page.book.pra_quem }}</dd></dl>
+      <div class="buy"><a class="btn k go" href="{{ page.book.afiliado }}" rel="sponsored noopener" data-track="livro-topo:{{ page.slug }}">Ver no Mercado Livre</a><small>Link de parceiro. Se comprar por ele, eu ganho uma comissão e você paga o mesmo.</small></div></div>
+  </div>{% endif %}
+  {% if page.summary %}<div class="resumo"><b>Em resumo</b><p>{{ page.summary }}</p></div>{% endif %}
+  {% if page.cover %}<figure class="cover"><img src="{{ page.cover }}" width="{{ page.cover_w }}" height="{{ page.cover_h }}" alt="{{ page.cover_alt }}" decoding="async"></figure>{% endif %}
+  {% if page.toc and page.toc|length > 3 %}<nav class="toc" aria-label="Neste texto"><b>Neste texto</b><ol>{% for h in page.toc %}<li><a href="#{{ h.id }}">{{ h.text }}</a></li>{% endfor %}</ol></nav>{% endif %}
+  <div class="prose">
+{{ page.html|safe }}
+  </div>
+  {% if page.cta %}<div class="next"><span class="k">Próximo passo</span><h3>{{ page.cta.label }}</h3>{% if page.cta.text %}<p>{{ page.cta.text }}</p>{% endif %}<a class="btn w go" href="{{ page.cta.url }}" data-track="cta:{{ page.slug }}">{{ page.cta.button or 'Conhecer' }}</a></div>{% endif %}
+  <aside class="author">
+    <img src="/img/avatar-192.webp" width="56" height="56" alt="João Bêrnardino" loading="lazy" decoding="async">
+    <div><b><a href="/sobre/">João Bêrnardino</a></b><p>{{ site.author_bio }}</p></div>
+  </aside>
+</article>
+<section class="after">
+  {% if page.book and page.shelf %}<h2 class="sec-h">Outros livros de {{ page.group|lower }}</h2>
+  <div class="shelf">{% for c in page.shelf %}<a class="bk" href="{{ c.url }}"><span class="cv"><img src="{{ c.book.capa }}" alt="Capa do livro {{ c.book.titulo }}" width="{{ c.cover_w }}" height="{{ c.cover_h }}" loading="lazy" decoding="async"></span><span class="t"><b>{{ c.short_title }}</b><span>{{ c.book.autor }}</span></span><span class="go">Ler a resenha</span></a>{% endfor %}</div>
+  {% elif page.related %}<h2 class="sec-h">Leia também</h2>
+  <div class="pgrid">{% for c in page.related %}{% with compact=true %}{% include "_pcard.html" %}{% endwith %}{% endfor %}</div>{% endif %}
+  {% if page.book %}<div class="nlbox"><h3>Receba o próximo resumo</h3><p>Cadastre seu melhor e-mail e receba cada livro novo que eu resumir.</p>{% with origem='livro' %}{% include "_signup.html" %}{% endwith %}</div>
+  {% else %}<div class="nlbox"><h3>Receba o que eu aprendo</h3><p>Cadastre seu melhor e-mail para ter acesso ao meu conhecimento.</p>{% with origem='texto' %}{% include "_signup.html" %}{% endwith %}</div>{% endif %}
+</section>
+{% endblock %}

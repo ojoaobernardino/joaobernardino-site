@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block preload %}<link rel="preload" as="image" href="/img/joao.webp" fetchpriority="high">{% endblock %}
+{% block content %}
+  <section class="hero"><div class="wrap">
+    <div>
+      <p class="kicker">Me chamo João Bêrnardino,</p>
+      <h1>Eu construo negócios que crescem por experimento<span class="dot">.</span></h1>
+      <p class="lead">E compartilho tudo o que aprendo por meio de textos e vídeos no YouTube.</p>
+    </div>
+    <div class="photo"><img src="/img/joao.webp" alt="João Bêrnardino, de camiseta preta e óculos de lente amarela" width="900" height="1125" fetchpriority="high"></div>
+  </div></section>
+
+
+
+
+
+
+  <section class="block" id="servicos"><div class="wrap">
+    <p class="kicker">Meus serviços</p>
+    <h2 class="h2">Crescimento para empresas e pessoas<span class="dot">.</span></h2>
+    <p class="sub">Aqui eu faço por você e com você.</p>
+    <div class="grid">
+      <div class="card"><div class="body">
+        <span class="tag">Growth</span>
+        <h3>Growth Marketing &amp; Sales</h3>
+        <p>Estruturação e estratégia de crescimento de marketing e vendas da sua empresa como uma máquina de receita previsível, medida etapa por etapa: aquisição, conversão, retenção e expansão, guiadas por dados e experimentos.</p>
+      </div></div>
+      <div class="card"><div class="body">
+        <span class="tag">IA</span>
+        <h3>Agentes de IA &amp; Automação</h3>
+        <p>Agentes que atendem, qualificam e vendem pelo WhatsApp e pelo site, 24 horas. E automações que tiram o trabalho repetitivo do seu time.</p>
+      </div></div>
+      <div class="card"><div class="body">
+        <span class="tag">1:1</span>
+        <h3>Atendimento 1:1</h3>
+        <p>Projetos pontuais, como sites e landing pages, e mentoria individual de vendas, liderança e alta performance com neurociência e PNL.</p>
+      </div></div>
+    </div>
+  </div></section>
+
+  <section class="block" id="produtos"><div class="wrap">
+    <p class="kicker">Produtos</p>
+    <h2 class="h2">O que eu construí, o que eu uso e o que eu indico<span class="dot">.</span></h2>
+    <div class="grid">
+      <div class="card">
+        <div class="img" style="background-image:url('/img/a-obra.webp')"></div>
+        <div class="body">
+          <span class="tag">Criados por mim</span>
+          <h3>Meus produtos</h3>
+          <p>Produtos que eu construí e que eu mesmo ensino, prontos pra você colocar em prática.</p>
+          <a class="btn w go" href="/produtos/">Ver meus produtos</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img logos">
+          <img src="/img/parceiros/logo-growth.png" alt="Growth Suplementos" width="120" height="38" loading="lazy">
+          <img src="/img/parceiros/logo-ultramel.svg" alt="Ultramel" width="120" height="22" loading="lazy">
+          <img src="/img/parceiros/logo-apex.png" alt="Apex Performance" width="120" height="30" loading="lazy">
+          <img src="/img/parceiros/logo-padraopuro.png" alt="Padrão Puro" width="44" height="42" loading="lazy">
+        </div>
+        <div class="body">
+          <span class="tag">Cupons</span>
+          <h3>Meus cupons</h3>
+          <p>Compre com meu cupom e tenha desconto nas marcas que eu uso.</p>
+          <a class="btn w go" href="/linktree/">Ver meus cupons</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img" style="display:grid;place-items:center;background:#FFE600"><img src="/img/parceiros/logo-mercadolivre.webp" alt="Mercado Livre" width="268" height="68" loading="lazy" style="width:60%;height:auto;max-width:220px"></div>
+        <div class="body">
+          <span class="tag">Recomendados</span>
+          <h3>Produtos que eu indico</h3>
+          <p>O que eu uso no dia a dia e recomendo.</p>
+          <a class="btn w go" href="/blog/livros/">Ver os livros que eu indico</a>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="block" id="youtube"><div class="wrap">
+    <p class="kicker">Meu canal no YouTube</p>
+    <h2 class="h2">Minha maneira de ver o mundo, gravando<span class="dot">.</span></h2>
+    <a class="bigcard" href="https://www.youtube.com/@ojoaobernardino?sub_confirmation=1" rel="noopener">
+      <div class="img vidimg" role="img" aria-label="João e Gabriel Barreto, fundador da Apex, no episódio 2 de O que é sucesso?" style="background-image:url('/img/yt/YffMwPQ_CLE.webp');background-position:center"><span class="play" aria-hidden="true"></span></div>
+      <div class="txt">
+        <h3>Aqui tenho como missão documentar e compartilhar tudo o que aprendo por meio de vídeos.</h3>
+        <span class="btn yt go" style="align-self:flex-start">Se inscreva no YouTube</span>
+      </div>
+    </a>
+  </div></section>
+
+  <section class="block" id="newsletter"><div class="wrap nl">
+    <p class="kicker">Meu conhecimento</p>
+    <h2 class="h2">Receba o que eu aprendo<span class="dot">.</span></h2>
+    <p class="sub">Cadastre seu melhor e-mail para ter acesso ao meu conhecimento.</p>
+    {% with origem="sobre" %}{% include "_signup.html" %}{% endwith %}
+  </div></section>
+
+  <section class="block" id="blog"><div class="wrap">
+    <p class="kicker">Meu blog</p>
+    <h2 class="h2">Minha maneira de ver o mundo, escrevendo<span class="dot">.</span></h2>
+    <a class="bigcard" href="/blog/">
+      <div class="img" role="img" aria-label="Lobo no muro de tijolos"></div>
+      <div class="txt">
+        <h3>Aqui tenho como missão documentar e compartilhar tudo o que aprendo por meio de textos.</h3>
+        <span class="btn w go" style="align-self:flex-start">Ler o blog</span>
+      </div>
+    </a>
+  </div></section>
+{% endblock %}

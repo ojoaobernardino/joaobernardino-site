@@ -1,0 +1,1 @@
+<nav class="crumbs" aria-label="Você está em">{% for c in page.crumbs %}{% if not loop.last %}<a href="{{ c.url }}">{{ c.name }}</a><span aria-hidden="true">›</span>{% else %}<span aria-current="page">{{ c.short or c.name }}</span>{% endif %}{% endfor %}</nav>

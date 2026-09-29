@@ -1,0 +1,6 @@
+<form class="signup" name="newsletter" method="POST" action="/" data-netlify="true" netlify-honeypot="website" novalidate><input type="hidden" name="form-name" value="newsletter"><input type="hidden" name="origem" value="{{ origem }}"><p hidden><label>Não preencha <input name="website" tabindex="-1" autocomplete="off"></label></p>
+  <label for="email-{{ origem }}" class="sr">Seu e-mail</label>
+  <input id="email-{{ origem }}" name="email" type="email" inputmode="email" autocomplete="email" placeholder="seu@email.com" required>
+  <button type="submit">Cadastrar</button>
+</form>
+<p class="signup-ok" role="status" hidden></p>

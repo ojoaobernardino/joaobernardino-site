@@ -1,0 +1,1 @@
+<nav class="tabs" aria-label="Temas do blog"><a href="/blog/"{% if page.type == 'blog' %} aria-current="page"{% endif %}>Todos</a>{% for h in site.blog_hubs %}<a href="{{ h.url }}"{% if h.url == page.url %} aria-current="page"{% endif %}>{{ h.name }}<small>{{ h.total }}</small></a>{% endfor %}</nav>

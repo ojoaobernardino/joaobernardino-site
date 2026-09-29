@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="ix-hero"><div class="wrap">
+  {% include "_crumbs.html" %}
+  <p class="kicker red">{{ page.kicker or 'Tema' }}</p>
+  <h1 class="h1">{{ page.name }}<span class="dot">.</span></h1>
+  {% if page.summary %}<p class="lead">{{ page.summary }}</p>{% endif %}
+  {% if page.section == 'blog' %}<p class="byline"><img src="/img/avatar-192.webp" alt="" width="32" height="32" loading="lazy" decoding="async">por <a href="/sobre/">João Bêrnardino</a>{% if page.total %} · {{ page.total }} {{ 'texto' if page.total == 1 else 'textos' }}{% endif %}</p>{% endif %}
+  {% if page.section == 'blog' %}{% include "_tabs.html" %}{% endif %}
+</div></section>
+<section class="ix-body"><div class="wrap">
+  {% if page.subhubs %}<h2 class="sec-h">Subtemas</h2>
+  <div class="pgrid">{% for h in page.subhubs %}<a class="pcard" href="{{ h.url }}"><span class="meta">{{ h.total }} {{ 'texto' if h.total == 1 else 'textos' }}</span><h3>{{ h.name }}</h3><p>{{ h.card or h.description }}</p><span class="go-link">Abrir</span></a>{% endfor %}</div>{% endif %}
+
+  {% if page.start %}<h2 class="sec-h">Comece por aqui</h2>
+  <div class="pgrid">{% with c=page.start, dest=true %}{% include "_pcard.html" %}{% endwith %}</div>{% endif %}
+
+  {% if page.mode == 'cards' %}
+    {% if page.posts %}<h2 class="sec-h">{{ page.list_title or 'Textos' }}</h2>
+    <div class="pgrid">{% for c in page.posts %}{% include "_pcard.html" %}{% endfor %}</div>{% endif %}
+  {% else %}
+    <h2 class="sec-h">Destaques</h2>
+    <div class="pgrid">{% for c in page.featured %}{% include "_pcard.html" %}{% endfor %}</div>
+    {% for g in page.groups %}<h2 class="sec-h">{{ g.name }}</h2>
+    <ul class="plist">{% for c in g.posts %}<li><a href="{{ c.url }}"><b>{{ c.title }}</b><span>{{ c.reading }} min · {{ c.date_br }}</span></a></li>{% endfor %}</ul>{% endfor %}
+  {% endif %}
+
+  {% if page.html_body %}<div class="prose" style="max-width:680px;margin-top:48px">{{ page.html_body|safe }}</div>{% endif %}
+
+  {% if page.extra_links %}<h2 class="sec-h">{{ page.extra_title or 'Veja também' }}</h2>
+  <div class="pgrid">{% for x in page.extra_links %}<a class="pcard" href="{{ x.url }}" rel="noopener"><span class="meta">{{ x.meta }}</span><h3>{{ x.title }}</h3>{% if x.text %}<p>{{ x.text }}</p>{% endif %}<span class="go-link">{{ x.go or 'Abrir' }}</span></a>{% endfor %}</div>{% endif %}
+
+  {% if page.cta %}<h2 class="sec-h">Próximo passo</h2>
+  <div class="pgrid"><a class="pcard dest" href="{{ page.cta.url }}" data-track="cta:{{ page.slug }}"><span class="meta">{{ page.cta.meta or 'Produto' }}</span><h3>{{ page.cta.label }}</h3>{% if page.cta.text %}<p>{{ page.cta.text }}</p>{% endif %}<span class="go-link">{{ page.cta.button or 'Conhecer' }}</span></a></div>{% endif %}
+</div></section>
+{% endblock %}
