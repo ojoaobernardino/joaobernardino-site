@@ -382,7 +382,7 @@ def main():
             h['mode'], h['posts'] = 'cards', direct
         else:
             feat_urls = [f if f.startswith('/') else h['url'] + f + '/' for f in (h.get('featured') or [])]
-            featured = [by_url[u] for u in feat_urls if u in by_url][:3] or direct[:3]
+            featured = [by_url[u] for u in feat_urls if u in by_url][:4] or direct[:4]
             rest = [c for c in direct if c not in featured]
             groups = {}
             for c in rest:
