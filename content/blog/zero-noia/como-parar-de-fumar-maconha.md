@@ -21,7 +21,7 @@ draft: false
 
 ## 1º de janeiro de 2024
 
-Parei de fumar maconha na virada de 2023 pra 2024. Segunda-feira, dia 1º. Não teve fundo do poço, não teve intervenção de família, não teve clínica. Teve um cara de 26 anos cansado de começar o ano igual ao anterior. <!-- CONFIRMAR: idade em jan/2024 -->
+Parei de fumar maconha na virada de 2023 pra 2024. Segunda-feira, dia 1º. Não teve fundo do poço, não teve intervenção de família, não teve clínica. Teve um cara de 25 anos cansado de começar o ano igual ao anterior.
 
 Este não é um texto contra maconha. É o que aconteceu comigo quando parei, com data, e o que a ciência descreve sobre isso. Quem quiser moral procura em outro lugar.
 

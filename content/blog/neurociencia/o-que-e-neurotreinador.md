@@ -54,7 +54,7 @@ Primeiro eu vendi. Multinível na Hinode, estágio na Heineken, depois Stone/Pag
 
 Depois eu vi. No começo da liderança a frase da operação era "pessoas mentem, números não". Meus pares cobravam por ela, e o time deles entregava e ia embora, pro time do lado, onde performava. O número não estava errado. O líder estava. Entendi que o próximo era eu. A história inteira está em [turnover em vendas](/blog/lideranca/turnover-em-vendas/).
 
-Então fui estudar, antes de perder gente. Pós em Neurociências e Comportamento na PUCRS. Practitioner, Trainer Training e Master Trainer em PNL na SBPNL, onde fui Anjo, o voluntário que acompanha a turma de dentro da sala. <!-- CONFIRMAR: papel de Anjo e período (CV registra out/2024 a nov/2025) -->
+Então fui estudar, antes de perder gente. Pós em Neurociências e Comportamento na PUCRS. Practitioner, Trainer Training e Master Trainer em PNL na SBPNL, onde fui Anjo, o voluntário que acompanha a turma de dentro da sala.
 
 A formação não é o que me define. É a prova de que eu não esperei perder gente pra estudar gente. Depois dela, por anos, fui o líder com menos turnover da operação.
 

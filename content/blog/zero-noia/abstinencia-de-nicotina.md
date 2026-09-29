@@ -65,7 +65,7 @@ Existe ferramenta clínica com evidência: adesivo e goma de nicotina e a buprop
 
 ## Por que eu não te prometo o mesmo
 
-Amostra de uma pessoa não é evidência, é história. Eu tinha 26 anos, treino diário, sem doença, sem diagnóstico psiquiátrico, um trabalho que permitia filmar à noite e uma câmera que me obrigava a prestar contas. <!-- CONFIRMAR: idade em jan/2024 --> Tira qualquer uma dessas variáveis e eu não sei o que teria acontecido. Quem fuma há 30 anos, ou fuma pra segurar uma ansiedade, está em outro jogo, e nesse jogo a minha tabela vale menos que uma consulta.
+Amostra de uma pessoa não é evidência, é história. Eu tinha 25 anos, treino diário, sem doença, sem diagnóstico psiquiátrico, um trabalho que permitia filmar à noite e uma câmera que me obrigava a prestar contas. Tira qualquer uma dessas variáveis e eu não sei o que teria acontecido. Quem fuma há 30 anos, ou fuma pra segurar uma ansiedade, está em outro jogo, e nesse jogo a minha tabela vale menos que uma consulta.
 
 ## O que virou o Zero Nóia
 
