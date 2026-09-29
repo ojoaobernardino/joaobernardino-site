@@ -33,3 +33,7 @@
 .linha p{margin:0;color:var(--soft);font-size:16px;line-height:1.6;max-width:64ch}
 @media (max-width:900px){.ficha{grid-template-columns:1fr}.linha li{grid-template-columns:1fr;gap:4px;padding-left:24px}}
 a.photo{display:block}
+.jb-crumbs{padding-top:28px}
+.jb-crumbs .crumbs{color:#8f8f8f;margin:0}
+.jb-hero .wrap{padding-block:40px 88px}
+@media (max-width:900px){.jb-hero .wrap{padding-block:28px 56px}}

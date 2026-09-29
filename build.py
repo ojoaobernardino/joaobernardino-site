@@ -188,7 +188,7 @@ def person_full():
             {'@type': 'EducationalOccupationalCredential', 'name': 'Pós-graduação em Neurociências e Comportamento', 'credentialCategory': 'degree', 'recognizedBy': {'@type': 'CollegeOrUniversity', 'name': 'PUCRS'}},
             {'@type': 'EducationalOccupationalCredential', 'name': 'Master Trainer em Programação Neurolinguística', 'credentialCategory': 'certificate', 'recognizedBy': {'@type': 'EducationalOrganization', 'name': 'Sociedade Brasileira de Programação Neurolinguística'}},
         ],
-        'knowsAbout': ['Growth marketing', 'Vendas B2B', 'Inside sales', 'Liderança comercial', 'Agentes de IA', 'Programação Neurolinguística', 'Neurociência do hábito'],
+        'knowsAbout': ['Growth marketing', 'Treinamento híbrido', 'Vendas B2B', 'Inside sales', 'Liderança comercial', 'Agentes de IA', 'Programação Neurolinguística', 'Neurociência do hábito'],
         'worksFor': {'@type': 'Organization', 'name': 'JB Treinamento e Desenvolvimento'},
         'sameAs': ['https://www.instagram.com/ojoaobernardino', 'https://www.youtube.com/@ojoaobernardino', 'https://www.tiktok.com/@ojoaobernardino',
                    'https://www.linkedin.com/in/jo%C3%A3o-b%C3%AArnardino-176a70108/', 'https://strava.app.link/dRHfi2AGt1b', 'https://www.threads.com/@ojoaobernardino',
