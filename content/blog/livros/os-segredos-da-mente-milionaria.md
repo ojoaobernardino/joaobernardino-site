@@ -3,7 +3,7 @@ title: "Os Segredos da Mente Milionária: resumo e o que apliquei"
 description: "Resumo de Os Segredos da Mente Milionária, de T. Harv Eker: o modelo de dinheiro, os 17 arquivos de riqueza e o que João Bernardino aproveitou do livro."
 type: post
 kind: livro
-group: "Mente e hábito"
+group: "Dinheiro e carreira"
 date: 2026-09-29
 updated: 2026-09-29
 tags: [os-segredos-da-mente-milionaria, t-harv-eker, dinheiro, mentalidade, financas-pessoais, livros]
