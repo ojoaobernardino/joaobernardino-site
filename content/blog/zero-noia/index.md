@@ -6,7 +6,7 @@ cluster: zero-noia
 date: 2026-09-11
 updated: 2026-09-11
 tags: [zero-noia, parar-de-fumar, habito, neurociencia]
-summary: "Fumei tabaco por 11 anos. Parei a maconha em 01/01/2024 e o cigarro em 07/01/2024, com a câmera ligada todo dia. Gravei 91 vídeos sem resultado e o 92º viralizou (175 mil seguidores). Disso nasceu o Zero Nóia, um produto de R$ 19,90 que mais de mil pessoas já compraram."
+summary: "Fui fumante durante 11 anos. Em 1º de janeiro de 2024 decidi parar e, no dia 7, comecei a documentar tudo na internet: um vídeo por dia, mais de 90 seguidos. Mais de 170 mil pessoas acompanharam essa virada, e dela nasceu o método Zero Nóia: 5 passos, com manual em PDF baseado na neurociência e na PNL, videoaulas e uma comunidade no WhatsApp onde milhares de pessoas se ajudam a parar de fumar."
 card: "Como eu parei de fumar em 2024, com a câmera ligada, e o que a ciência do hábito explica."
 featured: [como-parar-de-fumar, como-parar-de-fumar-maconha, o-que-acontece-quando-voce-para-de-fumar, parar-de-fumar-sozinho]
 subtopics: ["Parar de fumar", "Abstinência", "Por que faz mal", "Maconha", "Vape"]
@@ -25,9 +25,9 @@ extra_links:
     url: "https://www.youtube.com/watch?v=yrJz-TuqS7c"
     go: "Assistir"
 cta:
-  meta: "Produto · R$ 19,90"
+  meta: "Manual de como parar de fumar"
   label: "Zero Nóia"
-  text: "O que eu fiz, dia a dia, do jeito que eu fiz, em videoaulas. Mais de mil alunos."
+  text: "Manual prático em PDF, com a teoria e os exercícios pra parar de fumar, baseado na neurociência e na PNL. Mais videoaulas de apoio e uma comunidade no WhatsApp pra você não parar sozinho."
   button: "Quero o Zero Nóia"
   url: "https://pay.kiwify.com.br/y0iIDtj"
 cover: ""

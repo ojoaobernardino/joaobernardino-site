@@ -9,8 +9,11 @@ updated: 2026-09-11
 tags: [parar-de-fumar, nicotina, habito, zero-noia, neurociencia]
 summary: "Fumei tabaco por 11 anos. Em 07/01/2024 decidi parar e liguei a câmera pra me obrigar a contar. Aqui está o que fiz nas primeiras 72 horas, os gatilhos que mapeei (6, com horário), o que não funcionou e o que a ciência do hábito explica. Sem cura, sem método infalível. Relato e fonte."
 cta:
+  kicker: "Manual de como parar de fumar"
   label: "Zero Nóia"
-  url: "/blog/zero-noia/"
+  text: "Manual prático em PDF, com a teoria e os exercícios pra parar de fumar, baseado na neurociência e na PNL. Mais videoaulas de apoio e uma comunidade no WhatsApp pra você não parar sozinho."
+  button: "Quero o Zero Nóia"
+  url: "https://pay.kiwify.com.br/y0iIDtj"
 cover: ""
 cover_alt: ""
 draft: false

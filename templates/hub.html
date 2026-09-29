@@ -30,7 +30,7 @@
   {% if page.extra_links %}<h2 class="sec-h">{{ page.extra_title or 'Veja também' }}</h2>
   <div class="pgrid">{% for x in page.extra_links %}<a class="pcard" href="{{ x.url }}" rel="noopener"><span class="meta">{{ x.meta }}</span><h3>{{ x.title }}</h3>{% if x.text %}<p>{{ x.text }}</p>{% endif %}<span class="go-link">{{ x.go or 'Abrir' }}</span></a>{% endfor %}</div>{% endif %}
 
-  {% if page.cta %}<h2 class="sec-h">Próximo passo</h2>
+  {% if page.cta %}<h2 class="sec-h">O método</h2>
   <div class="pgrid"><a class="pcard dest" href="{{ page.cta.url }}" data-track="cta:{{ page.slug }}"><span class="meta">{{ page.cta.meta or 'Produto' }}</span><h3>{{ page.cta.label }}</h3>{% if page.cta.text %}<p>{{ page.cta.text }}</p>{% endif %}<span class="go-link">{{ page.cta.button or 'Conhecer' }}</span></a></div>{% endif %}
 </div></section>
 {% endblock %}

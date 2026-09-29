@@ -9,8 +9,11 @@ updated: 2026-09-11
 tags: [parar-de-fumar-maconha, cannabis, abstinencia, zero-noia, neurociencia]
 summary: "Parei a maconha em 01/01/2024 e o tabaco em 07/01/2024, com 6 dias de diferença. O uso era esporádico. Este texto é o que eu notei nas duas primeiras semanas (sono, apetite, humor), marcado como relato, e o que a literatura descreve sobre abstinência de cannabis. Sem moralismo, sem promessa."
 cta:
+  kicker: "Manual de como parar de fumar"
   label: "Zero Nóia"
-  url: "/blog/zero-noia/"
+  text: "Manual prático em PDF, com a teoria e os exercícios pra parar de fumar, baseado na neurociência e na PNL. Mais videoaulas de apoio e uma comunidade no WhatsApp pra você não parar sozinho."
+  button: "Quero o Zero Nóia"
+  url: "https://pay.kiwify.com.br/y0iIDtj"
 cover: ""
 cover_alt: ""
 draft: false

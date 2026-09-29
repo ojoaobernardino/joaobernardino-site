@@ -5,6 +5,7 @@
 > **Assinatura padrão (quadro do autor):** "Empreendedor, criador de conteúdo, atleta e Growth Marketing & Sales. Pós em Neurociências e Comportamento (PUCRS), Master Trainer em PNL (SBPNL), Engenheiro de Produção (Mackenzie)."
 > **Serviços:** a seção de serviços da /sobre foi publicada por decisão do João em 29/09/2026, ciente da regra de exclusividade abaixo (risco assumido por ele). Nos textos do blog a regra continua valendo.
 > **Fatos:** Koin = só BNPL (nunca antifraude). Heineken = off-premise, supermercados, venda futura.
+> **Zero Nóia (29/09, decisão do João):** TODO texto de /blog/zero-noia/ e o índice levam direto pro checkout da Kiwify (https://pay.kiwify.com.br/y0iIDtj), com o bloco "Manual de como parar de fumar" (kicker vermelho) + "Zero Nóia" + manual em PDF (neurociência e PNL), videoaulas e comunidade no WhatsApp. Isso substitui a regra antiga "artigo nunca linka checkout" só pro Zero Nóia.
 > Publicação: `python3 build.py && python3 check.py` (0 erros) → PR no GitHub → prévia do Netlify → merge.
 
 (Abaixo, a especificação original do blog, que continua valendo pro texto.)

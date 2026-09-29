@@ -9,8 +9,11 @@ updated: 2026-09-29
 tags: [abstinencia, nicotina, parar-de-fumar, zero-noia, neurociencia]
 summary: "A nicotina sai do corpo em cerca de 72 horas, mas a abstinência não acaba no dia 3. Esta é a linha do tempo (dia 1, 3, 7, 14 e 30) com o que a literatura descreve, o que eu senti quando parei em 07/01/2024 e o que fiz em cada fase. Relato marcado como relato. Fonte marcada como fonte."
 cta:
+  kicker: "Manual de como parar de fumar"
   label: "Zero Nóia"
-  url: "/blog/zero-noia/"
+  text: "Manual prático em PDF, com a teoria e os exercícios pra parar de fumar, baseado na neurociência e na PNL. Mais videoaulas de apoio e uma comunidade no WhatsApp pra você não parar sozinho."
+  button: "Quero o Zero Nóia"
+  url: "https://pay.kiwify.com.br/y0iIDtj"
 cover: ""
 cover_alt: ""
 draft: false

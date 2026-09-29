@@ -22,7 +22,7 @@
   <div class="prose">
 {{ page.html|safe }}
   </div>
-  {% if page.cta %}<div class="next"><span class="k">Próximo passo</span><h3>{{ page.cta.label }}</h3>{% if page.cta.text %}<p>{{ page.cta.text }}</p>{% endif %}<a class="btn w go" href="{{ page.cta.url }}" data-track="cta:{{ page.slug }}">{{ page.cta.button or 'Conhecer' }}</a></div>{% endif %}
+  {% if page.cta %}<div class="next"><span class="k{{ ' red' if page.cta.kicker }}">{{ page.cta.kicker or 'Próximo passo' }}</span><h3>{{ page.cta.label }}</h3>{% if page.cta.text %}<p>{{ page.cta.text }}</p>{% endif %}<a class="btn w go" href="{{ page.cta.url }}" data-track="cta:{{ page.slug }}">{{ page.cta.button or 'Conhecer' }}</a></div>{% endif %}
   <aside class="author">
     <img src="/img/avatar-192.webp" width="56" height="56" alt="João Bêrnardino" loading="lazy" decoding="async">
     <div><b><a href="/sobre/">João Bêrnardino</a></b><p>{{ site.author_bio }}</p></div>

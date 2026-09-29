@@ -9,8 +9,11 @@ updated: 2026-09-11
 tags: [diario, parar-de-fumar, 30-dias, zero-noia, accountability]
 summary: "Parei de fumar em 07/01/2024 e gravei um vídeo por dia contando. Nos 30 dias deste diário ninguém assistiu (o viral só veio no vídeo 92, quase 2 meses depois). Este é o registro em 4 semanas: o que aconteceu no corpo, o que aconteceu nos vídeos, e o que aprendi sobre mim antes de qualquer resultado."
 cta:
+  kicker: "Manual de como parar de fumar"
   label: "Zero Nóia"
-  url: "/blog/zero-noia/"
+  text: "Manual prático em PDF, com a teoria e os exercícios pra parar de fumar, baseado na neurociência e na PNL. Mais videoaulas de apoio e uma comunidade no WhatsApp pra você não parar sozinho."
+  button: "Quero o Zero Nóia"
+  url: "https://pay.kiwify.com.br/y0iIDtj"
 cover: ""
 cover_alt: ""
 draft: false
