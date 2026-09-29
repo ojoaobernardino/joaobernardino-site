@@ -33,7 +33,7 @@ SITE = {
     # cabeçalho e rodapé de todas as páginas geradas (home e linktree ficam de fora)
     'nav': [
         {'label': 'Cupons', 'url': '/linktree/', 'section': 'linktree'},
-        {'label': 'Produtos', 'url': '/produtos/', 'section': 'produtos'},
+        {'label': 'Produtos', 'url': '/sobre/#produtos', 'section': 'produtos'},
         {'label': 'Serviços', 'url': '/sobre/#servicos', 'section': 'servicos'},
         {'label': 'Blog', 'url': '/blog/', 'section': 'blog'},
         {'label': 'Sobre', 'url': '/sobre/', 'section': 'sobre'},
