@@ -25,7 +25,7 @@
     <ul class="plist">{% for c in g.posts %}<li><a href="{{ c.url }}"><b>{{ c.title }}</b><span>{{ c.reading }} min · {{ c.date_br }}</span></a></li>{% endfor %}</ul>{% endfor %}
   {% endif %}
 
-  {% if page.html_body %}<div class="prose" style="max-width:680px;margin-top:48px">{{ page.html_body|safe }}</div>{% endif %}
+  {% if page.html_body %}<div class="prose hub-prose">{{ page.html_body|safe }}</div>{% endif %}
 
   {% if page.extra_links %}<h2 class="sec-h">{{ page.extra_title or 'Veja também' }}</h2>
   <div class="pgrid">{% for x in page.extra_links %}<a class="pcard" href="{{ x.url }}" rel="noopener"><span class="meta">{{ x.meta }}</span><h3>{{ x.title }}</h3>{% if x.text %}<p>{{ x.text }}</p>{% endif %}<span class="go-link">{{ x.go or 'Abrir' }}</span></a>{% endfor %}</div>{% endif %}

@@ -4,7 +4,7 @@ description: "Neurotreinador é o nome que João Bernardino dá ao que faz: trei
 type: post
 cluster: neurociencia
 date: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-29
 tags: [neurotreinador, neurociencia, pnl, vendas, lideranca, habito]
 summary: "Neurotreinador é um treinador que só ensina o que consegue explicar com mecanismo e provar com número. Não é coach, não é terapeuta. O termo nasceu de cinco anos vendendo e liderando times de inside sales, e de uma pós em Neurociências na PUCRS."
 cta:
@@ -50,7 +50,7 @@ Não é "neurovendas" de palco, aquele que fala em cérebro reptiliano e em 95% 
 
 Vem de uma sequência, e a ordem importa.
 
-Primeiro eu vendi. Multinível na Hinode, estágio na Heineken, depois Stone/Pagar.me, de vendedor júnior a coordenador comercial sênior. Cinco anos de campo antes de qualquer sala de aula sobre cérebro.
+Primeiro eu vendi. Multinível na Hinode, estágio na Heineken, depois Stone/Pagar.me, de executivo de contas a coordenador comercial sênior. Cinco anos de campo antes de qualquer sala de aula sobre cérebro.
 
 Depois eu vi. No começo da liderança a frase da operação era "pessoas mentem, números não". Meus pares cobravam por ela, e o time deles entregava e ia embora, pro time do lado, onde performava. O número não estava errado. O líder estava. Entendi que o próximo era eu. A história inteira está em [turnover em vendas](/blog/lideranca/turnover-em-vendas/).
 
@@ -64,7 +64,7 @@ Em vendas. Na Pessoalize, numa operação de atendimento e venda que montei, o t
 
 Em liderança. Cada pessoa abaixo da mediana ganha um PDI com fase e data, não um "melhora aí". Delegação com decisão de verdade, porque líder que revisa tudo ensina o time a não decidir. Eu aprendi isso ouvindo de uma pessoa do meu time: "parece que você não confia em mim".
 
-No treino físico. Jiu-jitsu, boxe, corrida, treino híbrido, maratona em dezembro de 2026. O corpo é onde eu testo em mim o que ensino pros outros: repetição, feedback, progressão. Vendedor cansado vende mal, e eu já vendi cansado.
+No treino físico. Boxe, corrida e musculação: sou atleta híbrido. O corpo é onde eu testo em mim o que ensino pros outros: repetição, feedback, progressão. Vendedor cansado vende mal, e eu já vendi cansado.
 
 No hábito. Liguei a câmera todo dia pra me obrigar a contar que tinha parado de fumar. Gravei 91 vídeos sem resultado nenhum. O 92º viralizou. Daquilo nasceu o [Zero Nóia](/blog/zero-noia/), comprado por 688 pessoas. Accountability pública funciona porque cria custo social pra recaída, e eu senti esse custo na pele.
 
@@ -74,7 +74,7 @@ Eu não prometo resultado. Os casos acima são meus, num contexto específico, c
 
 Os efeitos que a ciência valida são modestos. Rapport aumenta chance, não fecha venda. Quem te vender "técnica que fecha 90%" está vendendo palco.
 
-Em saúde, eu sou relato. Parei de fumar do meu jeito e não te prometo o mesmo, porque o que funcionou pra mim teve câmera, 175 mil pessoas olhando e um cérebro que não é o seu.
+Em saúde, eu sou relato. Parei de fumar do meu jeito e não te prometo o mesmo, porque o que funcionou pra mim teve câmera, mais de 170 mil pessoas olhando e um cérebro que não é o seu.
 
 E eu erro. Este texto tem dois erros meus declarados, e vai ter mais nos próximos.
 

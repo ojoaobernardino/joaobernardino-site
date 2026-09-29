@@ -80,7 +80,7 @@ A literatura de cessação chama isso de automonitoramento e apoio social, duas 
 
 Não era conteúdo. Virou prontuário.
 
-Ninguém assistiu. Gravei 91 vídeos sem resultado nenhum, em cerca de 2 meses. O 92º viralizou e o perfil chegou a 175 mil seguidores. Mas isso foi depois dos 30 dias, e nos 30 dias eu falei sozinho, todo dia, pra um celular.
+Ninguém assistiu. Gravei 91 vídeos sem resultado nenhum, em cerca de 2 meses. O 92º viralizou e o perfil passou dos 170 mil seguidores. Mas isso foi depois dos 30 dias, e nos 30 dias eu falei sozinho, todo dia, pra um celular.
 
 ## O que não funcionou
 

@@ -93,7 +93,7 @@ A edição brasileira tem 23 capítulos, sem divisão formal em partes. Pra faci
 
 ## O que eu apliquei
 
-O livro que mais me lembrou a minha rotina fora de vendas. Eu gravei um vídeo por dia depois que parei com a maconha e o cigarro, em janeiro de 2024. Foram 91 vídeos sem resultado nenhum, e o 92º viralizou (175 mil seguidores depois). Prospecção é exatamente isso: o resultado não vem da tentativa boa, vem da tentativa de número alto. Quem para no vídeo 40 nunca descobre o 92.
+O livro que mais me lembrou a minha rotina fora de vendas. Eu gravei um vídeo por dia depois que parei com a maconha e o cigarro, em janeiro de 2024. Foram 91 vídeos sem resultado nenhum, e o 92º viralizou (mais de 170 mil seguidores depois). Prospecção é exatamente isso: o resultado não vem da tentativa boa, vem da tentativa de número alto. Quem para no vídeo 40 nunca descobre o 92.
 
 Na Stone, como coordenador comercial, eu liderei 3 times de inside sales, com SDRs, executivos e especialistas. A rotina tinha segunda de planejamento e terça de reunião de previsibilidade. O Blount entrou nas duas. Na segunda, o bloco de prospecção da semana ficava na agenda antes de qualquer outra coisa. Na terça, a pergunta não era só quanto ia fechar, era quanto pipeline novo tinha entrado, porque é ele que decide o trimestre seguinte.
 

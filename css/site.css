@@ -264,3 +264,4 @@ h2.sec-h{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppe
 @media (max-width:600px){.f-nav{flex-wrap:nowrap;gap:14px}.f-nav a{font-size:14px;white-space:nowrap}}
 @media (max-width:360px){.f-nav{gap:10px}.f-nav a{font-size:13px}}
 .next .k.red{color:var(--red-on-dark)}
+.hub-prose{max-width:680px;margin:64px auto 0;padding-top:48px;border-top:1px solid var(--border)}

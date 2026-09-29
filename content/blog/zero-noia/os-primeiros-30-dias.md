@@ -23,7 +23,7 @@ draft: false
 
 Este diário cobre de domingo, 07/01/2024, a terça, 06/02/2024. Trinta dias. <!-- CONFIRMAR: 07/01 a 06/02 inclusive dá 31 dias; o João conta 30 -->
 
-Uma coisa precisa ficar clara antes da primeira semana: nesses 30 dias não aconteceu nada. Nenhum vídeo passou de algumas dezenas de visualizações. <!-- CONFIRMAR: views típicas dos primeiros vídeos --> O 92º vídeo, o que viralizou e levou o perfil a 175 mil seguidores, veio em março, quase 2 meses depois. <!-- CONFIRMAR: mês do viral (91 vídeos em ~2 meses a partir de 07/01 aponta pra março) --> Gravei 91 vídeos pra ninguém, e este texto é sobre os primeiros 30. Se você está procurando a parte em que dá certo, ela não está aqui. Aqui está a parte que ninguém viu.
+Uma coisa precisa ficar clara antes da primeira semana: nesses 30 dias não aconteceu nada. Nenhum vídeo passou de algumas dezenas de visualizações. <!-- CONFIRMAR: views típicas dos primeiros vídeos --> O 92º vídeo, o que viralizou e levou o perfil a mais de 170 mil seguidores, veio em março, quase 2 meses depois. <!-- CONFIRMAR: mês do viral (91 vídeos em ~2 meses a partir de 07/01 aponta pra março) --> Gravei 91 vídeos pra ninguém, e este texto é sobre os primeiros 30. Se você está procurando a parte em que dá certo, ela não está aqui. Aqui está a parte que ninguém viu.
 
 Escrevo de memória, com a ajuda dos vídeos que ficaram salvos. Onde eu não tenho certeza, eu digo.
 
