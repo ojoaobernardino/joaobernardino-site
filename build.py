@@ -346,7 +346,7 @@ def main():
         h['name'] = hub_name(h)
 
     # breadcrumbs: Início > Seção > (temas...) > página
-    section_root = {'blog': ('Blog', '/blog/'), 'produtos': ('Produtos', '/produtos/'), 'sobre': ('Sobre', '/sobre/')}
+    section_root = {'blog': ('Blog', '/blog/'), 'produtos': ('Produtos', '/produtos/'), 'sobre': ('Sobre', '/sobre/'), 'indicacoes': ('Indicações', '/indicacoes/')}
     for p in pages:
         chain = []
         cur = p['parent']
@@ -453,7 +453,7 @@ def main():
     # Nunca mexe em /blog/altive/ (seção privada feita à mão), na home nem no /linktree/.
     import shutil
     keep = set(written)
-    for sec in ('blog', 'sobre', 'produtos'):
+    for sec in ('blog', 'sobre', 'produtos', 'indicacoes'):
         for idx in sorted((ROOT / sec).rglob('index.html'), reverse=True):
             url = '/' + str(idx.parent.relative_to(ROOT)).replace('\\', '/') + '/'
             if url.startswith('/blog/altive/') or url in keep:

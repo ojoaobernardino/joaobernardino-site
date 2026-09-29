@@ -2,9 +2,12 @@
 title: "Meu contador: por que eu confio na WJR"
 description: "João Bernardino conta por que a WJR, contabilidade na Mooca, cuida da empresa dele desde 2024. Cliente e amigo do Lucas Brito há mais de 20 anos."
 type: page
-cluster: wjr
+kicker: "Contabilidade"
+card_title: "WJR Contabilidade"
+card: "A contabilidade que cuida da minha empresa desde 2024, na Mooca, em São Paulo."
+aliases: [/blog/wjr/]
 date: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-29
 tags: [wjr, contabilidade, pj, lucas-brito]
 summary: "Sou cliente da WJR desde 05/03/2024. O Lucas Brito, que toca a WJR, é meu amigo há mais de 20 anos. As duas relações estão aqui em cima pra você saber de onde eu falo."
 cta:
