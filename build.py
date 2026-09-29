@@ -175,7 +175,8 @@ def brl(v):
 def buybox(page, onde):
     """Onde comprar: site da marca com cupom JB e Mercado Livre, lado a lado (regra do João p/ parceiro com cupom)."""
     pr = page['produto']
-    preco = f'<p class="preco"><b>{brl(pr["preco"])}</b>' + (f' <s>{brl(pr["preco_de"])}</s>' if pr.get('preco_de') else '') + f' no site da {html.escape(pr["marca"])}</p>'
+    # sem preço na página: a marca muda preço e promoção toda hora; o que não muda é o cupom (João, 29/09)
+    preco = f'<p class="preco"><b>{html.escape(pr["desconto"])}</b> com o cupom {pr["cupom"]} no site da {html.escape(pr["marca"])}</p>'
     nome = '' if onde == 'topo' else f'<h3>{html.escape(pr["nome"])}</h3>'
     return (f'<div class="buy2"><span class="k">Onde comprar</span>{nome}{preco}'
             f'<div class="bts"><a class="btn w go" href="{pr["loja_url"]}" rel="sponsored noopener" data-track="produto-{onde}:loja:{page["slug"]}">Comprar com cupom {pr["cupom"]}</a>'
@@ -234,9 +235,7 @@ def jsonld(page):
                       'image': [SITE['url'] + pr['imagem']] + [SITE['url'] + i for i in pr.get('imagens', [])], 'description': page['description'],
                       'category': pr.get('categoria'), 'sku': pr.get('sku'),
                       'additionalProperty': [{'@type': 'PropertyValue', 'name': k, 'value': str(v)} for k, v in (pr.get('ficha') or {}).items()],
-                      'offers': {'@type': 'Offer', 'url': pr['loja_url'].split('?')[0], 'price': f"{float(pr['preco']):.2f}", 'priceCurrency': 'BRL',
-                                 'availability': 'https://schema.org/InStock', 'itemCondition': 'https://schema.org/NewCondition',
-                                 'seller': {'@type': 'Organization', 'name': pr['marca']}}})
+                      'url': pr['loja_url'].split('?')[0]})
     if t == 'post' and page.get('produto'):
         graph.append({'@type': 'BlogPosting', '@id': SITE['url'] + page['url'] + '#artigo', 'headline': page['title'], 'description': page['description'],
                       'datePublished': str(page['date']), 'dateModified': str(page['updated']), 'inLanguage': 'pt-BR',
@@ -334,7 +333,7 @@ def og_book(page, out, name, bold, reg):
     y = 140
     for l in lines[:5]:
         d.text((80, y), l, font=font, fill='#ffffff'); y += 68
-    d.text((80, y + 10), f"{pr['marca']} · {brl(pr['preco'])}" if pr else f"{bk['autor']} · nota {bk['nota']} de 5".replace('.5 de', ',5 de'), font=reg(24), fill='#a3a3a3')
+    d.text((80, y + 10), f"Cupom {pr['cupom']}: {pr['desconto']} na {pr['marca']}" if pr else f"{bk['autor']} · nota {bk['nota']} de 5".replace('.5 de', ',5 de'), font=reg(24), fill='#a3a3a3')
     try:
         av = Image.open(ROOT / 'img' / 'avatar-216.webp').convert('RGB').resize((72, 72))
         m = Image.new('L', (72, 72), 0); ImageDraw.Draw(m).ellipse([0, 0, 71, 71], fill=255); im.paste(av, (80, 510), m)

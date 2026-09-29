@@ -9,7 +9,7 @@ tags: [banheira-de-gelo, imersao-em-agua-fria, recuperacao-muscular, corrida, ap
 short_title: "Banheira de gelo Apex"
 card_title: "Banheira de gelo portátil Apex Recovery Tub"
 card: "Medidas, quanto gelo, tempo e temperatura segundo os estudos, quando não usar e onde comprar com o cupom JB."
-summary: "Vale a pena se você treina forte e quer sentir menos dor nos dias seguintes. As meta-análises mostram que 10 a 15 minutos em água de 10 a 15 °C reduzem a dor muscular tardia e melhoram a sensação de recuperação. Não use logo depois de musculação se o objetivo é ganhar massa: aí o gelo atrapalha. A Apex Recovery Tub tem 85 cm de diâmetro, 440 litros e sai por R$ 679 no site da Apex, com cupom JB."
+summary: "Vale a pena se você treina forte e quer sentir menos dor nos dias seguintes. As meta-análises mostram que 10 a 15 minutos em água de 10 a 15 °C reduzem a dor muscular tardia e melhoram a sensação de recuperação. Não use logo depois de musculação se o objetivo é ganhar massa: aí o gelo atrapalha. A Apex Recovery Tub tem 85 cm de diâmetro e 440 litros, e com o cupom JB você tem 10% off no site da Apex."
 produto:
   nome: "Apex Recovery Tub"
   marca: "Apex"
@@ -18,8 +18,7 @@ produto:
   imagem: "/img/indicacoes/apex-recovery-tub.webp"
   alt: "Banheira de gelo portátil Apex Recovery Tub, preta, com tampa, cheia de gelo"
   imagens: ["/img/indicacoes/apex-recovery-tub-medidas.webp"]
-  preco: 679
-  preco_de: 997
+  desconto: "10% off"
   cupom: "JB"
   loja_url: "https://apx.com.br/products/apex-recovery-tub?utm_source=joaobernardino&utm_medium=site&utm_campaign=indicacoes&utm_content=banheira-de-gelo"
   ml_url: "https://meli.la/2KSvsVz"
@@ -39,7 +38,7 @@ A banheira de gelo vale a pena se você treina forte, principalmente corrida e e
 
 Eu uso banheira de gelo desde 2024, treino pra maratona e sou patrocinado pela Apex. Por isso esta página tem duas regras: todo benefício vem com estudo, e todo "quando não usar" também está aqui.
 
-<figure class="fig-p"><img src="/img/indicacoes/joao-banheira-de-gelo-apex.webp" alt="João Bêrnardino dentro de uma banheira de gelo da Apex, com boné e óculos escuros, com gelo até o peito" width="1000" height="1333" loading="lazy" decoding="async"><figcaption>Eu no gelo com o time da Apex, na imersão da roça, em 31/08/2025.</figcaption></figure>
+<figure class="fig-p"><img src="/img/indicacoes/joao-banheira-de-gelo-apex.webp" alt="João Bêrnardino dentro de uma banheira de gelo da Apex, com boné e óculos escuros, com gelo até o peito" width="1000" height="1333" loading="lazy" decoding="async"><figcaption>Eu na Apex Recovery Tub PRO, com o time da Apex, na imersão da roça, em 31/08/2025.</figcaption></figure>
 
 ## O que é a Apex Recovery Tub
 
@@ -52,8 +51,7 @@ Eu uso banheira de gelo desde 2024, treino pra maratona e sou patrocinado pela A
 | Volume total | 440 litros |
 | Peso | 3,1 kg |
 | Acompanha | Tampa |
-| Preço no site da Apex | R$ 679 (de R$ 997), com cupom JB |
-| Envio | Em até 24 horas úteis, frete grátis acima de R$ 250 |
+| Cupom | JB: 10% off no site da Apex |
 
 <figure class="fig-w"><img src="/img/indicacoes/apex-recovery-tub-medidas.webp" alt="Medidas da banheira de gelo portátil Apex Recovery Tub: 85 cm de diâmetro, 75 cm de altura, 440 litros e 3,1 kg" width="900" height="900" loading="lazy" decoding="async"><figcaption>Medidas da Apex Recovery Tub. Imagem: Apex.</figcaption></figure>
 
@@ -102,11 +100,11 @@ Tradução pra rotina de quem faz treino híbrido: gelo depois da corrida longa,
 
 Sou patrocinado pela Apex, e você precisa saber disso antes de qualquer outra coisa. A história começou em 2024: quando um vídeo meu viralizou, o Gabriel, fundador da Apex, passou a me seguir e me mandou uma banheira. Desde então ela faz parte da minha recuperação. Em 31/08/2025, na imersão da roça, entrei no gelo com ele e com o time da Apex.
 
-<figure class="fig-p"><img src="/img/indicacoes/gabriel-apex-banheira-de-gelo.webp" alt="Gabriel, fundador da Apex, apoiado na borda de uma banheira de gelo, de boné da Apex" width="1000" height="1333" loading="lazy" decoding="async"><figcaption>Gabriel, fundador da Apex, na mesma imersão, em 31/08/2025.</figcaption></figure>
+<figure class="fig-p"><img src="/img/indicacoes/gabriel-apex-banheira-de-gelo.webp" alt="Gabriel, fundador da Apex, apoiado na borda de uma banheira de gelo, de boné da Apex" width="1000" height="1333" loading="lazy" decoding="async"><figcaption>Gabriel, fundador da Apex, na mesma imersão, na Recovery Tub PRO, em 31/08/2025.</figcaption></figure>
 
 Indico porque ela resolve o que faz a maioria desistir da banheira de gelo em casa: é portátil, leve (3,1 kg vazia), tem marcação interna de nível pra acertar a mistura de gelo e água e vem com tampa.
 
-Você tem duas opções de compra. No site da Apex, com o cupom JB, sai por R$ 679 com frete grátis. No Mercado Livre, pelo meu link, você compra com a garantia e o prazo de entrega do Mercado Livre.
+Você tem duas opções de compra. No site da Apex, o cupom JB te dá 10% off. No Mercado Livre, pelo meu link, você compra com a garantia e o prazo de entrega do Mercado Livre.
 
 ## Perguntas frequentes
 
@@ -138,9 +136,9 @@ Não há evidência. O estudo com nadadores de inverno não mostrou mais ativaç
 
 Pode fazer, pra quem tem doença do coração ou pressão alta, e em qualquer pessoa se afundar a cabeça ou prender a respiração, por causa do choque do frio (Tipton, 2017). Fale com o seu médico antes se tiver qualquer condição de saúde.
 
-### Quanto custa a banheira de gelo portátil da Apex?
+### Tem cupom de desconto na banheira de gelo da Apex?
 
-R$ 679 no site da Apex (preço cheio de R$ 997), com frete grátis acima de R$ 250 e envio em até 24 horas úteis. Use o cupom JB no checkout. Também está no Mercado Livre.
+Tem. Com o cupom JB você tem 10% off no site da Apex. É só digitar JB no checkout. A banheira também está no Mercado Livre.
 
 ### Quais as medidas da Apex Recovery Tub?
 
