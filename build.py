@@ -195,7 +195,7 @@ def buybox(page, onde):
     nome = '' if onde == 'topo' else f'<h3>{html.escape(pr["nome"])}</h3>'
     return (f'<div class="buy2"><span class="k">Onde comprar</span>{nome}{preco}'
             f'<div class="bts"><a class="btn w go" href="{pr["loja_url"]}" rel="sponsored noopener" data-track="produto-{onde}:loja:{page["slug"]}">Comprar com cupom {pr["cupom"]}</a>'
-            f'<a class="btn g go" href="{pr["ml_url"]}" rel="sponsored noopener" data-track="produto-{onde}:ml:{page["slug"]}">Ver no Mercado Livre</a></div>'
+            + (f'<a class="btn g go" href="{pr["ml_url"]}" rel="sponsored noopener" data-track="produto-{onde}:ml:{page["slug"]}">Ver no Mercado Livre</a>' if pr.get('ml_url') else '') + '</div>'
             f'<p class="cupom">Cupom <b>{pr["cupom"]}</b>: digite no checkout do site da {html.escape(pr["marca"])}.</p>'
             f'<small>{html.escape(pr["aviso"])}</small></div>')
 
@@ -250,7 +250,10 @@ def jsonld(page):
                       'image': [SITE['url'] + pr['imagem']] + [SITE['url'] + i for i in pr.get('imagens', [])], 'description': page['description'],
                       'category': pr.get('categoria'), 'sku': pr.get('sku'),
                       'additionalProperty': [{'@type': 'PropertyValue', 'name': k, 'value': str(v)} for k, v in (pr.get('ficha') or {}).items()],
-                      'url': pr['loja_url'].split('?')[0]})
+                      'url': pr['loja_url'].split('?')[0],
+                      **({'review': {'@type': 'Review', 'author': {'@id': PERSON_ID}, 'datePublished': str(page['date']),
+                                     'reviewRating': {'@type': 'Rating', 'ratingValue': pr['nota'], 'bestRating': 10, 'worstRating': 0},
+                                     'reviewBody': page['summary']}} if pr.get('nota') else {})})
     if t == 'post' and page.get('produto'):
         graph.append({'@type': 'BlogPosting', '@id': SITE['url'] + page['url'] + '#artigo', 'headline': page['title'], 'description': page['description'],
                       'datePublished': str(page['date']), 'dateModified': str(page['updated']), 'inLanguage': 'pt-BR',

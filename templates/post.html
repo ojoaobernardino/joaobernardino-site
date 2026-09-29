@@ -18,7 +18,7 @@
   </div>{% endif %}
   {% if page.produto %}<div class="prod">
     <div class="ph"><img src="{{ page.produto.imagem }}" alt="{{ page.produto.alt }}" width="{{ page.prod_w }}" height="{{ page.prod_h }}" fetchpriority="high"></div>
-    <div class="pi"><span class="k">{{ page.produto.marca }} · {{ page.produto.categoria }}</span><b class="nm">{{ page.produto.nome }}</b>
+    <div class="pi"><span class="k">{{ page.produto.marca }} · {{ page.produto.categoria }}</span><b class="nm">{{ page.produto.nome }}</b>{% if page.produto.nota %}<p class="nota"><b>{{ page.produto.nota }}/10</b> minha nota</p>{% endif %}
       {% if page.produto.ficha %}<dl>{% for k, v in page.produto.ficha.items() %}<dt>{{ k }}</dt><dd>{{ v }}</dd>{% endfor %}</dl>{% endif %}
     </div>
   </div>

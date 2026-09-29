@@ -309,3 +309,4 @@ h2.sec-h{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppe
 .prose details.fontes summary::after{right:4px}
 .prose details.fontes ul{font-size:15px;color:var(--fg-2);line-height:1.6;margin:0 0 16px}
 .buy2 .preco b{font-size:inherit}.buy2 .preco b:first-child{font-size:22px}
+.prod .nota{margin:-6px 0 14px;font-size:14px;color:var(--fg-2)}.prod .nota b{display:inline-block;background:var(--red);color:#fff;border-radius:8px;padding:3px 10px;margin-right:6px;font-size:15px}
