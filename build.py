@@ -38,7 +38,7 @@ SITE = {
         {'label': 'Blog', 'url': '/blog/', 'section': 'blog'},
         {'label': 'Sobre', 'url': '/sobre/', 'section': 'sobre'},
     ],
-    'author_bio': 'Empreendedor, Atleta e Growth Marketing & Sales. Pós em Neurociências e Comportamento (PUCRS), Master Trainer em PNL (SBPNL), Engenheiro de Produção (Mackenzie).',  # assinatura padrão (João, 29/09)
+    'author_bio': 'Empreendedor, criador de conteúdo, atleta e Growth Marketing & Sales. Pós em Neurociências e Comportamento (PUCRS), Master Trainer em PNL (SBPNL), Engenheiro de Produção (Mackenzie).',  # assinatura padrão (João, 29/09)
 }
 # nome curto dos temas do blog (chips e breadcrumbs); o que não estiver aqui usa `name` do index.md
 CLUSTERS = {
@@ -177,7 +177,7 @@ def person_full():
         'nationality': {'@type': 'Country', 'name': 'Brasil'},
         'url': SITE['url'] + '/sobre/jb/', 'image': SITE['url'] + '/img/joao.webp',
         'jobTitle': 'Growth Marketing & Sales',
-        'description': 'Empreendedor, atleta e Growth Marketing & Sales. Engenheiro de Produção pela Universidade Presbiteriana Mackenzie, pós-graduado em Neurociências e Comportamento pela PUCRS e Master Trainer em PNL pela Sociedade Brasileira de Programação Neurolinguística.',
+        'description': 'Empreendedor, criador de conteúdo, atleta e Growth Marketing & Sales. Engenheiro de Produção pela Universidade Presbiteriana Mackenzie, pós-graduado em Neurociências e Comportamento pela PUCRS e Master Trainer em PNL pela Sociedade Brasileira de Programação Neurolinguística.',
         'alumniOf': [
             {'@type': 'CollegeOrUniversity', 'name': 'Universidade Presbiteriana Mackenzie', 'sameAs': 'https://www.mackenzie.br/', 'address': {'@type': 'PostalAddress', 'addressLocality': 'São Paulo', 'addressRegion': 'SP', 'streetAddress': 'Campus Higienópolis'}},
             {'@type': 'CollegeOrUniversity', 'name': 'Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)', 'sameAs': 'https://portal.pucrs.br/'},
@@ -486,7 +486,7 @@ def main():
     # llms.txt: apresentação do site pras IAs (nunca inclui /blog/altive/)
     L = ['# João Bêrnardino', '',
          '> Site pessoal de João Bernardino (João Bêrnardino, @ojoaobernardino): growth marketing e vendas, neurociência do hábito e PNL aplicada. Textos em primeira pessoa, com fonte, e resenhas completas de livros de vendas, liderança e mente.', '',
-         'Empreendedor, atleta e Growth Marketing & Sales. Engenheiro de Produção (Mackenzie), pós-graduado em Neurociências e Comportamento (PUCRS) e Master Trainer em PNL (SBPNL). Criou o Zero Nóia (como parou de fumar em 2024) e a Comunidade A Obra.', '',
+         'Empreendedor, criador de conteúdo, atleta e Growth Marketing & Sales. Engenheiro de Produção (Mackenzie), pós-graduado em Neurociências e Comportamento (PUCRS) e Master Trainer em PNL (SBPNL). Criou o Zero Nóia (como parou de fumar em 2024) e a Comunidade A Obra.', '',
          '## Sobre', '', f"- [Sobre João Bêrnardino]({SITE['url']}/sobre/): quem é, serviços, produtos, canal do YouTube e blog.", '']
     livros = [p for p in posts if p.get('book')]
     if livros:
