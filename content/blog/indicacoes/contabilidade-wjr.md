@@ -5,14 +5,14 @@ type: page
 kicker: "Contabilidade"
 card_title: "WJR Contabilidade"
 card: "A contabilidade que cuida da minha empresa desde 2024, na Mooca, em São Paulo."
-aliases: [/blog/wjr/]
+aliases: [/blog/wjr/, /indicacoes/contabilidade-wjr/]
 date: 2026-09-11
 updated: 2026-09-29
 tags: [wjr, contabilidade, pj, lucas-brito]
 summary: "Sou cliente da WJR desde 05/03/2024. O Lucas Brito, que toca a WJR, é meu amigo há mais de 20 anos. As duas relações estão aqui em cima pra você saber de onde eu falo."
 cta:
   label: "Falar com a WJR no WhatsApp"
-  url: "https://wa.me/5511933335961?text=Vim%20pelo%20site%20do%20Jo%C3%A3o"
+  url: "https://wa.me/5511933335961?text=Vim%20pelo%20site%20do%20JB"
 cover: ""
 cover_alt: ""
 draft: false
