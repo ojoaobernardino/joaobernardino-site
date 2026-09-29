@@ -3,9 +3,11 @@ title: "Meu contador: por que eu confio na WJR Contabilidade"
 description: "Por que João Bernardino abriu uma LTDA e confia a contabilidade à WJR, na Mooca: notas, impostos, pró-labore, imposto de renda e holding."
 type: page
 indicacao: servico
+logo: "/img/indicacoes/logo-wjr-contabilidade-branco.webp"
+logo_alt: "Logo da WJR Contabilidade"
 kicker: "Contabilidade"
 card_title: "WJR Contabilidade"
-card: "A contabilidade que cuida da minha empresa desde 2024, na Mooca, em São Paulo."
+card: "A contabilidade que cuida da minha empresa, na Mooca, em São Paulo."
 aliases: [/blog/wjr/, /indicacoes/contabilidade-wjr/]
 date: 2026-09-11
 updated: 2026-09-29
