@@ -39,6 +39,18 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
+  for = "/sobre/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600"
+[[headers]]
+  for = "/produtos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600"
+[[headers]]
+  for = "/linktree/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+[[headers]]
   for = "/blog/*"
   [headers.values]
     Cache-Control = "public, max-age=600"
@@ -46,3 +58,23 @@
   for = "/img/og/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+# ─────────────────────────────────────────────────────────────────────
+# PÁGINAS PRIVADAS · /blog/altive/**  (regra do João, 28/09/2026)
+# Material interno (playbooks de vendas por vendedor). Padrão de caminho:
+#   /blog/altive/playbook/<tipo>/<vendedor>/
+# Regra: nenhum sinal de SEO, robôs ou LLM nessas páginas.
+#   1. Este header (abaixo) em todas elas + a mesma meta robots no <head>.
+#   2. Nunca entram em sitemap.xml, feed.xml, llms.txt nem robots.txt
+#      (nem como Disallow: listar o caminho revelaria a seção).
+#   3. Nenhuma página do site aponta para elas (blog, home, hubs, rodapé).
+#   4. Sem canonical, Open Graph, Twitter card, JSON-LD, description e GA4.
+#   5. Nunca enviar ao Search Console, Bing Webmaster ou IndexNow.
+#   6. referrer no-referrer, para o endereço não vazar ao clicar num link.
+# O check.py do blog deve ignorar blog/altive/ (não é página do blog).
+# ─────────────────────────────────────────────────────────────────────
+[[headers]]
+  for = "/blog/altive/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai"
+    Referrer-Policy = "no-referrer"
+    Cache-Control = "no-cache"
