@@ -1,409 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>João Bêrnardino · Vendedor & Neurotreinador</title>
-<meta name="description" content="João Bernardino (João Bêrnardino): vendedor e neurotreinador. 21 Leis, Comunidade A Obra e os cupons dos parceiros, tudo num link só.">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#C8102E">
-<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <link rel="canonical" href="https://joaobernardino.com.br/">
+<title>João Bêrnardino</title>
+<meta name="description" content="A vida é boa.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:url" content="https://joaobernardino.com.br/">
-<meta property="og:site_name" content="João Bêrnardino">
-<meta property="og:title" content="João Bêrnardino · Vendedor & Neurotreinador">
-<meta property="og:description" content="21 Leis, Comunidade A Obra e os cupons dos parceiros, tudo num link só.">
-<meta property="og:image" content="https://joaobernardino.com.br/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="João Bêrnardino · Vendedor & Neurotreinador">
-<meta name="twitter:description" content="21 Leis, Comunidade A Obra e os cupons dos parceiros, tudo num link só.">
-<meta name="twitter:image" content="https://joaobernardino.com.br/og-image.jpg">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" href="/fonts/barlow-condensed-900.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/img/avatar-192.webp" as="image" type="image/webp" fetchpriority="high">
-<style>
-  @font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/barlow-condensed-700.woff2) format('woff2')}
-  @font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:900;font-display:swap;src:url(/fonts/barlow-condensed-900.woff2) format('woff2')}
-  @font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/barlow-400.woff2) format('woff2')}
-  @font-face{font-family:'Barlow';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/barlow-600.woff2) format('woff2')}
-  /* fallbacks métricos: reduzem o pulo de layout enquanto a fonte real chega */
-  @font-face{font-family:'Barlow Condensed Fallback';src:local('Arial Narrow'),local('Helvetica Neue'),local('Arial');size-adjust:88%;ascent-override:95%;descent-override:22%}
-  @font-face{font-family:'Barlow Fallback';src:local('Helvetica Neue'),local('Arial');size-adjust:98%}
+<meta property="og:title" content="João Bêrnardino">
+<meta property="og:description" content="A vida é boa.">
+<meta property="og:image" content="https://joaobernardino.com.br/og-lobo.jpg">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="600">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="João Bêrnardino">
+<meta name="twitter:description" content="A vida é boa.">
+<meta name="twitter:image" content="https://joaobernardino.com.br/og-lobo.jpg">
+<link rel="icon" href="/fav/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/fav/icon-32.png">
+<link rel="apple-touch-icon" href="/fav/apple-touch-icon.png">
+<link rel="preload" href="/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Inter';font-style:normal;font-weight:400 800;font-display:swap;src:url(/fonts/inter-var-latin.woff2) format('woff2')}
+:root{color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:#000;color:#fff;font-family:'Inter',system-ui,sans-serif;font-optical-sizing:auto;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+main{width:100%;max-width:820px;text-align:center;display:flex;flex-direction:column;align-items:center;margin-top:-40px}
+.mark{width:46px;height:auto;margin-bottom:16px}
+h1{font-weight:600;font-size:56px;line-height:1;letter-spacing:-.022em;margin:0 0 16px;text-wrap:balance;max-width:660px}
+.social{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:16px}
+.social a{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 10px 0 8px;border-radius:999px;background:#1c1c1c;color:#fff;text-decoration:none;font-size:14px;font-weight:500;line-height:1.5;letter-spacing:.005em;transition:background .15s}
+.social a:hover{background:#262626}
+.social svg{width:18px;height:18px;flex:none}
+p{margin:0 0 32px;color:#bdbdbd;font-size:18px;line-height:1.5;max-width:640px;text-wrap:balance}
+.signup{display:flex;gap:8px;justify-content:center;margin:0 0 20px;width:100%}
+.signup input{width:210px;height:48px;border-radius:8px;border:1px solid transparent;background:#1c1c1c;color:#fff;font:inherit;font-size:16px;padding:0 14px;outline:none}
+.signup input::placeholder{color:#6e6e6e}
+.signup input:focus{border-color:#444}
+.signup button{height:48px;padding:0 16px;border-radius:8px;border:0;background:#333;color:#fff;font:inherit;font-size:16px;font-weight:500;cursor:pointer}
+.signup button:hover{background:#3d3d3d}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.ok{font-size:14px;color:#8a8a8a;margin:-8px 0 16px}
+.links{display:flex;gap:24px;justify-content:center;margin-bottom:8px}
+.links a{color:#bdbdbd;text-decoration:none;font-size:15px;line-height:24px}
+.links a:hover{color:#fff}
+.go{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:28px}
+.go a{display:inline-flex;align-items:center;height:48px;padding:0 18px;border-radius:8px;background:#1c1c1c;color:#fff;text-decoration:none;font-size:16px;font-weight:500;transition:background .15s}
+.go a:hover{background:#2a2a2a}
+.go a.main{background:#333}
+.go a.main:hover{background:#3d3d3d}
+footer{color:#7d7f83;font-size:14px;line-height:24px}
 
-  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-  :root{
-    --red:#C8102E; --red-dark:#9e0c23;
-    --black:#111111; --black2:#1a1a1a;
-    --red-text:#F0405C; /* vermelho para texto pequeno: 5:1 sobre o preto (o #C8102E dá 3,2:1) */
-    --white:#ffffff; --gray:#9a9a9a; --gray-dim:#8a8a8a; --gray-light:#2a2a2a; --line:#262626;
-    --cond:'Barlow Condensed','Barlow Condensed Fallback',sans-serif;
-    --sans:'Barlow','Barlow Fallback',sans-serif;
-  }
-  html{scroll-behavior:smooth}
-  body{background:var(--black);color:var(--white);font-family:var(--sans);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-  .container{position:relative;max-width:480px;margin:0 auto;padding:44px 20px 64px}
-
-  /* HEADER */
-  .header{text-align:center;margin-bottom:24px}
-  .avatar{width:96px;height:96px;border-radius:50%;border:3px solid var(--red);background:var(--gray-light);object-fit:cover;display:block;margin:0 auto 14px}
-  .name{font-family:var(--cond);font-weight:900;font-size:32px;text-transform:uppercase;letter-spacing:.02em;line-height:1;margin-bottom:6px}
-  .name span{color:var(--red)}
-  .tagline{font-family:var(--cond);font-weight:700;font-size:15px;color:var(--red-text);letter-spacing:.18em;text-transform:uppercase}
-
-  /* SOCIAL */
-  .social-row{display:flex;justify-content:center;gap:12px;margin:18px 0 30px}
-  .social-icon{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;border:1px solid #333;background:var(--black2);color:var(--white);text-decoration:none;transition:border-color .2s,transform .15s}
-  .social-icon:hover{border-color:var(--red);transform:translateY(-2px)}
-  .social-icon svg{width:18px;height:18px;fill:currentColor}
-
-  /* LABEL */
-  .section-label{font-family:var(--cond);font-weight:700;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--red-text);margin:0 0 12px;padding-left:4px;display:flex;align-items:center;gap:8px}
-  .section-label::after{content:'';flex:1;height:1px;background:var(--line)}
-
-  /* LINKS */
-  .links-main{display:flex;flex-direction:column;gap:10px;margin:14px 0 34px}
-  .link-btn{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;min-height:88px;background:var(--black2);border:1px solid var(--gray-light);border-radius:10px;text-decoration:none;color:var(--white);font-family:var(--cond);font-weight:700;font-size:19px;letter-spacing:.05em;text-transform:uppercase;position:relative;transition:background .2s,border-color .2s,transform .2s;-webkit-tap-highlight-color:transparent;cursor:pointer;text-align:left;width:100%}
-  .link-btn::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--red);border-radius:8px 0 0 8px}
-  .link-btn:hover{background:#222;border-color:#444;transform:translateX(3px)}
-  .btn-left{display:flex;align-items:center;flex:1;min-width:0}
-  .btn-icon{font-size:22px;margin-right:12px;min-width:28px;text-align:center}
-  .btn-label{flex:1;min-width:0}
-  .btn-sub{font-family:var(--sans);font-weight:400;font-size:12.5px;letter-spacing:.02em;text-transform:none;color:var(--gray);margin-top:3px;display:block;line-height:1.35}
-  .link-btn.has-cover .btn-left{padding-right:96px}
-  .arrow{color:#6b6b6b;font-size:18px;transition:color .2s;flex-shrink:0;margin-left:10px}
-  .link-btn:hover .arrow{color:var(--red)}
-  .link-btn.featured{background:var(--red);border-color:var(--red)}
-  .link-btn.featured::before{background:rgba(0,0,0,.3)}
-  .link-btn.featured .btn-sub{color:rgba(255,255,255,.94)}
-  .link-btn.featured .arrow{color:rgba(255,255,255,.6)}
-  .link-btn.featured:hover{background:var(--red-dark);border-color:var(--red-dark)}
-  .cover-wrap{position:absolute;right:-14px;top:50%;transform:translateY(-52%);width:92px;z-index:2;pointer-events:none}
-  .cover-img{width:86px;height:120px;object-fit:cover;object-position:center top;border-radius:6px;display:block;transform:rotate(5deg);box-shadow:6px 10px 28px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.08)}
-
-  /* PARCEIROS */
-  .sponsors-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
-  .sponsor-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 12px;background:var(--black2);border:1px solid var(--gray-light);border-radius:8px;text-decoration:none;color:var(--white);gap:6px;text-align:center;position:relative;transition:background .15s,border-color .15s;-webkit-tap-highlight-color:transparent}
-  .sponsor-btn:hover{background:#1e1e1e;border-color:var(--red)}
-  .sponsor-btn.featured{border-color:var(--red);box-shadow:0 0 0 1px rgba(200,16,46,.3),inset 0 0 20px rgba(200,16,46,.04)}
-  .sponsor-name{font-family:var(--cond);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.05em}
-  .sponsor-coupon{font-size:12.5px;color:var(--red-text);letter-spacing:.1em;text-transform:uppercase;font-weight:600}
-  .sponsor-coupon.copied{color:#5fd07a}
-  .sponsors-hint{font-size:12.5px;color:var(--gray-dim);text-align:center;margin:4px 0 32px}
-
-  .quote{text-align:center;margin:36px 0 0;padding:0 12px}
-  .quote p{font-family:var(--cond);font-size:14px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--red-text);line-height:1.6}
-  .quote cite{font-style:normal;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gray-dim);margin-top:8px;display:block}
-  .footer-blog{display:block;margin-bottom:10px;font-family:var(--cond);font-weight:700;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-text);text-decoration:none}
-  .footer-blog:hover{color:#fff}
-  .footer{text-align:center;margin-top:28px;font-size:12.5px;color:var(--gray-dim);letter-spacing:.1em;text-transform:uppercase}
-
-  /* TOAST */
-  .toast{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--red);color:#fff;font-family:var(--cond);font-weight:700;font-size:16px;letter-spacing:.06em;text-transform:uppercase;padding:18px 30px;border-radius:12px;box-shadow:0 12px 40px rgba(200,16,46,.5);z-index:9999;opacity:0;pointer-events:none;transition:opacity .2s;text-align:center;line-height:1.5;white-space:pre-line}
-  .toast.show{opacity:1}
-
-  /* POPUP lista de espera */
-  .popup-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.84);z-index:1000;align-items:center;justify-content:center;padding:20px}
-  .popup-overlay.active{display:flex}
-  .popup-box{background:#181818;border:1px solid var(--red);border-radius:16px;padding:32px 26px 26px;max-width:400px;width:100%;position:relative;box-shadow:0 8px 48px rgba(200,16,46,.3);max-height:90vh;overflow-y:auto;-webkit-overflow-scrolling:touch}
-  .popup-close{position:absolute;top:12px;right:16px;background:none;border:none;color:#9a9a9a;font-size:24px;cursor:pointer;line-height:1;padding:4px}
-  .popup-title{font-family:var(--cond);font-size:23px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;text-align:center;margin-bottom:6px}
-  .popup-sub{font-size:14px;color:#bdbdbd;text-align:center;margin-bottom:20px;line-height:1.5}
-  .popup-form{display:flex;flex-direction:column;gap:12px}
-  .popup-input{background:#111;border:1px solid #333;border-radius:10px;padding:14px 16px;font-family:var(--sans);font-size:16px;color:#fff;outline:none;width:100%;-webkit-appearance:none;transition:border-color .2s}
-  .popup-input::placeholder{color:#6b6b6b}
-  .popup-input:focus{border-color:var(--red)}
-  .popup-input.campo-erro{border-color:var(--red);background:#1f0a0d}
-  .popup-msg-erro{font-size:12.5px;color:#e05065;margin-top:-6px;padding-left:4px;display:none}
-  .popup-msg-erro.visivel{display:block}
-  .popup-btn{background:var(--red);color:#fff;border:none;border-radius:10px;padding:15px;font-family:var(--cond);font-size:17px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;width:100%;transition:background .2s}
-  .popup-btn:hover{background:var(--red-dark)}
-  .popup-btn[disabled]{opacity:.6;cursor:wait}
-  .popup-privacy{font-size:12.5px;color:var(--gray-dim);text-align:center;margin-top:8px}
-  .popup-sucesso{display:none;text-align:center;padding:12px 0 6px}
-  .popup-sucesso .ok{font-size:40px;margin-bottom:8px}
-
-  @media (min-width:600px){
-    .container{max-width:520px;padding:60px 32px 90px}
-    .avatar{width:108px;height:108px}
-    .name{font-size:38px}
-    .link-btn{padding:20px 24px}
-    .cover-img{width:92px;height:128px}
-    .sponsors-grid{gap:10px}
-  }
-  @media (max-width:360px){
-    .container{padding:36px 14px 56px}
-    .social-row{gap:8px}
-    .link-btn.has-cover .btn-left{padding-right:84px}
-    .cover-wrap{right:-8px}
-  }
-  @media (hover:none){
-    .link-btn:hover,.social-icon:hover,.sponsor-btn:hover{transform:none}
-    .link-btn:active{background:#222;border-color:var(--red);transform:scale(.98)}
-    .link-btn.featured:active{background:var(--red-dark)}
-    .sponsor-btn:active{border-color:var(--red);transform:scale(.96)}
-  }
-  :focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:4px}
-  a,button{touch-action:manipulation}
+@media (max-width:809px){h1{font-size:45px}}
+@media (max-width:420px){h1{font-size:38px}p{font-size:18px}}
 </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://joaobernardino.com.br/#pessoa",
-      "name": "João Bernardino",
-      "alternateName": ["João Bêrnardino", "ojoaobernardino"],
-      "url": "https://joaobernardino.com.br/",
-      "image": "https://joaobernardino.com.br/apple-touch-icon.png",
-      "jobTitle": "Vendedor & Neurotreinador",
-      "description": "Vendedor com passagem por Heineken, Stone, Closecare, Pessoalize e Koin. Master Trainer em PNL e pós-graduado em Neurociências. Autor do 21 Leis e criador da Comunidade A Obra.",
-      "knowsAbout": ["Vendas B2B", "PNL", "Neurociência", "Alta Performance", "Máquina comercial"],
-      "sameAs": [
-        "https://www.instagram.com/ojoaobernardino",
-        "https://www.youtube.com/@ojoaobernardino",
-        "https://www.tiktok.com/@ojoaobernardino",
-        "https://www.linkedin.com/in/jo%C3%A3o-b%C3%AArnardino-176a70108/",
-        "https://strava.app.link/dRHfi2AGt1b"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://joaobernardino.com.br/#site",
-      "url": "https://joaobernardino.com.br/",
-      "name": "João Bêrnardino",
-      "inLanguage": "pt-BR",
-      "publisher": {"@id": "https://joaobernardino.com.br/#pessoa"}
-    }
-  ]
-}
-</script>
 </head>
 <body>
-<div class="container">
-<main aria-label="Conteúdo principal">
-
-  <header class="header">
-    <img class="avatar" src="/img/avatar-192.webp" srcset="/img/avatar-192.webp 192w, /img/avatar-216.webp 216w" sizes="(min-width:600px) 108px, 96px" width="96" height="96" alt="João Bêrnardino" fetchpriority="high" decoding="async">
-    <h1 class="name">JOÃO <span>BÊRNARDINO</span></h1>
-    <p class="tagline">Vendedor &amp; Neurotreinador</p>
-  </header>
-
-  <nav aria-label="Redes sociais">
-    <div class="social-row">
-      <a href="https://instagram.com/ojoaobernardino" class="social-icon" data-track="instagram" title="Instagram" aria-label="Instagram" rel="me noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      </a>
-      <a href="https://youtube.com/@ojoaobernardino" class="social-icon" data-track="youtube" title="YouTube" aria-label="YouTube" rel="me noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
-      </a>
-      <a href="https://tiktok.com/@ojoaobernardino" class="social-icon" data-track="tiktok" title="TikTok" aria-label="TikTok" rel="me noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05A6.34 6.34 0 003.15 15.3a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.77 1.52V6.76a4.85 4.85 0 01-1-.07z"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/jo%C3%A3o-b%C3%AArnardino-176a70108/" class="social-icon" data-track="linkedin" title="LinkedIn" aria-label="LinkedIn" rel="me noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-      </a>
-      <a href="https://strava.app.link/dRHfi2AGt1b" class="social-icon" data-track="strava" title="Strava" aria-label="Strava" rel="me noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/></svg>
-      </a>
-    </div>
+<main>
+  <img class="mark" src="/lobo-obra.svg" alt="" width="46" height="46">
+  <h1>Eu construo negócios que crescem por experimento.</h1>
+  <nav class="social" aria-label="Redes">
+    <a href="https://youtube.com/@ojoaobernardino"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="5" width="21" height="14" rx="4" fill="#FF0000"/><path d="M10 9l5 3-5 3z" fill="#fff"/></svg>@ojoaobernardino</a>
+    <a href="https://instagram.com/ojoaobernardino"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".35" stop-color="#FA7E1E"/><stop offset=".6" stop-color="#D62976"/><stop offset=".85" stop-color="#962FBF"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="6" fill="url(#ig)"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="#fff"/></svg>@ojoaobernardino</a>
+    <a href="https://www.linkedin.com/in/jo%C3%A3o-b%C3%AArnardino-176a70108/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="#0A66C2"/><path d="M7 10h2.3v7H7zM8.2 6.4a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6zM11 10h2.2v1c.4-.7 1.2-1.2 2.3-1.2 2.2 0 2.6 1.4 2.6 3.3V17h-2.3v-3.4c0-.9 0-1.9-1.2-1.9s-1.3.9-1.3 1.8V17H11z" fill="#fff"/></svg>@ojoaobernardino</a>
   </nav>
-
-  <div class="section-label">Comece por aqui</div>
-  <div class="links-main">
-    <a href="https://pay.kiwify.com.br/JBzXPmB?utm_source=instagram&utm_medium=bio&utm_campaign=21-leis&utm_content=botao-1" class="link-btn featured has-cover" data-track="21-leis">
-      <div class="btn-left">
-        <span class="btn-icon" aria-hidden="true">🧠</span>
-        <div class="btn-label">
-          21 Leis
-          <span class="btn-sub">Como reprogramar a sua mente para o sucesso</span>
-        </div>
-      </div>
-      <div class="cover-wrap"><img class="cover-img" src="/img/capa-21-leis.webp" width="86" height="120" alt="" fetchpriority="high" decoding="async"></div>
-    </a>
-    <button type="button" class="link-btn" id="btn-obra" data-track="a-obra">
-      <div class="btn-left">
-        <span class="btn-icon" aria-hidden="true">🐺</span>
-        <div class="btn-label">
-          Comunidade A Obra
-          <span class="btn-sub">Aprenda a vender mais de 100k por mês na internet</span>
-        </div>
-      </div>
-      <span class="arrow" aria-hidden="true">›</span>
-    </button>
-  </div>
-
-  <div class="section-label">Parceiros · use o cupom JB</div>
-  <div class="sponsors-grid">
-    <a href="https://www.gsuplementos.com.br/?utm_source=instagram&utm_medium=bio&utm_campaign=growth&utm_content=cupom-jb" class="sponsor-btn featured" data-track="growth" data-cupom="JB" rel="noopener">
-      <span class="sponsor-name">Growth</span>
-      <span class="sponsor-coupon">Cupom · JB</span>
-    </a>
-    <a href="https://www.ultramel.com.br/?afId=JB" class="sponsor-btn" data-track="ultramel" data-cupom="JB" rel="noopener">
-      <span class="sponsor-name">Ultra Mel</span>
-      <span class="sponsor-coupon">Cupom · JB</span>
-    </a>
-    <a href="https://apx.com.br/?utm_source=instagram&utm_medium=bio&utm_campaign=apex&utm_content=cupom-jb" class="sponsor-btn" data-track="apex" data-cupom="JB" rel="noopener">
-      <span class="sponsor-name">Apex</span>
-      <span class="sponsor-coupon">Cupom · JB</span>
-    </a>
-    <a href="https://padraopuro.com.br/jb?utm_source=instagram&utm_medium=bio&utm_campaign=padraopuro&utm_content=cupom-jb" class="sponsor-btn" data-track="padraopuro" data-cupom="JB" rel="noopener">
-      <span class="sponsor-name">Padrão Puro</span>
-      <span class="sponsor-coupon">Cupom · JB</span>
-    </a>
-  </div>
-  <p class="sponsors-hint">O cupom é copiado no toque e o site do parceiro abre em seguida.</p>
-
-  <blockquote class="quote">
-    <p>"Tudo o que a mente humana pode conceber,<br>ela pode conquistar."</p>
-    <cite>— Napoleon Hill</cite>
-  </blockquote>
-
-  <footer class="footer" role="contentinfo"><a class="footer-blog" href="/blog/" data-track="blog">Meu blog</a>© João Bêrnardino</footer>
+  <p>Cadastre seu melhor e-mail para ter acesso ao meu conhecimento. Compartilho tudo o que aprendo por meio de textos e vídeos no YouTube.</p>
+  <form class="signup" id="signup" name="newsletter" method="POST" action="/" data-netlify="true" netlify-honeypot="website" novalidate><input type="hidden" name="form-name" value="newsletter"><input type="hidden" name="origem" value="home"><p hidden><label>Não preencha <input name="website" tabindex="-1" autocomplete="off"></label></p>
+    <label for="email" class="sr">Seu e-mail</label>
+    <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="seu@email.com" required>
+    <button type="submit">Cadastrar</button>
+  </form>
+  <p class="ok" id="ok" role="status" hidden></p>
+  <nav class="links" aria-label="Caminhos"><a href="/sobre/">Sobre</a><a href="/linktree/">Cupons</a></nav>
+  <footer>© 2026 João Bêrnardino</footer>
 </main>
-</div>
-
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-<div class="popup-overlay" id="popup-obra" role="dialog" aria-modal="true" aria-labelledby="popup-obra-title">
-  <div class="popup-box">
-    <button class="popup-close" type="button" onclick="fecharPopup()" aria-label="Fechar">&times;</button>
-    <h2 class="popup-title" id="popup-obra-title">Comunidade A Obra</h2>
-    <p class="popup-sub">Se inscreva para a primeira turma.</p>
-    <form class="popup-form" id="form-obra" name="lista-a-obra" method="POST" action="/" data-netlify="true" netlify-honeypot="website" novalidate>
-      <input type="hidden" name="form-name" value="lista-a-obra">
-      <input type="hidden" name="origem" id="input-origem" value="bio">
-      <p hidden><label>Não preencha: <input name="website" tabindex="-1" autocomplete="off"></label></p>
-      <input class="popup-input" type="text" name="nome" id="input-nome" placeholder="Seu primeiro nome" autocomplete="given-name" required maxlength="40">
-      <span class="popup-msg-erro" id="erro-nome">Digite o seu nome</span>
-      <input class="popup-input" type="tel" name="whatsapp" id="input-wpp" placeholder="(11) 99999-9999" autocomplete="tel" inputmode="numeric" required maxlength="15" oninput="mascaraWpp(this)">
-      <span class="popup-msg-erro" id="erro-wpp">WhatsApp com DDD, ex: (11) 98222-2297</span>
-      <button class="popup-btn" type="submit" id="btn-enviar">Entrar na lista</button>
-      <p class="popup-privacy">Sem spam. Só o aviso da turma.</p>
-    </form>
-    <div class="popup-sucesso" id="popup-sucesso">
-      <div class="ok" aria-hidden="true">✅</div>
-      <p class="popup-title">Você está na lista</p>
-      <p class="popup-sub">Te aviso no WhatsApp quando abrir.</p>
-    </div>
-  </div>
-</div>
-
-<script>
-/* ── Rastreio: um evento por clique, pro pixel e pro GA4 (quando existir) ── */
-var GA4_ID = 'G-5MSB6QLXN0'; /* propriedade "joaobernardino.com.br", conta GA "Joao Bernardino", stream "Link na bio" (10/09/2026) */
-function track(nome, extra) {
-  var p = Object.assign({ botao: nome }, extra || {});
-  try { if (window.fbq) fbq('trackCustom', 'ClickBio', p); } catch (e) {}
-  try { if (window.gtag) gtag('event', 'click_bio', p); } catch (e) {}
-}
-document.addEventListener('click', function (e) {
-  var el = e.target.closest('[data-track]');
-  if (el) track(el.getAttribute('data-track'));
-});
-
-/* ── Cupom: copia no toque (quando o navegador deixa) e segue pro parceiro ── */
-function showToast(msg) {
-  var t = document.getElementById('toast');
-  t.textContent = msg; t.classList.add('show');
-  clearTimeout(t._h); t._h = setTimeout(function () { t.classList.remove('show'); }, 1800);
-}
-document.querySelectorAll('.sponsor-btn[data-cupom]').forEach(function (btn) {
-  btn.addEventListener('click', function (e) {
-    var code = btn.getAttribute('data-cupom');
-    var el = btn.querySelector('.sponsor-coupon');
-    if (!navigator.clipboard || !navigator.clipboard.writeText) return; /* sem clipboard (webview): só navega */
-    e.preventDefault();
-    var href = btn.href;
-    navigator.clipboard.writeText(code).then(function () {
-      el.textContent = 'Copiado: ' + code; el.classList.add('copied');
-      showToast('Cupom ' + code + ' copiado\nCole no carrinho do parceiro');
-    }).catch(function () {}).finally(function () {
-      setTimeout(function () { location.href = href; }, 900);
-    });
-  });
-});
-
-/* ── Popup lista de espera (Netlify Forms) ── */
-var _scrollPos = 0;
-var overlay = document.getElementById('popup-obra');
-function abrirPopup() {
-  document.getElementById('form-obra').style.display = '';
-  document.getElementById('popup-sucesso').style.display = 'none';
-  _scrollPos = window.scrollY || 0;
-  overlay.classList.add('active');
-  document.body.style.overflow = 'hidden';
-  setTimeout(function () { document.getElementById('input-nome').focus(); }, 50);
-}
-function fecharPopup() {
-  overlay.classList.remove('active');
-  document.body.style.overflow = '';
-  window.scrollTo(0, _scrollPos);
-}
-document.getElementById('btn-obra').addEventListener('click', abrirPopup);
-overlay.addEventListener('click', function (e) { if (e.target === overlay) fecharPopup(); });
-document.addEventListener('keydown', function (e) { if (e.key === 'Escape') fecharPopup(); });
-function mascaraWpp(el) {
-  var v = el.value.replace(/\D/g, '').substring(0, 11), r = '';
-  if (v.length > 0) r += '(' + v.substring(0, 2);
-  if (v.length >= 2) r += ') ' + v.substring(2, 7);
-  if (v.length >= 7) r += '-' + v.substring(7, 11);
-  el.value = r;
-  el.classList.remove('campo-erro'); document.getElementById('erro-wpp').classList.remove('visivel');
-}
-document.getElementById('input-nome').addEventListener('input', function () {
-  this.classList.remove('campo-erro'); document.getElementById('erro-nome').classList.remove('visivel');
-});
-function erro(inputId, msgId) {
-  var el = document.getElementById(inputId);
-  el.classList.add('campo-erro'); document.getElementById(msgId).classList.add('visivel'); el.focus();
-}
-document.getElementById('form-obra').addEventListener('submit', function (e) {
-  e.preventDefault();
-  var form = this;
-  if (form.website.value) return;
-  var nome = form.nome.value.trim(), wpp = form.whatsapp.value.replace(/\D/g, '');
-  if (nome.length < 2) return erro('input-nome', 'erro-nome');
-  if (wpp.length < 10) return erro('input-wpp', 'erro-wpp');
-  var btn = document.getElementById('btn-enviar'); btn.disabled = true; btn.textContent = 'Enviando...';
-  var data = new URLSearchParams(new FormData(form)); data.set('whatsapp', wpp);
-  data.set('origem', location.search.slice(1) || 'bio');
-  fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: data.toString() })
-    .then(function (r) { if (!r.ok) throw new Error(r.status); })
-    .then(function () {
-      form.style.display = 'none'; document.getElementById('popup-sucesso').style.display = 'block';
-      track('a-obra-lista', { status: 'ok' });
-      try { localStorage.setItem('obra_lista', '1'); } catch (x) {}
-    })
-    .catch(function () {
-      showToast('Não deu certo agora. Tenta de novo em instantes.');
-      track('a-obra-lista', { status: 'erro' });
-    })
-    .finally(function () { btn.disabled = false; btn.textContent = 'Entrar na lista'; });
-});
-
-/* ── Meta Pixel: stub imediato, script real 2s depois do load (playbook da casa) ── */
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];f._fbqSrc=v}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1374672797442818'); fbq('track', 'PageView');
-window.addEventListener('load', function () {
-  setTimeout(function () {
-    var s = document.createElement('script'); s.async = true; s.src = window._fbqSrc; document.head.appendChild(s);
-    if (GA4_ID) {
-      var g = document.createElement('script'); g.async = true; g.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID; document.head.appendChild(g);
-      window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer.push(arguments); };
-      gtag('js', new Date()); gtag('config', GA4_ID);
-    }
-  }, 2000);
-});
-</script>
-<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1374672797442818&ev=PageView&noscript=1"></noscript>
+<script>(function(){var f=document.getElementById("signup"),i=document.getElementById("email"),o=document.getElementById("ok"),b=f.querySelector("button");f.addEventListener("submit",function(e){e.preventDefault();if(f.website.value)return;if(!i.value||!i.checkValidity()){o.textContent="Confira o e-mail.";o.hidden=false;i.focus();return;}b.disabled=true;var t=b.textContent;b.textContent="Enviando...";fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(new FormData(f)).toString()}).then(function(r){if(!r.ok)throw 0;f.reset();o.textContent="Pronto! Você está na lista.";o.hidden=false;}).catch(function(){o.textContent="Não deu certo agora. Tente de novo em instantes.";o.hidden=false;}).finally(function(){b.disabled=false;b.textContent=t;});});})();</script>
 </body>
 </html>

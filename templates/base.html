@@ -6,7 +6,7 @@
 <title>{{ page.title_tag }}</title>
 <meta name="description" content="{{ page.description }}">
 <meta name="robots" content="{{ 'noindex, nofollow' if page.draft else 'index, follow' }}">
-<meta name="theme-color" content="#111111">
+<meta name="theme-color" content="#000000">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 <meta property="og:type" content="{{ 'article' if page.type == 'post' else 'website' }}">
@@ -20,57 +20,50 @@
 <meta property="og:image:height" content="630">
 {% if page.type == 'post' %}<meta property="article:published_time" content="{{ page.date }}">
 <meta property="article:modified_time" content="{{ page.updated }}">
-<meta property="article:author" content="{{ site.url }}/blog/sobre/">{% endif %}
+<meta property="article:author" content="{{ site.url }}/sobre/">{% endif %}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.title }}">
 <meta name="twitter:description" content="{{ page.description }}">
 <meta name="twitter:image" content="{{ site.url }}{{ page.og_image }}">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/fav/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/fav/icon-32.png">
+<link rel="apple-touch-icon" href="/fav/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="João Bêrnardino" href="/blog/feed.xml">
-<link rel="preload" href="/fonts/barlow-condensed-900.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+{% block preload %}{% endblock %}
 <style>{{ css|safe }}</style>
 <script type="application/ld+json">{{ page.jsonld|safe }}</script>
 </head>
-<body class="blog">
-<header class="site-head">
-  <div class="wrap">
-    <a class="wordmark" href="/blog/" aria-label="João Bêrnardino, início do blog">JOÃO <span>BÊRNARDINO</span></a>
-    <nav class="site-nav" aria-label="Seções">
-      {% for item in site.nav %}<a href="{{ item.url }}"{% if item.url == page.url or (item.url != '/blog/' and page.url.startswith(item.url)) %} aria-current="page"{% endif %}>{{ item.label }}</a>{% endfor %}
-    </nav>
-  </div>
-</header>
-<main class="wrap main">
+<body class="theme-{{ page.theme }}">
+<header class="top"><div class="wrap">
+  <a class="brand" href="{{ '#inicio' if page.url == '/sobre/' else '/sobre/' }}" aria-label="João Bêrnardino, sobre"><img src="/lobo-obra.svg" alt="João Bêrnardino" width="36" height="36"></a>
+  <nav class="nav" aria-label="Menu">
+    {% for item in site.nav %}<a href="{{ item.url }}"{% if item.section == page.section %} aria-current="page"{% endif %}>{{ item.label }}</a>{% endfor %}
+  </nav>
+</div></header>
+<main id="inicio">
 {% block content %}{% endblock %}
 </main>
-<footer class="site-foot">
-  <div class="wrap">
-    <nav class="foot-nav" aria-label="Rodapé">
-      <a href="/blog/">Blog</a>
-      <a href="/">Todos os meus links</a>
-      <a href="/blog/sobre/">Sobre</a>
-      <a href="/blog/zero-noia/">Zero Nóia</a>
-      <a href="/blog/a-obra/">Comunidade A Obra</a>
-      <a href="/blog/parceiros/">Cupom JB</a>
-    </nav>
-    <nav class="foot-social" aria-label="Redes">
-      <a href="https://instagram.com/ojoaobernardino" rel="me noopener">Instagram</a>
-      <a href="https://youtube.com/@ojoaobernardino" rel="me noopener">YouTube</a>
-      <a href="https://tiktok.com/@ojoaobernardino" rel="me noopener">TikTok</a>
-      <a href="https://www.linkedin.com/in/ojoaobernardino" rel="me noopener">LinkedIn</a>
-    </nav>
-    <p class="copy">© {{ site.year }} João Bêrnardino</p>
-  </div>
-</footer>
+<footer class="foot"><div class="wrap">
+  <nav class="f-nav" aria-label="Rodapé">{% for item in site.nav %}<a href="{{ item.url }}"{% if item.section == page.section %} aria-current="page"{% endif %}>{{ item.label }}</a>{% endfor %}</nav>
+  <div class="f-soc">{% include "_social.html" %}</div>
+  <p class="f-copy">© {{ site.year }} João Bêrnardino</p>
+</div></footer>
+<script>
+document.querySelectorAll('form.signup').forEach(function(f){var i=f.querySelector('input[type=email]'),o=f.parentNode.querySelector('.signup-ok'),b=f.querySelector('button');
+f.addEventListener('submit',function(e){e.preventDefault();if(f.website&&f.website.value)return;if(!i.value||!i.checkValidity()){o.textContent='Confira o e-mail.';o.hidden=false;i.focus();return;}
+b.disabled=true;var t=b.textContent;b.textContent='Enviando...';
+fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()})
+.then(function(r){if(!r.ok)throw 0;f.reset();o.textContent='Pronto! Você está na lista.';o.hidden=false;try{track('newsletter',{status:'ok'})}catch(x){}})
+.catch(function(){o.textContent='Não deu certo agora. Tente de novo em instantes.';o.hidden=false;})
+.finally(function(){b.disabled=false;b.textContent=t;});});});
+</script>
 <script>
 var GA4_ID = 'G-5MSB6QLXN0';
 function track(nome, extra) {
   var p = Object.assign({ botao: nome, pagina: location.pathname }, extra || {});
-  try { if (window.fbq) fbq('trackCustom', 'ClickBlog', p); } catch (e) {}
-  try { if (window.gtag) gtag('event', 'click_blog', p); } catch (e) {}
+  try { if (window.fbq) fbq('trackCustom', 'ClickSite', p); } catch (e) {}
+  try { if (window.gtag) gtag('event', 'click_site', p); } catch (e) {}
 }
 document.addEventListener('click', function (e) {
   var el = e.target.closest('a[data-track], a[rel~="sponsored"], a.cta, a.btn-checkout');

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="ix-hero"><div class="wrap">
+  {% include "_crumbs.html" %}
+  <p class="kicker red">Meu blog</p>
+  <h1 class="h1">Minha maneira de ver o mundo, escrevendo<span class="dot">.</span></h1>
+  <p class="lead">{{ page.summary }}</p>
+  <nav class="chips" aria-label="Temas">{% for h in site.blog_hubs %}<a href="{{ h.url }}">{{ h.name }} <small>{{ h.total }}</small></a>{% endfor %}</nav>
+</div></section>
+<section class="ix-body"><div class="wrap">
+  <p class="sec-h">Mais recentes</p>
+  <div class="pgrid">{% for c in page.latest %}{% include "_pcard.html" %}{% endfor %}</div>
+  <p class="sec-h">Todos os temas</p>
+  <div class="pgrid">{% for h in site.blog_hubs %}<a class="pcard" href="{{ h.url }}"><span class="meta">{{ h.total }} {{ 'texto' if h.total == 1 else 'textos' }}</span><h3>{{ h.name }}</h3><p>{{ h.card or h.description }}</p><span class="go-link">Abrir</span></a>{% endfor %}</div>
+  <div class="nlbox" style="margin-top:48px"><h3>Receba o que eu aprendo</h3><p>Cadastre seu melhor e-mail para ter acesso ao meu conhecimento.</p>{% with origem='blog' %}{% include "_signup.html" %}{% endwith %}</div>
+</div></section>
+{% endblock %}

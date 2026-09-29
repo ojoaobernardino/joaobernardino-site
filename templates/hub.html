@@ -1,46 +1,36 @@
 {% extends "base.html" %}
 {% block content %}
-<article class="post hub">
-  <nav class="crumbs" aria-label="Você está em">
-    {% for c in page.crumbs %}{% if not loop.last %}<a href="{{ c.url }}">{{ c.name }}</a><span aria-hidden="true"> › </span>{% else %}<span aria-current="page">{{ c.name }}</span>{% endif %}{% endfor %}
-  </nav>
-  <p class="kicker">Seção</p>
-  <h1>{{ page.title }}</h1>
-  <p class="byline"><img src="/img/avatar-192.webp" width="32" height="32" alt="" loading="lazy" decoding="async"><span>por <a href="/blog/sobre/">João Bêrnardino</a></span><span>·</span><span>atualizado em <time datetime="{{ page.updated }}">{{ page.updated_br }}</time></span></p>
-  {% if page.summary %}<div class="resumo"><p class="resumo-label">Em resumo</p><p>{{ page.summary }}</p></div>{% endif %}
-  <div class="prose">
-{{ page.html|safe }}
-  </div>
-  {% if page.checkout %}
-  <div class="cta-box checkout">
-    <p class="cta-label">{{ page.checkout.label }}</p>
-    <a class="btn-checkout" href="{{ page.checkout.url }}" rel="noopener" data-track="checkout:{{ page.slug }}">{{ page.checkout.button }}</a>
-    <p class="cta-note">{{ page.checkout.note }}</p>
-  </div>
+<section class="ix-hero"><div class="wrap">
+  {% include "_crumbs.html" %}
+  <p class="kicker red">{{ page.kicker or 'Tema' }}</p>
+  <h1 class="h1">{{ page.name }}<span class="dot">.</span></h1>
+  {% if page.summary %}<p class="lead">{{ page.summary }}</p>{% endif %}
+  <p class="byline"><img src="/img/avatar-192.webp" alt="" width="32" height="32" loading="lazy" decoding="async">por <a href="/sobre/">João Bêrnardino</a> · {{ page.total }} {{ 'texto' if page.total == 1 else 'textos' }}</p>
+  {% if page.section == 'blog' %}<nav class="chips" aria-label="Temas">{% for h in site.blog_hubs %}<a href="{{ h.url }}"{% if h.url == page.url %} aria-current="page"{% endif %}>{{ h.name }} <small>{{ h.total }}</small></a>{% endfor %}</nav>{% endif %}
+</div></section>
+<section class="ix-body"><div class="wrap">
+  {% if page.subhubs %}<p class="sec-h">Subtemas</p>
+  <div class="pgrid">{% for h in page.subhubs %}<a class="pcard" href="{{ h.url }}"><span class="meta">{{ h.total }} {{ 'texto' if h.total == 1 else 'textos' }}</span><h3>{{ h.name }}</h3><p>{{ h.card or h.description }}</p><span class="go-link">Abrir</span></a>{% endfor %}</div>{% endif %}
+
+  {% if page.start %}<p class="sec-h">Comece por aqui</p>
+  <div class="pgrid">{% with c=page.start, dest=true %}{% include "_pcard.html" %}{% endwith %}</div>{% endif %}
+
+  {% if page.mode == 'cards' %}
+    {% if page.posts %}<p class="sec-h">Textos</p>
+    <div class="pgrid">{% for c in page.posts %}{% include "_pcard.html" %}{% endfor %}</div>{% endif %}
+  {% else %}
+    <p class="sec-h">Destaques</p>
+    <div class="pgrid">{% for c in page.featured %}{% include "_pcard.html" %}{% endfor %}</div>
+    {% for g in page.groups %}<p class="sec-h">{{ g.name }}</p>
+    <ul class="plist">{% for c in g.posts %}<li><a href="{{ c.url }}"><b>{{ c.title }}</b><span>{{ c.reading }} min · {{ c.date_br }}</span></a></li>{% endfor %}</ul>{% endfor %}
   {% endif %}
-  <section class="children">
-    <h2>Os textos desta seção</h2>
-    {% if page.children %}
-    <ul class="post-list">
-      {% for p in page.children %}
-      <li>
-        <a class="post-card" href="{{ p.url }}">
-          <span class="card-title">{{ p.title }}</span>
-          <span class="card-desc">{{ p.description }}</span>
-          <span class="card-meta"><time datetime="{{ p.date }}">{{ p.date_br }}</time> · {{ p.reading }} min</span>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-    {% else %}
-    <p class="muted">Os primeiros textos desta seção estão sendo escritos. Volte em breve.</p>
-    {% endif %}
-  </section>
-  {% if page.cta %}
-  <div class="cta-box">
-    <p class="cta-label">Próximo passo</p>
-    <a class="cta" href="{{ page.cta.url }}" data-track="cta:{{ page.slug }}">{{ page.cta.label }}</a>
-  </div>
-  {% endif %}
-</article>
+
+  {% if page.html_body %}<div class="prose" style="max-width:680px;margin-top:48px">{{ page.html_body|safe }}</div>{% endif %}
+
+  {% if page.extra_links %}<p class="sec-h">{{ page.extra_title or 'Veja também' }}</p>
+  <div class="pgrid">{% for x in page.extra_links %}<a class="pcard" href="{{ x.url }}" rel="noopener"><span class="meta">{{ x.meta }}</span><h3>{{ x.title }}</h3>{% if x.text %}<p>{{ x.text }}</p>{% endif %}<span class="go-link">{{ x.go or 'Abrir' }}</span></a>{% endfor %}</div>{% endif %}
+
+  {% if page.cta %}<p class="sec-h">Próximo passo</p>
+  <div class="pgrid"><a class="pcard dest" href="{{ page.cta.url }}" data-track="cta:{{ page.slug }}"><span class="meta">{{ page.cta.meta or 'Produto' }}</span><h3>{{ page.cta.label }}</h3>{% if page.cta.text %}<p>{{ page.cta.text }}</p>{% endif %}<span class="go-link">{{ page.cta.button or 'Conhecer' }}</span></a></div>{% endif %}
+</div></section>
 {% endblock %}

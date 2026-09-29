@@ -1,46 +1,67 @@
 #!/usr/bin/env python3
-"""Gerador do blog joaobernardino.com.br/blog/.
-Lê content/**/*.md (Markdown + frontmatter YAML), escreve blog/**/index.html, blog/feed.xml, sitemap.xml
-e img/og/<slug>.jpg. Sem build no Netlify: a saída é commitada.
+"""Gerador do joaobernardino.com.br (v2, 29/09/2026).
+
+Lê content/**/*.md (Markdown + frontmatter YAML) e escreve o HTML de cada página na pasta de mesmo caminho.
+O caminho do arquivo é a URL:  content/blog/zero-noia/como-parar-de-fumar.md  ->  /blog/zero-noia/como-parar-de-fumar/
+                              content/blog/zero-noia/index.md               ->  /blog/zero-noia/   (índice do tema)
+
+Tipos (campo `type`):
+  post  texto do blog (fundo off-white)            page  texto fora do blog (off-white)
+  hub   índice de um tema; lista sozinho as filhas  blog  o índice geral /blog/
+  lp    página de apresentação/venda (fundo preto), molde em templates/lp_<template>.html
+
+Os índices se adaptam ao tamanho: até CARDS_MAX textos diretos, cards; acima disso, 3 destaques em card
+e o resto em lista compacta, agrupada por `subtopic` (ou por ano). Passou de SPLIT_WARN, o check.py avisa
+pra dividir o tema em subtemas (uma pasta dentro da pasta, com o próprio index.md).
+
+Home (/index.html) e /linktree/ são arquivos próprios, fora do gerador.
 Uso: python3 build.py            (gera tudo)
-     python3 build.py --drafts   (inclui draft: true, pra preview local)
+     python3 build.py --drafts   (inclui draft: true, pra prévia local)
 """
-import os, re, sys, json, html, datetime, pathlib, unicodedata
+import re, sys, json, html, datetime, pathlib, unicodedata
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markdown_it import MarkdownIt
 
 ROOT = pathlib.Path(__file__).resolve().parent
 CONTENT = ROOT / 'content'
-OUT = ROOT / 'blog'
+CARDS_MAX = 12      # até aqui o índice mostra cards
+SPLIT_WARN = 30     # acima disso o check.py pede subtemas
 SITE = {
     'url': 'https://joaobernardino.com.br',
     'year': datetime.date.today().year,
+    # cabeçalho e rodapé de todas as páginas geradas (home e linktree ficam de fora)
     'nav': [
-        {'label': 'Blog', 'url': '/blog/'},
-        {'label': 'Todos os meus links', 'url': '/'},
+        {'label': 'Cupons', 'url': '/linktree/', 'section': 'linktree'},
+        {'label': 'Produtos', 'url': '/produtos/', 'section': 'produtos'},
+        {'label': 'Serviços', 'url': '/sobre/#servicos', 'section': 'servicos'},
+        {'label': 'Blog', 'url': '/blog/', 'section': 'blog'},
+        {'label': 'Sobre', 'url': '/sobre/', 'section': 'sobre'},
     ],
+    'author_bio': 'Empreendedor, Atleta e Growth Marketing & Sales. Pós em Neurociências e Comportamento (PUCRS), Master Trainer em PNL (SBPNL), Engenheiro de Produção (Mackenzie).',  # assinatura padrão (João, 29/09)
 }
+# nome curto dos temas do blog (chips e breadcrumbs); o que não estiver aqui usa `name` do index.md
 CLUSTERS = {
     'vendas': 'Vendas', 'lideranca': 'Liderança', 'gestao': 'Gestão', 'neurociencia': 'Neurociência', 'treino': 'Treino',
-    'dieta': 'Dieta', 'zero-noia': 'Zero Nóia', 'livros': 'Livros', 'uso': 'O que eu uso', 'parceiros': 'Parceiros',
-    'wjr': 'WJR', 'a-obra': 'Comunidade A Obra',
+    'dieta': 'Dieta', 'zero-noia': 'Zero Nóia', 'livros': 'Livros', 'uso': 'O que eu uso', 'wjr': 'WJR',
 }
-MENU_ORDER = ['vendas', 'lideranca', 'gestao', 'neurociencia', 'treino', 'dieta', 'zero-noia', 'livros', 'uso', 'a-obra', 'wjr', 'parceiros']
+MENU_ORDER = ['vendas', 'lideranca', 'gestao', 'neurociencia', 'zero-noia', 'treino', 'dieta', 'livros', 'uso', 'wjr']
+# endereços antigos que não viraram página (os de páginas vivas ficam em `aliases:` no frontmatter)
+STATIC_REDIRECTS = [('/blog/parceiros/', '/linktree/'), ('/blog/parceiros', '/linktree/'), ('/menu/', '/sobre/'), ('/menu', '/sobre/')]
 PERSON_ID = SITE['url'] + '/#pessoa'
 MESES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
 INCLUDE_DRAFTS = '--drafts' in sys.argv
 
 env = Environment(loader=FileSystemLoader(str(ROOT / 'templates')), autoescape=select_autoescape(['html']))
-CSS = (ROOT / 'css' / 'blog.css').read_text(encoding='utf-8')
-CSS = re.sub(r'\s*\n\s*', '', CSS)  # minify leve
+def mini(css): return re.sub(r'\s*\n\s*', '', re.sub(r'/\*.*?\*/', '', css, flags=re.S))
+CSS = mini((ROOT / 'css' / 'site.css').read_text(encoding='utf-8'))
+CSS_LP = mini((ROOT / 'css' / 'lp.css').read_text(encoding='utf-8'))
 md = MarkdownIt('commonmark', {'html': True, 'typographer': False}).enable('table').enable('strikethrough')
 
 
 def slugify(s):
     s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode()
-    s = re.sub(r'[^a-zA-Z0-9]+', '-', s).strip('-').lower()
-    return s
+    return re.sub(r'[^a-zA-Z0-9]+', '-', s).strip('-').lower()
 
 
 def date_br(d):
@@ -55,9 +76,11 @@ def parse(path):
         raise SystemExit(f'sem frontmatter: {path}')
     fm = yaml.safe_load(m.group(1)) or {}
     body = m.group(2)
-    for k in ('title', 'description', 'type', 'date', 'updated', 'summary'):
+    for k in ('title', 'description', 'type', 'date', 'updated'):
         if k not in fm:
             raise SystemExit(f'{path}: falta `{k}` no frontmatter')
+    if fm['type'] in ('post', 'page') and not fm.get('summary'):
+        raise SystemExit(f'{path}: falta `summary` (o "Em resumo")')
     if len(fm['title']) > 70:
         raise SystemExit(f'{path}: title com {len(fm["title"])} caracteres (máx 70)')
     if len(fm['description']) > 160:
@@ -67,24 +90,29 @@ def parse(path):
             raise SystemExit(f'{path}: contém "{bad}" (proibido pela voz do João)')
     rel = path.relative_to(CONTENT)
     parts = list(rel.parts)
-    parts[-1] = parts[-1][:-3]  # tira .md
-    if parts[-1] == 'index':
+    parts[-1] = parts[-1][:-3]
+    is_index = parts[-1] == 'index'
+    if is_index:
         parts = parts[:-1]
-    url = '/blog/' + '/'.join(parts) + ('/' if parts else '')
-    slug = parts[-1] if parts else 'blog'
-    cluster = fm.get('cluster') or (parts[0] if len(parts) > 1 else None)
-    return {**fm, 'body': body, 'url': url, 'slug': slug, 'cluster': cluster, 'src': str(rel)}
+    url = '/' + '/'.join(parts) + '/' if parts else '/'
+    section = parts[0] if parts else ''
+    # pasta-mãe: pra um texto é a pasta onde ele está; pra um índice é a pasta de cima
+    folder = '/'.join(parts[:-1]) if not is_index else '/'.join(parts[:-1])
+    own_folder = '/'.join(parts) if is_index else None
+    slug = parts[-1] if parts else 'home'
+    t = fm['type']
+    theme = fm.get('theme') or ('paper' if (section == 'blog' or t in ('post', 'page')) else 'dark')
+    return {**fm, 'body': body, 'url': url, 'slug': slug, 'section': section, 'folder': folder,
+            'own_folder': own_folder, 'theme': theme, 'src': str(rel)}
 
 
 PENDING = []
 
 
 def render_md(body, page):
-    # marcações <!-- CONFIRMAR: ... --> ficam no Markdown, saem do HTML e vão pro relatório
     for m in re.findall(r'<!--\s*CONFIRMAR:?\s*(.*?)-->', body, re.S):
         PENDING.append((page['url'], ' '.join(m.split())))
     body = re.sub(r'\s*<!--\s*CONFIRMAR.*?-->', '', body, flags=re.S)
-    # callouts: linha começando com "!!! "
     lines = []
     for line in body.split('\n'):
         if line.startswith('!!! '):
@@ -97,12 +125,10 @@ def render_md(body, page):
         else:
             lines.append(line)
     body = '\n'.join(lines)
-    # {sponsored} depois do link
     body = re.sub(r'\]\(([^)]+)\)\{sponsored\}', r'](\1){{SPONSORED}}', body)
     out = md.render(body)
     out = re.sub(r'<a href="([^"]+)">([^<]*)</a>\{\{SPONSORED\}\}', r'<a href="\1" rel="sponsored noopener">\2</a>', out)
     out = out.replace('{{SPONSORED}}', '')
-    # ids nos H2/H3 + toc
     toc = []
     def add_id(m):
         level, text = m.group(1), m.group(2)
@@ -112,99 +138,100 @@ def render_md(body, page):
             toc.append({'id': i, 'text': plain})
         return f'<h{level} id="{i}">{text}</h{level}>'
     out = re.sub(r'<h([23])>(.*?)</h\1>', add_id, out)
-    # imagens relativas -> /img/blog/
+    out = out.replace('<table>', '<div class="tbl"><table>').replace('</table>', '</table></div>')
     out = out.replace('src="img/', 'src="/img/blog/')
-    # links externos ganham rel=noopener (sem target)
     out = re.sub(r'<a href="(https?://[^"]+)">', r'<a href="\1" rel="noopener">', out)
     out = out.replace('rel="noopener" rel="sponsored noopener"', 'rel="sponsored noopener"')
     return out, toc
 
 
-def jsonld(page, pages):
+def person_full():
+    return {
+        '@type': 'Person', '@id': PERSON_ID, 'name': 'João Bernardino',
+        'alternateName': ['João Bêrnardino', 'João Pedro Vendramini Bernardino de Souza', 'ojoaobernardino', 'JB'],
+        'url': SITE['url'] + '/sobre/', 'image': SITE['url'] + '/img/joao.webp',
+        'jobTitle': 'Growth Marketing & Sales',
+        'description': 'Growth marketing e vendas. Engenheiro de Produção (Mackenzie), pós em Neurociências e Comportamento (PUCRS), Master Trainer em PNL (SBPNL). Criador do Zero Nóia e da Comunidade A Obra.',
+        'alumniOf': [{'@type': 'CollegeOrUniversity', 'name': 'Universidade Presbiteriana Mackenzie'}, {'@type': 'CollegeOrUniversity', 'name': 'PUCRS'}],
+        'knowsAbout': ['Growth marketing', 'Vendas B2B', 'Liderança comercial', 'Agentes de IA', 'PNL', 'Neurociência do hábito'],
+        'worksFor': {'@type': 'Organization', 'name': 'JB Treinamento e Desenvolvimento'},
+        'sameAs': ['https://www.instagram.com/ojoaobernardino', 'https://www.youtube.com/@ojoaobernardino', 'https://www.tiktok.com/@ojoaobernardino',
+                   'https://www.linkedin.com/in/ojoaobernardino', 'https://strava.app.link/dRHfi2AGt1b', 'https://www.threads.com/@ojoaobernardino',
+                   'https://joaobernardino.substack.com'],
+    }
+
+
+def jsonld(page):
     crumbs = [{'@type': 'ListItem', 'position': i + 1, 'name': c['name'], 'item': SITE['url'] + c['url']} for i, c in enumerate(page['crumbs'])]
     graph = [{'@type': 'BreadcrumbList', 'itemListElement': crumbs}]
-    if page['type'] == 'post':
-        graph.append({
-            '@type': 'BlogPosting', '@id': SITE['url'] + page['url'] + '#artigo',
-            'headline': page['title'], 'description': page['description'],
-            'datePublished': str(page['date']), 'dateModified': str(page['updated']),
-            'inLanguage': 'pt-BR', 'mainEntityOfPage': SITE['url'] + page['url'],
-            'image': SITE['url'] + page['og_image'],
-            'author': {'@id': PERSON_ID}, 'publisher': {'@id': PERSON_ID},
-            'articleSection': page.get('cluster_name'), 'keywords': ', '.join(page.get('tags') or []),
-            'wordCount': page['words'],
-        })
-    elif page['type'] == 'hub':
-        graph.append({
-            '@type': 'CollectionPage', '@id': SITE['url'] + page['url'] + '#secao',
-            'name': page['title'], 'description': page['description'], 'inLanguage': 'pt-BR',
-            'url': SITE['url'] + page['url'], 'author': {'@id': PERSON_ID},
-            'hasPart': [{'@type': 'BlogPosting', 'headline': c['title'], 'url': SITE['url'] + c['url']} for c in page.get('children', [])],
-        })
-    elif page['slug'] == 'sobre':
-        graph.append({
-            '@type': 'ProfilePage', '@id': SITE['url'] + page['url'] + '#perfil',
-            'name': page['title'], 'description': page['description'], 'inLanguage': 'pt-BR',
-            'dateModified': str(page['updated']), 'mainEntity': {'@id': PERSON_ID},
-        })
-        graph.append({
-            '@type': 'Person', '@id': PERSON_ID, 'name': 'João Bernardino',
-            'alternateName': ['João Bêrnardino', 'João Pedro Vendramini Bernardino de Souza', 'ojoaobernardino', 'JB'],
-            'url': SITE['url'] + '/', 'image': SITE['url'] + '/apple-touch-icon.png',
-            'jobTitle': 'Vendedor & Neurotreinador',
-            'description': 'Vendedor enterprise (Heineken, Stone/Pagar.me, Closecare, Pessoalize, Koin), Engenheiro de Produção (Mackenzie), pós em Neurociências e Comportamento (PUCRS), Master Trainer em PNL (SBPNL). Criador do Zero Nóia e da Comunidade A Obra.',
-            'alumniOf': [{'@type': 'CollegeOrUniversity', 'name': 'Universidade Presbiteriana Mackenzie'}, {'@type': 'CollegeOrUniversity', 'name': 'PUCRS'}],
-            'knowsAbout': ['Vendas B2B', 'Inside sales', 'Liderança comercial', 'PNL', 'Neurociência do hábito', 'Treinamento híbrido'],
-            'worksFor': {'@type': 'Organization', 'name': 'JB Treinamento e Desenvolvimento'},
-            'sameAs': ['https://www.instagram.com/ojoaobernardino', 'https://www.youtube.com/@ojoaobernardino', 'https://www.tiktok.com/@ojoaobernardino',
-                       'https://www.linkedin.com/in/ojoaobernardino', 'https://strava.app.link/dRHfi2AGt1b', 'https://www.threads.com/@ojoaobernardino'],
-        })
+    t = page['type']
+    if t == 'post':
+        graph.append({'@type': 'BlogPosting', '@id': SITE['url'] + page['url'] + '#artigo', 'headline': page['title'], 'description': page['description'],
+                      'datePublished': str(page['date']), 'dateModified': str(page['updated']), 'inLanguage': 'pt-BR',
+                      'mainEntityOfPage': SITE['url'] + page['url'], 'image': SITE['url'] + page['og_image'],
+                      'author': {'@id': PERSON_ID}, 'publisher': {'@id': PERSON_ID},
+                      'articleSection': page.get('cluster_name'), 'keywords': ', '.join(page.get('tags') or []), 'wordCount': page['words']})
+    elif t in ('hub', 'blog'):
+        graph.append({'@type': 'CollectionPage', '@id': SITE['url'] + page['url'] + '#secao', 'name': page['title'], 'description': page['description'],
+                      'inLanguage': 'pt-BR', 'url': SITE['url'] + page['url'], 'author': {'@id': PERSON_ID},
+                      'hasPart': [{'@type': 'BlogPosting', 'headline': c['title'], 'url': SITE['url'] + c['url']} for c in page.get('all_posts', [])[:100]]})
+    elif page['url'] == '/sobre/':
+        graph.append({'@type': 'ProfilePage', '@id': SITE['url'] + '/sobre/#perfil', 'name': page['title'], 'description': page['description'],
+                      'inLanguage': 'pt-BR', 'dateModified': str(page['updated']), 'mainEntity': {'@id': PERSON_ID}})
     else:
-        graph.append({'@type': 'WebPage', '@id': SITE['url'] + page['url'], 'name': page['title'], 'description': page['description'], 'inLanguage': 'pt-BR', 'author': {'@id': PERSON_ID}})
-    if page['slug'] != 'sobre':
-        graph.append({'@type': 'Person', '@id': PERSON_ID, 'name': 'João Bernardino', 'alternateName': ['João Bêrnardino'], 'url': SITE['url'] + '/blog/sobre/'})
+        graph.append({'@type': 'WebPage', '@id': SITE['url'] + page['url'], 'name': page['title'], 'description': page['description'],
+                      'inLanguage': 'pt-BR', 'author': {'@id': PERSON_ID}})
+    graph.append(person_full() if page['url'] == '/sobre/' else
+                 {'@type': 'Person', '@id': PERSON_ID, 'name': 'João Bernardino', 'alternateName': ['João Bêrnardino'], 'url': SITE['url'] + '/sobre/'})
     return json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=False)
 
 
-def og_image(page):
-    """Gera img/og/<slug>.jpg 1200x630, preto, título em Barlow Condensed (via fontTools woff2->ttf em cache)."""
-    from PIL import Image, ImageDraw, ImageFont
-    ogdir = ROOT / 'img' / 'og'; ogdir.mkdir(parents=True, exist_ok=True)
-    out = ogdir / f"{page['slug']}.jpg"
-    ttf = ROOT / '.cache' / 'barlow-condensed-900.ttf'
+def _inter(weight):
+    """Inter (variável) em TTF no peso pedido, pro Pillow desenhar a imagem de compartilhamento."""
+    from PIL import ImageFont
+    ttf = ROOT / '.cache' / 'inter-var.ttf'
     if not ttf.exists():
         ttf.parent.mkdir(exist_ok=True)
         from fontTools.ttLib import TTFont
-        f = TTFont(str(ROOT / 'fonts' / 'barlow-condensed-900.woff2')); f.flavor = None; f.save(str(ttf))
-    ttf2 = ROOT / '.cache' / 'barlow-600.ttf'
-    if not ttf2.exists():
-        from fontTools.ttLib import TTFont
-        f = TTFont(str(ROOT / 'fonts' / 'barlow-600.woff2')); f.flavor = None; f.save(str(ttf2))
-    im = Image.new('RGB', (1200, 630), '#111111'); d = ImageDraw.Draw(im)
-    d.rectangle([0, 0, 14, 630], fill='#C8102E')
-    kicker = (page.get('cluster_name') or 'João Bêrnardino').upper()
-    d.text((80, 80), kicker, font=ImageFont.truetype(str(ttf2), 26), fill='#F0405C')
-    font = ImageFont.truetype(str(ttf), 78)
+        f = TTFont(str(ROOT / 'fonts' / 'inter-var-latin.woff2')); f.flavor = None; f.save(str(ttf))
+    def make(size):
+        font = ImageFont.truetype(str(ttf), size)
+        try: font.set_variation_by_axes([32, weight])
+        except Exception: pass
+        return font
+    return make
+
+
+def og_image(page):
+    """img/og/<caminho>.jpg 1200x630 no padrão novo: preto, Inter, ponto vermelho."""
+    from PIL import Image, ImageDraw
+    name = page['url'].strip('/').replace('/', '--') or 'home'
+    ogdir = ROOT / 'img' / 'og'; ogdir.mkdir(parents=True, exist_ok=True)
+    out = ogdir / f'{name}.jpg'
+    bold, reg = _inter(700), _inter(500)
+    im = Image.new('RGB', (1200, 630), '#000000'); d = ImageDraw.Draw(im)
+    kicker = (page.get('cluster_name') or page.get('kicker') or 'João Bêrnardino').upper()
+    d.text((80, 84), kicker, font=reg(26), fill='#BF1E2D')
+    font = bold(72)
     words = page['title'].split(); lines = []; cur = ''
     for w in words:
         t = (cur + ' ' + w).strip()
         if d.textlength(t, font=font) > 1040: lines.append(cur); cur = w
         else: cur = t
     lines.append(cur)
-    lines = lines[:4]
     y = 140
-    for i, line in enumerate(lines):
-        d.text((80, y), line, font=font, fill='#ffffff'); y += 88
+    for line in lines[:4]:
+        d.text((80, y), line, font=font, fill='#ffffff'); y += 84
     try:
-        av = Image.open(ROOT / 'img' / 'avatar-216.webp').convert('RGB').resize((96, 96))
-        mask = Image.new('L', (96, 96), 0); ImageDraw.Draw(mask).ellipse([0, 0, 95, 95], fill=255)
-        im.paste(av, (80, 500), mask)
-        d.text((196, 512), 'João Bêrnardino', font=ImageFont.truetype(str(ttf), 40), fill='#ffffff')
-        d.text((196, 556), 'joaobernardino.com.br', font=ImageFont.truetype(str(ttf2), 24), fill='#9a9a9a')
+        av = Image.open(ROOT / 'img' / 'avatar-216.webp').convert('RGB').resize((88, 88))
+        mask = Image.new('L', (88, 88), 0); ImageDraw.Draw(mask).ellipse([0, 0, 87, 87], fill=255)
+        im.paste(av, (80, 494), mask)
+        d.text((188, 504), 'João Bêrnardino', font=bold(34), fill='#ffffff')
+        d.text((188, 546), 'joaobernardino.com.br', font=reg(22), fill='#8a8a8a')
     except Exception:
         pass
     im.save(out, quality=82, optimize=True, progressive=True)
-    return '/img/og/' + page['slug'] + '.jpg'
+    return '/img/og/' + name + '.jpg'
 
 
 def main():
@@ -213,38 +240,93 @@ def main():
         p = parse(path)
         if p.get('draft') and not INCLUDE_DRAFTS:
             continue
-        p['cluster_name'] = CLUSTERS.get(p['cluster'], p['cluster'].title() if p['cluster'] else None)
-        p['cluster_url'] = f"/blog/{p['cluster']}/" if p['cluster'] else None
+        pages.append(p)
+    by_url = {p['url']: p for p in pages}
+    hubs_by_folder = {p['own_folder']: p for p in pages if p['type'] == 'hub'}
+
+    def hub_name(h):
+        return h.get('name') or CLUSTERS.get(h['slug']) or h['title']
+
+    for p in pages:
         p['words'] = len(re.findall(r'\w+', p['body']))
         p['reading'] = max(1, round(p['words'] / 200))
         p['date_br'] = date_br(p['date']); p['updated_br'] = date_br(p['updated'])
         p['title_tag'] = p['title'] if 'Bêrnardino' in p['title'] else f"{p['title']} · João Bêrnardino"
-        pages.append(p)
-    by_url = {p['url']: p for p in pages}
-    # crumbs
+        parent = hubs_by_folder.get(p['folder']) if p['type'] != 'hub' else hubs_by_folder.get(p['folder'])
+        p['parent'] = parent
+        if p['type'] == 'post' and parent:
+            p['cluster_name'], p['cluster_url'] = hub_name(parent), parent['url']
+        else:
+            p['cluster_name'], p['cluster_url'] = None, None
+    for h in hubs_by_folder.values():
+        h['name'] = hub_name(h)
+
+    # breadcrumbs: Início > Seção > (temas...) > página
+    section_root = {'blog': ('Blog', '/blog/'), 'produtos': ('Produtos', '/produtos/'), 'sobre': ('Sobre', '/sobre/')}
     for p in pages:
-        crumbs = [{'name': 'Início', 'url': '/'}, {'name': 'Blog', 'url': '/blog/'}]
-        if p['cluster'] and p['type'] == 'post' and p['cluster_url'] in by_url:
-            crumbs.append({'name': p['cluster_name'], 'url': p['cluster_url']})
-        crumbs.append({'name': p['title'], 'url': p['url']})
+        chain = []
+        cur = p['parent']
+        while cur is not None:
+            chain.insert(0, {'name': cur['name'], 'url': cur['url']})
+            cur = cur['parent']
+        crumbs = [{'name': 'Início', 'url': '/'}]
+        sec = section_root.get(p['section'])
+        if sec and p['url'] != sec[1] and not (chain and chain[0]['url'] == sec[1]):
+            crumbs.append({'name': sec[0], 'url': sec[1]})
+        crumbs += chain
+        crumbs.append({'name': p['title'], 'url': p['url'], 'short': p.get('name') if p['type'] == 'hub' else None})
         p['crumbs'] = crumbs
-    # children / related
+
     posts = [p for p in pages if p['type'] == 'post']
+    items = [p for p in pages if p['type'] in ('post', 'page', 'lp')]  # o que um índice pode listar
+    newest = lambda lst: sorted(lst, key=lambda c: (str(c['date']), c['title']), reverse=True)
+
+    # índices: filhas diretas + subtemas + modo (cards ou lista)
+    def under(h):
+        return [c for c in items if c['url'].startswith(h['url']) and c['url'] != h['url']]
+    for h in hubs_by_folder.values():
+        direct = newest([c for c in items if c['parent'] is h])
+        start = by_url.get(h['start']) if h.get('start') else None
+        if start in direct:
+            direct.remove(start)
+        h['start'] = start
+        h['subhubs'] = [s for s in hubs_by_folder.values() if s['parent'] is h]
+        h['all_posts'] = newest(under(h))
+        h['total'] = len(h['all_posts'])
+        h['direct_count'] = len(direct) + (1 if start else 0)
+        if len(direct) <= CARDS_MAX:
+            h['mode'], h['posts'] = 'cards', direct
+        else:
+            feat_urls = [f if f.startswith('/') else h['url'] + f + '/' for f in (h.get('featured') or [])]
+            featured = [by_url[u] for u in feat_urls if u in by_url][:3] or direct[:3]
+            rest = [c for c in direct if c not in featured]
+            groups = {}
+            for c in rest:
+                key = c.get('subtopic') or str(datetime.date.fromisoformat(str(c['date'])).year)
+                groups.setdefault(key, []).append(c)
+            order = h.get('subtopics') or sorted(groups, reverse=True)
+            h['mode'], h['featured'] = 'list', featured
+            h['groups'] = [{'name': k, 'posts': groups[k]} for k in order if k in groups]
+    # relacionados: mesmo tema primeiro (por tags em comum), depois 1 de outro tema
+    for p in posts:
+        same = [c for c in posts if c['parent'] is p['parent'] and c is not p]
+        same.sort(key=lambda c: len(set(c.get('tags') or []) & set(p.get('tags') or [])), reverse=True)
+        other = newest([c for c in posts if c['parent'] is not p['parent']])
+        p['related'] = (same[:2] + other[:1])[:3]
+
+    blog_hubs = [h for h in hubs_by_folder.values() if h['section'] == 'blog' and h['folder'] == 'blog']
+    blog_hubs.sort(key=lambda h: MENU_ORDER.index(h['slug']) if h['slug'] in MENU_ORDER else 99)
+    SITE['blog_hubs'] = [h for h in blog_hubs if h['total'] > 0] + [h for h in blog_hubs if h['total'] == 0]
     for p in pages:
-        if p['type'] == 'hub':
-            p['children'] = sorted([c for c in posts if c['cluster'] == p['cluster']], key=lambda c: str(c['date']), reverse=True)
-        if p['type'] == 'post':
-            same = [c for c in posts if c['cluster'] == p['cluster'] and c['url'] != p['url']]
-            same.sort(key=lambda c: len(set(c.get('tags') or []) & set(p.get('tags') or [])), reverse=True)
-            other = [c for c in posts if c['cluster'] != p['cluster']]
-            p['related'] = (same[:2] + other[:1])[:3]
-    # menu (hubs em ordem fixa + Sobre), usado no índice e no rodapé de todas as páginas
-    hubs = sorted([p for p in pages if p['type'] == 'hub'], key=lambda h: MENU_ORDER.index(h['cluster']) if h['cluster'] in MENU_ORDER else 99)
-    menu = [{'label': CLUSTERS.get(h['cluster'], h['title']), 'url': h['url']} for h in hubs] + [{'label': 'Sobre', 'url': '/blog/sobre/'}]
-    SITE['menu'] = menu
-    # render
+        if p['type'] == 'blog':
+            p['latest'] = newest(posts)[:6]
+            p['all_posts'] = newest(posts)
+
+    written = []
     for p in pages:
         p['html'], p['toc'] = render_md(p['body'], p)
+        if p['type'] == 'hub':
+            p['html_body'] = p['html']
         cover = p.get('cover') or ''
         if cover:
             from PIL import Image
@@ -253,38 +335,43 @@ def main():
         else:
             p['cover'] = ''
         p['og_image'] = og_image(p)
-        p['jsonld'] = jsonld(p, pages)
-        tpl = {'post': 'post.html', 'hub': 'hub.html', 'page': 'page.html'}[p['type']]
-        out = OUT / p['url'][len('/blog/'):] / 'index.html'
+        p['jsonld'] = jsonld(p)
+        tpl = {'post': 'post.html', 'hub': 'hub.html', 'page': 'page.html', 'blog': 'blog.html'}.get(p['type']) or f"lp_{p['template']}.html"
+        css = CSS + (CSS_LP if p['type'] == 'lp' else '')
+        out = ROOT / p['url'].strip('/') / 'index.html'
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(env.get_template(tpl).render(page=p, site=SITE, css=CSS), encoding='utf-8')
-    # índice /blog/
-    latest = sorted(posts, key=lambda c: str(c['date']), reverse=True)
-    idx = {'title': 'Meu blog', 'title_tag': 'Blog · João Bêrnardino', 'description': 'Vendas, neurociência, liderança, treino e o Zero Nóia. Os textos de João Bernardino, com número e em primeira pessoa.',
-           'url': '/blog/', 'type': 'page', 'slug': 'blog', 'draft': False, 'og_image': '/og-image.jpg', 'hubs': hubs, 'menu': menu, 'posts': latest,
-           'crumbs': [{'name': 'Início', 'url': '/'}, {'name': 'Blog', 'url': '/blog/'}], 'date': datetime.date.today(), 'updated': datetime.date.today()}
-    idx['jsonld'] = json.dumps({'@context': 'https://schema.org', '@graph': [
-        {'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Início', 'item': SITE['url'] + '/'}, {'@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': SITE['url'] + '/blog/'}]},
-        {'@type': 'Blog', '@id': SITE['url'] + '/blog/#blog', 'name': 'Textos de João Bêrnardino',
-         'url': SITE['url'] + '/blog/', 'inLanguage': 'pt-BR', 'author': {'@id': PERSON_ID},
-         'blogPost': [{'@type': 'BlogPosting', 'headline': c['title'], 'url': SITE['url'] + c['url'], 'datePublished': str(c['date'])} for c in latest[:50]]},
-        {'@type': 'Person', '@id': PERSON_ID, 'name': 'João Bernardino', 'alternateName': ['João Bêrnardino'], 'url': SITE['url'] + '/blog/sobre/'}]}, ensure_ascii=False)
-    (OUT / 'index.html').write_text(env.get_template('index.html').render(page=idx, site=SITE, css=CSS), encoding='utf-8')
-    # feed
+        out.write_text(env.get_template(tpl).render(page=p, site=SITE, css=css), encoding='utf-8')
+        written.append(p['url'])
+
+    # feed do blog
+    latest = newest(posts)
     items = ''.join(f"<item><title>{html.escape(c['title'])}</title><link>{SITE['url']}{c['url']}</link><guid>{SITE['url']}{c['url']}</guid><pubDate>{datetime.datetime.fromisoformat(str(c['date'])).strftime('%a, %d %b %Y 08:00:00 -0300')}</pubDate><description>{html.escape(c['description'])}</description></item>" for c in latest[:30])
-    (OUT / 'feed.xml').write_text(f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>João Bêrnardino</title><link>{SITE["url"]}/blog/</link><description>Vendas, cérebro e hábito, em primeira pessoa.</description><language>pt-BR</language>{items}</channel></rss>', encoding='utf-8')
-    # sitemap (home + blog)
-    urls = [('/', datetime.date(2026, 9, 10), '1.0'), ('/blog/', max(str(p['updated']) for p in pages) if pages else '2026-09-11', '0.9')]
-    urls += [(p['url'], str(p['updated']), '0.8' if p['type'] == 'post' else '0.9') for p in pages]
+    (ROOT / 'blog' / 'feed.xml').write_text(f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>João Bêrnardino</title><link>{SITE["url"]}/blog/</link><description>O que eu aprendo, em texto.</description><language>pt-BR</language>{items}</channel></rss>', encoding='utf-8')
+
+    # sitemap: home + linktree + tudo que o gerador escreveu (a seção privada /blog/altive/ nunca entra)
+    today = str(datetime.date.today())
+    urls = [('/', today), ('/linktree/', today)] + [(p['url'], str(p['updated'])) for p in pages if not p.get('noindex')]
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(
-        f'  <url><loc>{SITE["url"]}{u}</loc><lastmod>{d}</lastmod><priority>{pr}</priority></url>\n' for u, d, pr in urls) + '</urlset>\n'
+        f'  <url><loc>{SITE["url"]}{u}</loc><lastmod>{d}</lastmod></url>\n' for u, d in urls if '/altive/' not in u) + '</urlset>\n'
     (ROOT / 'sitemap.xml').write_text(sm, encoding='utf-8')
-    print(f'ok: {len(pages)} páginas + índice + feed + sitemap ({len(urls)} URLs)')
+
+    # redirecionamentos (Netlify lê _redirects na raiz)
+    redir = list(STATIC_REDIRECTS)
     for p in pages:
-        print(f"  {p['type']:4s} {p['url']:55s} {p['words']:5d} palavras  {len((OUT / p['url'][6:] / 'index.html').read_bytes())//1024} KB")
+        for a in p.get('aliases') or []:
+            redir.append((a, p['url']))
+            if a.endswith('/'):
+                redir.append((a.rstrip('/'), p['url']))
+    (ROOT / '_redirects').write_text('# gerado pelo build.py: endereços antigos -> páginas novas\n' + ''.join(f'{a}  {b}  301\n' for a, b in redir), encoding='utf-8')
+
+    print(f'ok: {len(pages)} páginas + feed + sitemap ({len(urls)} URLs) + {len(redir)} redirecionamentos')
+    for p in pages:
+        extra = f" [{p['mode']}, {p['total']} textos]" if p['type'] == 'hub' else ''
+        print(f"  {p['type']:4s} {p['theme']:5s} {p['url']:50s} {p['words']:5d} palavras{extra}")
     if PENDING:
+        (ROOT / '.cache').mkdir(exist_ok=True)
         (ROOT / '.cache' / 'CONFIRMAR.md').write_text('# Fatos a confirmar com o João (saem do HTML, ficam no Markdown)\n\n' + '\n'.join(f'- `{u}`: {t}' for u, t in PENDING), encoding='utf-8')
-        print(f'  {len(PENDING)} marcações CONFIRMAR removidas do HTML e listadas em .cache/CONFIRMAR.md')
+        print(f'  {len(PENDING)} marcações CONFIRMAR listadas em .cache/CONFIRMAR.md')
 
 
 if __name__ == '__main__':
