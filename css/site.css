@@ -322,3 +322,4 @@ h2.sec-h{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppe
 .prose .buy2 a.btn{text-decoration:none}
 .bk .cv.cv-w img{filter:none}.bk .cv.cv-t b{overflow-wrap:anywhere;hyphens:auto}@media (max-width:600px){.bk .cv.cv-t b{font-size:17px}}
 .bk .cv.cv-logo{align-items:center;justify-content:center}.bk .cv.cv-logo img{width:78%;height:auto;filter:none}
+.prose a.btn,.prose .btn{text-decoration:none}
