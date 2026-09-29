@@ -45,7 +45,7 @@ CLUSTERS = {
     'vendas': 'Vendas', 'lideranca': 'Liderança', 'gestao': 'Gestão', 'neurociencia': 'Neurociência', 'treino': 'Treino',
     'dieta': 'Dieta', 'zero-noia': 'Zero Nóia', 'livros': 'Livros', 'uso': 'O que eu uso', 'wjr': 'WJR',
 }
-MENU_ORDER = ['zero-noia', 'livros', 'vendas', 'lideranca', 'neurociencia', 'gestao', 'treino', 'dieta', 'uso']
+MENU_ORDER = ['zero-noia', 'livros', 'indicacoes', 'vendas', 'lideranca', 'neurociencia', 'gestao', 'treino', 'dieta', 'uso']
 # endereços antigos que não viraram página (os de páginas vivas ficam em `aliases:` no frontmatter)
 STATIC_REDIRECTS = [('/blog/parceiros/', '/linktree/'), ('/blog/parceiros', '/linktree/'), ('/menu/', '/sobre/'), ('/menu', '/sobre/')]
 SHORT_TITLES = {'Alcançando Excelência em Vendas: SPIN Selling': 'SPIN Selling', 'Legado: 15 Lições sobre Liderança': 'Legado'}
@@ -346,7 +346,7 @@ def main():
         h['name'] = hub_name(h)
 
     # breadcrumbs: Início > Seção > (temas...) > página
-    section_root = {'blog': ('Blog', '/blog/'), 'produtos': ('Produtos', '/produtos/'), 'sobre': ('Sobre', '/sobre/'), 'indicacoes': ('Indicações', '/indicacoes/')}
+    section_root = {'blog': ('Blog', '/blog/'), 'produtos': ('Produtos', '/produtos/'), 'sobre': ('Sobre', '/sobre/')}
     for p in pages:
         chain = []
         cur = p['parent']

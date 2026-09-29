@@ -5,7 +5,7 @@
   <p class="kicker red">{{ page.kicker or 'Tema' }}</p>
   <h1 class="h1">{{ page.name }}<span class="dot">.</span></h1>
   {% if page.summary %}<p class="lead">{{ page.summary }}</p>{% endif %}
-  {% if page.section == 'blog' %}<p class="byline"><img src="/img/avatar-192.webp" alt="" width="32" height="32" loading="lazy" decoding="async">por <a href="/sobre/">João Bêrnardino</a>{% if page.total %} · {{ page.total }} {{ 'texto' if page.total == 1 else 'textos' }}{% endif %}</p>{% endif %}
+  {% if page.section == 'blog' %}<p class="byline"><img src="/img/avatar-192.webp" alt="" width="32" height="32" loading="lazy" decoding="async">por <a href="/sobre/">João Bêrnardino</a>{% if page.total %} · {{ page.total }} {{ (page.unit_one or 'texto') if page.total == 1 else (page.unit or 'textos') }}{% endif %}</p>{% endif %}
   {% if page.section == 'blog' %}{% include "_tabs.html" %}{% endif %}
 </div></section>
 <section class="ix-body"><div class="wrap">

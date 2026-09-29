@@ -15,7 +15,7 @@
     {% if h.art %}<div class="art" role="img" aria-label="{{ h.name }}" style="background-image:url('{{ h.art }}');background-position:{{ h.art_pos or 'center' }}"></div>
     {% elif h.art_covers %}<div class="art books">{% for cv in h.art_covers %}<img src="{{ cv.src }}" alt="" width="{{ cv.w }}" height="{{ cv.h }}" loading="lazy" decoding="async">{% endfor %}</div>
     {% else %}<div class="art txt"><span>{{ h.name }}<b class="dot">.</b></span></div>{% endif %}
-    <div class="tb"><span class="meta">{{ h.total }} {{ h.unit or ('texto' if h.total == 1 else 'textos') }}</span><h3>{{ h.name }}</h3><p>{{ h.card or h.description }}</p></div></a>{% endfor %}</div>
+    <div class="tb"><span class="meta">{{ h.total }} {{ (h.unit_one or 'texto') if h.total == 1 else (h.unit or 'textos') }}</span><h3>{{ h.name }}</h3><p>{{ h.card or h.description }}</p></div></a>{% endfor %}</div>
   <div class="nlbox" style="margin-top:48px"><h3>Receba o que eu aprendo</h3><p>Cadastre seu melhor e-mail para ter acesso ao meu conhecimento.</p>{% with origem='blog' %}{% include "_signup.html" %}{% endwith %}</div>
 </div></section>
 {% endblock %}
