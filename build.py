@@ -38,7 +38,7 @@ SITE = {
         {'label': 'Blog', 'url': '/blog/', 'section': 'blog'},
         {'label': 'Sobre', 'url': '/sobre/', 'section': 'sobre'},
     ],
-    'author_bio': 'Empreendedor, Atleta e Growth Marketing & Sales. Pós em Neurociências e Comportamento (PUCRS), Master Trainer em PNL (SBPNL), Engenheiro de Produção (Mackenzie).',  # assinatura padrão (João, 29/09)
+    'author_bio': 'Empreendedor, criador de conteúdo, atleta e Growth Marketing & Sales. Pós em Neurociências e Comportamento (PUCRS), Master Trainer em PNL (SBPNL), Engenheiro de Produção (Mackenzie).',  # assinatura padrão (João, 29/09)
 }
 # nome curto dos temas do blog (chips e breadcrumbs); o que não estiver aqui usa `name` do index.md
 CLUSTERS = {
@@ -167,17 +167,31 @@ def render_md(body, page):
 
 
 def person_full():
+    """A entidade Pessoa completa (vive em /sobre/jb/ e /sobre/). Nomes, formação e redes pra o Google juntar tudo."""
     return {
-        '@type': 'Person', '@id': PERSON_ID, 'name': 'João Bernardino',
-        'alternateName': ['João Bêrnardino', 'João Pedro Vendramini Bernardino de Souza', 'ojoaobernardino', 'JB'],
-        'url': SITE['url'] + '/sobre/', 'image': SITE['url'] + '/img/joao.webp',
+        '@type': 'Person', '@id': PERSON_ID, 'name': 'João Bêrnardino',
+        'alternateName': ['João Bernardino', 'João Pedro Vendramini Bernardino de Souza', 'João Pedro Bernardino', 'ojoaobernardino', 'JB'],
+        'givenName': 'João Pedro', 'familyName': 'Vendramini Bernardino de Souza',
+        'birthDate': '1998-02-20',
+        'birthPlace': {'@type': 'Place', 'name': 'São José do Rio Preto, São Paulo, Brasil'},
+        'nationality': {'@type': 'Country', 'name': 'Brasil'},
+        'url': SITE['url'] + '/sobre/jb/', 'image': SITE['url'] + '/img/joao.webp',
         'jobTitle': 'Growth Marketing & Sales',
-        'description': 'Growth marketing e vendas. Engenheiro de Produção (Mackenzie), pós em Neurociências e Comportamento (PUCRS), Master Trainer em PNL (SBPNL). Criador do Zero Nóia e da Comunidade A Obra.',
-        'alumniOf': [{'@type': 'CollegeOrUniversity', 'name': 'Universidade Presbiteriana Mackenzie'}, {'@type': 'CollegeOrUniversity', 'name': 'PUCRS'}],
-        'knowsAbout': ['Growth marketing', 'Vendas B2B', 'Liderança comercial', 'Agentes de IA', 'PNL', 'Neurociência do hábito'],
+        'description': 'Empreendedor, criador de conteúdo, atleta e Growth Marketing & Sales. Engenheiro de Produção pela Universidade Presbiteriana Mackenzie, pós-graduado em Neurociências e Comportamento pela PUCRS e Master Trainer em PNL pela Sociedade Brasileira de Programação Neurolinguística.',
+        'alumniOf': [
+            {'@type': 'CollegeOrUniversity', 'name': 'Universidade Presbiteriana Mackenzie', 'sameAs': 'https://www.mackenzie.br/', 'address': {'@type': 'PostalAddress', 'addressLocality': 'São Paulo', 'addressRegion': 'SP', 'streetAddress': 'Campus Higienópolis'}},
+            {'@type': 'CollegeOrUniversity', 'name': 'Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)', 'sameAs': 'https://portal.pucrs.br/'},
+            {'@type': 'EducationalOrganization', 'name': 'Sociedade Brasileira de Programação Neurolinguística (SBPNL)', 'sameAs': 'https://pnl.com.br/'},
+        ],
+        'hasCredential': [
+            {'@type': 'EducationalOccupationalCredential', 'name': 'Bacharel em Engenharia de Produção', 'credentialCategory': 'degree', 'recognizedBy': {'@type': 'CollegeOrUniversity', 'name': 'Universidade Presbiteriana Mackenzie'}},
+            {'@type': 'EducationalOccupationalCredential', 'name': 'Pós-graduação em Neurociências e Comportamento', 'credentialCategory': 'degree', 'recognizedBy': {'@type': 'CollegeOrUniversity', 'name': 'PUCRS'}},
+            {'@type': 'EducationalOccupationalCredential', 'name': 'Master Trainer em Programação Neurolinguística', 'credentialCategory': 'certificate', 'recognizedBy': {'@type': 'EducationalOrganization', 'name': 'Sociedade Brasileira de Programação Neurolinguística'}},
+        ],
+        'knowsAbout': ['Growth marketing', 'Treinamento híbrido', 'Vendas B2B', 'Inside sales', 'Liderança comercial', 'Agentes de IA', 'Programação Neurolinguística', 'Neurociência do hábito'],
         'worksFor': {'@type': 'Organization', 'name': 'JB Treinamento e Desenvolvimento'},
         'sameAs': ['https://www.instagram.com/ojoaobernardino', 'https://www.youtube.com/@ojoaobernardino', 'https://www.tiktok.com/@ojoaobernardino',
-                   'https://www.linkedin.com/in/ojoaobernardino', 'https://strava.app.link/dRHfi2AGt1b', 'https://www.threads.com/@ojoaobernardino',
+                   'https://www.linkedin.com/in/jo%C3%A3o-b%C3%AArnardino-176a70108/', 'https://strava.app.link/dRHfi2AGt1b', 'https://www.threads.com/@ojoaobernardino',
                    'https://joaobernardino.substack.com'],
     }
 
@@ -206,7 +220,7 @@ def jsonld(page):
         graph.append({'@type': 'CollectionPage', '@id': SITE['url'] + page['url'] + '#secao', 'name': page['title'], 'description': page['description'],
                       'inLanguage': 'pt-BR', 'url': SITE['url'] + page['url'], 'author': {'@id': PERSON_ID},
                       'hasPart': [{'@type': 'BlogPosting', 'headline': c['title'], 'url': SITE['url'] + c['url']} for c in page.get('all_posts', [])[:100]]})
-    elif page['url'] == '/sobre/':
+    elif page['url'] in ('/sobre/', '/sobre/jb/'):
         graph.append({'@type': 'ProfilePage', '@id': SITE['url'] + '/sobre/#perfil', 'name': page['title'], 'description': page['description'],
                       'inLanguage': 'pt-BR', 'dateModified': str(page['updated']), 'mainEntity': {'@id': PERSON_ID}})
     else:
@@ -214,8 +228,8 @@ def jsonld(page):
                       'inLanguage': 'pt-BR', 'author': {'@id': PERSON_ID}})
     if page.get('faq'):
         graph.append({'@type': 'FAQPage', '@id': SITE['url'] + page['url'] + '#perguntas', 'mainEntity': page['faq']})
-    graph.append(person_full() if page['url'] == '/sobre/' else
-                 {'@type': 'Person', '@id': PERSON_ID, 'name': 'João Bernardino', 'alternateName': ['João Bêrnardino'], 'url': SITE['url'] + '/sobre/'})
+    graph.append(person_full() if page['url'] in ('/sobre/', '/sobre/jb/') else
+                 {'@type': 'Person', '@id': PERSON_ID, 'name': 'João Bêrnardino', 'alternateName': ['João Bernardino'], 'url': SITE['url'] + '/sobre/jb/'})
     return json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=False)
 
 
@@ -472,7 +486,7 @@ def main():
     # llms.txt: apresentação do site pras IAs (nunca inclui /blog/altive/)
     L = ['# João Bêrnardino', '',
          '> Site pessoal de João Bernardino (João Bêrnardino, @ojoaobernardino): growth marketing e vendas, neurociência do hábito e PNL aplicada. Textos em primeira pessoa, com fonte, e resenhas completas de livros de vendas, liderança e mente.', '',
-         'Empreendedor, atleta e Growth Marketing & Sales. Engenheiro de Produção (Mackenzie), pós-graduado em Neurociências e Comportamento (PUCRS) e Master Trainer em PNL (SBPNL). Criou o Zero Nóia (como parou de fumar em 2024) e a Comunidade A Obra.', '',
+         'Empreendedor, criador de conteúdo, atleta e Growth Marketing & Sales. Engenheiro de Produção (Mackenzie), pós-graduado em Neurociências e Comportamento (PUCRS) e Master Trainer em PNL (SBPNL). Criou o Zero Nóia (como parou de fumar em 2024) e a Comunidade A Obra.', '',
          '## Sobre', '', f"- [Sobre João Bêrnardino]({SITE['url']}/sobre/): quem é, serviços, produtos, canal do YouTube e blog.", '']
     livros = [p for p in posts if p.get('book')]
     if livros:
