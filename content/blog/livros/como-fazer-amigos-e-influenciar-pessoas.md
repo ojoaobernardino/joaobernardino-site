@@ -1,13 +1,13 @@
 ---
-title: "Como Fazer Amigos e Influenciar Pessoas: resumo do livro"
-description: "Resumo de Como Fazer Amigos e Influenciar Pessoas, de Dale Carnegie: os 30 princípios, as 7 lições e o que João Bernardino aplicou em vendas e liderança."
+title: "Como Fazer Amigos e Influenciar Pessoas: resumo e lições"
+description: "Resumo de Como Fazer Amigos e Influenciar Pessoas, de Dale Carnegie: os 30 capítulos, as lições e se vale a pena, por João Bernardino."
 type: post
 kind: livro
 group: "Vendas"
 date: 2026-09-29
-updated: 2026-09-29
+updated: 2026-09-30
 tags: [como-fazer-amigos, dale-carnegie, relacionamento, lideranca, livros]
-summary: "Como Fazer Amigos e Influenciar Pessoas é o clássico de Dale Carnegie, publicado em 1936, sobre como lidar com gente. São 30 princípios em 4 partes, e quase todos cabem numa ideia: as pessoas se interessam por elas mesmas, não por você. Aqui está o resumo parte por parte, as 7 lições que eu uso até hoje em venda e liderança e o que envelheceu."
+summary: "Como Fazer Amigos e Influenciar Pessoas é o clássico de Dale Carnegie, publicado em 1936, sobre como lidar com gente. São 30 princípios em 4 partes, e quase todos cabem numa ideia: as pessoas se interessam por elas mesmas, não por você. Aqui está o resumo dos 30 capítulos, as 7 lições que valem pra venda e liderança, as críticas e o que envelheceu."
 book:
   titulo: "Como Fazer Amigos e Influenciar Pessoas"
   autor: "Dale Carnegie"
@@ -17,8 +17,6 @@ book:
   afiliado: "https://meli.la/1BTybKD"
   nota: 5
 ---
-
-
 
 ## Quem é Dale Carnegie
 
@@ -37,57 +35,135 @@ Isso não é manipulação, e o Carnegie insiste nesse ponto o livro inteiro. O 
 ## Resumo capítulo por capítulo
 <!-- FONTE SUMÁRIO: https://s3.sa-east-1.amazonaws.com/ofitexto.arquivos/sumarios/como-fazer-amigos-influenciar-pessoas_sum.pdf (sumário da edição da Sextante, com prefácio de Donna Dale Carnegie) -->
 
-A edição da Sextante tem 30 capítulos curtos, divididos em 4 partes, e cada capítulo termina num princípio. Antes da Parte 1 vêm um prefácio de Donna Dale Carnegie, o texto do autor sobre como e por que o livro foi escrito e nove sugestões de leitura. No fim, um texto de Lowell Thomas sobre o autor e uma nota sobre o treinamento Dale Carnegie.
+A edição da Sextante tem 30 capítulos curtos, divididos em 4 partes, e cada capítulo termina num princípio. A numeração dos capítulos recomeça em cada parte, e os títulos abaixo são os exatos da edição. Antes da Parte 1 vêm um prefácio de Donna Dale Carnegie, o texto do autor sobre como e por que o livro foi escrito e nove sugestões de leitura.
 
-### Parte 1 · Técnicas fundamentais para lidar com as pessoas
+**Parte 1 · Técnicas fundamentais para lidar com as pessoas**
 
-A base do livro, em três princípios. O terceiro é o que mais conversa com vendas: o Carnegie usa o exemplo de pescar, em que você não põe na isca o que você gosta de comer, põe o que o peixe gosta.
+### Capítulo 1 · “Se você quer colher o mel, não chute a colmeia”
 
-- **Capítulo 1 · “Se você quer colher o mel, não chute a colmeia”.** **Não critique, não condene, não se queixe.** Crítica deixa a pessoa na defensiva e quase nunca muda o comportamento.
-- **Capítulo 2 · O grande segredo para lidar com pessoas.** **Faça elogios honestos e sinceros.** Todo mundo quer se sentir reconhecido, e quase ninguém recebe reconhecimento suficiente.
-- **Capítulo 3 · “Quem consegue isso tem o mundo inteiro a seu lado; quem não consegue trilha um caminho solitário”.** **Desperte na outra pessoa um desejo ardente.** A única forma de fazer alguém agir é falar do que ela quer, não do que você quer.
+O Carnegie abre mostrando que quase ninguém se considera culpado, nem criminosos famosos da época, que se viam como injustiçados. Se nem eles se criticam, a crítica de outra pessoa só gera defesa e ressentimento. Ele conta que Lincoln escreveu uma carta dura a um general e nunca a enviou. O princípio é **não critique, não condene, não se queixe**.
 
-### Parte 2 · Seis formas de fazer as pessoas gostarem de você
+### Capítulo 2 · O grande segredo para lidar com pessoas
 
-Seis princípios curtos, cada um com um capítulo próprio.
+A tese é que um dos desejos humanos mais fortes é o de se sentir importante. Quem satisfaz esse desejo com honestidade ganha a boa vontade das pessoas. O Carnegie usa o exemplo de Charles Schwab, executivo do aço bem pago em boa parte pela habilidade de lidar com gente, que dizia ser generoso no elogio. E separa apreciação de bajulação: a primeira é sincera, a segunda é falsa. O princípio: **faça elogios honestos e sinceros**.
 
-- **Capítulo 1 · Faça isso e você será bem-vindo em qualquer lugar.** **Tenha interesse genuíno pelas pessoas.** Você faz mais amigos se interessando pelos outros do que tentando fazer os outros se interessarem por você.
-- **Capítulo 2 · Um jeito simples de causar boa primeira impressão.** **Sorria.** Parece bobo, e o Carnegie gasta um capítulo inteiro mostrando que não é.
-- **Capítulo 3 · Se você não fizer isso, vai arranjar problema.** **Lembre o nome da pessoa.** Pra ela, o próprio nome é o som mais importante.
-- **Capítulo 4 · Um jeito fácil de se tornar bom de papo.** **Seja um bom ouvinte.** Incentive a pessoa a falar dela mesma.
-- **Capítulo 5 · Como despertar o interesse das pessoas.** **Fale sobre o que interessa à outra pessoa**, não sobre o que interessa a você.
-- **Capítulo 6 · Como fazer as pessoas gostarem de você à primeira vista.** **Faça a outra pessoa se sentir importante**, com sinceridade.
+### Capítulo 3 · “Quem consegue isso tem o mundo inteiro a seu lado; quem não consegue trilha um caminho solitário”
 
-### Parte 3 · Como fazer as pessoas pensarem como você
+É o capítulo que mais conversa com vendas. Pra pescar, você não põe no anzol o que você gosta de comer, põe o que o peixe gosta. Com gente é igual: a única forma de influenciar alguém é falar do que a pessoa quer e mostrar como conseguir. O Carnegie conta como negociou o aluguel de um salão de hotel escrevendo só do ponto de vista do gerente. O princípio: **desperte na outra pessoa um desejo ardente**.
 
-A parte mais longa, com doze princípios sobre persuasão sem confronto.
+**Parte 2 · Seis formas de fazer as pessoas gostarem de você**
 
-- **Capítulo 1 · É impossível ganhar uma discussão.** **A única forma de ganhar uma discussão é evitá-la.** Mesmo quando você vence, o outro sai ressentido.
-- **Capítulo 2 · Um jeito infalível de fazer inimigos e como evitá-lo.** Respeite a opinião do outro e **nunca diga que ele está errado**.
-- **Capítulo 3 · Se estiver errado, admita o erro.** Se você errou, **admita rápido e com clareza**. Desarma a outra pessoa na hora.
-- **Capítulo 4 · Uma gota de mel.** **Comece de forma amigável.** Ninguém muda de ideia sendo atacado.
-- **Capítulo 5 · Faça o outro dizer “sim” imediatamente.** Comece pelos pontos de acordo e **faça a pessoa dizer sim logo no começo**.
-- **Capítulo 6 · A válvula de segurança para lidar com reclamações.** **Deixe o outro falar a maior parte do tempo.** Quem desabafa fica pronto pra ouvir.
-- **Capítulo 7 · Como conseguir cooperação.** **Deixe a pessoa sentir que a ideia é dela.** A gente defende com mais força o que acha que criou.
-- **Capítulo 8 · Uma fórmula que vai fazer maravilhas por você.** **Tente ver as coisas pelo ponto de vista do outro**, de verdade.
-- **Capítulo 9 · O que todo mundo quer.** Seja solidário com as ideias e os desejos da outra pessoa.
-- **Capítulo 10 · Um apelo que todos adoram.** Apele aos motivos mais nobres da pessoa.
-- **Capítulo 11 · O cinema faz. Os anunciantes fazem. Por que você não faz também?** **Dramatize suas ideias**, pra que fiquem vivas e sejam lembradas.
-- **Capítulo 12 · Quando tudo falhar, tente este recurso.** Lance um desafio quando o objetivo é fazer alguém se superar.
+### Capítulo 1 · Faça isso e você será bem-vindo em qualquer lugar
 
-### Parte 4 · Seja um líder: como mudar as pessoas sem ofender nem criar ressentimentos
+O Carnegie compara com um cachorro, que faz amigos sem dizer nada, só demonstrando interesse. Você faz mais amigos em dois meses se interessando pelos outros do que em dois anos tentando fazer os outros se interessarem por você. Ele cita o hábito de Theodore Roosevelt de se interessar de verdade até pelos funcionários da Casa Branca. O princípio: **tenha interesse genuíno pelas pessoas**, que é a base de todos os outros capítulos desta parte.
 
-Nove princípios sobre como mudar o comportamento das pessoas sem ressentimento. É a parte que eu mais releio: um manual de feedback escrito décadas antes de alguém inventar a palavra.
+### Capítulo 2 · Um jeito simples de causar boa primeira impressão
 
-- **Capítulo 1 · Se precisar apontar defeitos, comece desta forma.** Comece com elogio e apreciação sinceros.
-- **Capítulo 2 · Como fazer críticas e não ser odiado.** Aponte os erros de forma indireta.
-- **Capítulo 3 · Fale primeiro sobre seus próprios erros.** Antes de criticar o outro, fale dos seus próprios erros.
-- **Capítulo 4 · Ninguém gosta de receber ordens.** **Faça perguntas em vez de dar ordens.**
-- **Capítulo 5 · Não deixe ninguém constrangido.** Deixe a pessoa salvar as aparências.
-- **Capítulo 6 · Como estimular as pessoas a alcançar o sucesso.** Elogie cada pequena melhora, e elogie de verdade.
-- **Capítulo 7 · Dê uma boa reputação ao cachorro.** Dê à pessoa uma boa reputação pra ela zelar.
-- **Capítulo 8 · Faça com que o erro pareça fácil de corrigir.** Use o encorajamento e faça o erro parecer fácil de corrigir.
-- **Capítulo 9 · Faça o outro se sentir feliz por fazer aquilo que você quer.** Faça a pessoa ficar feliz em fazer o que você sugere.
+**Sorria.** Parece bobo, e o Carnegie gasta um capítulo inteiro mostrando que não é. O sorriso diz "gosto de você" antes de qualquer palavra, e um rosto fechado passa o recado contrário. Ele traz relatos de alunos que passaram a sorrir de propósito e viram o trato com colegas e clientes mudar. O argumento de fundo é que ação e sentimento andam juntos: agir com alegria ajuda a sentir alegria,.
+
+### Capítulo 3 · Se você não fizer isso, vai arranjar problema
+
+**Lembre o nome da pessoa.** Pra ela, o próprio nome é o som mais doce e importante em qualquer idioma. O Carnegie cita políticos que decoravam milhares de nomes e o industrial Andrew Carnegie, que batizava negócios com o nome de quem queria agradar. Esquecer ou errar o nome passa a mensagem de que a pessoa não importa. Detalhe pequeno, efeito grande.
+
+### Capítulo 4 · Um jeito fácil de se tornar bom de papo
+
+O Carnegie conta que passou um jantar inteiro ouvindo um botânico falar de plantas, quase sem abrir a boca, e depois foi descrito como ótimo conversador. A lição é que ouvir com atenção é um dos maiores elogios que se pode fazer. O princípio: **seja um bom ouvinte e incentive os outros a falar deles mesmos**. É o capítulo mais útil pra quem faz descoberta.
+
+### Capítulo 5 · Como despertar o interesse das pessoas
+
+Quem recebia Theodore Roosevelt se impressionava com o quanto ele sabia de qualquer assunto. O segredo era simples: na véspera, ele estudava o tema que interessava ao visitante. O caminho mais curto pro coração de alguém é falar do que ela mais valoriza. O princípio: **fale sobre o que interessa à outra pessoa**, não sobre o que interessa a você.
+
+### Capítulo 6 · Como fazer as pessoas gostarem de você à primeira vista
+
+O Carnegie conta que, numa fila de correio, fez um elogio sincero ao cabelo do funcionário entediado e mudou o humor dele na hora, sem pedir nada em troca. A ideia é que todo mundo quer se sentir importante, e dá pra fazer isso em pequenos gestos, todos os dias. O princípio: **faça a outra pessoa se sentir importante, e faça isso com sinceridade**.
+
+**Parte 3 · Como fazer as pessoas pensarem como você**
+
+### Capítulo 1 · É impossível ganhar uma discussão
+
+O Carnegie conta que corrigiu em público a origem de uma citação num jantar, estava errado, e um amigo o ajudou a não piorar. A lição: mesmo quando você vence a discussão, o outro sai humilhado e ressentido, e não muda de ideia. O princípio: **a única forma de ganhar uma discussão é evitá-la**. É o capítulo que abre a parte sobre persuasão.
+
+### Capítulo 2 · Um jeito infalível de fazer inimigos e como evitá-lo
+
+Dizer a alguém que ele está errado, com palavras, olhar ou tom, é atacar a inteligência e o orgulho dele. A pessoa vai revidar, não mudar. O Carnegie cita Benjamin Franklin, que abandonou as palavras dogmáticas e passou a dizer "eu imagino" ou "me parece". O princípio: **respeite a opinião do outro e nunca diga que ele está errado**. Humilhar não convence.
+
+### Capítulo 3 · Se estiver errado, admita o erro
+
+O Carnegie soltava o cachorro sem coleira num parque. Quando um guarda o pegou, ele admitiu a culpa antes que o guarda falasse, e o guarda acabou minimizando a infração. Quem se critica primeiro tira do outro o papel de acusador, e o outro tende a ser generoso. O princípio: **se você errou, admita rápido e com clareza**. Desarma o conflito na hora.
+
+### Capítulo 4 · Uma gota de mel
+
+O título vem de um ditado citado por Lincoln: se pega mais mosca com uma gota de mel do que com um barril de fel. Se alguém chega com raiva, não vai ser convencido com mais raiva. O Carnegie usa a fábula do sol e do vento, em que a gentileza consegue o que a força não conseguiu. O princípio: **comece de forma amigável**. Ninguém muda de ideia sendo atacado.
+
+### Capítulo 5 · Faça o outro dizer “sim” imediatamente
+
+Numa conversa, não comece pelos pontos de discordância. Comece pelo que vocês concordam e faça a pessoa dizer sim várias vezes logo no início. Quem diz "não" se compromete com o não e passa a defendê-lo por orgulho. O Carnegie associa a técnica ao método de Sócrates, que fazia perguntas com as quais o outro concordava até chegar a uma conclusão. O princípio: **faça a pessoa dizer sim logo no começo**.
+
+### Capítulo 6 · A válvula de segurança para lidar com reclamações
+
+Quem quer convencer costuma falar demais. O Carnegie conta o caso de um vendedor que perdeu a voz antes de uma apresentação importante, deixou o cliente falar a reunião inteira e fechou o negócio. Deixar o outro falar funciona como válvula de segurança: quem desabafa fica pronto pra ouvir. O princípio: **deixe o outro falar a maior parte do tempo**.
+
+### Capítulo 7 · Como conseguir cooperação
+
+A gente confia mais nas ideias que descobre sozinho do que nas que recebe prontas. Por isso, em vez de impor uma ideia, o Carnegie sugere dar pistas e deixar a pessoa chegar à conclusão. Ele cita o caso de um conselheiro do presidente Wilson que plantava ideias e deixava o presidente apresentá-las como dele. O princípio: **deixe a pessoa sentir que a ideia é dela**.
+
+### Capítulo 8 · Uma fórmula que vai fazer maravilhas por você
+
+A outra pessoa pode estar totalmente errada, mas ela não acha isso. Em vez de condenar, tente entender por que ela pensa e age assim. Há um motivo, e descobrir esse motivo dá a chave do comportamento dela. O Carnegie sugere se perguntar como você se sentiria no lugar dela antes de qualquer conversa difícil. O princípio: **tente ver as coisas, com honestidade, pelo ponto de vista do outro**.
+
+### Capítulo 9 · O que todo mundo quer
+
+O Carnegie conta que errou um dado sobre uma escritora num programa de rádio e recebeu uma carta furiosa. Em vez de revidar, telefonou, reconheceu o erro e disse que, no lugar dela, sentiria o mesmo. A raiva virou simpatia. A lição é que quase todo mundo quer se sentir compreendido. O princípio: **seja solidário com as ideias e os desejos da outra pessoa**.
+
+### Capítulo 10 · Um apelo que todos adoram
+
+As pessoas costumam ter dois motivos pra fazer algo: um que soa bem e o verdadeiro. O Carnegie sugere apelar ao primeiro, porque todo mundo gosta de se ver como honesto e justo. Ele traz casos de cobranças difíceis resolvidas ao tratar o devedor como alguém correto, que só precisava de uma chance de mostrar isso. O princípio: **apele aos motivos mais nobres da pessoa**.
+
+### Capítulo 11 · O cinema faz. Os anunciantes fazem. Por que você não faz também?
+
+Dizer a verdade não basta; é preciso torná-la viva, interessante e memorável. O Carnegie mostra como vendedores e anunciantes da época encenavam as ideias em vez de só explicar, com vitrines e demonstrações que chamavam a atenção. Uma ideia vista fica mais do que uma ideia ouvida. O princípio: **dramatize suas ideias**. Pra quem apresenta proposta, clareza sozinha não prende ninguém.
+
+### Capítulo 12 · Quando tudo falhar, tente este recurso
+
+Quando nada funciona, o Carnegie sugere apelar ao desejo de se destacar. Ele conta que Charles Schwab, diante de uma usina que não batia meta, escreveu no chão o número de fornadas do turno do dia, e o turno da noite se sentiu desafiado a superar. O princípio: **lance um desafio**, especialmente com gente competitiva.
+
+**Parte 4 · Seja um líder: como mudar as pessoas sem ofender nem criar ressentimentos**
+
+### Capítulo 1 · Se precisar apontar defeitos, comece desta forma
+
+É mais fácil ouvir algo desagradável depois de ouvir algo verdadeiro e positivo sobre si mesmo. O Carnegie compara com o barbeiro que passa espuma antes de barbear. Começar pelo que a pessoa faz bem não é truque, desde que o elogio seja sincero: é o que abre espaço pra crítica ser ouvida. O princípio: **comece com elogio e apreciação sinceros**.
+
+### Capítulo 2 · Como fazer críticas e não ser odiado
+
+O Carnegie conta que Schwab encontrou funcionários fumando embaixo de uma placa de proibido fumar. Em vez de apontar a placa, deu um charuto a cada um e pediu que fumassem lá fora. Não houve bronca, e todos entenderam. Ele também sugere trocar o "mas" depois do elogio por "e", pra que o elogio não soe como preparação da crítica. O princípio: **aponte os erros de forma indireta**.
+
+### Capítulo 3 · Fale primeiro sobre seus próprios erros
+
+O Carnegie conta que se irritava com os erros de uma secretária jovem até lembrar dos próprios erros na mesma idade. Quando passou a começar a conversa pelos erros dele, a correção ficou mais fácil de ouvir. Admitir as próprias falhas antes de apontar as do outro tira o tom de superioridade da crítica. O princípio: **fale dos seus próprios erros antes de criticar a outra pessoa**.
+
+### Capítulo 4 · Ninguém gosta de receber ordens
+
+O Carnegie cita um executivo que nunca dava ordens diretas: ele sugeria e perguntava "você acha que isso funcionaria?". Perguntar preserva o orgulho da pessoa, dá a ela a chance de corrigir o próprio erro e estimula a cooperação em vez da rebeldia. Ordem gera resistência, mesmo quando é certa. O princípio: **faça perguntas em vez de dar ordens**. Vale muito pra quem lidera.
+
+### Capítulo 5 · Não deixe ninguém constrangido
+
+Mesmo quando a outra pessoa está errada, humilhá-la na frente de outros destrói a relação e não conserta nada. O Carnegie traz o caso de uma grande empresa que, pra tirar um especialista de um cargo de chefia, deu a ele um novo título de prestígio em vez de rebaixá-lo. O princípio: **deixe a pessoa salvar as aparências**. O cuidado evita anos de ressentimento.
+
+### Capítulo 6 · Como estimular as pessoas a alcançar o sucesso
+
+O Carnegie usa o exemplo de adestradores que recompensam o animal a cada pequeno avanço e pergunta por que não fazemos o mesmo com gente. Elogio acelera o aprendizado; crítica constante trava. A condição é o elogio ser específico e verdadeiro, porque o genérico soa automático. O princípio: **elogie cada pequena melhora e elogie todas as melhoras**, com sinceridade na aprovação e generosidade no elogio.
+
+### Capítulo 7 · Dê uma boa reputação ao cachorro
+
+Se você quer que alguém melhore num ponto, trate a pessoa como se ela já tivesse aquela qualidade. Quem recebe uma boa reputação costuma se esforçar pra não decepcionar. O Carnegie traz casos de funcionários que mudaram de atitude depois de um chefe elogiar publicamente a qualidade que eles ainda estavam construindo. O princípio: **dê à pessoa uma boa reputação pra ela zelar**.
+
+### Capítulo 8 · Faça com que o erro pareça fácil de corrigir
+
+Dizer a alguém que ele não tem jeito pra uma coisa mata a vontade de tentar. O contrário, mostrar que o erro é pequeno e que a pessoa tem capacidade, estimula a melhora. O Carnegie defende o encorajamento como ferramenta de ensino, seja no trabalho, seja em casa. O princípio: **use o encorajamento e faça o erro parecer fácil de corrigir**.
+
+### Capítulo 9 · Faça o outro se sentir feliz por fazer aquilo que você quer
+
+O último princípio fecha o livro com a ideia de que pedir bem é fazer a pessoa ganhar algo com o pedido. O Carnegie lembra que Napoleão criou condecorações e títulos pra motivar os soldados, e sugere pensar no que a outra pessoa ganha ao fazer o que você propõe. O princípio: **faça a pessoa ficar feliz em fazer o que você sugere**.
 
 ## As 7 principais lições
 
@@ -99,25 +175,13 @@ Nove princípios sobre como mudar o comportamento das pessoas sem ressentimento.
 6. **A ideia tem que parecer do outro.** O que a pessoa conclui sozinha ela defende.
 7. **Pergunte em vez de mandar.** Pergunta preserva a autonomia; ordem cria resistência.
 
-## O que eu apliquei
+## Críticas e limitações do livro
 
-Na descoberta, o Carnegie virou regra de time. Quando eu era coordenador comercial na Stone, liderando 3 times de inside sales, a regra de descoberta era simples: cliente fala 70%, vendedor 30%. É o princípio de deixar o outro falar a maior parte do tempo, com número. Vendedor que fala mais do que isso está falando dele, e o cliente, como o Carnegie avisa, está interessado nele mesmo.
+Os exemplos envelheceram. O livro é cheio de histórias de presidentes americanos, industriais do começo do século 20 e vendedores de outra época. As ideias continuam valendo, mas o leitor precisa traduzir o tempo todo, e parte dos casos soa anedótica: são histórias de alunos e biografias, não pesquisa.
 
-Na liderança, o princípio que eu mais uso é o de fazer perguntas em vez de dar ordens. Antes de dizer como fazer, pergunto como a pessoa faria e o que ela precisa de mim. Delegar deixou de ser entregar tarefa, virou combinar resultado.
+Alguns princípios, levados ao pé da letra, viram caricatura. Quem repete o nome do cliente a cada frase, porque leu que funciona, soa como roteiro de call center. O Carnegie fala em lembrar o nome, não em repetir. O mesmo vale pro elogio: sem sinceridade, vira bajulação.
 
-Com o time, usei o princípio de elogiar cada pequena melhora. No começo não funcionou, porque eu elogiava de forma genérica e soava automático. Só funcionou quando o elogio passou a ser específico: o que a pessoa fez, em qual ligação, e por que foi melhor que antes.
-
-Na Stone, um SDR novo estava travado e todo mundo já tinha opinião sobre ele. Peguei a única ligação boa da semana dele, elogiei em detalhe e pedi que ele mostrasse essa ligação pro time na reunião de terça. Ele virou referência daquele tipo de abertura em um mês.
-
-!!! Regra: antes de corrigir alguém, eu pergunto como a pessoa enxerga o que aconteceu.
-
-## O que não serviu
-
-Os exemplos envelheceram. O livro é cheio de histórias de presidentes americanos, industriais do começo do século 20 e vendedores de carvão. As ideias continuam valendo, mas o leitor precisa traduzir o tempo todo.
-
-O princípio do nome, levado ao pé da letra, vira caricatura. Vendedor que repete o nome do cliente a cada frase, porque leu que funciona, soa como roteiro de call center. O Carnegie fala em lembrar o nome, não em repetir.
-
-E o livro quase não trata de conflito real. Ele ensina a evitar discussão, mas em negociação e em liderança há momentos em que a conversa difícil é necessária, e ser agradável não resolve. Pra isso, eu complemento com livros de negociação e de feedback.
+E o livro quase não trata de conflito real. Ensina a evitar discussão, mas em negociação e em liderança há momentos em que a conversa difícil é necessária, e ser agradável não resolve. Pra essa parte, livros de negociação e de feedback complementam melhor.
 
 ## Pra quem é e pra quem não é
 
@@ -129,7 +193,7 @@ E o livro quase não trata de conflito real. Ele ensina a evitar discussão, mas
 
 Vale, e eu leria mais de uma vez. É o livro mais antigo desta lista e o que eu mais indico, porque serve pra venda, pra liderança e pra vida. A técnica envelhece; o jeito de tratar gente, não.
 
-Leia devagar. Um princípio por semana rende mais do que o livro inteiro num fim de semana.
+Leia devagar. Um princípio por semana rende mais do que o livro inteiro num fim de semana. Pra quem vende, a [resenha de SPIN Selling](/blog/livros/spin-selling/) é o passo seguinte natural: o Carnegie ensina a ouvir, e o Rackham ensina o que perguntar.
 
 **Minha nota: 5 de 5.**
 
@@ -137,42 +201,14 @@ Leia devagar. Um princípio por semana rende mais do que o livro inteiro num fim
 
 ### Quais são os capítulos de Como Fazer Amigos e Influenciar Pessoas?
 
-O livro tem 30 capítulos, divididos em 4 partes (numeração da edição da Sextante, que recomeça em cada parte):
+O livro tem 30 capítulos, divididos em 4 partes, e cada capítulo termina num princípio. Na edição da Sextante, a numeração recomeça em cada parte:
 
-1. **Parte 1 · Técnicas fundamentais para lidar com as pessoas**
-    1. “Se você quer colher o mel, não chute a colmeia”
-    2. O grande segredo para lidar com pessoas
-    3. “Quem consegue isso tem o mundo inteiro a seu lado; quem não consegue trilha um caminho solitário”
-2. **Parte 2 · Seis formas de fazer as pessoas gostarem de você**
-    1. Faça isso e você será bem-vindo em qualquer lugar
-    2. Um jeito simples de causar boa primeira impressão
-    3. Se você não fizer isso, vai arranjar problema
-    4. Um jeito fácil de se tornar bom de papo
-    5. Como despertar o interesse das pessoas
-    6. Como fazer as pessoas gostarem de você à primeira vista
-3. **Parte 3 · Como fazer as pessoas pensarem como você**
-    1. É impossível ganhar uma discussão
-    2. Um jeito infalível de fazer inimigos e como evitá-lo
-    3. Se estiver errado, admita o erro
-    4. Uma gota de mel
-    5. Faça o outro dizer “sim” imediatamente
-    6. A válvula de segurança para lidar com reclamações
-    7. Como conseguir cooperação
-    8. Uma fórmula que vai fazer maravilhas por você
-    9. O que todo mundo quer
-    10. Um apelo que todos adoram
-    11. O cinema faz. Os anunciantes fazem. Por que você não faz também?
-    12. Quando tudo falhar, tente este recurso
-4. **Parte 4 · Seja um líder: como mudar as pessoas sem ofender nem criar ressentimentos**
-    1. Se precisar apontar defeitos, comece desta forma
-    2. Como fazer críticas e não ser odiado
-    3. Fale primeiro sobre seus próprios erros
-    4. Ninguém gosta de receber ordens
-    5. Não deixe ninguém constrangido
-    6. Como estimular as pessoas a alcançar o sucesso
-    7. Dê uma boa reputação ao cachorro
-    8. Faça com que o erro pareça fácil de corrigir
-    9. Faça o outro se sentir feliz por fazer aquilo que você quer
+1. Técnicas fundamentais para lidar com as pessoas (3 capítulos)
+2. Seis formas de fazer as pessoas gostarem de você (6 capítulos)
+3. Como fazer as pessoas pensarem como você (12 capítulos)
+4. Seja um líder: como mudar as pessoas sem ofender nem criar ressentimentos (9 capítulos)
+
+Os títulos de todos os capítulos estão no resumo acima.
 
 ### Qual o resumo de Como Fazer Amigos e Influenciar Pessoas?
 
@@ -182,7 +218,7 @@ O livro reúne 30 princípios de relacionamento, divididos em 4 partes: técnica
 
 Dale Carnegie, escritor e professor americano (1888 a 1955), que dava cursos de oratória e relações humanas e fundou o que hoje é a Dale Carnegie Training.
 
-### Como Fazer Amigos e Influenciar Pessoas tem PDF gratuito?
+### Como Fazer Amigos e Influenciar Pessoas tem em PDF para download?
 
 A versão legal é o livro físico ou a edição digital vendida nas lojas oficiais. O PDF gratuito que circula em Drive e sites de download costuma ser cópia sem autorização, muitas vezes de uma tradução antiga.
 

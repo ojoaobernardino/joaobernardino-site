@@ -41,6 +41,7 @@ p{margin:0 0 32px;color:#bdbdbd;font-size:18px;line-height:1.5;max-width:640px;t
 .signup input:focus{border-color:#444}
 .signup button{height:48px;padding:0 16px;border-radius:8px;border:0;background:#333;color:#fff;font:inherit;font-size:16px;font-weight:500;cursor:pointer}
 .signup button:hover{background:#3d3d3d}
+.email-fix{background:none;border:0;padding:0;font:inherit;font-weight:600;color:inherit;text-decoration:underline;text-decoration-color:#BF1E2D;text-underline-offset:3px;cursor:pointer}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .ok{font-size:14px;color:#8a8a8a;margin:-8px 0 16px}
 .links{display:flex;gap:24px;justify-content:center;margin-bottom:8px}
@@ -76,7 +77,8 @@ footer{color:#7d7f83;font-size:14px;line-height:24px}
   <nav class="links" aria-label="Caminhos"><a href="/sobre/">Sobre</a><a href="/linktree/">Cupons</a></nav>
   <footer>© 2026 João Bêrnardino</footer>
 </main>
-<script>(function(){var f=document.getElementById("signup"),i=document.getElementById("email"),o=document.getElementById("ok"),b=f.querySelector("button");f.addEventListener("submit",function(e){e.preventDefault();if(f.website.value)return;if(!i.value||!i.checkValidity()){o.textContent="Confira o e-mail.";o.hidden=false;i.focus();return;}b.disabled=true;var t=b.textContent;b.textContent="Enviando...";fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(new FormData(f)).toString()}).then(function(r){if(!r.ok)throw 0;f.reset();o.textContent="Pronto! Você está na lista.";o.hidden=false;}).catch(function(){o.textContent="Não deu certo agora. Tente de novo em instantes.";o.hidden=false;}).finally(function(){b.disabled=false;b.textContent=t;});});})();</script>
+<script src="/js/valida-email.js"></script>
+<script>(function(){var f=document.getElementById("signup"),i=document.getElementById("email"),o=document.getElementById("ok"),b=f.querySelector("button");f.addEventListener("submit",function(e){e.preventDefault();if(f.website.value)return;if(!checaEmailNoForm(i,o))return;b.disabled=true;var t=b.textContent;b.textContent="Enviando...";fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(new FormData(f)).toString()}).then(function(r){if(!r.ok)throw 0;f.reset();o.textContent="Pronto! Você está na lista.";o.hidden=false;}).catch(function(){o.textContent="Não deu certo agora. Tente de novo em instantes.";o.hidden=false;}).finally(function(){b.disabled=false;b.textContent=t;});});})();</script>
 <script>
 var GA4_ID = 'G-5MSB6QLXN0';
 function track(nome, extra) {

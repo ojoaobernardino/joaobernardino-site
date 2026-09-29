@@ -55,9 +55,10 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);}
   <div class="f-soc">{% include "_social.html" %}</div>
   <p class="f-copy">© {{ site.year }} João Bêrnardino</p>
 </div></footer>
+<script src="/js/valida-email.js"></script>
 <script>
 document.querySelectorAll('form.signup').forEach(function(f){var i=f.querySelector('input[type=email]'),o=f.parentNode.querySelector('.signup-ok'),b=f.querySelector('button');
-f.addEventListener('submit',function(e){e.preventDefault();if(f.website&&f.website.value)return;if(!i.value||!i.checkValidity()){o.textContent='Confira o e-mail.';o.hidden=false;i.focus();return;}
+f.addEventListener('submit',function(e){e.preventDefault();if(f.website&&f.website.value)return;if(!checaEmailNoForm(i,o))return;
 b.disabled=true;var t=b.textContent;b.textContent='Enviando...';
 fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()})
 .then(function(r){if(!r.ok)throw 0;f.reset();o.textContent='Pronto! Você está na lista.';o.hidden=false;try{track('newsletter',{status:'ok'})}catch(x){}})

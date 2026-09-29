@@ -6,8 +6,8 @@ template: livros
 name: "Livros"
 date: 2026-09-11
 updated: 2026-09-29
-summary: "Todos os livros que eu tenho em casa, eu resumo aqui, um por um: o que o livro diz, o que eu apliquei, o que não serviu e pra quem é."
-card: "A minha estante, um por um: resumo, o que eu apliquei e pra quem cada livro serve."
+summary: "Todos os livros que eu tenho em casa, eu resumo aqui, um por um: capítulo por capítulo, as principais lições, as críticas e pra quem cada livro serve."
+card: "A minha estante, um por um: resumo capítulo por capítulo, lições, críticas e pra quem cada livro serve."
 art_books: [spin-selling, prospeccao-fanatica, flow, responsabilidade-extrema]
 estantes:
   Vendas: [spin-selling, prospeccao-fanatica, objecoes, a-biblia-de-vendas, storytelling, do-fracasso-ao-sucesso-na-arte-de-vender, bora-vender, os-segredos-do-lobo, como-fazer-amigos-e-influenciar-pessoas, a-arte-de-lidar-com-pessoas, como-conquistar-as-pessoas, go-pro, jogos-de-poder, quem-convence-enriquece]
@@ -22,7 +22,7 @@ kicker: "Só os que recomendo"
 
 ## Como funciona
 
-Cada livro ganha uma página: resumo honesto, a ideia que eu levei pra prática, o que eu discordo, e pra quem eu indicaria. Não é resenha de capa. É o que ficou depois de usar.
+Cada livro ganha uma página: quem é o autor, a ideia central, o resumo capítulo por capítulo, as principais lições, as críticas e pra quem eu indicaria. Não é resenha de capa, e a nota é honesta.
 
 
 ## Por onde começar
