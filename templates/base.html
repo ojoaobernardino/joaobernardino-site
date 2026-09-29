@@ -37,10 +37,16 @@
 <body class="theme-{{ page.theme }}">
 <header class="top"><div class="wrap">
   <a class="brand" href="{{ '#inicio' if page.url == '/sobre/' else '/sobre/' }}" aria-label="João Bêrnardino, sobre"><img src="/lobo-obra.svg" alt="João Bêrnardino" width="36" height="36"></a>
-  <nav class="nav" aria-label="Menu">
-    {% for item in site.nav %}<a href="{{ item.url }}"{% if item.section == page.section %} aria-current="page"{% endif %}>{{ item.label }}</a>{% endfor %}
+  <button type="button" class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal"><span></span><span></span><span></span></button>
+  <nav class="nav" id="menu-principal" aria-label="Menu">
+    {% for item in site.nav %}<a href="{{ '#inicio' if (item.section == page.section and item.url == page.url) else item.url }}"{% if item.section == page.section %} aria-current="page"{% endif %}>{{ item.label }}</a>{% endfor %}
   </nav>
 </div></header>
+<script>(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('menu-principal');if(!b)return;
+function set(o){b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Fechar menu':'Abrir menu');document.body.classList.toggle('menu-aberto',o);}
+b.addEventListener('click',function(){set(b.getAttribute('aria-expanded')!=='true');});
+n.addEventListener('click',function(e){if(e.target.closest('a'))set(false);});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});})();</script>
 <main id="inicio">
 {% block content %}{% endblock %}
 </main>
