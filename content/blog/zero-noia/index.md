@@ -8,7 +8,7 @@ updated: 2026-09-11
 tags: [zero-noia, parar-de-fumar, habito, neurociencia]
 summary: "Fui fumante durante 11 anos. Em 1º de janeiro de 2024 decidi parar e, no dia 7, comecei a documentar tudo na internet: um vídeo por dia, mais de 90 seguidos. Mais de 170 mil pessoas acompanharam essa virada, e dela nasceu o método Zero Nóia: 5 passos, com manual em PDF baseado na neurociência e na PNL, videoaulas e uma comunidade no WhatsApp onde milhares de pessoas se ajudam a parar de fumar."
 card: "Como eu parei de fumar em 2024, com a câmera ligada, e o que a ciência do hábito explica."
-featured: [minha-historia-com-o-cigarro, como-parar-de-fumar, como-parar-de-fumar-maconha, abstinencia-de-nicotina]
+featured: [minha-historia-com-o-cigarro, como-parar-de-fumar, como-parar-de-fumar-maconha, como-parar-de-vapear]
 subtopics: ["Parar de fumar", "Abstinência", "Por que faz mal", "Maconha", "Vape"]
 art: "/img/zero-noia.webp"
 art_pos: "center 52%"
