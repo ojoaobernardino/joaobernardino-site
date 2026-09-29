@@ -8,6 +8,8 @@ updated: 2026-09-11
 tags: [zero-noia, parar-de-fumar, habito, neurociencia]
 summary: "Fumei tabaco por 11 anos. Parei a maconha em 01/01/2024 e o cigarro em 07/01/2024, com a câmera ligada todo dia. Gravei 91 vídeos sem resultado e o 92º viralizou (175 mil seguidores). Disso nasceu o Zero Nóia, um produto de R$ 19,90 que mais de mil pessoas já compraram."
 card: "Como eu parei de fumar em 2024, com a câmera ligada, e o que a ciência do hábito explica."
+art: "/img/zero-noia.webp"
+art_pos: "center 52%"
 extra_title: "Entrevistas"
 extra_links:
   - meta: "Vídeo · PodRecomeçar EP 35"

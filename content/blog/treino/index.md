@@ -7,7 +7,7 @@ date: 2026-09-11
 updated: 2026-09-11
 tags: [treino, corrida, jiu-jitsu, boxe, hibrido]
 summary: "Treino seis vezes por semana: musculação, jiu-jitsu, boxe e corrida (primeira maratona em dezembro de 2026). Aqui eu conto o que faço, o que deu errado e o que a ciência diz. Nada aqui é prescrição."
-draft: false
+draft: true
 ---
 
 ## O que você vai encontrar aqui

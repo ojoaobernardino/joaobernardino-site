@@ -7,7 +7,7 @@ date: 2026-09-11
 updated: 2026-09-11
 tags: [gestao, processo, rotina, meta]
 summary: "Engenheiro de produção que virou gestor comercial. Aqui eu escrevo sobre o lado da gestão que ninguém ensina na faculdade: rotina, meta, delegação e o que fazer quando o número não fecha."
-draft: false
+draft: true
 ---
 
 ## O que você vai encontrar aqui

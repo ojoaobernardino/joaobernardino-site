@@ -7,7 +7,7 @@ date: 2026-09-11
 updated: 2026-09-11
 tags: [dieta, alimentacao, treino, energia]
 summary: "Eu não sou nutricionista. Sou um cara que treina seis vezes por semana e precisou aprender a comer pra aguentar. Aqui vai o que eu como, o que testei, o que deu errado e o que a ciência explica."
-draft: false
+draft: true
 ---
 
 ## O que você vai encontrar aqui

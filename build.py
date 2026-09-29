@@ -45,9 +45,10 @@ CLUSTERS = {
     'vendas': 'Vendas', 'lideranca': 'Liderança', 'gestao': 'Gestão', 'neurociencia': 'Neurociência', 'treino': 'Treino',
     'dieta': 'Dieta', 'zero-noia': 'Zero Nóia', 'livros': 'Livros', 'uso': 'O que eu uso', 'wjr': 'WJR',
 }
-MENU_ORDER = ['vendas', 'lideranca', 'gestao', 'neurociencia', 'zero-noia', 'treino', 'dieta', 'livros', 'uso', 'wjr']
+MENU_ORDER = ['zero-noia', 'livros', 'vendas', 'lideranca', 'neurociencia', 'gestao', 'treino', 'dieta', 'uso']
 # endereços antigos que não viraram página (os de páginas vivas ficam em `aliases:` no frontmatter)
 STATIC_REDIRECTS = [('/blog/parceiros/', '/linktree/'), ('/blog/parceiros', '/linktree/'), ('/menu/', '/sobre/'), ('/menu', '/sobre/')]
+SHORT_TITLES = {'Alcançando Excelência em Vendas: SPIN Selling': 'SPIN Selling', 'Legado: 15 Lições sobre Liderança': 'Legado'}
 PERSON_ID = SITE['url'] + '/#pessoa'
 MESES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
 INCLUDE_DRAFTS = '--drafts' in sys.argv
@@ -109,6 +110,19 @@ def parse(path):
 PENDING = []
 
 
+def extract_faq(body):
+    if '## Perguntas frequentes' not in body:
+        return []
+    sec = body.split('## Perguntas frequentes', 1)[1].split('\n## ', 1)[0]
+    sec = re.sub(r'<!--.*?-->', '', sec, flags=re.S)
+    out = []
+    for q, a in re.findall(r'### (.*?)\n\n(.*?)(?=\n### |\Z)', sec, re.S):
+        txt = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', a)
+        txt = re.sub(r'[*_`]', '', txt)
+        out.append({'@type': 'Question', 'name': q.strip(), 'acceptedAnswer': {'@type': 'Answer', 'text': ' '.join(txt.split())}})
+    return out
+
+
 def render_md(body, page):
     for m in re.findall(r'<!--\s*CONFIRMAR:?\s*(.*?)-->', body, re.S):
         PENDING.append((page['url'], ' '.join(m.split())))
@@ -134,11 +148,18 @@ def render_md(body, page):
         level, text = m.group(1), m.group(2)
         plain = re.sub(r'<[^>]+>', '', text)
         i = slugify(plain)
-        if level == '2':
+        if level == '2' and i != 'fontes':
             toc.append({'id': i, 'text': plain})
         return f'<h{level} id="{i}">{text}</h{level}>'
     out = re.sub(r'<h([23])>(.*?)</h\1>', add_id, out)
     out = out.replace('<table>', '<div class="tbl"><table>').replace('</table>', '</table></div>')
+    if page.get('book'):
+        bk = page['book']; short = page['short_title']
+        buy = (f'<div class="next" style="margin:24px 0 32px"><span class="k">Onde comprar</span><h3>{html.escape(short)}, edição {html.escape(str(bk.get("editora","")))}</h3>'
+               f'<p>{html.escape(bk.get("pra_quem",""))}: este é o livro.</p><a class="btn w go" href="{bk["afiliado"]}" rel="sponsored noopener" data-track="livro-fim:{page["slug"]}">Comprar o livro</a>'
+               '<small>Link de parceiro: eu ganho uma comissão e você paga o mesmo.</small></div>\n')
+        out = out.replace('<h2 id="perguntas-frequentes">', buy + '<h2 id="perguntas-frequentes">', 1)
+    out = out.replace('<h2 id="fontes">', '<h2 id="fontes" class="fontes-h">')
     out = out.replace('src="img/', 'src="/img/blog/')
     out = re.sub(r'<a href="(https?://[^"]+)">', r'<a href="\1" rel="noopener">', out)
     out = out.replace('rel="noopener" rel="sponsored noopener"', 'rel="sponsored noopener"')
@@ -165,7 +186,17 @@ def jsonld(page):
     crumbs = [{'@type': 'ListItem', 'position': i + 1, 'name': c['name'], 'item': SITE['url'] + c['url']} for i, c in enumerate(page['crumbs'])]
     graph = [{'@type': 'BreadcrumbList', 'itemListElement': crumbs}]
     t = page['type']
-    if t == 'post':
+    if t == 'post' and page.get('book'):
+        bk = page['book']
+        graph.append({'@type': ['Review', 'BlogPosting'], '@id': SITE['url'] + page['url'] + '#resenha', 'headline': page['title'], 'name': page['title'],
+                      'description': page['description'], 'url': SITE['url'] + page['url'], 'mainEntityOfPage': SITE['url'] + page['url'],
+                      'datePublished': str(page['date']), 'dateModified': str(page['updated']), 'inLanguage': 'pt-BR', 'wordCount': page['words'],
+                      'image': SITE['url'] + page['og_image'], 'author': {'@id': PERSON_ID}, 'publisher': {'@id': PERSON_ID},
+                      'reviewRating': {'@type': 'Rating', 'ratingValue': bk['nota'], 'bestRating': 5, 'worstRating': 0}, 'reviewBody': page['summary'],
+                      'itemReviewed': {'@type': 'Book', 'name': bk['titulo'], 'author': {'@type': 'Person', 'name': bk['autor']},
+                                       'publisher': {'@type': 'Organization', 'name': str(bk.get('editora', ''))}, 'inLanguage': 'pt-BR',
+                                       'image': SITE['url'] + bk['capa']}})
+    elif t == 'post':
         graph.append({'@type': 'BlogPosting', '@id': SITE['url'] + page['url'] + '#artigo', 'headline': page['title'], 'description': page['description'],
                       'datePublished': str(page['date']), 'dateModified': str(page['updated']), 'inLanguage': 'pt-BR',
                       'mainEntityOfPage': SITE['url'] + page['url'], 'image': SITE['url'] + page['og_image'],
@@ -181,6 +212,8 @@ def jsonld(page):
     else:
         graph.append({'@type': 'WebPage', '@id': SITE['url'] + page['url'], 'name': page['title'], 'description': page['description'],
                       'inLanguage': 'pt-BR', 'author': {'@id': PERSON_ID}})
+    if page.get('faq'):
+        graph.append({'@type': 'FAQPage', '@id': SITE['url'] + page['url'] + '#perguntas', 'mainEntity': page['faq']})
     graph.append(person_full() if page['url'] == '/sobre/' else
                  {'@type': 'Person', '@id': PERSON_ID, 'name': 'João Bernardino', 'alternateName': ['João Bêrnardino'], 'url': SITE['url'] + '/sobre/'})
     return json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=False)
@@ -209,6 +242,8 @@ def og_image(page):
     ogdir = ROOT / 'img' / 'og'; ogdir.mkdir(parents=True, exist_ok=True)
     out = ogdir / f'{name}.jpg'
     bold, reg = _inter(700), _inter(500)
+    if page.get('book'):
+        return og_book(page, out, name, bold, reg)
     im = Image.new('RGB', (1200, 630), '#000000'); d = ImageDraw.Draw(im)
     kicker = (page.get('cluster_name') or page.get('kicker') or 'João Bêrnardino').upper()
     d.text((80, 84), kicker, font=reg(26), fill='#BF1E2D')
@@ -234,6 +269,35 @@ def og_image(page):
     return '/img/og/' + name + '.jpg'
 
 
+def og_book(page, out, name, bold, reg):
+    """Imagem de compartilhamento da resenha: título à esquerda, capa do livro à direita."""
+    from PIL import Image, ImageDraw
+    bk = page['book']
+    im = Image.new('RGB', (1200, 630), '#000000'); d = ImageDraw.Draw(im)
+    d.rounded_rectangle([760, 60, 1140, 570], radius=24, fill='#F1EEE8')
+    cv = Image.open(ROOT / bk['capa'].lstrip('/')).convert('RGBA'); cv.thumbnail((260, 440))
+    im.paste(cv, (950 - cv.width // 2, 315 - cv.height // 2), cv)
+    d.text((80, 90), 'LIVROS · RESENHA', font=reg(24), fill='#BF1E2D')
+    font = bold(58); lines = []; cur = ''
+    for w in page['title'].split():
+        t = (cur + ' ' + w).strip()
+        if d.textlength(t, font=font) > 620: lines.append(cur); cur = w
+        else: cur = t
+    lines.append(cur)
+    y = 140
+    for l in lines[:5]:
+        d.text((80, y), l, font=font, fill='#ffffff'); y += 68
+    d.text((80, y + 10), f"{bk['autor']} · nota {bk['nota']} de 5".replace('.5 de', ',5 de'), font=reg(24), fill='#a3a3a3')
+    try:
+        av = Image.open(ROOT / 'img' / 'avatar-216.webp').convert('RGB').resize((72, 72))
+        m = Image.new('L', (72, 72), 0); ImageDraw.Draw(m).ellipse([0, 0, 71, 71], fill=255); im.paste(av, (80, 510), m)
+        d.text((168, 516), 'João Bêrnardino', font=bold(28), fill='#ffffff'); d.text((168, 552), 'joaobernardino.com.br', font=reg(20), fill='#8a8a8a')
+    except Exception:
+        pass
+    im.save(out, quality=84, optimize=True, progressive=True)
+    return '/img/og/' + name + '.jpg'
+
+
 def main():
     pages = []
     for path in sorted(CONTENT.rglob('*.md')):
@@ -252,6 +316,12 @@ def main():
         p['reading'] = max(1, round(p['words'] / 200))
         p['date_br'] = date_br(p['date']); p['updated_br'] = date_br(p['updated'])
         p['title_tag'] = p['title'] if 'Bêrnardino' in p['title'] else f"{p['title']} · João Bêrnardino"
+        p['faq'] = extract_faq(p['body'])
+        if p.get('book'):
+            from PIL import Image
+            bk = p['book']
+            p['cover_w'], p['cover_h'] = Image.open(ROOT / bk['capa'].lstrip('/')).size
+            p['short_title'] = bk.get('curto') or SHORT_TITLES.get(bk['titulo']) or bk['titulo'].split(':')[0].strip()
         parent = hubs_by_folder.get(p['folder']) if p['type'] != 'hub' else hubs_by_folder.get(p['folder'])
         p['parent'] = parent
         if p['type'] == 'post' and parent:
@@ -274,7 +344,7 @@ def main():
         if sec and p['url'] != sec[1] and not (chain and chain[0]['url'] == sec[1]):
             crumbs.append({'name': sec[0], 'url': sec[1]})
         crumbs += chain
-        crumbs.append({'name': p['title'], 'url': p['url'], 'short': p.get('name') if p['type'] == 'hub' else None})
+        crumbs.append({'name': p['title'], 'url': p['url'], 'short': p.get('name') if p['type'] == 'hub' else ('Blog' if p['type'] == 'blog' else p.get('short_title'))})
         p['crumbs'] = crumbs
 
     posts = [p for p in pages if p['type'] == 'post']
@@ -307,6 +377,25 @@ def main():
             order = h.get('subtopics') or sorted(groups, reverse=True)
             h['mode'], h['featured'] = 'list', featured
             h['groups'] = [{'name': k, 'posts': groups[k]} for k in order if k in groups]
+    # livros: prateleiras do índice (ordem do frontmatter `estantes`) e prateleira do fim de cada resenha
+    for h in hubs_by_folder.values():
+        if h.get('template') == 'livros' and isinstance(h.get('estantes'), dict):
+            kids = {c['slug']: c for c in h['all_posts'] if c.get('book')}
+            listed = set()
+            h['shelves'] = []
+            for name, slugs in h['estantes'].items():
+                books = [kids[x] for x in slugs if x in kids]
+                listed.update(slugs)
+                for b in books: b['group'] = name
+                h['shelves'].append({'name': name, 'books': books})
+            loose = [c for c in kids.values() if c['slug'] not in listed]
+            if loose:
+                h['shelves'].append({'name': 'Outros', 'books': loose})
+                for b in loose: b['group'] = 'Outros'
+            for g in h['shelves']:
+                for b in g['books']:
+                    b['shelf'] = [x for x in g['books'] if x is not b][:3]
+            h['art_covers'] = [{'src': kids[x]['book']['capa'], 'w': kids[x]['cover_w'], 'h': kids[x]['cover_h']} for x in (h.get('art_books') or []) if x in kids]
     # relacionados: mesmo tema primeiro (por tags em comum), depois 1 de outro tema
     for p in posts:
         same = [c for c in posts if c['parent'] is p['parent'] and c is not p]
@@ -319,7 +408,7 @@ def main():
     SITE['blog_hubs'] = [h for h in blog_hubs if h['total'] > 0] + [h for h in blog_hubs if h['total'] == 0]
     for p in pages:
         if p['type'] == 'blog':
-            p['latest'] = newest(posts)[:6]
+            p['latest'] = newest(posts)[:7]
             p['all_posts'] = newest(posts)
 
     written = []
@@ -336,13 +425,29 @@ def main():
             p['cover'] = ''
         p['og_image'] = og_image(p)
         p['jsonld'] = jsonld(p)
-        tpl = {'post': 'post.html', 'hub': 'hub.html', 'page': 'page.html', 'blog': 'blog.html'}.get(p['type']) or f"lp_{p['template']}.html"
+        if p['type'] == 'hub' and p.get('template'):
+            tpl = f"hub_{p['template']}.html"
+        else:
+            tpl = {'post': 'post.html', 'hub': 'hub.html', 'page': 'page.html', 'blog': 'blog.html'}.get(p['type']) or f"lp_{p['template']}.html"
         css = CSS + (CSS_LP if p['type'] == 'lp' else '')
         out = ROOT / p['url'].strip('/') / 'index.html'
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(env.get_template(tpl).render(page=p, site=SITE, css=css), encoding='utf-8')
         written.append(p['url'])
 
+    # limpeza: página gerada antes e que não existe mais (rascunho, tema vazio, mudou de lugar) sai do disco.
+    # Nunca mexe em /blog/altive/ (seção privada feita à mão), na home nem no /linktree/.
+    import shutil
+    keep = set(written)
+    for sec in ('blog', 'sobre', 'produtos'):
+        for idx in sorted((ROOT / sec).rglob('index.html'), reverse=True):
+            url = '/' + str(idx.parent.relative_to(ROOT)).replace('\\', '/') + '/'
+            if url.startswith('/blog/altive/') or url in keep:
+                continue
+            idx.unlink()
+            print(f'  removido (não existe mais): {url}')
+            try: idx.parent.rmdir()
+            except OSError: pass
     # feed do blog
     latest = newest(posts)
     items = ''.join(f"<item><title>{html.escape(c['title'])}</title><link>{SITE['url']}{c['url']}</link><guid>{SITE['url']}{c['url']}</guid><pubDate>{datetime.datetime.fromisoformat(str(c['date'])).strftime('%a, %d %b %Y 08:00:00 -0300')}</pubDate><description>{html.escape(c['description'])}</description></item>" for c in latest[:30])
@@ -364,6 +469,18 @@ def main():
                 redir.append((a.rstrip('/'), p['url']))
     (ROOT / '_redirects').write_text('# gerado pelo build.py: endereços antigos -> páginas novas\n' + ''.join(f'{a}  {b}  301\n' for a, b in redir), encoding='utf-8')
 
+    # llms.txt: apresentação do site pras IAs (nunca inclui /blog/altive/)
+    L = ['# João Bêrnardino', '',
+         '> Site pessoal de João Bernardino (João Bêrnardino, @ojoaobernardino): growth marketing e vendas, neurociência do hábito e PNL aplicada. Textos em primeira pessoa, com fonte, e resenhas completas de livros de vendas, liderança e mente.', '',
+         'Empreendedor, atleta e Growth Marketing & Sales. Engenheiro de Produção (Mackenzie), pós-graduado em Neurociências e Comportamento (PUCRS) e Master Trainer em PNL (SBPNL). Criou o Zero Nóia (como parou de fumar em 2024) e a Comunidade A Obra.', '',
+         '## Sobre', '', f"- [Sobre João Bêrnardino]({SITE['url']}/sobre/): quem é, serviços, produtos, canal do YouTube e blog.", '']
+    livros = [p for p in posts if p.get('book')]
+    if livros:
+        L += ['## Livros (resenhas completas)', ''] + [f"- [{p['title']}]({SITE['url']}{p['url']}): {p['description']}" for p in sorted(livros, key=lambda x: x['title'])] + ['']
+    outros = [p for p in newest(posts) if not p.get('book')]
+    L += ['## Textos', ''] + [f"- [{p['title']}]({SITE['url']}{p['url']}): {p['description']}" for p in outros] + ['']
+    L += ['## Seções', ''] + [f"- [{h['name']}]({SITE['url']}{h['url']})" for h in SITE['blog_hubs']] + ['']
+    (ROOT / 'llms.txt').write_text('\n'.join(l for l in L if '/altive/' not in l), encoding='utf-8')
     print(f'ok: {len(pages)} páginas + feed + sitemap ({len(urls)} URLs) + {len(redir)} redirecionamentos')
     for p in pages:
         extra = f" [{p['mode']}, {p['total']} textos]" if p['type'] == 'hub' else ''

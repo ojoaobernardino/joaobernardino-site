@@ -1,4 +1,14 @@
-# Especificação de conteúdo do blog (joaobernardino.com.br/blog/)
+# Especificação de conteúdo do joaobernardino.com.br
+
+> **Atualização 29/09/2026 (site v2):** o gerador agora monta o site inteiro. O caminho do arquivo em `content/` é o endereço: `content/blog/zero-noia/como-parar-de-fumar.md` → `/blog/zero-noia/como-parar-de-fumar/`. Seções: `blog/` (off-white), `sobre/` e `produtos/` (padrão LP preto). Tipos: `post`, `page`, `hub`, `blog`, `lp`.
+> **Resenha de livro** = `post` em `content/blog/livros/<slug>.md` com o bloco `book:` (titulo, autor, editora, pra_quem, capa `/img/livros/<slug>.webp`, afiliado, nota, e `curto` opcional) e `group:`; a ordem das prateleiras fica em `estantes:` no `content/blog/livros/index.md`. Estrutura obrigatória: ver o piloto `spin-selling.md` (capítulos reais com fonte, FAQ começando por "Quais são os capítulos de X?", Fontes). Livro só vende o livro ou captura e-mail (nunca A Obra).
+> **Assinatura padrão (quadro do autor):** "Empreendedor, Atleta e Growth Marketing & Sales. Pós em Neurociências e Comportamento (PUCRS), Master Trainer em PNL (SBPNL), Engenheiro de Produção (Mackenzie)."
+> **Serviços:** a seção de serviços da /sobre foi publicada por decisão do João em 29/09/2026, ciente da regra de exclusividade abaixo (risco assumido por ele). Nos textos do blog a regra continua valendo.
+> **Fatos:** Koin = só BNPL (nunca antifraude). Heineken = off-premise, supermercados, venda futura.
+> Publicação: `python3 build.py && python3 check.py` (0 erros) → PR no GitHub → prévia do Netlify → merge.
+
+(Abaixo, a especificação original do blog, que continua valendo pro texto.)
+
 
 Todo texto do blog é um arquivo Markdown em `content/`. O caminho do arquivo define a URL:
 

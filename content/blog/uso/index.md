@@ -7,7 +7,7 @@ date: 2026-09-11
 updated: 2026-09-11
 tags: [produtos, treino, corrida, suplemento]
 summary: "Só entra aqui o que eu uso há tempo suficiente pra ter opinião: tênis de corrida, creatina, luva, kimono, relógio. Cada página tem o contra honesto. Alguns links são de parceiros."
-draft: false
+draft: true
 ---
 
 ## Como funciona

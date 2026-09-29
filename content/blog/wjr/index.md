@@ -1,7 +1,7 @@
 ---
 title: "Meu contador: por que eu confio na WJR"
 description: "João Bernardino conta por que a WJR, contabilidade na Mooca, cuida da empresa dele desde 2024. Cliente e amigo do Lucas Brito há mais de 20 anos."
-type: hub
+type: page
 cluster: wjr
 date: 2026-09-11
 updated: 2026-09-11

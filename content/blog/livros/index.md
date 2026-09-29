@@ -1,20 +1,25 @@
 ---
-title: "Livros: a minha estante, um por um"
-description: "Os livros de vendas, mente, hábito e liderança que João Bernardino leu de verdade, com resumo, o que aplicou e pra quem cada um serve."
+title: "Livros: resumo e resenha de cada livro da minha estante"
+description: "Resumos e resenhas de livros de vendas, mente e liderança por João Bernardino: capítulo por capítulo, o que ele aplicou e pra quem cada um serve."
 type: hub
-cluster: livros
+template: livros
+name: "Livros"
 date: 2026-09-11
-updated: 2026-09-11
-tags: [livros, resumo, vendas, lideranca, habito]
-summary: "Tenho uns sessenta livros na estante de casa (e mais na casa dos meus pais). Aqui eu resumo um por um: o que o livro diz, o que eu apliquei, o que não serviu e pra quem é. Alguns links são de parceiros."
-draft: false
+updated: 2026-09-29
+summary: "Todos os livros que eu tenho em casa, eu resumo aqui, um por um: o que o livro diz, o que eu apliquei, o que não serviu e pra quem é."
+card: "A minha estante, um por um: resumo, o que eu apliquei e pra quem cada livro serve."
+art_books: [spin-selling, prospeccao-fanatica, flow, responsabilidade-extrema]
+estantes:
+  Vendas: [spin-selling, prospeccao-fanatica, objecoes, a-biblia-de-vendas, os-segredos-do-lobo, como-fazer-amigos-e-influenciar-pessoas]
+  Mente e hábito: [flow, 12-regras-para-a-vida, nada-pode-me-ferir, a-estrutura-da-magia, o-milagre-da-manha, em-busca-de-sentido, os-segredos-da-mente-milionaria]
+  Liderança: [pipeline-de-lideranca, responsabilidade-extrema, gestao-de-alta-performance, o-monge-e-o-executivo, legado-15-licoes-sobre-lideranca]
+unit: "livros"
 ---
 
 ## Como funciona
 
 Cada livro ganha uma página: resumo honesto, a ideia que eu levei pra prática, o que eu discordo, e pra quem eu indicaria. Não é resenha de capa. É o que ficou depois de usar.
 
-<p class="disclosure">Alguns links desta seção são de parceiros. Se você comprar por eles, eu ganho uma comissão e você paga o mesmo preço.</p>
 
 ## Por onde começar
 
