@@ -2,14 +2,18 @@
 title: "Como parar de fumar maconha: o que mudou quando eu parei em 2024"
 description: "João Bernardino parou a maconha em 01/01/2024. O que mudou em sono, apetite e humor nas 2 primeiras semanas e o que o DSM-5 descreve sobre abstinência."
 type: post
+subtopic: "Maconha"
 cluster: zero-noia
 date: 2026-09-11
 updated: 2026-09-11
 tags: [parar-de-fumar-maconha, cannabis, abstinencia, zero-noia, neurociencia]
 summary: "Parei a maconha em 01/01/2024 e o tabaco em 07/01/2024, com 6 dias de diferença. O uso era esporádico. Este texto é o que eu notei nas duas primeiras semanas (sono, apetite, humor), marcado como relato, e o que a literatura descreve sobre abstinência de cannabis. Sem moralismo, sem promessa."
 cta:
+  kicker: "Manual de como parar de fumar"
   label: "Zero Nóia"
-  url: "/blog/zero-noia/"
+  text: "Manual prático em PDF, com a teoria e os exercícios pra parar de fumar, baseado na neurociência e na PNL. Mais videoaulas de apoio e uma comunidade no WhatsApp pra você não parar sozinho."
+  button: "Quero o Zero Nóia"
+  url: "https://pay.kiwify.com.br/y0iIDtj"
 cover: ""
 cover_alt: ""
 draft: false
@@ -17,7 +21,7 @@ draft: false
 
 ## 1º de janeiro de 2024
 
-Parei de fumar maconha na virada de 2023 pra 2024. Segunda-feira, dia 1º. Não teve fundo do poço, não teve intervenção de família, não teve clínica. Teve um cara de 26 anos cansado de começar o ano igual ao anterior. <!-- CONFIRMAR: idade em jan/2024 -->
+Parei de fumar maconha na virada de 2023 pra 2024. Segunda-feira, dia 1º. Não teve fundo do poço, não teve intervenção de família, não teve clínica. Teve um cara de 25 anos cansado de começar o ano igual ao anterior.
 
 Este não é um texto contra maconha. É o que aconteceu comigo quando parei, com data, e o que a ciência descreve sobre isso. Quem quiser moral procura em outro lugar.
 

@@ -2,14 +2,18 @@
 title: "Como parar de fumar: o que eu fiz em 2024 e o que a ciência diz"
 description: "João Bernardino fumou 11 anos e parou em 07/01/2024 com a câmera ligada. As primeiras 72h, os gatilhos, o que falhou e o que a neurociência do hábito explica."
 type: post
+subtopic: "Parar de fumar"
 cluster: zero-noia
 date: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-29
 tags: [parar-de-fumar, nicotina, habito, zero-noia, neurociencia]
 summary: "Fumei tabaco por 11 anos. Em 07/01/2024 decidi parar e liguei a câmera pra me obrigar a contar. Aqui está o que fiz nas primeiras 72 horas, os gatilhos que mapeei (6, com horário), o que não funcionou e o que a ciência do hábito explica. Sem cura, sem método infalível. Relato e fonte."
 cta:
+  kicker: "Manual de como parar de fumar"
   label: "Zero Nóia"
-  url: "/blog/zero-noia/"
+  text: "Manual prático em PDF, com a teoria e os exercícios pra parar de fumar, baseado na neurociência e na PNL. Mais videoaulas de apoio e uma comunidade no WhatsApp pra você não parar sozinho."
+  button: "Quero o Zero Nóia"
+  url: "https://pay.kiwify.com.br/y0iIDtj"
 cover: ""
 cover_alt: ""
 draft: false
@@ -34,7 +38,7 @@ O que eu fiz nesses 3 dias:
 - Joguei fora maço, isqueiro e cinzeiro no dia 1, antes do meio-dia. Parece bobagem. Não é. Todo cigarro que eu fumei na vida começou com um objeto ao alcance da mão.
 - Água gelada na hora da vontade. A vontade dura poucos minutos, e beber alguma coisa ocupa a boca e a mão.
 - Treino todo dia, mesmo ruim. <!-- CONFIRMAR: o que treinou nos 3 primeiros dias -->
-- Gravei um vídeo por dia contando como tinha sido. <!-- CONFIRMAR: cadência real (91 vídeos em ~2 meses sugere mais de 1 por dia) -->
+- Gravei um vídeo por dia contando como tinha sido.
 
 O dia 3 foi o pior. Dormi mal, briguei com gente que não tinha culpa e comi mais do que devia. Estava dentro do previsto.
 
@@ -76,7 +80,7 @@ A literatura de cessação chama isso de automonitoramento e apoio social, duas 
 
 Não era conteúdo. Virou prontuário.
 
-Ninguém assistiu. Gravei 91 vídeos sem resultado nenhum, em cerca de 2 meses. O 92º viralizou e o perfil chegou a 175 mil seguidores. Mas isso foi depois dos 30 dias, e nos 30 dias eu falei sozinho, todo dia, pra um celular.
+A série viralizou já no dia 0: o 4º vídeo bombou, o 10º mais ainda, e o perfil passou dos 170 mil seguidores. Mas a audiência não era o ponto. O ponto era ter que contar, todo dia, pra alguém.
 
 ## O que não funcionou
 

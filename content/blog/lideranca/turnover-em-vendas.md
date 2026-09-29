@@ -81,7 +81,7 @@ Fase 3, autonomia: ela passou a escutar as próprias ligações e trazer o diagn
 
 ## A delegação que eu fazia errado
 
-Onde eu errei foi em outro lugar. Delegava a tarefa e revisava tudo. Uma sênior do meu time me disse, na frente de outra pessoa: "parece que você não confia em mim". <!-- CONFIRMAR: quem disse e em que contexto -->
+Onde eu errei foi em outro lugar. Delegava a tarefa e revisava tudo. Uma sênior do meu time me disse, na frente de outra pessoa: "parece que você não confia em mim".
 
 Ela tinha razão. Delegar tarefa sem delegar decisão é só distribuir trabalho. Mudei o formato: sênior passou a acompanhar decisão de desligamento e de PDI antes de ter cargo pra isso. Quando a cadeira de líder chegava, a pessoa já tinha decidido vinte vezes com rede embaixo. Isso virou o meu plano de sucessão.
 
