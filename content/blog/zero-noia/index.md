@@ -33,6 +33,7 @@ cta:
 cover: ""
 cover_alt: ""
 draft: false
+kicker: "Minha causa ESG (Environmental, Social and Governance)"
 ---
 ## O que você encontra aqui
 

@@ -14,6 +14,7 @@ estantes:
   Mente e hábito: [flow, 12-regras-para-a-vida, nada-pode-me-ferir, a-estrutura-da-magia, o-milagre-da-manha, em-busca-de-sentido, os-segredos-da-mente-milionaria]
   Liderança: [pipeline-de-lideranca, responsabilidade-extrema, gestao-de-alta-performance, o-monge-e-o-executivo, legado-15-licoes-sobre-lideranca]
 unit: "livros"
+kicker: "Só os que recomendo"
 ---
 
 ## Como funciona
