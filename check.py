@@ -98,6 +98,15 @@ for url, s in public.items():
     if url.count('/') >= 4 and parent in public and parent != url and '"@type": "CollectionPage"' in public[parent]:
         if f'href="{url}"' not in public[parent]: err(f'{parent}: índice não lista {url} (Lei da Árvore)')
 
+# página órfã: toda página pública precisa de pelo menos um link vindo de outra página (exceto home e /linktree/)
+linked = set()
+for u, s2 in public.items():
+    for href in re.findall(r'href="(/[^"#?]*)', s2):
+        if href != u: linked.add(href if href.endswith('/') else href)
+for u in public:
+    if u not in ('/', '/linktree/') and u not in linked:
+        err(f'{u}: página órfã (nenhuma outra página aponta pra ela)')
+
 # seção privada: sem SEO nenhum e ninguém aponta pra ela
 for url, s in private.items():
     if 'noindex' not in s: err(f'{url}: página privada sem noindex')
