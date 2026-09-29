@@ -2,9 +2,10 @@
 title: "Abstinência de nicotina: o que acontece no corpo, dia a dia"
 description: "Dia 1, 3, 7, 14 e 30 sem cigarro: o que a literatura descreve e o que João Bernardino sentiu ao parar em 07/01/2024 após 11 anos. Com fonte e sinal de alerta."
 type: post
+subtopic: "Abstinência"
 cluster: zero-noia
 date: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-29
 tags: [abstinencia, nicotina, parar-de-fumar, zero-noia, neurociencia]
 summary: "A nicotina sai do corpo em cerca de 72 horas, mas a abstinência não acaba no dia 3. Esta é a linha do tempo (dia 1, 3, 7, 14 e 30) com o que a literatura descreve, o que eu senti quando parei em 07/01/2024 e o que fiz em cada fase. Relato marcado como relato. Fonte marcada como fonte."
 cta:
@@ -57,7 +58,7 @@ Abstinência de nicotina não é perigosa por si. O que exige médico é o que e
 
 Procure atendimento se: o humor deprimido durar mais de 2 semanas ou vier com pensamento de se machucar; a ansiedade impedir de trabalhar ou dormir por vários dias seguidos; você tiver histórico de depressão, transtorno de ansiedade ou uso de outra substância; a tosse vier com sangue, falta de ar ou dor no peito; ou se você já tentou parar mais de uma vez e voltou.
 
-Existe ferramenta clínica com evidência: adesivo e goma de nicotina, bupropiona e vareniclina, os dois últimos só com prescrição. Aconselhamento junto com medicação aumenta a chance de parar em comparação com tentar sozinho (Fiore, 2008). No Brasil, o Programa Nacional de Controle do Tabagismo do INCA, pelo SUS, oferece acompanhamento e medicação sem custo. Eu não usei nada disso. Relato, não recomendação.
+Existe ferramenta clínica com evidência: adesivo e goma de nicotina e a bupropiona, que só sai com prescrição. A vareniclina, outro remédio com evidência, hoje não está à venda no Brasil. Aconselhamento junto com medicação aumenta a chance de parar em comparação com tentar sozinho (Fiore, 2008). No Brasil, o Programa Nacional de Controle do Tabagismo do INCA, pelo SUS, oferece de graça acompanhamento, adesivo, goma e bupropiona, com entrada pela UBS ou pelo Disque Saúde 136. Eu não usei nada disso. Relato, não recomendação.
 
 ## Por que eu não te prometo o mesmo
 

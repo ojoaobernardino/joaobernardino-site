@@ -2,6 +2,7 @@
 title: "Os primeiros 30 dias sem cigarro: meu diário de 07/01 a 06/02/2024"
 description: "Semana a semana, os 30 primeiros dias de João Bernardino sem cigarro em 2024: o que gravou, o que ninguém assistiu e o que aprendeu antes do vídeo 92 viralizar."
 type: post
+subtopic: "Abstinência"
 cluster: zero-noia
 date: 2026-09-11
 updated: 2026-09-11

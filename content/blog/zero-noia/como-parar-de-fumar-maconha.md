@@ -2,6 +2,7 @@
 title: "Como parar de fumar maconha: o que mudou quando eu parei em 2024"
 description: "João Bernardino parou a maconha em 01/01/2024. O que mudou em sono, apetite e humor nas 2 primeiras semanas e o que o DSM-5 descreve sobre abstinência."
 type: post
+subtopic: "Maconha"
 cluster: zero-noia
 date: 2026-09-11
 updated: 2026-09-11

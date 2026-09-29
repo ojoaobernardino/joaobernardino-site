@@ -2,6 +2,7 @@
 title: "Como parar de fumar: o que eu fiz em 2024 e o que a ciência diz"
 description: "João Bernardino fumou 11 anos e parou em 07/01/2024 com a câmera ligada. As primeiras 72h, os gatilhos, o que falhou e o que a neurociência do hábito explica."
 type: post
+subtopic: "Parar de fumar"
 cluster: zero-noia
 date: 2026-09-11
 updated: 2026-09-11
