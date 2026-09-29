@@ -66,7 +66,7 @@ Em liderança. Cada pessoa abaixo da mediana ganha um PDI com fase e data, não 
 
 No treino físico. Boxe, corrida e musculação: sou atleta híbrido. O corpo é onde eu testo em mim o que ensino pros outros: repetição, feedback, progressão. Vendedor cansado vende mal, e eu já vendi cansado.
 
-No hábito. Liguei a câmera todo dia pra me obrigar a contar que tinha parado de fumar. Gravei 91 vídeos sem resultado nenhum. O 92º viralizou. Daquilo nasceu o [Zero Nóia](/blog/zero-noia/), comprado por 688 pessoas. Accountability pública funciona porque cria custo social pra recaída, e eu senti esse custo na pele.
+No hábito. Liguei a câmera todo dia pra me obrigar a contar que tinha parado de fumar. A série viralizou já nos primeiros vídeos e passou de 90, um por dia. Daquilo nasceu o [Zero Nóia](/blog/zero-noia/), comprado por 688 pessoas. Accountability pública funciona porque cria custo social pra recaída, e eu senti esse custo na pele.
 
 ## Os limites
 

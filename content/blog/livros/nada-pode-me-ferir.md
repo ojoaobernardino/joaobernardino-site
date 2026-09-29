@@ -95,7 +95,7 @@ O fechamento. Ele pergunta o que o leitor faria se não aceitasse os limites que
 
 O pote de biscoitos é a ferramenta que mais uso, e ela tem uma data. Parei a maconha em 01/01/2024 e o cigarro em 07/01/2024. Nos primeiros meses, quando a vontade voltava, lembrar do que eu já tinha aguentado nos dias anteriores ajudava mais do que qualquer frase de motivação. Cada dia sem usar virou um biscoito.
 
-A segunda aplicação foi nos vídeos. Gravei um vídeo por dia desde o começo, e foram 91 sem resultado. Na mente de quem desiste, o vídeo 30 já seria o limite. Eu não pensava em regra dos 40% naquela época, mas o mecanismo era esse: a sensação de "não está funcionando" chegou muito antes de o esforço ter acabado. O 92º viralizou (mais de 170 mil seguidores depois). O primeiro mês foi um tropeço atrás do outro e eu quase mudei de assunto três vezes.
+A segunda aplicação foi nos vídeos. Antes da série sobre parar de fumar, eu gravei 91 vídeos de PNL e neurociência, e nenhum estourou. Na mente de quem desiste, o vídeo 30 já seria o limite. Eu não pensava em regra dos 40% naquela época, mas o mecanismo era esse: a sensação de "não está funcionando" chegou muito antes de o esforço ter acabado. Eu quase mudei de assunto três vezes. O 92º, o primeiro da série "vou parar de fumar", viralizou já no dia 0 (mais de 170 mil seguidores depois).
 
 No treino, eu uso a lógica do desconforto escolhido. Corrida e musculação não são só pro corpo: é onde eu pratico ficar mais cinco minutos quando a cabeça pede pra parar, pra ter isso disponível no resto do dia.
 

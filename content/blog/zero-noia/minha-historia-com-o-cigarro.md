@@ -31,7 +31,7 @@ Primeiro dia do ano, primeira decisão: maconha nunca mais. Não teve cerimônia
 
 ## 07/01/2024 e a câmera
 
-Dia 7 de janeiro eu decidi parar o tabaco e fiz uma coisa diferente de todas as tentativas anteriores: liguei a câmera. Todo dia, um vídeo, contando pra quem quisesse ouvir que eu tinha passado mais um dia sem fumar. Ninguém estava assistindo no começo. Não importava. O vídeo não era pra audiência, era pra mim.
+Dia 7 de janeiro eu decidi parar o tabaco e fiz uma coisa diferente de todas as tentativas anteriores: liguei a câmera. Todo dia, um vídeo, contando pra quem quisesse ouvir que eu tinha passado mais um dia sem fumar. O vídeo não era pra audiência, era pra mim. A audiência veio depois, e veio rápido.
 
 A lógica é simples e tem nome. O BJ Fogg, pesquisador de Stanford, descreve no modelo dele (Fogg, 2009) que um comportamento acontece quando motivação, habilidade e gatilho se encontram no mesmo instante. Motivação eu tinha, oscilando. Habilidade de não acender um cigarro qualquer pessoa tem. O que faltava era o gatilho na hora certa e um custo por falhar. A câmera virou os dois: no fim do dia eu tinha que gravar, e gravar mentindo era pior do que fumar. Não era conteúdo, virou accountability com lente.
 
@@ -45,13 +45,13 @@ O que a câmera fez foi enfiar um comportamento novo entre a pista e a rotina ve
 
 Um aviso que eu devo a você: eu não sou médico. Se o seu caso envolve remédio, doença ou um consumo que você não controla há muito tempo, procura um médico ou um psiquiatra antes de tentar qualquer coisa que leu aqui. Vale pra cigarro e vale dobrado pra maconha.
 
-## Os 91 vídeos e o 92º
+## Os 91 vídeos antes e o dia 0
 
-Aqui é onde a história costuma ser contada errado, então vou contar com número. Gravei 91 vídeos seguidos sem resultado nenhum. Cerca de dois meses de vídeo diário, com visualização de conhecido, comentário de amigo e a nítida sensação de estar falando com a parede. Meu erro nesse período foi achar que o vídeo bom seria o mais bem editado. Eu estava editando pra esconder o desconforto, e o desconforto era a única coisa interessante ali.
+Aqui é onde a história costuma ser contada errado, então vou contar com número. Antes do cigarro eu já gravava: foram 91 vídeos sobre PNL e neurociência, no estilo divulgação científica, sem nada a ver com parar de fumar. Nenhum estourou.
 
-O 92º viralizou. Eu não sei te dizer exatamente o que ele tinha de diferente, e desconfio de quem diz que sabe. O perfil foi de quase nada pra mais de 170 mil seguidores, e a caixa de mensagem virou uma fila de gente perguntando a mesma coisa: como.
+Em janeiro de 2024 eu postei os dois primeiros vídeos de uma série nova, "vou parar de fumar": o dia 0 (os vídeos 92 e 93 do perfil). Eles já viralizaram. O 4º vídeo da série bombou, o 10º bombou mais ainda, e a série passou de 90 vídeos, um por dia. O perfil foi de quase nada pra mais de 170 mil seguidores, e a caixa de mensagem virou uma fila de gente perguntando a mesma coisa: como.
 
-O reframe que eu tirei disso é o mesmo que uso em vendas hoje: 91 vídeos não foram fracasso, viraram ramp. Ninguém fecha no primeiro follow-up.
+Eu não sei te dizer exatamente o que aqueles vídeos tinham de diferente, e desconfio de quem diz que sabe. O que eu sei é que os 91 de antes não foram fracasso, viraram ramp: quando o assunto certo chegou, eu já sabia falar pra câmera. Ninguém fecha no primeiro follow-up.
 
 ## Por que o nome Zero Nóia
 
@@ -77,7 +77,7 @@ Até hoje, mais de mil pessoas compraram o Zero Nóia. Não é número de vitrin
 
 ## Por que eu não te prometo o mesmo
 
-Porque o que funcionou comigo tem variáveis que eu não controlo em você: quanto tempo você fuma, o que mais você usa, como está a sua cabeça, se você tem pra quem gravar. Eu tinha uma câmera, uma pós em Neurociências começando e uma teimosia treinada em 91 vídeos. O Zero Nóia é o meu registro e o que eu entendi dele. Não é cura, não é tratamento, não substitui médico. É a versão organizada de alguém que passou pela porta e deixou a luz acesa pra quem vem atrás.
+Porque o que funcionou comigo tem variáveis que eu não controlo em você: quanto tempo você fuma, o que mais você usa, como está a sua cabeça, se você tem pra quem gravar. Eu tinha uma câmera, uma pós em Neurociências começando e uma teimosia treinada em 91 vídeos de antes. O Zero Nóia é o meu registro e o que eu entendi dele. Não é cura, não é tratamento, não substitui médico. É a versão organizada de alguém que passou pela porta e deixou a luz acesa pra quem vem atrás.
 
 ## O que eu faço hoje
 
