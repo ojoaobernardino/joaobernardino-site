@@ -434,7 +434,7 @@ def main():
         h['direct_count'] = len(direct) + (1 if start else 0)
         if h.get('secoes'):
             h['mode'], h['posts'] = 'secoes', direct
-            h['secoes'] = [dict(s, posts=[c for c in direct if c.get('indicacao') == s['tipo']]) for s in h['secoes']]
+            h['secoes'] = [dict(s, posts=[c for c in direct if s.get('tipo') and c.get('indicacao') == s['tipo']]) for s in h['secoes']]
         elif len(direct) <= CARDS_MAX:
             h['mode'], h['posts'] = 'cards', direct
         else:
@@ -467,6 +467,12 @@ def main():
                 for b in g['books']:
                     b['shelf'] = [x for x in g['books'] if x is not b][:3]
             h['art_covers'] = [{'src': kids[x]['book']['capa'], 'w': kids[x]['cover_w'], 'h': kids[x]['cover_h']} for x in (h.get('art_books') or []) if x in kids]
+    # seções que puxam de outro índice (ex.: Indicações > Livros vem da estante de /blog/livros/, na ordem das prateleiras)
+    for h in hubs_by_folder.values():
+        for sc in h.get('secoes') or []:
+            if isinstance(sc, dict) and sc.get('fonte') in by_url:
+                src = by_url[sc['fonte']]
+                sc['posts'] = [b for g in src.get('shelves', []) for b in g['books']] or src.get('all_posts', [])
     # relacionados: mesmo tema primeiro (por tags em comum), depois 1 de outro tema
     for p in posts:
         same = [c for c in posts if c['parent'] is p['parent'] and c is not p]
