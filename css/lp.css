@@ -17,3 +17,19 @@
   .hero h1{font-size:44px}
   .photo{aspect-ratio:1/1;order:-1}
 }
+/* /sobre/jb/ */
+.jb-hero .crumbs{color:#8f8f8f;margin-bottom:22px}
+.jb-hero .lead strong{color:#fff;font-weight:600}
+.ficha{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:24px 0 0}
+.ficha>div{background:var(--card);padding:20px 22px;min-width:0}
+.ficha dt{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:6px}
+.ficha dd{margin:0;font-size:16px;line-height:1.5}
+.linha{list-style:none;margin:32px 0 0;padding:0;border-left:1px solid var(--line)}
+.linha li{position:relative;display:grid;grid-template-columns:150px minmax(0,1fr);gap:24px;padding:0 0 36px 32px}
+.linha li::before{content:"";position:absolute;left:-6px;top:6px;width:11px;height:11px;border-radius:50%;background:#000;border:2px solid #555}
+.linha li.agora::before{background:var(--red);border-color:var(--red)}
+.linha .ano{font-size:14px;font-weight:600;color:var(--red-on-dark);padding-top:3px}
+.linha h3{margin:0 0 6px;font-size:21px;letter-spacing:-.02em}
+.linha p{margin:0;color:var(--soft);font-size:16px;line-height:1.6;max-width:64ch}
+@media (max-width:900px){.ficha{grid-template-columns:1fr}.linha li{grid-template-columns:1fr;gap:4px;padding-left:24px}}
+a.photo{display:block}
