@@ -1,13 +1,13 @@
 ---
-title: "O Monge e o Executivo: resumo do livro e o que eu apliquei"
-description: "Resumo de O Monge e o Executivo, de James C. Hunter, dia por dia: liderança servidora, poder x autoridade e o que João Bernardino aplicou com o time."
+title: "O Monge e o Executivo, de James Hunter: resumo do livro"
+description: "Resumo de O Monge e o Executivo, de James C. Hunter, capítulo por capítulo: liderança servidora, poder x autoridade e se vale a pena, por João Bernardino."
 type: post
 kind: livro
 group: "Liderança"
 date: 2026-09-29
-updated: 2026-09-29
+updated: 2026-09-30
 tags: [o-monge-e-o-executivo, james-hunter, lideranca-servidora, lideranca, livros]
-summary: "O Monge e o Executivo conta 7 dias de um gerente em crise dentro de um mosteiro, conversando com um ex-executivo que virou monge. A tese: liderar não é mandar, é servir, e autoridade se constrói, não se herda do cargo. Aqui está o resumo dia por dia, as 7 lições e o que funcionou na prática."
+summary: "O Monge e o Executivo conta 7 dias de um gerente em crise dentro de um mosteiro, conversando com um ex-executivo que virou monge. A tese: liderar não é mandar, é servir, e autoridade se constrói, não se herda do cargo. Aqui estão o resumo dia por dia, as 7 lições, as críticas e pra quem o livro serve."
 book:
   titulo: "O Monge e o Executivo: uma história sobre a essência da liderança"
   autor: "James C. Hunter"
@@ -44,39 +44,39 @@ O livro é uma fábula. John Daily é um gerente bem-sucedido no papel, mas com 
 
 ### Prólogo
 
-John chega contrariado. Acha que é perda de tempo, que ele já sabe liderar. O prólogo mostra a distância entre o que ele acha de si e o que as pessoas ao redor sentem dele.
+John chega contrariado. Acha que é perda de tempo, que ele já sabe liderar e que os problemas da fábrica e de casa são culpa dos outros. O prólogo mostra a distância entre o que ele acha de si e o que as pessoas ao redor sentem dele: a esposa infeliz, os filhos distantes, a equipe insatisfeita. Também apresenta o cenário do retiro, com a rotina rígida do mosteiro, os horários de oração e o silêncio. É a montagem da fábula: um homem que tem o cargo e os resultados, mas não tem a confiança das pessoas que lidera.
 
 ### Capítulo 1 · As Definições
 
-Simeão começa pelo vocabulário: liderança, poder e autoridade. A diferença entre poder e autoridade é a base de tudo. O grupo percebe que usa muito poder e pouca autoridade, em casa e no trabalho.
+Simeão começa pelo vocabulário: gerenciar, liderar, poder e autoridade. Gerenciar é o que se faz com coisas; liderar é o que se faz com pessoas. A diferença entre poder e autoridade é a base de tudo o que vem depois. O poder vem da posição e pode ser tirado; a autoridade vem da pessoa e é dada por quem é liderado. O grupo percebe que usa muito poder e pouca autoridade, em casa e no trabalho, e que o poder pode até funcionar no curto prazo, mas desgasta as relações. Hunter usa o capítulo pra estabelecer a definição de liderança que atravessa o livro.
 
 ### Capítulo 2 · O Velho Paradigma
 
-A pirâmide tradicional, com o chefe no topo e o cliente lá embaixo, é virada de ponta-cabeça. Na pirâmide invertida, o cliente fica em cima, os funcionários logo abaixo e o líder na base, sustentando. Simeão também separa vontade de necessidade: o líder deve atender às necessidades legítimas do time, não às vontades de todo mundo.
+A pirâmide tradicional, com o chefe no topo e o cliente lá embaixo, é virada de ponta-cabeça. Na pirâmide invertida, o cliente fica em cima, os funcionários da linha de frente logo abaixo e o líder na base, sustentando. Simeão argumenta que o velho modelo faz todo mundo olhar pra cima, pro chefe, em vez de olhar pro cliente. Também separa vontade de necessidade: o líder deve atender às necessidades legítimas do time, o que as pessoas precisam pra fazer bem o trabalho, e não às vontades de todo mundo. Servir, nesse sentido, não é agradar.
 
 ### Capítulo 3 · O Modelo
 
-É o capítulo que mais aparece nas buscas. Simeão desenha o modelo completo, de baixo pra cima: vontade, amor, serviço e sacrifício, autoridade e liderança. Liderar começa em querer. Quem não decide servir não constrói autoridade, por mais cargo que tenha.
+É o capítulo que mais aparece nas buscas. Simeão desenha o modelo completo de liderança servidora, de baixo pra cima: vontade, amor, serviço e sacrifício, autoridade e liderança. Cada degrau depende do anterior. A vontade é a decisão de alinhar as ações às intenções. O amor é a disposição de atender às necessidades do outro. O serviço e o sacrifício são o amor em prática, e é deles que nasce a autoridade. Liderar começa em querer. Quem não decide servir não constrói autoridade, por mais cargo que tenha, e acaba recorrendo ao poder.
 
 ### Capítulo 4 · O Verbo
 
-Amor como verbo, não como sentimento. Simeão usa um texto bíblico conhecido pra listar os comportamentos: paciência, bondade, humildade, respeito, abnegação, perdão, honestidade e compromisso. São oito atitudes, e todas podem ser treinadas. O capítulo transforma uma palavra abstrata em lista de comportamento.
+Amor como verbo, não como sentimento. Simeão usa um texto bíblico conhecido, a descrição do amor na carta de Paulo aos Coríntios, pra listar os comportamentos: paciência, bondade, humildade, respeito, abnegação, perdão, honestidade e compromisso. São oito atitudes, e todas podem ser praticadas e treinadas, mesmo quando a pessoa não sente vontade. O capítulo transforma uma palavra abstrata em lista de comportamento observável. O argumento é que o time não sente o que o líder sente; o time vê o que o líder faz. Por isso o amor, no trabalho, é medido pelo comportamento.
 
 ### Capítulo 5 · O Ambiente
 
-A metáfora é o jardim. O líder não faz a planta crescer. Ele cria o ambiente pra que ela cresça: responsabilidade, feedback, reconhecimento, correção quando precisa. Ser gentil não é aceitar tudo. Deixar alguém errar sem corrigir também é falta de respeito.
+A metáfora é o jardim. O jardineiro não faz a planta crescer. Ele cria o ambiente pra que ela cresça: solo, água, luz, poda na hora certa. No trabalho, isso significa responsabilidade clara, feedback, reconhecimento e correção quando precisa. Simeão insiste que ser gentil não é aceitar tudo. Deixar alguém errar sem corrigir também é falta de respeito, porque tira da pessoa a chance de melhorar. O capítulo é o contraponto necessário à ideia de servir: o líder servidor cobra, só que cobra pelo bem da pessoa e do grupo, não pelo próprio ego.
 
 ### Capítulo 6 · A Escolha
 
-Outro capítulo muito buscado. O tema é que a gente escolhe o comportamento, mesmo quando não escolhe o sentimento. Simeão fala de como hábitos se formam em estágios, da falta de consciência até o comportamento automático, e diz que intenção sem ação não vale nada. Mudar como líder é repetir o comportamento certo até ele virar natural.
+Outro capítulo muito buscado. O tema é que a gente escolhe o comportamento, mesmo quando não escolhe o sentimento. Entre o estímulo e a resposta, existe um espaço, e é ali que o líder decide como agir. Simeão fala de como hábitos se formam em estágios, da falta de consciência até o comportamento automático, passando pela fase desconfortável em que a pessoa sabe o que deve fazer mas ainda faz com esforço. E diz que intenção sem ação não vale nada. Mudar como líder é repetir o comportamento certo até ele virar natural.
 
 ### Capítulo 7 · A Recompensa
 
-O último dia fala do que o líder ganha servindo. Não é dinheiro nem cargo. É a satisfação de ver as pessoas crescerem, e o tipo de relação que só aparece quando o time confia em você.
+O último dia fala do que o líder ganha servindo. Não é dinheiro nem cargo. É a satisfação de ver as pessoas crescerem, a alegria que vem de ter contribuído pra vida dos outros, e o tipo de relação que só aparece quando o time confia em você. Simeão também admite que o caminho é difícil e que ninguém faz isso o tempo todo. O capítulo fecha o retiro com cada participante pensando no que vai levar pra casa. É o dia mais emocional do livro, e o que menos traz ideia nova.
 
 ### Epílogo
 
-John volta pra casa e pra fábrica tentando aplicar o que aprendeu. O livro fecha sem final perfeito: ele sabe que vai errar, mas agora sabe o que corrigir.
+John volta pra casa e pra fábrica tentando aplicar o que aprendeu. O livro fecha sem final perfeito: ele sabe que vai errar, que vai recair no jeito antigo de liderar, mas agora sabe o que corrigir e por quê. O epílogo reforça a mensagem de que liderança servidora não é um estado alcançado numa semana de retiro, é uma escolha feita todos os dias. É um fechamento coerente com o capítulo 6: a mudança real só começa depois do livro, na repetição.
 
 ## As 7 principais lições
 
@@ -88,27 +88,13 @@ John volta pra casa e pra fábrica tentando aplicar o que aprendeu. O livro fech
 6. **Intenção sem ação não conta.** O time julga o que você faz, não o que você quis fazer.
 7. **Mudar de estilo leva tempo.** Hábito de liderança se forma repetindo, como qualquer outro hábito.
 
-## O que eu apliquei
+## Críticas e limitações do livro
 
-A frase que me colocou esse livro de volta na cabeça veio de um liderado: "parece que você não confia em mim". Eu tinha o cargo, tinha o poder de decidir, e estava usando os dois. Autoridade, naquele momento, eu não tinha com ele. Mudei a forma de delegar a partir dali.
+A primeira limitação é o formato. A fábula ajuda a vender o livro e atrapalha quem quer aplicar. Muita página é gasta com diálogo previsível, e os personagens funcionam mais como porta-vozes de objeções do que como pessoas: o sargento cético existe pra levantar a dúvida que o monge vai derrubar, e o monge sempre tem a resposta certa.
 
-A lição do quinto dia foi a que mais serviu. Com uma vendedora do time, montei um PDI (3 fases, uma de cada vez). Não era uma lista de metas pra cobrar, era um jeito de criar o ambiente pra ela crescer: o que ela precisava aprender, com quem, e como a gente ia medir. Cuidar não virou passar a mão na cabeça, virou combinar o que eu ia cobrar e cobrar.
+A segunda é a falta de ferramenta. O livro diz o que um líder deve ser, mas quase não diz o que fazer na segunda-feira. Não tem rotina, não tem reunião, não tem indicador, não tem roteiro de conversa difícil. Pra isso é preciso outro livro, como a [resenha de Gestão de Alta Performance](/blog/livros/gestao-de-alta-performance/), do Andy Grove, que é quase o oposto em estilo.
 
-Errei no começo. Na primeira fase, eu fiz o PDI mais pra mim do que pra ela, com o que eu achava importante. Só andou quando ela escreveu metade do plano.
-
-E tem a lição do sexto dia, que eu uso fora do trabalho. Hábito é escolha repetida. Foi assim que parei a maconha em 01/01/2024 e o cigarro em 07/01/2024: um vídeo por dia, todos os dias, sem esperar vontade.
-
-Num dia de ação comercial forte, um SDR adoeceu de manhã. Em vez de redistribuir a lista dele pro time, peguei a lista e fiz as ligações eu mesmo. Ninguém pediu. No mês seguinte, quando eu precisei de hora extra pra uma virada de mês, não precisei pedir duas vezes.
-
-!!! Regra: se o time só faz porque eu mandei, eu tenho poder, não liderança.
-
-## O que não serviu
-
-A primeira coisa é o formato. A fábula ajuda a vender o livro e atrapalha quem quer aplicar. Muita página é gasta com diálogo previsível, e o sargento cético existe só pra levantar a objeção que o monge vai derrubar.
-
-A segunda é a falta de ferramenta. O livro diz o que um líder deve ser, mas quase não diz o que fazer na segunda-feira. Não tem rotina, não tem reunião, não tem indicador. Pra isso eu complemento com Gestão de Alta Performance, do Andy Grove.
-
-A terceira é o tom religioso. O cenário é um mosteiro e a base da lista de comportamentos é um texto bíblico. Pra alguns leitores isso ajuda, pra outros afasta. A ideia funciona sem a religião, mas o livro não separa as duas.
+A terceira é o tom religioso. O cenário é um mosteiro e a base da lista de comportamentos é um texto bíblico. Pra alguns leitores isso ajuda, pra outros afasta. A ideia funciona sem a religião, mas o livro não separa as duas. Por fim, o livro não traz pesquisa: a liderança servidora tem estudos acadêmicos próprios, mas Hunter não os usa, e a tese fica apoiada na força da história, não em evidência.
 
 ## Pra quem é e pra quem não é
 
@@ -122,7 +108,7 @@ Vale, principalmente como primeiro livro de liderança. A diferença entre poder
 
 Só não espere manual. Leia pra mudar a cabeça e busque outro livro pra mudar a rotina.
 
-**Minha nota: 4 de 5**.
+**Minha nota: 4 de 5** pra quem está começando a liderar.
 
 ## Perguntas frequentes
 
@@ -158,9 +144,13 @@ James C. Hunter, consultor americano de liderança e relações de trabalho. O t
 
 John Daily é um gerente bem-sucedido no trabalho e em crise na vida pessoal. Ele vai a um retiro num mosteiro beneditino, onde o professor é Simeão, antigo executivo famoso. Em sete dias de aula, o grupo discute o que é liderança de verdade.
 
-### Tem O Monge e o Executivo pra ler online?
+### O Monge e o Executivo tem em PDF para download?
 
 A versão legal é o livro físico ou a edição digital vendida nas lojas oficiais. O PDF gratuito que circula na internet costuma ser cópia sem autorização da editora.
+
+### O Monge e o Executivo vale a pena?
+
+Vale como primeiro livro de liderança, pela diferença entre poder e autoridade. Não vale pra quem já lidera há anos e procura método ou ferramenta prática.
 
 ## Fontes
 

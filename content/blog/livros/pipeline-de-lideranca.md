@@ -1,13 +1,13 @@
 ---
 title: "Pipeline de Liderança 3.0: resumo do livro e as 5 passagens"
-description: "Resumo de Pipeline de Liderança, de Charan, Drotter e Noel: as 5 passagens da edição 3.0, as 7 lições e o que João Bernardino aprendeu ao virar gestor."
+description: "Resumo de Pipeline de Liderança 3.0, de Ram Charan e coautores: as 5 passagens, os 11 capítulos e se o livro vale a pena, por João Bernardino."
 type: post
 kind: livro
 group: "Liderança"
 date: 2026-09-29
-updated: 2026-09-29
+updated: 2026-09-30
 tags: [pipeline-de-lideranca, ram-charan, lideranca, gestao-comercial, livros]
-summary: "Pipeline de Liderança é o livro de Ram Charan, Stephen Drotter e James Noel sobre por que bons profissionais viram gestores ruins. Na edição 3.0, a resposta está em 5 passagens de carreira, e em cada uma o líder precisa mudar o que faz, como usa o tempo e o que valoriza. Aqui está o resumo passagem por passagem, as 7 lições e o que eu aprendi ao sair de executivo de contas pra coordenador."
+summary: "Pipeline de Liderança é o livro de Ram Charan, Stephen Drotter e James Noel sobre por que bons profissionais viram gestores ruins. Na edição 3.0, a resposta está em 5 passagens de carreira, e em cada uma o líder precisa mudar o que faz, como usa o tempo e o que valoriza. Aqui estão o resumo dos 11 capítulos, as 7 lições, as críticas e pra quem o livro serve."
 book:
   titulo: "Pipeline de Liderança 3.0"
   autor: "Ram Charan, Stephen Drotter, James Noel e Kent Jonasen"
@@ -41,63 +41,57 @@ A terceira é a mais difícil. Dá pra aprender uma habilidade num curso. Mudar 
 O nome "pipeline" vem daí: a empresa precisa de um fluxo contínuo de líderes prontos pra cada nível. Quando a passagem falha, o cano entope.
 
 ## Resumo capítulo por capítulo
-<!-- FONTE SUMÁRIO: https://www.gbv.de/dms/zbw/1866069543.pdf -->
+<!-- FONTE SUMÁRIO: https://www.gbv.de/dms/zbw/1866069543.pdf (sumário da 3ª edição original, Wiley, 2024; títulos em tradução livre) -->
 
-Os títulos abaixo são da edição original, em tradução livre. A edição 3.0 tem uma introdução e 11 capítulos em 3 partes. Uma mudança importante em relação à primeira edição: o modelo agora trabalha com 5 passagens (liderar outros, liderar líderes, liderar uma função, liderar um negócio e liderar a empresa), e não mais com as 6 do livro de 2001.
+Os títulos dos capítulos seguem a edição original, em tradução livre. A edição 3.0 tem uma introdução e 11 capítulos, organizados em três partes: por que o modelo importa (capítulos 1 e 2), as cinco passagens (capítulos 3 a 7) e a aplicação (capítulos 8 a 11). Uma mudança importante em relação à primeira edição: o modelo agora trabalha com 5 passagens (liderar outros, liderar líderes, liderar uma função, liderar um negócio e liderar a empresa), e não mais com as 6 do livro de 2001.
 
 ### Introdução
 
-Explica o que muda nesta atualização e por que o trabalho do líder mudou com a digitalização, o trabalho remoto e a incerteza econômica. Fecha desfazendo alguns mitos sobre o modelo, como a ideia de que ele descreve um organograma fixo.
+A introdução explica o que muda nesta atualização e por que o trabalho do líder mudou com a digitalização, o trabalho remoto e a incerteza econômica. O argumento é que, com times distribuídos e decisões mais rápidas, a clareza sobre o que se espera de cada nível fica mais importante, não menos. A introdução fecha desfazendo alguns mitos sobre o modelo, como a ideia de que ele descreve um organograma fixo ou um plano de carreira em linha reta.
 
-### Parte 1 · Por que o Pipeline de Liderança importa
+### Capítulo 1 · Panorama do Pipeline de Liderança
 
-#### Capítulo 1 · Panorama do Pipeline de Liderança
+Apresenta as grandes ideias do modelo, que nasceu de avaliações de mais de 1.500 candidatos a cargos de direção. A efetividade do líder aparece em três dimensões: habilidades, uso do tempo e valores de trabalho. O capítulo mostra as passagens centrais, como definir o trabalho de cada nível e como entender as transições entre eles. É o capítulo que dá o vocabulário do livro inteiro. Quem ler só este e o capítulo 3 já leva a ideia principal: promoção não é prêmio pelo trabalho anterior, é troca de trabalho.
 
-Apresenta as grandes ideias do modelo, que nasceu de avaliações de mais de 1.500 candidatos a cargos de direção. A efetividade do líder aparece em três dimensões: habilidades, uso do tempo e valores de trabalho. O capítulo mostra as passagens centrais, como definir o trabalho de cada nível e como entender as transições.
+### Capítulo 2 · A proposta de valor do Pipeline de Liderança
 
-#### Capítulo 2 · A proposta de valor do Pipeline de Liderança
+Por que vale a pena implementar o modelo numa empresa. Os autores listam três ganhos: fortalecer o elo mais fraco da liderança, reduzir custos invisíveis (retrabalho, rotatividade, decisão travada) e ter uma régua comum de líderes pra empresa inteira. O argumento é de negócio, não de RH: um gestor que continua fazendo o trabalho do nível anterior custa caro, porque trava o time dele e ocupa o espaço de quem deveria crescer. O capítulo fecha com o que é preciso montar pra o modelo funcionar pra sair do papel.
 
-Por que vale a pena implementar: fortalecer o elo mais fraco da liderança, reduzir custos invisíveis (retrabalho, rotatividade, decisão travada) e ter uma régua comum de líderes pra empresa inteira. O capítulo fecha com o que é preciso montar pra o modelo funcionar.
+### Capítulo 3 · Liderar outros
 
-### Parte 2 · As cinco passagens do Pipeline de Liderança
+É a primeira passagem, de profissional individual pra gestor, e a mais negligenciada pelas empresas. O profissional que era bom individualmente é promovido e continua fazendo o que sabia: vendendo, resolvendo, apagando incêndio. O trabalho novo é planejar o trabalho do time, delegar, acompanhar, dar feedback e desenvolver pessoas. No tempo, entra agenda protegida pra planejar e pra conversar com cada liderado. No valor, entra a ideia de que o sucesso do gestor é o resultado dos outros. O erro clássico é achar que ser gestor é ser o melhor executor da equipe.
 
-#### Capítulo 3 · Liderar outros
+### Capítulo 4 · Liderar líderes
 
-É a passagem que eu conheço por dentro, e a mais negligenciada. O profissional que era bom individualmente é promovido e continua fazendo o que sabia: vendendo, resolvendo, apagando incêndio. O trabalho novo é planejar o trabalho do time, delegar, acompanhar, dar feedback e desenvolver pessoas. O erro clássico é achar que ser gestor é ser o melhor executor da equipe.
+Aqui a pessoa lidera quem lidera. A habilidade central é escolher e desenvolver gestores de primeira linha e cobrar deles o trabalho de gestão, não o trabalho técnico. O gestor de gestores também precisa distribuir recursos entre times e coordenar o que um faz com o que o outro faz. O risco apontado é o gestor de gestores que pula a camada do meio e fala direto com o time, tirando a autoridade de quem está entre eles. Os autores tratam essa passagem como a que mais define a qualidade da liderança de base de uma empresa.
 
-#### Capítulo 4 · Liderar líderes
+### Capítulo 5 · Liderar uma função
 
-Aqui a pessoa lidera quem lidera. A habilidade central é escolher e desenvolver gestores de primeira linha e cobrar deles o trabalho de gestão, não o trabalho técnico. O risco apontado é o gestor de gestores que pula a camada do meio e fala direto com o time, tirando a autoridade de quem está entre eles.
+O líder passa a responder por uma área inteira, como vendas, marketing ou operações. Precisa entender subáreas que nunca praticou, pensar a função no longo prazo e negociar com as outras funções por recurso e prioridade. É a passagem em que a estratégia da área deixa de ser um documento e vira trabalho de verdade. O líder também passa a se comunicar através de duas camadas de gestão, o que exige mensagens mais claras. Quem vem de uma especialidade forte tende a favorecer a subárea de origem, e o capítulo alerta pra esse viés.
 
-#### Capítulo 5 · Liderar uma função
+### Capítulo 6 · Liderar um negócio
 
-O líder passa a responder por uma área inteira, como vendas, marketing ou operações. Precisa entender áreas que nunca praticou, pensar a função no longo prazo e negociar com as outras funções por recurso e prioridade.
+O líder passa a responder pelo resultado de um negócio inteiro, com todas as funções embaixo dele. O capítulo começa pelo peso e pelo alcance do cargo: agora ele precisa valorizar todas as áreas, não só a de origem, e equilibrar o curto e o longo prazo. A pergunta deixa de ser se a área funciona e passa a ser se o negócio dá lucro. É também a passagem em que o líder fica mais exposto: o resultado aparece no balanço, e não existe mais um chefe de função pra dividir a responsabilidade. Tempo pra pensar e analisar vira parte do trabalho.
 
-#### Capítulo 6 · Liderar um negócio
+### Capítulo 7 · Liderar a empresa
 
-O líder passa a responder pelo resultado de um negócio inteiro, com todas as funções embaixo dele. O capítulo começa pelo peso e pelo alcance do cargo: agora ele precisa valorizar todas as áreas, não só a de origem, e equilibrar curto e longo prazo.
+A última passagem, a do presidente. O capítulo trata do trabalho de construir uma mentalidade de empresa inteira: visão de longo prazo, relação com conselho e investidores, escolha do portfólio de negócios e a empresa que vai existir depois dele. O líder desse nível é avaliado por resultados de vários anos, não de um trimestre. Os autores insistem que o presidente também faz uma passagem, e que quem chega ao topo com a cabeça de líder de negócio tende a gerenciar a operação de perto demais, deixando sem dono o trabalho que só ele pode fazer.
 
-#### Capítulo 7 · Liderar a empresa
+### Capítulo 8 · Estratégias pra implementar o modelo
 
-A última passagem, a do presidente. O capítulo trata do trabalho de construir uma mentalidade de empresa inteira: visão de longo prazo, relação com conselho e investidores, e a empresa que vai existir depois dele.
+Começa a parte de aplicação. O capítulo mostra como sair do conceito: desenhar o retrato de cada papel de liderança na empresa, escolher o grau de implementação e encaixar o modelo nos processos que já existem, como seleção, avaliação e sucessão. A proposta não é criar um programa paralelo de RH, e sim usar as passagens como régua em decisões que a empresa já toma. Pra quem está em empresa menor, a mensagem útil é que dá pra começar pequeno, definindo só o papel do gestor de primeira linha.
 
-### Parte 3 · Aplicação
+### Capítulo 9 · Dicas pra ajustar a implementação
 
-#### Capítulo 8 · Estratégias pra implementar o modelo
+Dicas separadas por público: líderes de negócio, líderes de RH e business partners de RH. Cada grupo tem um papel diferente pra o modelo funcionar, e o capítulo deixa claro que, sem o envolvimento direto de quem lidera o negócio, o pipeline vira projeto de RH que ninguém usa. Traz uma lista do que ninguém deve fazer ao implementar e dicas pra desentupir o pipeline quando ele trava, por exemplo quando uma camada inteira de gestores continua presa ao trabalho do nível anterior.
 
-Como sair do conceito: desenhar o retrato de cada papel de liderança na empresa, escolher o grau de implementação e encaixar o modelo nos processos que já existem.
+### Capítulo 10 · Diálogos significativos sobre desempenho, engajamento e retenção
 
-#### Capítulo 9 · Dicas pra ajustar a implementação
+Leva o modelo pra conversa individual entre líder e liderado. Mostra por onde começar, o que evitar e como usar os círculos de desempenho do pipeline pra levar alguém ao desempenho pleno no papel atual antes de pensar na próxima passagem. Liga desenvolvimento a retenção: quem entende o que se espera dele e vê um caminho tende a ficar. É o capítulo mais útil pro gestor de primeira linha no dia a dia, porque transforma a teoria das passagens em pauta de conversa.
 
-Dicas separadas por público: líderes de negócio, líderes de RH e business partners de RH. Traz uma lista do que ninguém deve fazer e dicas pra desentupir o pipeline quando ele trava.
+### Capítulo 11 · Como o modelo se aplica a papéis específicos
 
-#### Capítulo 10 · Diálogos significativos sobre desempenho, engajamento e retenção
-
-Leva o modelo pra conversa individual entre líder e liderado. Mostra por onde começar, o que evitar e como usar os círculos de desempenho do pipeline pra levar alguém ao desempenho pleno. Liga desenvolvimento a retenção.
-
-#### Capítulo 11 · Como o modelo se aplica a papéis específicos
-
-Adapta as passagens a cargos que não cabem no organograma clássico: líder de projeto, líder em organização ágil escalada, líder de terceirizados, líder de seção e líder de grupo.
+Adapta as passagens a cargos que não cabem no organograma clássico: líder de projeto, líder em organização ágil escalada, líder de terceirizados, líder de seção e líder de grupo. É a resposta dos autores à crítica de que o modelo foi feito pra hierarquia tradicional. Em cada caso, a lógica é a mesma: identificar quais habilidades, qual uso do tempo e quais valores mudam naquele papel. É o capítulo que mais conversa com empresas de tecnologia e times por projeto.
 
 ## As 7 principais lições
 
@@ -109,27 +103,13 @@ Adapta as passagens a cargos que não cabem no organograma clássico: líder de 
 6. **Defina o que se espera de cada nível.** Sem régua, a empresa promove por desempenho técnico.
 7. **Líder se forma no fluxo.** A empresa que não desenvolve gente em cada passagem entope o pipeline.
 
-## O que eu apliquei
+## Críticas e limitações do livro
 
-Eu fiz a primeira passagem na Stone. Saí de executivo de contas de inside sales, com carteira B2B de médio porte, pra coordenador comercial, liderando 3 times de inside sales (SDRs, executivos e especialistas). E cometi o erro do livro.
+O livro é escrito pra empresa grande. As passagens mais altas falam de estruturas com vários negócios e conselho de administração, e pra quem trabalha em startup ou empresa média elas soam distantes. Numa empresa de cem pessoas, as passagens se misturam e ninguém tem o cargo que o livro descreve. O capítulo 11 tenta responder a isso, mas o centro do modelo continua sendo a hierarquia clássica.
 
-Eu ainda estava no valor do nível anterior: achava que o trabalho importante era a negociação bem feita, e entrava nas contas do time pra fazer do meu jeito. O livro me deu o nome pro problema. Habilidade eu tinha; o valor de trabalho não tinha mudado. Mudei a forma de delegar. Errei feio na primeira tentativa: soltei demais, sem combinar acompanhamento, e fiquei sabendo de problema tarde. O ajuste foi delegar o resultado e combinar o ritmo de conversa.
+É também um livro de RH. A metade que fala de implementação, régua por nível e diagnóstico foi escrita pra quem desenha o sistema, não pra quem está vivendo a transição. O gestor recém-promovido vai ler a primeira passagem com atenção e folhear o resto.
 
-O uso do tempo virou agenda. A rotina fixa, com segunda de planejamento e terça de reunião de previsibilidade, é exatamente o que o livro chama de tempo de gestor: tempo protegido pra planejar e acompanhar o time, que não some quando aparece um cliente urgente.
-
-E o desenvolvimento de gente deixou de ser conversa solta, virou plano. O PDI em 3 fases que eu montei com uma vendedora do time é a aplicação mais direta da lição de que o sucesso do gestor é o resultado do liderado.
-
-Fui promovido a coordenador depois de um ano e meio como executivo, e no primeiro mês ainda fechava negócio no lugar do time. Sentei num domingo e escrevi numa folha o que só um líder faz e o que qualquer executivo faz. Na segunda, entreguei minhas contas e fiquei só com a primeira lista.
-
-!!! Regra: se eu estou fazendo o trabalho do meu time, eu não estou fazendo o meu.
-
-## O que não serviu
-
-O livro é escrito pra empresa grande. As passagens mais altas falam de estruturas com vários negócios e grupos, e pra quem trabalha em startup ou empresa média elas soam distantes. Numa empresa de cem pessoas, as passagens se misturam e ninguém tem o cargo bonito do livro.
-
-É também um livro de RH. A metade que fala de sucessão, régua por nível e diagnóstico foi escrita pra quem desenha o sistema, não pra quem está vivendo a transição. O gestor recém-promovido vai ler a primeira passagem com atenção e folhear o resto.
-
-E falta prática de vendas. O modelo é genérico por design. Quem lidera time comercial precisa traduzir: o que é abrir mão do trabalho técnico quando o trabalho técnico é fechar negócio e bater meta.
+Falta prática de função. O modelo é genérico por design, e quem lidera time comercial, de tecnologia ou de operação precisa traduzir sozinho o que é abrir mão do trabalho técnico quando o trabalho técnico é o que a empresa mais cobra. E a base empírica é a experiência dos autores em consultoria, não pesquisa controlada: o modelo é convincente, mas é mais um mapa prático do que uma teoria testada.
 
 ## Pra quem é e pra quem não é
 
@@ -139,11 +119,13 @@ E falta prática de vendas. O modelo é genérico por design. Quem lidera time c
 
 ## Vale a pena ler?
 
-Vale, e eu queria ter lido antes da minha promoção, não depois. O maior ganho é o vocabulário: habilidade, tempo e valor. Com essas três palavras, dá pra diagnosticar por que um gestor novo está travado e conversar sobre isso sem acusar ninguém.
+Vale, e o melhor momento é antes da promoção, não depois. O maior ganho é o vocabulário: habilidade, tempo e valor. Com essas três palavras, dá pra diagnosticar por que um gestor novo está travado e conversar sobre isso sem acusar ninguém.
+
+Pra técnica de gestão do dia a dia (reuniões, one-on-one, decisões), eu leria junto com a [resenha de Gestão de Alta Performance](/blog/livros/gestao-de-alta-performance/), do Andy Grove. Um explica o que muda em cada nível; o outro mostra como gerenciar a semana.
 
 Se você é gestor de primeira linha, leia a primeira passagem duas vezes e o resto uma.
 
-**Minha nota: 4,5 de 5** pra quem lidera.
+**Minha nota: 4,5 de 5** pra quem lidera ou forma líderes.
 
 ## Perguntas frequentes
 
