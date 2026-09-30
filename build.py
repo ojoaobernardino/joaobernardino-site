@@ -47,7 +47,7 @@ CLUSTERS = {
 }
 MENU_ORDER = ['zero-noia', 'livros', 'indicacoes', 'vendas', 'lideranca', 'neurociencia', 'gestao', 'treino', 'dieta', 'uso']
 # endereços antigos que não viraram página (os de páginas vivas ficam em `aliases:` no frontmatter)
-STATIC_REDIRECTS = [('/blog/parceiros/', '/linktree/'), ('/blog/parceiros', '/linktree/'), ('/menu/', '/sobre/'), ('/menu', '/sobre/')]
+STATIC_REDIRECTS = [('/img/joao.webp', '/img/joao-bernardino.webp'), ('/blog/parceiros/', '/linktree/'), ('/blog/parceiros', '/linktree/'), ('/menu/', '/sobre/'), ('/menu', '/sobre/')]
 SHORT_TITLES = {'Alcançando Excelência em Vendas: SPIN Selling': 'SPIN Selling', 'Legado: 15 Lições sobre Liderança': 'Legado'}
 PERSON_ID = SITE['url'] + '/#pessoa'
 MESES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
@@ -235,12 +235,12 @@ def person_full():
     """A entidade Pessoa completa (vive em /sobre/jb/ e /sobre/). Nomes, formação e redes pra o Google juntar tudo."""
     return {
         '@type': 'Person', '@id': PERSON_ID, 'name': 'João Bêrnardino',
-        'alternateName': ['João Bernardino', 'João Pedro Vendramini Bernardino de Souza', 'João Pedro Bernardino', 'ojoaobernardino', 'JB'],
+        'alternateName': ['João Bernardino', 'Joao Bernardino', 'Joao Bêrnardino', 'João Pedro Vendramini Bernardino de Souza', 'João Pedro Bernardino', 'ojoaobernardino', 'JB'],
         'givenName': 'João Pedro', 'familyName': 'Vendramini Bernardino de Souza',
         'birthDate': '1998-02-20',
         'birthPlace': {'@type': 'Place', 'name': 'São José do Rio Preto, São Paulo, Brasil'},
         'nationality': {'@type': 'Country', 'name': 'Brasil'},
-        'url': SITE['url'] + '/sobre/jb/', 'image': SITE['url'] + '/img/joao.webp',
+        'url': SITE['url'] + '/sobre/jb/', 'image': SITE['url'] + '/img/joao-bernardino.webp',
         'jobTitle': 'Growth Marketing & Sales',
         'description': 'Empreendedor, criador de conteúdo, atleta e Growth Marketing & Sales. Engenheiro de Produção pela Universidade Presbiteriana Mackenzie, pós-graduado em Neurociências e Comportamento pela PUCRS e Master Trainer em PNL pela Sociedade Brasileira de Programação Neurolinguística.',
         'alumniOf': [
@@ -256,7 +256,7 @@ def person_full():
         'knowsAbout': ['Growth marketing', 'Treinamento híbrido', 'Vendas B2B', 'Inside sales', 'Liderança comercial', 'Agentes de IA', 'Programação Neurolinguística', 'Neurociência do hábito'],
         'worksFor': {'@type': 'Organization', 'name': 'JB Treinamento e Desenvolvimento'},
         'sameAs': ['https://www.instagram.com/ojoaobernardino', 'https://www.youtube.com/@ojoaobernardino', 'https://www.tiktok.com/@ojoaobernardino',
-                   'https://www.linkedin.com/in/jo%C3%A3o-b%C3%AArnardino-176a70108/', 'https://strava.app.link/dRHfi2AGt1b', 'https://www.threads.com/@ojoaobernardino',
+                   'https://www.linkedin.com/in/ojoaobernardino/', 'https://strava.app.link/dRHfi2AGt1b', 'https://www.threads.com/@ojoaobernardino',
                    'https://joaobernardino.substack.com'],
     }
 
@@ -391,6 +391,23 @@ def og_book(page, out, name, bold, reg):
         pass
     im.save(out, quality=84, optimize=True, progressive=True)
     return '/img/og/' + name + '.jpg'
+
+
+def ficha_da_home():
+    """A home fica fora do gerador: coloca nela a ficha do Google (site + pessoa, com o nome com e sem acento)."""
+    f = ROOT / 'index.html'
+    s = f.read_text(encoding='utf-8')
+    ld = {'@context': 'https://schema.org', '@graph': [
+        {'@type': 'WebSite', '@id': SITE['url'] + '/#site', 'url': SITE['url'] + '/', 'name': 'João Bêrnardino',
+         'alternateName': ['João Bernardino', 'Joao Bernardino', 'joaobernardino.com.br'], 'inLanguage': 'pt-BR', 'publisher': {'@id': PERSON_ID}},
+        {'@type': 'ProfilePage', '@id': SITE['url'] + '/#perfil', 'url': SITE['url'] + '/', 'name': 'João Bêrnardino', 'mainEntity': {'@id': PERSON_ID}},
+        person_full()]}
+    bloco = '<script type="application/ld+json" id="ficha-pessoa">' + json.dumps(ld, ensure_ascii=False) + '</script>'
+    if 'id="ficha-pessoa"' in s:
+        s = re.sub(r'<script type="application/ld\+json" id="ficha-pessoa">.*?</script>', lambda m: bloco, s, flags=re.S)
+    else:
+        s = s.replace('</head>', bloco + '\n</head>', 1)
+    f.write_text(s, encoding='utf-8')
 
 
 def versiona_estaticos():
@@ -613,3 +630,4 @@ def main():
 if __name__ == '__main__':
     main()
     versiona_estaticos()
+    ficha_da_home()
