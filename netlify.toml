@@ -78,3 +78,13 @@
     X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate, noai, noimageai"
     Referrer-Policy = "no-referrer"
     Cache-Control = "no-cache"
+
+# validador de e-mail: a URL leva ?v=<hash> (build.py), então pode ficar em cache por 1 ano
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/lobo-obra.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"

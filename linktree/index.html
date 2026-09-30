@@ -437,6 +437,6 @@ window.addEventListener('load', function () {
 });
 </script>
 <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1374672797442818&ev=PageView&noscript=1"></noscript>
-<script src="/js/valida-email.js"></script>
+<script src="/js/valida-email.js?v=ebd669ce" defer></script>
 <script>(function(){var f=document.getElementById("news-form"),i=document.getElementById("news-email"),o=document.getElementById("news-ok"),b=f.querySelector("button");f.addEventListener("submit",function(e){e.preventDefault();if(f.website.value)return;if(!checaEmailNoForm(i,o))return;b.disabled=true;var t=b.textContent;b.textContent="Enviando...";fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(new FormData(f)).toString()}).then(function(r){if(!r.ok)throw 0;f.reset();o.textContent="Pronto! Você está na lista.";o.hidden=false;}).catch(function(){o.textContent="Não deu certo agora. Tente de novo em instantes.";o.hidden=false;}).finally(function(){b.disabled=false;b.textContent=t;});});})();</script></body>
 </html>

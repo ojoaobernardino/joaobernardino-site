@@ -77,7 +77,7 @@ footer{color:#7d7f83;font-size:14px;line-height:24px}
   <nav class="links" aria-label="Caminhos"><a href="/sobre/">Sobre</a><a href="/linktree/">Cupons</a></nav>
   <footer>© 2026 João Bêrnardino</footer>
 </main>
-<script src="/js/valida-email.js"></script>
+<script src="/js/valida-email.js?v=ebd669ce" defer></script>
 <script>(function(){var f=document.getElementById("signup"),i=document.getElementById("email"),o=document.getElementById("ok"),b=f.querySelector("button");f.addEventListener("submit",function(e){e.preventDefault();if(f.website.value)return;if(!checaEmailNoForm(i,o))return;b.disabled=true;var t=b.textContent;b.textContent="Enviando...";fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(new FormData(f)).toString()}).then(function(r){if(!r.ok)throw 0;f.reset();o.textContent="Pronto! Você está na lista.";o.hidden=false;}).catch(function(){o.textContent="Não deu certo agora. Tente de novo em instantes.";o.hidden=false;}).finally(function(){b.disabled=false;b.textContent=t;});});})();</script>
 <script>
 var GA4_ID = 'G-5MSB6QLXN0';

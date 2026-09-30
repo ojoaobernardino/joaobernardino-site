@@ -11,7 +11,7 @@
 <section class="ix-body"><div class="wrap">
   {% for g in page.shelves %}
   <div class="rowh"><p class="sec-h">{{ g.name }} <small>{{ g.books|length }}</small></p><div class="arrows"><button type="button" class="arr" data-dir="-1" aria-label="Voltar">‹</button><button type="button" class="arr" data-dir="1" aria-label="Avançar">›</button></div></div>
-  <div class="shelf rail">{% for c in g.books %}<a class="bk" href="{{ c.url }}"><span class="cv"><img src="{{ c.book.capa }}" alt="Capa do livro {{ c.book.titulo }}" width="{{ c.cover_w }}" height="{{ c.cover_h }}" loading="lazy" decoding="async"></span><span class="t"><b>{{ c.short_title }}</b><span>{{ c.book.autor }}</span></span><span class="go">Ler a resenha</span></a>{% endfor %}</div>
+  <div class="shelf rail">{% for c in g.books %}<a class="bk" href="{{ c.url }}"><span class="cv">{% set tw = thumb_wh(c.book.capa) %}<img src="{{ c.book.capa|thumb }}" alt="Capa do livro {{ c.book.titulo }}" width="{{ tw[0] }}" height="{{ tw[1] }}" loading="lazy" decoding="async"></span><span class="t"><b>{{ c.short_title }}</b><span>{{ c.book.autor }}</span></span><span class="go">Ler a resenha</span></a>{% endfor %}</div>
   {% endfor %}
   {% if page.html_body %}<div class="prose hub-prose">{{ page.html_body|safe }}</div>{% endif %}
   <div class="nlbox" style="margin-top:48px"><h3>Receba o próximo resumo</h3><p>Cadastre seu melhor e-mail e receba cada livro novo que eu resumir.</p>{% with origem='livros' %}{% include "_signup.html" %}{% endwith %}</div>
