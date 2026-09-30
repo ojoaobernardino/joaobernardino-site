@@ -54,6 +54,37 @@ MESES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', '
 INCLUDE_DRAFTS = '--drafts' in sys.argv
 
 env = Environment(loader=FileSystemLoader(str(ROOT / 'templates')), autoescape=select_autoescape(['html']))
+
+
+def thumb(path, h=320):
+    """Miniatura pra card e prateleira: mesma imagem com h px de altura (o dobro do que aparece), gerada uma vez só."""
+    from PIL import Image
+    src = ROOT / path.lstrip('/')
+    out = ROOT / 'img' / 'thumbs' / f"{src.stem}-{h}.webp"
+    if not out.exists() or out.stat().st_mtime < src.stat().st_mtime:
+        out.parent.mkdir(parents=True, exist_ok=True)
+        im = Image.open(src)
+        if im.height > h:
+            im = im.convert('RGB') if im.mode not in ('RGB', 'RGBA') else im
+            im = im.resize((round(im.width * h / im.height), h), Image.LANCZOS)
+        im.save(out, 'WEBP', quality=80, method=6)
+    return '/img/thumbs/' + out.name
+
+
+def thumb_wh(path, h=320):
+    from PIL import Image
+    im = Image.open(ROOT / thumb(path, h).lstrip('/'))
+    return im.width, im.height
+
+
+def asset_v(path):
+    import hashlib
+    return path + '?v=' + hashlib.md5((ROOT / path.lstrip('/')).read_bytes()).hexdigest()[:8]
+
+
+env.filters['thumb'] = thumb
+env.globals['thumb_wh'] = thumb_wh
+env.globals['asset_v'] = asset_v
 def mini(css): return re.sub(r'\s*\n\s*', '', re.sub(r'/\*.*?\*/', '', css, flags=re.S))
 CSS = mini((ROOT / 'css' / 'site.css').read_text(encoding='utf-8'))
 CSS_LP = mini((ROOT / 'css' / 'lp.css').read_text(encoding='utf-8'))
@@ -362,6 +393,15 @@ def og_book(page, out, name, bold, reg):
     return '/img/og/' + name + '.jpg'
 
 
+def versiona_estaticos():
+    """Home e /linktree/ ficam fora do gerador: atualiza neles a versão do validador de e-mail (cache longo sem arquivo velho)."""
+    for f in (ROOT / 'index.html', ROOT / 'linktree' / 'index.html'):
+        s = f.read_text(encoding='utf-8')
+        s2 = re.sub(r'<script src="/js/valida-email\.js(\?v=\w+)?"( defer)?></script>', f'<script src="{asset_v("/js/valida-email.js")}" defer></script>', s)
+        if s2 != s:
+            f.write_text(s2, encoding='utf-8')
+
+
 def main():
     pages = []
     for path in sorted(CONTENT.rglob('*.md')):
@@ -466,7 +506,7 @@ def main():
             for g in h['shelves']:
                 for b in g['books']:
                     b['shelf'] = [x for x in g['books'] if x is not b][:3]
-            h['art_covers'] = [{'src': kids[x]['book']['capa'], 'w': kids[x]['cover_w'], 'h': kids[x]['cover_h']} for x in (h.get('art_books') or []) if x in kids]
+            h['art_covers'] = [dict(zip(('w', 'h'), thumb_wh(kids[x]['book']['capa'])), src=thumb(kids[x]['book']['capa'])) for x in (h.get('art_books') or []) if x in kids]
     # seções que puxam de outro índice (ex.: Indicações > Livros vem da estante de /blog/livros/, na ordem das prateleiras)
     for h in hubs_by_folder.values():
         for sc in h.get('secoes') or []:
@@ -570,3 +610,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    versiona_estaticos()

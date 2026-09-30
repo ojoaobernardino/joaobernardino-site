@@ -12,7 +12,7 @@
     {% if page.type == 'post' %}<span>· {{ page.reading }} min de leitura</span>{% endif %}
   </p>
   {% if page.book %}<div class="book">
-    <div class="cv"><img src="{{ page.book.capa }}" alt="Capa do livro {{ page.book.titulo }}, de {{ page.book.autor }}" width="{{ page.cover_w }}" height="{{ page.cover_h }}" fetchpriority="high"></div>
+    <div class="cv">{% set bw = thumb_wh(page.book.capa, 560) %}<img src="{{ page.book.capa|thumb(560) }}" alt="Capa do livro {{ page.book.titulo }}, de {{ page.book.autor }}" width="{{ bw[0] }}" height="{{ bw[1] }}" fetchpriority="high"></div>
     <div><dl><dt>Livro</dt><dd>{{ page.book.titulo }}</dd><dt>Autor</dt><dd>{{ page.book.autor }}</dd><dt>Editora</dt><dd>{{ page.book.editora }}</dd><dt>Pra quem</dt><dd>{{ page.book.pra_quem }}</dd></dl>
       <div class="buy"><a class="btn k go" href="{{ page.book.afiliado }}" rel="sponsored noopener" data-track="livro-topo:{{ page.slug }}">Ver no Mercado Livre</a><small>Link de parceiro. Se comprar por ele, eu ganho uma comissão e você paga o mesmo.</small></div></div>
   </div>{% endif %}
@@ -37,7 +37,7 @@
 </article>
 <section class="after">
   {% if page.book and page.shelf %}<h2 class="sec-h">Outros livros de {{ page.group|lower }}</h2>
-  <div class="shelf">{% for c in page.shelf %}<a class="bk" href="{{ c.url }}"><span class="cv"><img src="{{ c.book.capa }}" alt="Capa do livro {{ c.book.titulo }}" width="{{ c.cover_w }}" height="{{ c.cover_h }}" loading="lazy" decoding="async"></span><span class="t"><b>{{ c.short_title }}</b><span>{{ c.book.autor }}</span></span><span class="go">Ler a resenha</span></a>{% endfor %}</div>
+  <div class="shelf">{% for c in page.shelf %}<a class="bk" href="{{ c.url }}"><span class="cv">{% set tw = thumb_wh(c.book.capa) %}<img src="{{ c.book.capa|thumb }}" alt="Capa do livro {{ c.book.titulo }}" width="{{ tw[0] }}" height="{{ tw[1] }}" loading="lazy" decoding="async"></span><span class="t"><b>{{ c.short_title }}</b><span>{{ c.book.autor }}</span></span><span class="go">Ler a resenha</span></a>{% endfor %}</div>
   {% elif page.related %}<h2 class="sec-h">Leia também</h2>
   <div class="pgrid">{% for c in page.related %}{% with compact=true %}{% include "_pcard.html" %}{% endwith %}{% endfor %}</div>{% endif %}
   {% if page.book %}<div class="nlbox"><h3>Receba o próximo resumo</h3><p>Cadastre seu melhor e-mail e receba cada livro novo que eu resumir.</p>{% with origem='livro' %}{% include "_signup.html" %}{% endwith %}</div>
