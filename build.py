@@ -584,7 +584,9 @@ def main():
             redir.append((a, p['url']))
             if a.endswith('/'):
                 redir.append((a.rstrip('/'), p['url']))
-    (ROOT / '_redirects').write_text('# gerado pelo build.py: endereços antigos -> páginas novas\n' + ''.join(f'{a}  {b}  301\n' for a, b in redir), encoding='utf-8')
+    (ROOT / '_redirects').write_text('# gerado pelo build.py: endereços antigos -> páginas novas\n' + ''.join(f'{a}  {b}  301\n' for a, b in redir)
+                                     # por último: endereço que não existe vai pro /sobre (pedido do João, 30/09). Só pega o que não tem arquivo.
+                                     + '/*  /sobre/  302\n', encoding='utf-8')
 
     # llms.txt: apresentação do site pras IAs (nunca inclui /blog/altive/)
     L = ['# João Bêrnardino', '',
