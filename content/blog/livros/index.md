@@ -10,11 +10,12 @@ summary: "Todos os livros que eu tenho em casa, eu resumo aqui, um por um: capí
 card: "A minha estante, um por um: resumo capítulo por capítulo, lições, críticas e pra quem cada livro serve."
 art_books: [spin-selling, prospeccao-fanatica, flow, responsabilidade-extrema]
 estantes:
-  Vendas: [spin-selling, prospeccao-fanatica, objecoes, a-biblia-de-vendas, storytelling, do-fracasso-ao-sucesso-na-arte-de-vender, bora-vender, os-segredos-do-lobo, como-fazer-amigos-e-influenciar-pessoas, a-arte-de-lidar-com-pessoas, como-conquistar-as-pessoas, go-pro, jogos-de-poder, quem-convence-enriquece]
+  Vendas: [spin-selling, prospeccao-fanatica, objecoes, a-biblia-de-vendas, storytelling, do-fracasso-ao-sucesso-na-arte-de-vender, bora-vender, os-segredos-do-lobo, como-fazer-amigos-e-influenciar-pessoas, a-arte-de-lidar-com-pessoas, como-conquistar-as-pessoas, go-pro, jogos-de-poder, quem-convence-enriquece, as-armas-da-persuasao, receita-previsivel]
   Liderança: [pipeline-de-lideranca, responsabilidade-extrema, equipes-brilhantes, o-lado-dificil-das-situacoes-dificeis, gestao-de-alta-performance, o-monge-e-o-executivo, legado-15-licoes-sobre-lideranca, a-forca-dos-quietos, nao-ha-dia-facil, sob-pressao]
-  Mente e hábito: [flow, maestria, 12-regras-para-a-vida, nada-pode-me-ferir, a-estrutura-da-magia, o-milagre-da-manha, vire-o-jogo, em-busca-de-sentido, a-linguagem-do-corpo, crenca-inabalavel, dominando-a-voz-interior, mentalidade, o-poder-da-autorresponsabilidade]
-  Dinheiro e carreira: [o-homem-mais-rico-da-babilonia, os-segredos-da-mente-milionaria, fora-de-serie, a-escola-de-negocios, economia-modo-de-usar, empreenda-sem-fronteiras, eu-vou-te-ensinar-a-ser-rico, mais-esperto-que-o-diabo, transformando-sonhos-em-realidade]
-  Filosofia e espiritualidade: [confissoes, jesus-o-maior-psicologo-que-ja-existiu, o-caminho-quadruplo, o-heroi-de-mil-faces, o-ultimo-convite]
+  Mente e hábito: [flow, maestria, 12-regras-para-a-vida, nada-pode-me-ferir, a-estrutura-da-magia, o-milagre-da-manha, vire-o-jogo, em-busca-de-sentido, a-linguagem-do-corpo, crenca-inabalavel, dominando-a-voz-interior, mentalidade, o-poder-da-autorresponsabilidade, a-coragem-de-nao-agradar, a-unica-coisa, essencialismo, habitos-atomicos, ikigai, inteligencia-emocional, o-poder-do-agora, o-poder-do-habito, os-7-habitos-das-pessoas-altamente-eficazes, rapido-e-devagar]
+  Estratégia e poder: [a-arte-da-guerra, antifragil, as-48-leis-do-poder, o-principe]
+  Dinheiro e carreira: [o-homem-mais-rico-da-babilonia, os-segredos-da-mente-milionaria, fora-de-serie, a-escola-de-negocios, economia-modo-de-usar, empreenda-sem-fronteiras, eu-vou-te-ensinar-a-ser-rico, mais-esperto-que-o-diabo, transformando-sonhos-em-realidade, pai-rico-pai-pobre, quem-pensa-enriquece]
+  Filosofia e espiritualidade: [confissoes, jesus-o-maior-psicologo-que-ja-existiu, o-caminho-quadruplo, o-heroi-de-mil-faces, o-ultimo-convite, sapiens]
   Relacionamentos: [as-mulheres-primeiro]
 unit: "livros"
 kicker: "Só os que recomendo"
