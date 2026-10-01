@@ -190,6 +190,12 @@ def render_md(body, page):
                f'<p>{html.escape(bk.get("pra_quem",""))}: este é o livro.</p><a class="btn w go" href="{bk["afiliado"]}" rel="sponsored noopener" data-track="livro-fim:{page["slug"]}">Comprar o livro</a>'
                '<small>Link de parceiro: eu ganho uma comissão e você paga o mesmo.</small></div>\n')
         out = out.replace('<h2 id="perguntas-frequentes">', buy + '<h2 id="perguntas-frequentes">', 1)
+    if page.get('vitrine'):
+        v = vitrine(page)
+        if '<p>[[vitrine]]</p>' in out:
+            out = out.replace('<p>[[vitrine]]</p>', v, 1)
+        else:
+            out = out.replace('<h2 id="perguntas-frequentes">', v + '\n<h2 id="perguntas-frequentes">', 1)
     if page.get('produto'):
         out = out.replace('<h2 id="perguntas-frequentes">', buybox(page, 'fim') + '\n<h2 id="perguntas-frequentes">', 1)
     out = out.replace('<h2 id="fontes">', '<h2 id="fontes" class="fontes-h">')
@@ -216,6 +222,19 @@ def collapse(out):
 
 def brl(v):
     v = float(v); return ('R$ ' + f'{v:,.2f}'.replace(',', 'X').replace('.', ',').replace('X', '.')).replace(',00', '')
+
+
+def vitrine(page):
+    """Onde comprar, vários produtos da mesma família (página guia): foto, nome, uma linha e o link da marca com o afiliado."""
+    itens = []
+    for it in page['vitrine']:
+        w, h = thumb_wh(it['imagem'], 320)
+        itens.append(f'<a class="vt" href="{it["url"]}" rel="sponsored noopener" data-track="vitrine:{page["slug"]}:{html.escape(it["nome"])}">'
+                     f'<span class="ph"><img src="{thumb(it["imagem"], 320)}" alt="{html.escape(it.get("alt", it["nome"]))}" width="{w}" height="{h}" loading="lazy" decoding="async"></span>'
+                     f'<b>{html.escape(it["nome"])}</b>' + (f'<small>{html.escape(it["linha"])}</small>' if it.get('linha') else '') + '<span class="btn w">Ver na loja</span></a>')
+    pr = page.get('produto') or {}
+    cupom = f'<p class="cupom">Cupom <b>{pr["cupom"]}</b>: {html.escape(pr["desconto"])} em qualquer produto, digitando no checkout.</p>' if pr.get('cupom') else ''
+    return f'<div class="vitr"><span class="k">Onde comprar</span>{cupom}<div class="vg">{"".join(itens)}</div></div>'
 
 
 def buybox(page, onde):

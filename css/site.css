@@ -324,3 +324,13 @@ h2.sec-h{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppe
 .bk .cv.cv-logo{align-items:center;justify-content:center}.bk .cv.cv-logo img{width:78%;height:auto;filter:none}
 .prose a.btn,.prose .btn{text-decoration:none}
 .email-fix{background:none;border:0;padding:0;font:inherit;font-weight:600;color:inherit;text-decoration:underline;text-decoration-color:#BF1E2D;text-underline-offset:3px;cursor:pointer}
+.vitr{margin:32px 0;padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:18px}
+.vitr .k{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:600}
+.vitr .cupom{margin:6px 0 14px;font-size:15px}
+.vg{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+@media (max-width:480px){.vitr{padding:14px}.vg{grid-template-columns:1fr 1fr}.vt .ph{aspect-ratio:4/5}}
+.prose a.vt,.vt{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:inherit;background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:10px}
+.vt .ph{position:relative;background:#fff;border-radius:8px;aspect-ratio:1;overflow:hidden}
+.vt .ph img,.prose .vt .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:6px;border-radius:0}
+.vt b{font-size:14px;line-height:1.3}.vt small{font-size:13px;color:var(--fg-2)}
+.vt .btn{margin-top:auto;justify-content:center;text-align:center;font-size:13px;padding:8px 10px}

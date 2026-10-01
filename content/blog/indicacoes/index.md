@@ -9,8 +9,8 @@ card: "O que eu uso de verdade e indico: serviços, livros e marcas com o meu cu
 aliases: [/indicacoes/]
 kicker: "Minhas"
 date: 2026-09-29
-updated: 2026-09-29
-summary: "Só entra aqui o que eu uso de verdade: os produtos do meu treino e da minha recuperação, o serviço que cuida da minha empresa, os livros que mudaram o meu jeito de trabalhar e as marcas com o meu cupom."
+updated: 2026-10-01
+summary: "Só entra aqui o que eu uso de verdade: os produtos do meu treino e da minha recuperação, o serviço que cuida da minha empresa, os livros que mudaram o meu jeito de trabalhar e as marcas com o meu cupom. E guias dos produtos dessas marcas, em que eu digo com clareza o que uso e o que não uso."
 secoes:
   - {nome: "Produtos", id: produtos, tipo: produto}
   - {nome: "Serviços", id: servicos, tipo: servico}
