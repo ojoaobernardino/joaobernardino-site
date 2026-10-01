@@ -271,7 +271,7 @@ def jsonld(page):
                       'description': page['description'], 'url': SITE['url'] + page['url'], 'mainEntityOfPage': SITE['url'] + page['url'],
                       'datePublished': str(page['date']), 'dateModified': str(page['updated']), 'inLanguage': 'pt-BR', 'wordCount': page['words'],
                       'image': SITE['url'] + page['og_image'], 'author': {'@id': PERSON_ID}, 'publisher': {'@id': PERSON_ID},
-                      'reviewRating': {'@type': 'Rating', 'ratingValue': bk['nota'], 'bestRating': 5, 'worstRating': 0}, 'reviewBody': page['summary'],
+                      **({'reviewRating': {'@type': 'Rating', 'ratingValue': bk['nota'], 'bestRating': 5, 'worstRating': 0}} if bk.get('nota') else {}), 'reviewBody': page['summary'],
                       'itemReviewed': {'@type': 'Book', 'name': bk['titulo'], 'author': {'@type': 'Person', 'name': bk['autor']},
                                        'publisher': {'@type': 'Organization', 'name': str(bk.get('editora', ''))}, 'inLanguage': 'pt-BR',
                                        'image': SITE['url'] + bk['capa']}})
@@ -382,7 +382,7 @@ def og_book(page, out, name, bold, reg):
     y = 140
     for l in lines[:5]:
         d.text((80, y), l, font=font, fill='#ffffff'); y += 68
-    d.text((80, y + 10), f"Cupom {pr['cupom']}: {pr['desconto']} na {pr['marca']}" if pr else f"{bk['autor']} · nota {bk['nota']} de 5".replace('.5 de', ',5 de'), font=reg(24), fill='#a3a3a3')
+    d.text((80, y + 10), f"Cupom {pr['cupom']}: {pr['desconto']} na {pr['marca']}" if pr else (f"{bk['autor']} · nota {bk['nota']} de 5".replace('.5 de', ',5 de') if bk.get('nota') else bk['autor']), font=reg(24), fill='#a3a3a3')
     try:
         av = Image.open(ROOT / 'img' / 'avatar-216.webp').convert('RGB').resize((72, 72))
         m = Image.new('L', (72, 72), 0); ImageDraw.Draw(m).ellipse([0, 0, 71, 71], fill=255); im.paste(av, (80, 510), m)
