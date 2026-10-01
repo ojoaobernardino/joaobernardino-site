@@ -5,7 +5,7 @@ type: post
 kind: livro
 group: "Estratégia e poder"
 date: 2026-09-29
-updated: 2026-09-29
+updated: 2026-09-30
 tags: [as-48-leis-do-poder, robert-greene, poder, estrategia, livros]
 summary: "As 48 Leis do Poder é o livro de 1998 em que Robert Greene destila três mil anos de história em 48 regras sobre como o poder é conquistado, defendido e perdido. A tese: o jogo do poder acontece o tempo todo, e quem finge que ele não existe vira peça de quem joga. Aqui estão as 48 leis explicadas uma a uma, as 7 lições, as críticas sobre manipulação e pra quem o livro serve."
 book:
@@ -14,7 +14,7 @@ book:
   editora: "Rocco"
   pra_quem: "Quem quer reconhecer jogos de poder"
   capa: "/img/livros/as-48-leis-do-poder.webp"
-  afiliado: "https://meli.la/2zfw1zx"
+  afiliado: "https://meli.la/2TaVjhg"
   nota: 4
 ---
 
@@ -22,7 +22,7 @@ book:
 
 Robert Greene nasceu em Los Angeles em 1959 e se formou em estudos clássicos pela Universidade de Wisconsin-Madison, depois de começar o curso em Berkeley. Antes de escrever, teve cerca de 50 empregos, de operário da construção a tradutor, editor da revista Esquire e roteirista em Hollywood. Em 1995, trabalhando na Fabrica, uma escola de arte na Itália, conheceu o produtor de livros holandês Joost Elffers, que ajudou a conceber o formato visual de As 48 Leis do Poder.
 
-O livro saiu nos Estados Unidos em 1998, pela Viking, e virou fenômeno: vendeu mais de 1,2 milhão de exemplares só no mercado americano e foi traduzido para mais de 20 idiomas. Greene depois publicou A Arte da Sedução (2001), As 33 Estratégias da Guerra (2006), A 50ª Lei (2009, com o rapper 50 Cent), Maestria (2012) e As Leis da Natureza Humana (2018). No Brasil, a obra é da Rocco, que tem a edição completa e uma edição concisa, cuja capa aparece nesta página.
+O livro saiu nos Estados Unidos em 1998, pela Viking, e virou fenômeno: vendeu mais de 1,2 milhão de exemplares só no mercado americano e foi traduzido para mais de 20 idiomas. Greene depois publicou A Arte da Sedução (2001), As 33 Estratégias da Guerra (2006), A 50ª Lei (2009, com o rapper 50 Cent), Maestria (2012) e As Leis da Natureza Humana (2018). No Brasil, a obra é da Rocco, que tem a edição completa e uma edição concisa. A capa e o link desta página são da edição completa, em capa dura, com 544 páginas.
 
 ## A ideia central
 
@@ -281,7 +281,7 @@ Robert Greene é um escritor americano nascido em Los Angeles em 1959, formado e
 
 ### Qual a diferença entre a edição completa e a edição concisa?
 
-A edição concisa é uma versão resumida das mesmas 48 leis, em volume menor. A edição completa traz o texto integral, com todos os exemplos históricos e as citações das margens. Para quem vai ler pela primeira vez e quer as ideias principais, a concisa basta.
+A edição concisa é uma versão resumida das mesmas 48 leis, em volume menor. A edição completa traz o texto integral, com todos os exemplos históricos e as citações das margens. Na Rocco, a completa em capa dura tem 544 páginas, e a concisa, cerca de 270. Eu indico a completa: os exemplos históricos são a parte mais forte do livro. Para quem quer só as ideias principais, a concisa basta.
 
 ### As 48 Leis do Poder tem em PDF para download?
 
