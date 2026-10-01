@@ -1,6 +1,6 @@
 ---
 title: "Chocolate 100% cacau: o que é, como escolher e cuidados"
-description: "Chocolate 100 cacau: o que é, por que é tão amargo, como se acostumar, cacau 100 em pó x barra, metais pesados e o cupom JB com 5% off na Ultramel."
+description: "Chocolate 100 cacau: o que é, por que é tão amargo, como se acostumar, cacau 100 em pó x barra e o cupom JB com 5% off na Ultramel."
 type: post
 indicacao: produto
 date: 2026-10-01
@@ -8,8 +8,8 @@ updated: 2026-10-01
 tags: [ultramel, chocolate-100-cacau, cacau-100, cacau-em-po, amma, sem-acucar]
 short_title: "Chocolate 100% cacau"
 card_title: "Chocolate 100% cacau: o que é e como escolher"
-card: "O que quer dizer 100% cacau, por que amarga tanto, como se acostumar, barra ou pó, e o cuidado com metais pesados. Cupom JB."
-summary: "Chocolate 100% cacau é chocolate feito só de cacau, sem açúcar, sem leite e sem adoçante. Por isso é bem amargo, firme e intenso, e pede adaptação: subir aos poucos de 70% pra 85% e 100% ajuda. O cacau 100% em pó é parecido, mas tem bem menos gordura e mais fibra. Como todo produto com muito cacau, pode ter cádmio e chumbo, então vale moderação. Com o cupom JB, 5% off no site da Ultramel."
+card: "O que quer dizer 100% cacau, por que amarga tanto, como se acostumar e barra ou pó. Cupom JB."
+summary: "Chocolate 100% cacau é chocolate feito só de cacau, sem açúcar, sem leite e sem adoçante. Por isso é bem amargo, firme e intenso, e pede adaptação: subir aos poucos de 70% pra 85% e 100% ajuda. O cacau 100% em pó é parecido, mas tem bem menos gordura e mais fibra. Com o cupom JB, 5% off no site da Ultramel."
 produto:
   nome: "Chocolate Orgânico 100% Cacau AMMA 80g"
   marca: "AMMA"
@@ -65,7 +65,7 @@ draft: false
 
 Chocolate 100% cacau é chocolate feito só de cacau. Não tem açúcar, não tem leite, não tem adoçante. O resultado é uma barra firme, muito amarga e intensa, que derrete devagar. Quem vem do chocolate ao leite estranha, e é normal: o paladar se acostuma subindo aos poucos a porcentagem.
 
-O cacau 100% em pó é parente próximo: é o mesmo cacau, só que sem boa parte da gordura. E os dois têm um cuidado em comum, que vale pra todo produto com muito cacau: cádmio e chumbo.
+O cacau 100% em pó é parente próximo: é o mesmo cacau, só que sem boa parte da gordura.
 
 Eu não uso esse chocolate, então aqui não tem opinião minha sobre ele, só o que os estudos e o rótulo dizem. Sou afiliado da Ultramel, que vende o chocolate 100% da AMMA no próprio site, e você precisa saber disso antes de continuar.
 
@@ -152,21 +152,9 @@ Não existe estudo sobre isso, então aqui vai só o caminho mais lógico:
 
 O banco de dados americano dá cerca de 80 mg de cafeína e 1.300 mg de teobromina em 100 g de chocolate sem açúcar, e 230 mg de cafeína em 100 g de cacau em pó natural (USDA). Numa porção de 25 g de chocolate 100%, isso dá perto de 20 mg de cafeína. A FDA cita 400 mg por dia como limite pra maioria dos adultos (FDA). É pouco, mas quem é sensível pode sentir à noite.
 
-## Metais pesados no chocolate 100% cacau
-
-Cádmio e chumbo aparecem no cacau. O cádmio vem do solo; o chumbo, da poeira que gruda nas amêndoas na secagem (Consumer Reports, 2022). Quanto mais cacau o produto tem, mais metal tende a ter.
-
-- Em 2022, a Consumer Reports testou 28 barras de chocolate amargo: todas tinham os dois metais, e em 23 uma porção de cerca de 28 g por dia passaria do limite da Califórnia, o mais rígido dos Estados Unidos, pra pelo menos um deles.
-- Em 2023, testou 48 produtos de cacau. Chocolate amargo teve os níveis mais altos, chocolate ao leite os mais baixos, e só 2 cacaus em pó ficaram altos em chumbo (Consumer Reports, 2023).
-- Uma análise de 72 produtos de cacau, de 2014 a 2022, achou que os orgânicos tinham mais chance de ter níveis altos de cádmio e chumbo (Hands, 2024).
-
-A União Europeia tem limite de cádmio por tipo de produto: 0,80 mg por kg em chocolate com 50% ou mais de cacau e 0,60 mg por kg em cacau em pó vendido ao consumidor (UE, 2023).
-
-A página da loja não informa análise de metais pesados da barra da AMMA nem do pó da Ultraflora. Não dá pra dizer se estão acima ou abaixo de qualquer limite. O conselho dos pesquisadores vale pra qualquer marca: moderação, variar de marca e mais cuidado com criança e gestante.
-
 ## Quem deve ter cuidado
 
-- **Gestantes e crianças.** Pelo chumbo e pelo cádmio, a Consumer Reports orienta que gestantes e crianças comam chocolate amargo com moderação (Consumer Reports, 2022). Gestantes também devem conversar com o médico sobre o total de cafeína do dia (FDA).
+- **Gestantes.** Devem conversar com o médico sobre o total de cafeína do dia (FDA).
 - **Quem é sensível a cafeína.** Evite à noite.
 - **Quem controla gordura ou calorias.** O 100% tem 576 kcal e 56 g de gordura em 100 g, 35 g dela saturada, segundo a loja.
 - **Cachorros.** Teobromina e cafeína são tóxicas pra cães. Chocolate sem açúcar e cacau em pó são os mais perigosos, com mais estimulante por grama que o chocolate ao leite (Merck Veterinary Manual). Guarde longe do alcance.
@@ -209,10 +197,6 @@ Suba aos poucos: comece no 70% ou 75%, passe algumas semanas em cada nível e de
 
 Tem pouca: perto de 20 mg numa porção de 25 g, pelos dados do USDA para chocolate sem açúcar. Tem mais teobromina, um estimulante mais suave.
 
-### Chocolate 100% cacau tem metais pesados?
-
-Pode ter, como todo produto com muito cacau. Testes nos Estados Unidos acharam cádmio e chumbo em todas as barras amargas analisadas. Coma com moderação e varie de marca.
-
 ## Fontes
 
 - Ultramel. Chocolate Orgânico 100% Cacau AMMA 80g: descrição e informação nutricional. https://www.ultramel.com.br/chocolate-organico-100-cacau-amma-80g
@@ -226,10 +210,6 @@ Pode ter, como todo produto com muito cacau. Testes nos Estados Unidos acharam c
 - EFSA Panel on Dietetic Products, Nutrition and Allergies. Scientific Opinion on the substantiation of a health claim related to cocoa flavanols and maintenance of normal endothelium-dependent vasodilation. EFSA J, 2012. https://pubmed.ncbi.nlm.nih.gov/42016115/
 - Sesso HD et al. Effect of cocoa flavanol supplementation for the prevention of cardiovascular disease events: the COSMOS randomized clinical trial. Am J Clin Nutr, 2022. https://pubmed.ncbi.nlm.nih.gov/35294962/
 - Miller KB et al. Impact of alkalization on the antioxidant and flavanol content of commercial cocoa powders. J Agric Food Chem, 2008. https://pubmed.ncbi.nlm.nih.gov/18710243/
-- Hands JM et al. A multi-year heavy metal analysis of 72 dark chocolate and cocoa products in the USA. Front Nutr, 2024. https://pubmed.ncbi.nlm.nih.gov/39144282/
-- Consumer Reports. Lead and Cadmium Could Be in Your Dark Chocolate, 2022. https://www.consumerreports.org/health/food-safety/lead-and-cadmium-in-dark-chocolate-a8480295550/
-- Consumer Reports. A Third of Chocolate Products Are High in Heavy Metals, 2023. https://www.consumerreports.org/health/food-safety/a-third-of-chocolate-products-are-high-in-heavy-metals-a4844566398/
-- União Europeia. Regulamento (UE) 2023/915, teores máximos de contaminantes nos alimentos (cádmio em chocolate e cacau em pó). https://eur-lex.europa.eu/eli/reg/2023/915/oj
 - USDA FoodData Central. Baking chocolate, unsweetened, squares (FDC 167568). https://fdc.nal.usda.gov/food-details/167568/nutrients
 - USDA FoodData Central. Cocoa, dry powder, unsweetened (FDC 169593). https://fdc.nal.usda.gov/food-details/169593/nutrients
 - FDA. Spilling the Beans: How Much Caffeine is Too Much? https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much
