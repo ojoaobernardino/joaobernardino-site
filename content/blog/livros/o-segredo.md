@@ -95,7 +95,7 @@ A última seção apresenta os entrevistados citados ao longo do livro, com brev
 6. **Notícia ruim em excesso cansa.** Escolher o que consome de informação é cuidado com a mente.
 7. **Fantasia não substitui plano.** Esta o livro não ensina, mas a ciência ensina: imaginar o fim precisa vir com ação.
 
-## O que a ciência diz e onde o livro exagera
+## Críticas e limitações: o que a ciência diz
 
 A crítica principal é simples: **não existe evidência de que pensamentos atraiam acontecimentos por uma lei física**. Pensamentos não emitem uma frequência que o "Universo" capte, e a linguagem de física quântica do livro não corresponde ao que a física diz. Cientistas e céticos, como a física Lisa Randall e o psicólogo Christopher Chabris, criticaram publicamente a obra por isso. Estatísticas como a do 1% que ganha 96% do dinheiro aparecem sem fonte.
 
