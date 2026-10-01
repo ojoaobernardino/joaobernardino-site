@@ -51,7 +51,7 @@ Murphy lembra que o subconsciente cuida de funções que ninguém controla de pr
 
 ### Capítulo 4 · Curas mentais nos tempos antigos
 
-O capítulo percorre relatos históricos de curas ligadas a santuários, relíquias, rituais e figuras religiosas. A leitura de Murphy é que, em todos esses casos, o que curou foi a fé do doente atuando sobre o subconsciente, e não o objeto ou o lugar. Para o leitor católico, é bom saber que essa interpretação dos milagres é própria do Novo Pensamento e não coincide com a fé da Igreja.
+O capítulo percorre relatos históricos de curas ligadas a santuários, relíquias, rituais e figuras religiosas. A leitura de Murphy é que, em todos esses casos, o que curou foi a fé do doente atuando sobre o subconsciente, e não o objeto ou o lugar.
 
 ### Capítulo 5 · Curas mentais nos tempos modernos
 
@@ -134,8 +134,6 @@ A crítica principal é científica. O modelo de duas mentes, uma que manda e ou
 A segunda é a das curas. O livro está cheio de relatos de doenças resolvidas pela mente, sem controle nem verificação. O efeito placebo é real, mas uma revisão da Cochrane de 2010 encontrou efeitos modestos, sobretudo em sintomas relatados pelo paciente, como dor e náusea, e não em desfechos objetivos. O livro não substitui orientação médica, e ninguém deveria adiar um tratamento confiando só na sugestão.
 
 A terceira é sobre afirmações. Um estudo de Joanne Wood e colegas, publicado na Psychological Science em 2009, mostrou que repetir frases positivas sobre si mesmo fez pessoas com baixa autoestima se sentirem pior, justamente porque a frase brigava com o que elas acreditavam. O próprio Murphy intui esse risco no capítulo 9, o que é um mérito, mas o livro ainda promete demais.
-
-Por fim, uma nota para o leitor católico. Murphy usa muitas passagens bíblicas, mas as lê pela chave do Novo Pensamento, em que Deus se confunde com a mente e a oração vira técnica. Não é a leitura da Igreja, e vale ler com esse filtro.
 
 ## Pra quem é e pra quem não é
 

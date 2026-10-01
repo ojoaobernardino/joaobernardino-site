@@ -105,8 +105,6 @@ A terceira é ética. Se tudo o que acontece é atraído pelos próprios pensame
 
 Do outro lado, há algo que a pesquisa confirma: a prática de gratidão. O estudo de Robert Emmons e Michael McCullough, de 2003, encontrou ganhos de bem-estar em quem registrava motivos de gratidão. É a parte do livro que funciona, embora por razões psicológicas, e não místicas.
 
-Para o leitor católico, uma última nota. O livro mistura muitas tradições religiosas e trata Deus como uma força impessoal que responde a pedidos, quase um catálogo. Essa visão não é compatível com a fé cristã, em que a oração é relação com um Deus pessoal, e não técnica para obter coisas.
-
 ## Pra quem é e pra quem não é
 
 **Pra quem é:** quem quer entender o fenômeno da lei da atração, que influenciou boa parte da autoajuda dos últimos 20 anos, e quem busca um empurrão para cultivar gratidão e clareza de objetivos.
