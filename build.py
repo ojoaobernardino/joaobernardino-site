@@ -43,9 +43,9 @@ SITE = {
 # nome curto dos temas do blog (chips e breadcrumbs); o que não estiver aqui usa `name` do index.md
 CLUSTERS = {
     'vendas': 'Vendas', 'lideranca': 'Liderança', 'gestao': 'Gestão', 'neurociencia': 'Neurociência', 'treino': 'Treino',
-    'dieta': 'Dieta', 'zero-noia': 'Zero Nóia', 'livros': 'Livros', 'uso': 'O que eu uso', 'wjr': 'WJR',
+    'dieta': 'Dieta', 'zero-noia': 'Zero Nóia', 'livros': 'Livros', 'uso': 'O que eu uso', 'wjr': 'WJR', 'growth': 'Growth',
 }
-MENU_ORDER = ['zero-noia', 'livros', 'indicacoes', 'vendas', 'lideranca', 'neurociencia', 'gestao', 'treino', 'dieta', 'uso']
+MENU_ORDER = ['zero-noia', 'livros', 'indicacoes', 'vendas', 'growth', 'lideranca', 'neurociencia', 'gestao', 'treino', 'dieta', 'uso']
 # endereços antigos que não viraram página (os de páginas vivas ficam em `aliases:` no frontmatter)
 STATIC_REDIRECTS = [('/img/joao.webp', '/img/joao-bernardino.webp'), ('/blog/parceiros/', '/linktree/'), ('/blog/parceiros', '/linktree/'), ('/menu/', '/sobre/'), ('/menu', '/sobre/')]
 SHORT_TITLES = {'Alcançando Excelência em Vendas: SPIN Selling': 'SPIN Selling', 'Legado: 15 Lições sobre Liderança': 'Legado'}
@@ -154,6 +154,20 @@ def extract_faq(body):
     return out
 
 
+def extract_terms(body):
+    """Verbetes de dicionário (`glossario: true`): cada `### Termo {#id}` antes das Perguntas frequentes vira um DefinedTerm."""
+    body = body.split('## Perguntas frequentes', 1)[0]
+    body = re.sub(r'<!--.*?-->', '', body, flags=re.S)
+    out = []
+    for name, i, txt in re.findall(r'^### (.*?)\s*\{#([a-z0-9-]+)\}\s*\n\n(.*?)(?=\n#{2,3} |\Z)', body, re.S | re.M):
+        first = txt.strip().split('\n\n')[0]
+        first = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', first)
+        first = ' '.join(re.sub(r'[*_`]', '', first).split())
+        frase = re.match(r'.{40,}?[.!?](?=\s+[A-ZÁÉÍÓÚÂÊÔÃÕÇ0-9]|$)', first)  # só a definição (1ª frase): o verbete inteiro já está no HTML
+        out.append({'name': name.strip(), 'id': i, 'description': frase.group(0) if frase else first})
+    return out
+
+
 def render_md(body, page):
     for m in re.findall(r'<!--\s*CONFIRMAR:?\s*(.*?)-->', body, re.S):
         PENDING.append((page['url'], ' '.join(m.split())))
@@ -177,8 +191,11 @@ def render_md(body, page):
     toc = []
     def add_id(m):
         level, text = m.group(1), m.group(2)
+        custom = re.search(r'\s*\{#([a-z0-9-]+)\}\s*$', text)  # "### MQL {#mql}": âncora curta escolhida no texto (verbete de dicionário)
+        if custom:
+            text = text[:custom.start()]
         plain = re.sub(r'<[^>]+>', '', text)
-        i = slugify(plain)
+        i = custom.group(1) if custom else slugify(plain)
         if level == '2' and i != 'fontes':
             toc.append({'id': i, 'text': plain})
         return f'<h{level} id="{i}">{text}</h{level}>'
@@ -325,6 +342,10 @@ def jsonld(page):
     else:
         graph.append({'@type': 'WebPage', '@id': SITE['url'] + page['url'], 'name': page['title'], 'description': page['description'],
                       'inLanguage': 'pt-BR', 'author': {'@id': PERSON_ID}})
+    if page.get('glossario'):
+        graph.append({'@type': 'DefinedTermSet', '@id': SITE['url'] + page['url'] + '#termos', 'name': page['title'], 'inLanguage': 'pt-BR',
+                      'url': SITE['url'] + page['url'], 'hasDefinedTerm': [
+                          {'@type': 'DefinedTerm', 'name': t['name'], 'description': t['description'], 'url': SITE['url'] + page['url'] + '#' + t['id']} for t in extract_terms(page['body'])]})
     if page.get('faq'):
         graph.append({'@type': 'FAQPage', '@id': SITE['url'] + page['url'] + '#perguntas', 'mainEntity': page['faq']})
     graph.append(person_full() if page['url'] in ('/sobre/', '/sobre/jb/') else

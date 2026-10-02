@@ -25,7 +25,7 @@
   {{ page.buybox_top|safe }}{% endif %}
   {% if page.summary %}<div class="resumo"><b>Em resumo</b><p>{{ page.summary }}</p></div>{% endif %}
   {% if page.cover %}<figure class="cover"><img src="{{ page.cover }}" width="{{ page.cover_w }}" height="{{ page.cover_h }}" alt="{{ page.cover_alt }}" decoding="async"></figure>{% endif %}
-  {% if page.toc and page.toc|length > 3 %}<nav class="toc" aria-label="Neste texto"><b>Neste texto</b><ol>{% for h in page.toc %}<li><a href="#{{ h.id }}">{{ h.text }}</a></li>{% endfor %}</ol></nav>{% endif %}
+  {% if page.toc and page.toc|length > 3 %}<nav class="toc{% if page.glossario %} toc-az{% endif %}" aria-label="Neste texto"><b>Neste texto</b><ol>{% for h in page.toc %}<li><a href="#{{ h.id }}">{{ h.text }}</a></li>{% endfor %}</ol></nav>{% endif %}
   <div class="prose">
 {{ page.html|safe }}
   </div>
