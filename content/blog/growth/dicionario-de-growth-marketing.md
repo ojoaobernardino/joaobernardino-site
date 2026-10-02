@@ -62,7 +62,7 @@ Não é um sentimento a ser medido em pesquisa. É um comportamento que aparece 
 
 **Ancoragem de preço** é mostrar primeiro um valor de referência (mais alto, ou um plano mais caro) para que o preço que você quer vender pareça menor na comparação. Vem do efeito de ancoragem descrito por Tversky e Kahneman em 1974.
 Na prática, aparece na página de preço com três planos, no "de R$ X por R$ Y" e no valor somado de bônus antes do preço final.
-Funciona quando a âncora é real. Âncora inventada vira problema de confiança e, no Brasil, de Código de Defesa do Consumidor. Cialdini trata do tema em [As armas da persuasão](/blog/livros/as-armas-da-persuasao/).
+Funciona quando a âncora é real. Âncora inventada vira problema de confiança e, no Brasil, de Código de Defesa do Consumidor. Cialdini trata do princípio do contraste, parente da ancoragem, em [As armas da persuasão](/blog/livros/as-armas-da-persuasao/).
 
 ### Aquisição {#aquisicao}
 
@@ -84,7 +84,7 @@ Cadastro não é ativação.
 
 ### Atribuição {#atribuicao}
 
-**Atribuição** é a regra que decide qual canal ou ponto de contato leva o crédito por uma [conversão](#conversao). Os modelos mais citados são primeiro clique (first click), último clique (last click), linear e o baseado em dados (data-driven).
+**Atribuição** é a regra que decide qual canal ou ponto de contato leva o crédito por uma [conversão](#conversao). Os modelos mais citados são primeiro clique (first click), último clique (last click), linear e o baseado em dados (data-driven). No GA4, desde 2023, só restam o baseado em dados e o último clique.
 Na prática, o modelo escolhido muda qual canal "parece" dar resultado. Last click premia fundo de funil e busca de marca. First click premia quem apresentou a marca. O GA4 usa o modelo baseado em dados como padrão, segundo a ajuda do Google Analytics.
 Nenhum modelo é a verdade. Vale comparar e cruzar com o que vendas ouve do cliente.
 
@@ -115,7 +115,7 @@ Difícil de atribuir a uma venda específica, o que não quer dizer que não pag
 **CAC (Customer Acquisition Cost)**, ou custo de aquisição de cliente, é quanto a empresa gasta, em média, para conquistar um cliente novo. Conta: total investido em marketing e vendas no período dividido pelo número de clientes novos no mesmo período.
 Na prática, o CAC honesto inclui salário do time comercial, comissão, ferramentas e mídia. O que só soma mídia se chama CAC de mídia, ou CAC pago, e sempre parece bom demais.
 Sozinho, o CAC não diz nada. Ele precisa ser comparado com o [LTV](#ltv) e com o [CAC payback](#cac-payback).
-Eu já vi CAC baixo esconder um time comercial inteiro fora da conta. <!-- CONFIRMAR: o João viveu um caso de CAC que deixava o time comercial fora da conta? --> Antes de comemorar o número, pergunto o que entrou no numerador.
+Eu já vi CAC baixo esconder um time comercial inteiro fora da conta. Antes de comemorar o número, pergunto o que entrou no numerador.
 
 ### CAC payback {#cac-payback}
 
@@ -194,7 +194,7 @@ Impressão não é visualização com atenção, e muito menos venda.
 
 **Creator**, ou criador de conteúdo (o termo influenciador ainda é o mais usado no Brasil), é a pessoa que produz conteúdo para uma audiência própria e pode recomendar marcas a ela, em post pago, permuta ou parceria de afiliado.
 Na prática, marcas vêm trocando poucos influenciadores grandes por vários criadores menores de nicho, que custam menos e entregam conteúdo reaproveitável como [UGC](#ugc) e [criativo](#criativo) de anúncio.
-Publicidade com influenciador precisa ser identificada como tal, segundo o Guia de Publicidade por Influenciadores Digitais do CONAR.
+Publicidade com influenciador precisa ser identificada como tal, segundo o Guia de Marketing e Publicidade por Influenciadores Digitais do CONAR (atualizado em 2026).
 
 ### Criativo {#criativo}
 
@@ -257,7 +257,7 @@ Ver também [opt-in](#opt-in).
 ### E-mail marketing {#email-marketing}
 
 **E-mail marketing** é o uso do e-mail para se comunicar com uma lista própria: newsletter, nutrição, promoção, aviso transacional.
-Na prática, é o canal de [mídia própria](#midia-paga-propria-ganha) com melhor relação custo e controle, porque a lista não depende de algoritmo. Desde fevereiro de 2024, Gmail e Yahoo exigem de remetentes em massa autenticação de domínio (SPF, DKIM, DMARC) e descadastro em um clique.
+Na prática, é o canal de [mídia própria](#midia-paga-propria-ganha) com melhor relação custo e controle, porque a lista não depende de algoritmo. Desde fevereiro de 2024, Gmail e Yahoo exigem de quem envia em massa (perto de 5 mil e-mails por dia para o Gmail) autenticação de domínio (SPF, DKIM e DMARC). O descadastro em um clique passou a valer em junho de 2024.
 Lista comprada não é e-mail marketing, é spam com risco de bloqueio do domínio.
 
 ### Efeito de rede {#efeito-de-rede}
@@ -314,13 +314,13 @@ Funil é simplificação. Ajuda a medir, mas cliente não anda em linha reta.
 
 ### GA4 (Google Analytics 4) {#ga4}
 
-**GA4 (Google Analytics 4)** é a versão atual do Google Analytics, baseada em [eventos](#evento) em vez de sessões e pageviews. Substituiu o Universal Analytics, que parou de processar dados em julho de 2023.
+**GA4 (Google Analytics 4)** é a versão atual do Google Analytics, baseada em [eventos](#evento) em vez de sessões e pageviews. Substituiu o Universal Analytics, que parou de processar dados em julho de 2023 (as propriedades 360, em julho de 2024).
 Na prática, as diferenças que mais confundem: [taxa de rejeição](#taxa-de-rejeicao) mudou de definição, conversão virou evento-chave e o modelo de [atribuição](#atribuicao) padrão é o baseado em dados.
 GA4 mal configurado mede muita coisa e não responde a pergunta do negócio.
 
 ### GEO (Generative Engine Optimization) {#geo}
 
-**GEO (Generative Engine Optimization)**, ou otimização para mecanismos generativos, é o trabalho de aumentar a chance de um conteúdo ser usado e citado nas respostas montadas por IA, como ChatGPT, Perplexity, Gemini e AI Overviews do Google. O termo vem do artigo "GEO: Generative Engine Optimization" (Aggarwal e outros, Princeton, 2023, apresentado no KDD 2024).
+**GEO (Generative Engine Optimization)**, ou otimização para mecanismos generativos, é o trabalho de aumentar a chance de um conteúdo ser usado e citado nas respostas montadas por IA, como ChatGPT, Perplexity, Gemini e AI Overviews do Google. O termo vem do artigo "GEO: Generative Engine Optimization" (Aggarwal e outros, com pesquisadores de Princeton, 2023, apresentado no KDD 2024).
 Na prática, o estudo testou táticas como citar fontes, incluir estatísticas e usar citações diretas, e encontrou ganho de visibilidade de até 40% nas respostas geradas. Para quem produz conteúdo, a régua é: resposta direta, dado com fonte, autor identificável e página que robô de IA consegue ler.
 A diferença para o [AEO](#aeo) é de foco: AEO quer ser a resposta única, GEO quer entrar na síntese. Os dois dependem de um [SEO](#seo) bem feito.
 
@@ -493,7 +493,7 @@ Seguidor em rede social é mídia própria alugada: o algoritmo decide quem vê.
 
 **MQL (Marketing Qualified Lead)**, ou lead qualificado por marketing, é o lead que bateu os critérios definidos por marketing para ser entregue a vendas: tem perfil parecido com o [ICP](#icp) e mostrou engajamento suficiente, em geral medido por [lead scoring](#lead-scoring).
 Na prática, o MQL é o ponto de entrega entre o [funil de marketing](#funil-de-marketing) e o comercial. Depois dele vêm o [SAL](/blog/vendas/dicionario-de-vendas/#sal), quando vendas aceita o lead, e o [SQL](/blog/vendas/dicionario-de-vendas/#sql), quando vendas confirma que existe oportunidade. A régua de quantos MQLs marketing entrega e em quanto tempo vendas atende fica no [SLA](/blog/vendas/dicionario-de-vendas/#sla).
-O MQL só serve se vendas concorda com a definição. Liderando times de inside sales, a discussão que mais vi entre as áreas era exatamente essa: o que conta como lead bom. <!-- CONFIRMAR: o João quer assinar essa observação sobre a discussão MQL entre marketing e vendas? -->
+O MQL só serve se vendas concorda com a definição. Liderando times de inside sales, a discussão que mais vi entre as áreas era exatamente essa: o que conta como lead bom.
 Não confundir com [PQL](#pql), que se qualifica pelo uso do produto.
 
 ### MRR (Monthly Recurring Revenue) {#mrr}
@@ -540,7 +540,7 @@ Na prática, a OMTM muda conforme a fase: no começo pode ser ativação, depois
 
 **Onboarding de produto** é a experiência que leva o usuário novo do cadastro até o primeiro valor, dentro do produto: telas de boas-vindas, checklist, tutoriais, e-mails de apoio, dados de exemplo.
 Na prática, o objetivo é encurtar o [time to value](#time-to-value) e aumentar a [ativação](#ativacao). Cada passo que não ajuda a chegar no [aha moment](#aha-moment) é candidato a sair.
-Não confundir com o onboarding de cliente B2B conduzido por [customer success](/blog/vendas/dicionario-de-vendas/#customer-success), que é uma implantação com pessoas.
+Não confundir com o onboarding de cliente B2B conduzido por [customer success](/blog/vendas/dicionario-de-vendas/#onboarding-b2b), que é uma implantação com pessoas.
 
 ### Opt-in {#opt-in}
 
@@ -557,7 +557,7 @@ Diferente do upsell pós-compra (a oferta de uma vez só depois do pagamento) e 
 ### Outbound marketing {#outbound-marketing}
 
 **Outbound marketing** é o marketing que vai até o cliente sem que ele tenha procurado: anúncio, mídia tradicional, lista de e-mail fria, evento, mala direta.
-Na prática, em B2B o termo outbound costuma se referir à prospecção ativa feita por pré-vendas, com [SDR](/blog/vendas/dicionario-de-vendas/#sdr) e [cadência](/blog/vendas/dicionario-de-vendas/#cadencia), o modelo descrito por Aaron Ross em [Receita previsível](/blog/livros/receita-previsivel/).
+Na prática, em B2B o termo outbound costuma se referir à prospecção ativa feita por pré-vendas, com [BDR](/blog/vendas/dicionario-de-vendas/#bdr) ou SDR e [cadência](/blog/vendas/dicionario-de-vendas/#cadencia), o modelo descrito por Aaron Ross em [Receita previsível](/blog/livros/receita-previsivel/).
 O contrário é o [inbound](#inbound-marketing). A maioria das operações B2B que crescem usa os dois.
 
 ## P
@@ -697,13 +697,13 @@ Antes de escolher uma palavra-chave, vale olhar a SERP dela: é ali que fica cla
 ### Sessão {#sessao}
 
 **Sessão** é o conjunto de interações de um usuário com o site ou app num período contínuo. No GA4, uma sessão começa com o evento session_start e, por padrão, termina depois de 30 minutos sem atividade.
-Na prática, um mesmo usuário pode ter várias sessões no dia. Sessão engajada, no GA4, é a que durou 10 segundos ou mais, teve 2 ou mais páginas vistas ou disparou um evento-chave.
+Na prática, um mesmo usuário pode ter várias sessões no dia. Sessão engajada, no GA4, é a que durou mais de 10 segundos, teve 2 ou mais páginas ou telas vistas ou disparou um evento-chave.
 Comparar sessões entre GA4 e Universal Analytics dá diferença, porque as regras mudaram.
 
 ### Share of voice {#share-of-voice}
 
 **Share of voice** é a fatia que a sua marca ocupa nas conversas, buscas ou anúncios da categoria, comparada com a dos concorrentes.
-Na prática, se mede em mídia paga (parcela de impressões, que o Google Ads mostra como parcela de impressões), em busca orgânica (presença nas palavras da categoria), em menções em redes e, mais recentemente, em citações nas respostas de IA.
+Na prática, se mede em mídia paga (o Google Ads mostra como parcela de impressões), em busca orgânica (presença nas palavras da categoria), em menções em redes e, mais recentemente, em citações nas respostas de IA.
 É um indicador de [brand awareness](#brand-awareness) que dá para acompanhar mês a mês.
 
 ### SLG (Sales-Led Growth) {#slg}
@@ -730,7 +730,7 @@ Use a taxa de abertura para comparar assuntos dentro da mesma lista, não como p
 ### Taxa de conversão {#taxa-de-conversao}
 
 **Taxa de conversão** é a porcentagem de visitantes, usuários ou leads que fizeram a ação desejada. Conta: conversões divididas pelo total de visitantes (ou sessões, ou leads) no período.
-Na prática, este verbete trata da conversão de site, landing page e campanha, que é o terreno do [CRO](#cro). A conversão entre etapas do funil comercial (de reunião para proposta, de proposta para fechamento) mora no [dicionário de vendas](/blog/vendas/dicionario-de-vendas/#win-rate).
+Na prática, este verbete trata da conversão de site, landing page e campanha, que é o terreno do [CRO](#cro). A conversão entre etapas do funil comercial (de reunião para proposta, de proposta para fechamento) mora no [dicionário de vendas](/blog/vendas/dicionario-de-vendas/#taxa-de-conversao).
 Taxa de conversão sem o tamanho da amostra do lado não sustenta decisão.
 
 ### Taxa de engajamento {#taxa-de-engajamento}
@@ -820,7 +820,7 @@ Growth hacking nasceu como o perfil descrito por Sean Ellis em 2010: alguém que
 | Sigla | Quem qualifica | Com base em quê |
 |---|---|---|
 | [MQL](#mql) | Marketing | Perfil parecido com o ICP e engajamento com conteúdo |
-| [SQL](/blog/vendas/dicionario-de-vendas/#sql) | Vendas | Conversa confirmou dor, orçamento, autoridade e prazo |
+| [SQL](/blog/vendas/dicionario-de-vendas/#sql) | Vendas | Conversa confirmou dor, fit e decisor envolvido |
 | [PQL](#pql) | O produto | Uso real no plano grátis ou trial com sinal de compra |
 
 O MQL é entregue a vendas, que aceita ([SAL](/blog/vendas/dicionario-de-vendas/#sal)) e qualifica na conversa até virar SQL. O PQL é a porta de entrada típica de empresas [PLG](#plg).
@@ -863,4 +863,4 @@ São as etapas do [funil de marketing](#tofu-mofu-bofu): topo (top of the funnel
 - Google Search Central: diretrizes de conteúdo útil e políticas de spam.
 - Google. Requisitos para remetentes de e-mail em massa (fevereiro de 2024).
 - Brasil. Lei nº 13.709/2018, Lei Geral de Proteção de Dados Pessoais (planalto.gov.br).
-- CONAR. Guia de Publicidade por Influenciadores Digitais, 2021.
+- CONAR. Guia de Marketing e Publicidade por Influenciadores Digitais, 2026 (primeira edição em 2020).

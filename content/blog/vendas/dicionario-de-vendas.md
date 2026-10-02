@@ -15,7 +15,7 @@ draft: false
 
 ## Como usar este dicionário
 
-Montei este dicionário porque vendas tem mais sigla que hospital. Quem entra num time de inside sales escuta SDR, SQL, OTE e forecast na primeira semana e ninguém para pra explicar. Eu passei por isso como executivo de contas e voltei a ver o mesmo problema quando passei a liderar time. <!-- CONFIRMAR: o João viveu esse choque de siglas ao entrar e ao liderar? -->
+Montei este dicionário porque vendas tem mais sigla que hospital. Quem entra num time de inside sales escuta SDR, SQL, OTE e forecast na primeira semana e ninguém para pra explicar. Eu passei por isso como executivo de contas e voltei a ver o mesmo problema quando passei a liderar time.
 
 Os termos estão em ordem alfabética. Cada um começa pela definição, depois vem como aparece na prática e, quando faz sentido, com o que não confundir. Todo verbete tem link próprio: dá pra mandar pro time só o pedaço que interessa.
 
@@ -120,7 +120,7 @@ O que é métrica de marketing e de produto (MQL, CAC, LTV, churn, ICP) mora no 
 
 ### Clawback {#clawback}
 
-**Clawback** é a cláusula do plano de comissão que permite à empresa recuperar uma comissão já paga quando a venda é desfeita. Os gatilhos mais comuns são cancelamento nos primeiros meses, inadimplência e devolução. Na prática, o valor é descontado das comissões seguintes. A regra precisa estar escrita no plano assinado antes da venda; criada depois, vira problema trabalhista e de confiança. Ver [comissão](#comissao).
+**Clawback** é a cláusula do plano de comissão que permite à empresa recuperar uma comissão já paga quando a venda é desfeita. O gatilho típico é cancelamento ou inadimplência nos primeiros meses, com o valor descontado das comissões seguintes. No Brasil, para vendedor CLT, a Lei 3.207/57 só autoriza o estorno quando o comprador fica insolvente, e a Justiça do Trabalho costuma considerar indevido o estorno por cancelamento ou inadimplência. Clawback é comum em planos de empresas americanas; aqui, desenhe com o jurídico antes de colocar no plano. Ver [comissão](#comissao).
 
 ### Close date {#close-date}
 
@@ -128,7 +128,7 @@ O que é métrica de marketing e de produto (MQL, CAC, LTV, churn, ICP) mora no 
 
 ### Closer {#closer}
 
-**Closer** é o vendedor responsável por fechar o negócio: recebe a reunião qualificada do pré-vendas e conduz diagnóstico, proposta, negociação e assinatura. O termo ficou popular no Brasil com a divisão de funções de [Receita Previsível](/blog/livros/receita-previsivel/), em que o [SDR](#sdr) qualifica e o closer fecha. Em empresas de software, a mesma cadeira se chama [AE](#ae). A métrica principal do closer é o [win rate](#win-rate), não o volume de reuniões. Closer bom não é quem fala bem; é quem desqualifica cedo o que não vai fechar e gasta o tempo no que vai.
+**Closer** é o vendedor responsável por fechar o negócio: recebe a reunião qualificada do pré-vendas e conduz diagnóstico, proposta, negociação e assinatura. No Brasil, o termo pegou junto com a divisão de funções popularizada por [Receita Previsível](/blog/livros/receita-previsivel/), em que o [SDR](#sdr) qualifica e quem fecha é o Account Executive. Em empresas de software, a mesma cadeira se chama [AE](#ae). A métrica principal do closer é o [win rate](#win-rate), não o volume de reuniões. Closer bom não é quem fala bem; é quem desqualifica cedo o que não vai fechar e gasta o tempo no que vai.
 
 ### Coaching de vendas {#coaching-de-vendas}
 
@@ -144,7 +144,7 @@ O que é métrica de marketing e de produto (MQL, CAC, LTV, churn, ICP) mora no 
 
 ### Cold mail {#cold-mail}
 
-**Cold mail** (e-mail frio) é o e-mail enviado a um prospect que não pediu contato. Funciona quando é curto, específico pra pessoa e pede uma coisa só. A lógica foi sistematizada em [Receita Previsível](/blog/livros/receita-previsivel/), que propunha e-mails curtos perguntando quem era a pessoa certa na empresa. No Brasil, o envio precisa respeitar a LGPD: base legal, opção de descadastro e dado de contato obtido de forma legítima.
+**Cold mail** (e-mail frio) é o e-mail enviado a um prospect que não pediu contato. Funciona quando é curto, específico pra pessoa e pede uma coisa só. A lógica foi sistematizada em [Receita Previsível](/blog/livros/receita-previsivel/), que propunha e-mails curtos perguntando quem era a pessoa certa na empresa. No Brasil, o envio precisa respeitar a LGPD: base legal (normalmente legítimo interesse), forma fácil de pedir pra sair da lista e dado de contato obtido de forma legítima.
 
 ### Comissão {#comissao}
 
@@ -230,7 +230,7 @@ O que é métrica de marketing e de produto (MQL, CAC, LTV, churn, ICP) mora no 
 
 ### Funil de vendas {#funil-de-vendas}
 
-**Funil de vendas** é a representação do caminho que um potencial cliente percorre do primeiro contato até a compra, em etapas que vão afunilando porque nem todos avançam. Em vendas B2B, o funil costuma ir de lead a [SQL](#sql), oportunidade e cliente. Ele mostra onde as pessoas param e quanto volume você precisa no topo pra bater a meta embaixo. Não confundir com [pipeline](#pipeline): o funil é a visão de conversão entre etapas, o pipeline é a lista de oportunidades abertas com valor e data. A parte de marketing (topo, meio e fundo) está no [dicionário de growth](/blog/growth/dicionario-de-growth-marketing/#lead).
+**Funil de vendas** é a representação do caminho que um potencial cliente percorre do primeiro contato até a compra, em etapas que vão afunilando porque nem todos avançam. Em vendas B2B, o funil costuma ir de lead a [SQL](#sql), oportunidade e cliente. Ele mostra onde as pessoas param e quanto volume você precisa no topo pra bater a meta embaixo. Não confundir com [pipeline](#pipeline): o funil é a visão de conversão entre etapas, o pipeline é a lista de oportunidades abertas com valor e data. A parte de marketing (topo, meio e fundo) está no [dicionário de growth](/blog/growth/dicionario-de-growth-marketing/#tofu-mofu-bofu).
 
 ## G
 
@@ -240,7 +240,7 @@ O que é métrica de marketing e de produto (MQL, CAC, LTV, churn, ICP) mora no 
 
 ### GPCT {#gpct}
 
-**GPCT** é um critério de qualificação criado pela HubSpot que significa Goals, Plans, Challenges e Timeline (objetivos, planos, desafios e prazo). Parte do que o cliente quer atingir e não do que o vendedor quer vender. A versão estendida, GPCTBA/C&I, acrescenta Budget, Authority e Negative Consequences & Positive Implications (orçamento, autoridade e o que acontece se agir ou não agir). Combina bem com venda consultiva e [inbound](/blog/growth/dicionario-de-growth-marketing/#lead), em que o lead já chegou com um objetivo.
+**GPCT** é um critério de qualificação criado pela HubSpot que significa Goals, Plans, Challenges e Timeline (objetivos, planos, desafios e prazo). Parte do que o cliente quer atingir e não do que o vendedor quer vender. A versão estendida, GPCTBA/C&I, acrescenta Budget, Authority e Negative Consequences & Positive Implications (orçamento, autoridade e o que acontece se agir ou não agir). Combina bem com venda consultiva e [inbound](/blog/growth/dicionario-de-growth-marketing/#inbound-marketing), em que o lead já chegou com um objetivo.
 
 ## H
 
@@ -260,7 +260,7 @@ O que é métrica de marketing e de produto (MQL, CAC, LTV, churn, ICP) mora no 
 
 ### Inside sales {#inside-sales}
 
-**Inside sales** (vendas internas) é o modelo de venda feito à distância, por telefone, videochamada, e-mail e mensagem, sem visita presencial. Permite que um vendedor atenda muito mais contas por dia que na [venda de campo](#field-sales) e se espalhou com o software como serviço e com a pandemia. Costuma ser organizado com [pré-vendas](#pre-vendas) separado de fechamento. Inside sales não é telemarketing: o vendedor faz diagnóstico e negocia, não lê script. Liderei times de inside sales, e o que mais pesa no resultado é a rotina de treino e a qualidade do [pipeline](#pipeline), mais que o volume de ligações. <!-- CONFIRMAR: o João concorda com essa leitura sobre o que mais pesa em inside sales? -->
+**Inside sales** (vendas internas) é o modelo de venda feito à distância, por telefone, videochamada, e-mail e mensagem, sem visita presencial. Permite que um vendedor atenda muito mais contas por dia que na [venda de campo](#field-sales) e se espalhou com o software como serviço e com a pandemia. Costuma ser organizado com [pré-vendas](#pre-vendas) separado de fechamento. Inside sales não é telemarketing: o vendedor faz diagnóstico e negocia, não lê script. Liderei times de inside sales, e o que mais pesa no resultado é a rotina de treino e a qualidade do [pipeline](#pipeline), mais que o volume de ligações.
 
 ## K
 
@@ -322,7 +322,7 @@ O que é métrica de marketing e de produto (MQL, CAC, LTV, churn, ICP) mora no 
 
 ### One on one (1:1) {#one-on-one}
 
-**One on one**, ou 1:1, é a reunião individual e recorrente entre o líder e cada pessoa do time, normalmente semanal ou quinzenal. Em vendas, divide-se entre olhar números (pipeline, atividade, meta) e desenvolver a pessoa ([coaching](#coaching-de-vendas), [PDI](#pdi), carreira). O risco é virar só cobrança de pipeline, que já tem lugar na [pipeline review](#pipeline-review). Na minha visão, 1:1 é a reunião que o líder de vendas menos pode cancelar. <!-- CONFIRMAR: o João endossa essa opinião sobre o 1:1? -->
+**One on one**, ou 1:1, é a reunião individual e recorrente entre o líder e cada pessoa do time, normalmente semanal ou quinzenal. Em vendas, divide-se entre olhar números (pipeline, atividade, meta) e desenvolver a pessoa ([coaching](#coaching-de-vendas), [PDI](#pdi), carreira). O risco é virar só cobrança de pipeline, que já tem lugar na [pipeline review](#pipeline-review). Na minha visão, 1:1 é a reunião que o líder de vendas menos pode cancelar.
 
 ### OTE (On-Target Earnings) {#ote}
 
@@ -364,7 +364,7 @@ O que é métrica de marketing e de produto (MQL, CAC, LTV, churn, ICP) mora no 
 
 ### Positivação {#positivacao}
 
-**Positivação** é o termo usado em vendas de bens de consumo e distribuição para indicar que um cliente da carteira comprou pelo menos uma vez no período. Uma rede com 100 lojas cadastradas e 70 que fizeram pedido no mês tem 70% de positivação. É indicador de cobertura da [carteira](#carteira), complementar ao volume vendido. Vi esse indicador de perto na venda off-premise da Heineken, para supermercados. <!-- CONFIRMAR: o João usava o termo positivação na Heineken? -->
+**Positivação** é o termo usado em vendas de bens de consumo e distribuição para indicar que um cliente da carteira comprou pelo menos uma vez no período. Uma rede com 100 lojas cadastradas e 70 que fizeram pedido no mês tem 70% de positivação. É indicador de cobertura da [carteira](#carteira), complementar ao volume vendido. Vi esse indicador de perto na venda off-premise da Heineken, para supermercados.
 
 ### Pré-vendas {#pre-vendas}
 
@@ -400,7 +400,7 @@ O que é métrica de marketing e de produto (MQL, CAC, LTV, churn, ICP) mora no 
 
 ### Rapport {#rapport}
 
-**Rapport** é a sintonia entre vendedor e cliente que faz a conversa fluir e o cliente se sentir à vontade pra contar o problema de verdade. Não é ser simpático nem falar de futebol nos cinco primeiros minutos: é entrar no ritmo e no vocabulário do outro antes de conduzir. A base científica mais citada é o efeito camaleão (Chartrand e Bargh, 1999), com efeito real e modesto. Escrevi sobre isso em [PNL em vendas](/blog/vendas/pnl-em-vendas/).
+**Rapport** é a sintonia entre vendedor e cliente que faz a conversa fluir e o cliente se sentir à vontade pra contar o problema de verdade. Não é ser simpático nem falar de futebol nos cinco primeiros minutos: é entrar no ritmo e no vocabulário do outro antes de conduzir. A base científica mais citada é o efeito camaleão (Chartrand e Bargh, 1999). Escrevi sobre isso em [PNL em vendas](/blog/vendas/pnl-em-vendas/).
 
 ### Renovação {#renovacao}
 
@@ -438,7 +438,7 @@ O que é métrica de marketing e de produto (MQL, CAC, LTV, churn, ICP) mora no 
 
 ### SDR (Sales Development Representative) {#sdr}
 
-**SDR (Sales Development Representative)**, ou representante de desenvolvimento de vendas, é o profissional de [pré-vendas](#pre-vendas) que faz o primeiro contato com o lead, qualifica e agenda a reunião com o [closer](#closer) ou [AE](#ae). Na divisão mais comum, o SDR trabalha leads de inbound, que vieram do marketing, e o [BDR](#bdr) faz outbound. Muita empresa brasileira chama os dois de SDR. As métricas típicas são reuniões agendadas, [show rate](#show-rate) e percentual de reuniões que viram oportunidade ([SQL](#sql)). A função foi popularizada por [Receita Previsível](/blog/livros/receita-previsivel/) e costuma ser a porta de entrada da carreira em vendas B2B, com caminho natural para closer.
+**SDR (Sales Development Representative)**, ou representante de desenvolvimento de vendas, é o profissional de [pré-vendas](#pre-vendas) que faz o primeiro contato com o lead, qualifica e agenda a reunião com o [closer](#closer) ou [AE](#ae). Na divisão mais comum, o SDR trabalha leads de inbound, que vieram do marketing, e o [BDR](#bdr) faz outbound. Muita empresa brasileira chama os dois de SDR. As métricas típicas são reuniões agendadas, [show rate](#show-rate) e percentual de reuniões que viram oportunidade ([SQO](#sqo)). A função foi popularizada por [Receita Previsível](/blog/livros/receita-previsivel/) e costuma ser a porta de entrada da carreira em vendas B2B, com caminho natural para closer. No livro, o nome SDR era justamente de quem fazia outbound; quem atendia inbound era o Market Response Rep. Por isso a divisão varia de empresa pra empresa.
 
 ### Sell-in e sell-out {#sell-in-sell-out}
 
@@ -496,7 +496,7 @@ O que é métrica de marketing e de produto (MQL, CAC, LTV, churn, ICP) mora no 
 
 ### Turnover {#turnover}
 
-**Turnover** (rotatividade) é a taxa de saída de pessoas do time num período, voluntária ou não. Em vendas, o turnover pesa mais que em outras áreas porque cada saída leva junto relacionamento com clientes, pipeline em andamento e o tempo de [ramp up](#ramp-up) de quem entra no lugar. As causas mais citadas são meta irreal, plano de comissão confuso e liderança ausente. Mais em [turnover em vendas](/blog/lideranca/turnover-em-vendas/).
+**Turnover** (rotatividade) é a taxa de saída de pessoas do time num período, voluntária ou não. Em vendas, o turnover pesa mais que em outras áreas porque cada saída leva junto relacionamento com clientes, pipeline em andamento e o tempo de [ramp up](#ramp-up) de quem entra no lugar. Causas frequentes: meta irreal, plano de comissão confuso e liderança ausente. Mais em [turnover em vendas](/blog/lideranca/turnover-em-vendas/).
 
 ## U
 
@@ -550,7 +550,7 @@ Detalhes em [MQL](/blog/growth/dicionario-de-growth-marketing/#mql), [SAL](#sal)
 
 ### Qual a diferença entre SDR e BDR?
 
-Os dois são funções de pré-vendas que qualificam e agendam reunião para o closer. Na divisão mais usada, o [SDR](#sdr) trabalha leads que chegaram pelo marketing (inbound) e o [BDR](#bdr) prospecta contas que ainda não conhecem a empresa (outbound). No Brasil, muitas empresas chamam as duas cadeiras de SDR.
+Os dois são funções de pré-vendas que qualificam e agendam reunião para o closer. Na divisão mais usada, o [SDR](#sdr) trabalha leads que chegaram pelo marketing (inbound) e o [BDR](#bdr) prospecta contas que ainda não conhecem a empresa (outbound). No Brasil, muitas empresas chamam as duas cadeiras de SDR. Em Receita Previsível, que popularizou a função, a lógica era a inversa: SDR era quem fazia outbound.
 
 ### O que faz um SDR e o que faz um closer?
 

@@ -6,7 +6,7 @@ cluster: growth
 date: 2026-10-02
 updated: 2026-10-02
 tags: [growth, growth-marketing, marketing-digital, funil, revops]
-summary: "Comecei em vendas e fui puxado pro marketing pelo número que não fechava: lead demais pro time, venda de menos no fim do mês. Growth, pra mim, é isso. Uma conta só, do anúncio ao cliente que renova."
+summary: "Growth é marketing e vendas olhando a mesma conta, do anúncio ao cliente que renova. Aqui ficam os termos, as métricas e os livros que ligam as duas áreas."
 cta:
   label: "Comunidade A Obra"
   url: "/produtos/a-obra/"
@@ -16,7 +16,7 @@ draft: false
 ---
 ## O que este hub cobre
 
-Passei a maior parte da carreira do lado de vendas: executivo de contas, depois líder de times de inside sales. Todo mês a mesma discussão aparecia na reunião. O marketing dizia que tinha entregado os leads, o comercial dizia que os leads eram ruins. Os dois tinham razão pela metade, porque cada um olhava um pedaço do funil.
+Trabalhei em vendas B2B, de executivo de contas a líder de times de inside sales. Liderando esses times, a discussão que mais vi entre as áreas era sempre a mesma: o marketing diz que entregou os leads, o comercial diz que os leads são ruins. Os dois têm razão pela metade, porque cada um olha um pedaço do funil.
 
 Growth é o nome que eu dou a olhar o funil inteiro. Aquisição, ativação, conversão, retenção e receita na mesma planilha, com um dono pra cada etapa e um número que todo mundo persegue. Não é truque de crescimento rápido. Virou método de trabalho: hipótese, teste, leitura, decisão.
 
