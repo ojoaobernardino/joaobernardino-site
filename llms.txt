@@ -108,6 +108,8 @@ Empreendedor, criador de conteúdo, atleta e Growth Marketing & Sales. Engenheir
 
 ## Textos
 
+- [Dicionário de vendas: termos, siglas e o que significam](https://joaobernardino.com.br/blog/vendas/dicionario-de-vendas/): Dicionário de vendas de A a Z: SDR, BDR, closer, SQL, pipeline, forecast, OTE, ramp up e mais 100 termos, explicados por João Bernardino.
+- [Dicionário de growth e marketing digital: termos e siglas](https://joaobernardino.com.br/blog/growth/dicionario-de-growth-marketing/): Dicionário de growth e marketing digital de João Bernardino: CAC, LTV, churn, MQL, PQL, ROAS, north star metric, AEO e GEO explicados direto, com fonte.
 - [Óleo essencial de lavanda: pra que serve e como usar](https://joaobernardino.com.br/blog/indicacoes/oleo-essencial-de-lavanda/): Óleo essencial de lavanda francesa: o que os estudos dizem sobre ansiedade e sono, como usar no difusor e na pele, e cuidados. Cupom JB com 5% off.
 - [Óleo de melaleuca: pra que serve, como usar e cuidados](https://joaobernardino.com.br/blog/indicacoes/oleo-de-melaleuca/): Óleo de melaleuca: pra que serve segundo os estudos (acne, caspa, pé de atleta), como diluir, quem não deve usar e o cupom JB com 5% off na Ultramel.
 - [Própolis vermelho e marrom: a diferença para o verde](https://joaobernardino.com.br/blog/indicacoes/propolis-vermelho-e-marrom/): Própolis vermelho e marrom: de que planta vêm, o que os estudos dizem, a diferença para o verde e qual escolher. Cupom JB com 5% off na Ultramel.
@@ -149,5 +151,6 @@ Empreendedor, criador de conteúdo, atleta e Growth Marketing & Sales. Engenheir
 - [Livros](https://joaobernardino.com.br/blog/livros/)
 - [Indicações](https://joaobernardino.com.br/blog/indicacoes/)
 - [Vendas](https://joaobernardino.com.br/blog/vendas/)
+- [Growth](https://joaobernardino.com.br/blog/growth/)
 - [Liderança](https://joaobernardino.com.br/blog/lideranca/)
 - [Neurociência](https://joaobernardino.com.br/blog/neurociencia/)

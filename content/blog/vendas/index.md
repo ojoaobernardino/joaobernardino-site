@@ -24,6 +24,8 @@ Este hub é sobre vender B2B: como ser um bom vendedor, inside sales, PNL aplica
 
 Comece por [PNL em vendas](/blog/vendas/pnl-em-vendas/), porque é a interseção que define o que eu faço: vendedor que estudou o cérebro pra entender por que vendia. Depois vá pelo que dói mais: ramp de vendedor novo, hunter que não prospecta, closer que não fecha. Os textos estão listados abaixo.
 
+Se uma sigla travou a leitura (SDR, SQL, OTE, forecast), o [dicionário de vendas](/blog/vendas/dicionario-de-vendas/) explica cada uma em poucas linhas. O lado do marketing está no [dicionário de growth](/blog/growth/dicionario-de-growth-marketing/).
+
 Se você lidera quem vende, o hub irmão é [liderança comercial](/blog/lideranca/). Se quer o mecanismo por trás da técnica, é [neurociência](/blog/neurociencia/).
 
 !!! Regra: pipeline é atividade, não esperança.
