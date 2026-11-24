@@ -4,40 +4,40 @@ description: "Chocolate 100 cacau: o que é, por que é tão amargo, como se aco
 type: post
 indicacao: produto
 date: 2026-10-01
-updated: 2026-10-01
+updated: 2026-11-23
 tags: [ultramel, chocolate-100-cacau, cacau-100, cacau-em-po, amma, sem-acucar]
 short_title: "Chocolate 100% cacau"
 card_title: "Chocolate 100% cacau: o que é e como escolher"
 card: "O que quer dizer 100% cacau, por que amarga tanto, como se acostumar e barra ou pó. Cupom JB."
 summary: "Chocolate 100% cacau é chocolate feito só de cacau, sem açúcar, sem leite e sem adoçante. Por isso é bem amargo, firme e intenso, e pede adaptação: subir aos poucos de 70% pra 85% e 100% ajuda. O cacau 100% em pó é parecido, mas tem bem menos gordura e mais fibra. Com o cupom JB, 5% off no site da Ultramel."
 produto:
-  nome: "Chocolate Orgânico 100% Cacau AMMA 80g"
+  nome: "Chocolate Orgânico 100% Cacau AMMA 500g"
   marca: "AMMA"
   categoria: "Chocolate 100% cacau"
-  imagem: "/img/indicacoes/ultramel-chocolate-organico-100-cacau-amma-80g.webp"
-  alt: "Barra de 80 g do Chocolate Orgânico 100% Cacau AMMA, vendida no site da Ultramel"
+  imagem: "/img/indicacoes/ultramel-chocolate-organico-100-cacau-amma-500g.webp"
+  alt: "Embalagem de 500 g do Chocolate Orgânico 100% Cacau AMMA, vendida no site da Ultramel"
   desconto: "5% off"
   cupom: "JB"
-  loja_url: "https://www.ultramel.com.br/chocolate-organico-100-cacau-amma-80g?afId=JB&utm_source=joaobernardino&utm_medium=site&utm_campaign=indicacoes&utm_content=chocolate-100-cacau"
+  loja_url: "https://www.ultramel.com.br/chocolate-organico-100-cacau-amma-500g?afId=JB&utm_source=joaobernardino&utm_medium=site&utm_campaign=indicacoes&utm_content=chocolate-100-cacau"
   aviso: "Sou afiliado da Ultramel. Se você comprar pelo meu link ou com o cupom JB, eu ganho uma comissão e você não paga nada a mais por isso."
   ficha:
-    Peso: "80 g"
+    Peso: "500 g (também em barra de 80 g)"
     Composição: "Só cacau orgânico, sem açúcar, adoçante ou aromatizante"
     Açúcar: "0 g"
     Gordura: "14 g em 25 g"
     Fibra: "4,1 g em 25 g"
     Marca: "AMMA, cacau orgânico"
 vitrine:
-  - nome: "Chocolate 100% Cacau 80g"
-    imagem: "/img/indicacoes/ultramel-chocolate-organico-100-cacau-amma-80g.webp"
-    linha: "Só cacau, sem açúcar, barra de 80 g"
-    url: "https://www.ultramel.com.br/chocolate-organico-100-cacau-amma-80g?afId=JB&utm_source=joaobernardino&utm_medium=site&utm_campaign=indicacoes&utm_content=chocolate-100-cacau"
-    alt: "Barra de Chocolate Orgânico 100% Cacau AMMA de 80 g"
   - nome: "Chocolate 100% Cacau 500g"
     imagem: "/img/indicacoes/ultramel-chocolate-organico-100-cacau-amma-500g.webp"
     linha: "Só cacau, sem açúcar, 500 g pra receitas"
     url: "https://www.ultramel.com.br/chocolate-organico-100-cacau-amma-500g?afId=JB&utm_source=joaobernardino&utm_medium=site&utm_campaign=indicacoes&utm_content=chocolate-100-cacau"
     alt: "Embalagem de 500 g do Chocolate Orgânico 100% Cacau AMMA"
+  - nome: "Chocolate 100% Cacau 80g"
+    imagem: "/img/indicacoes/ultramel-chocolate-organico-100-cacau-amma-80g.webp"
+    linha: "Só cacau, sem açúcar, barra de 80 g"
+    url: "https://www.ultramel.com.br/chocolate-organico-100-cacau-amma-80g?afId=JB&utm_source=joaobernardino&utm_medium=site&utm_campaign=indicacoes&utm_content=chocolate-100-cacau"
+    alt: "Barra de Chocolate Orgânico 100% Cacau AMMA de 80 g"
   - nome: "Cacau em Pó Criollo 270g"
     imagem: "/img/indicacoes/ultramel-100-cacau-criollo-organico-1.webp"
     linha: "100% cacau criollo do Peru, orgânico"
