@@ -11,6 +11,7 @@ ROOT = pathlib.Path(__file__).resolve().parent
 SITE = 'https://joaobernardino.com.br'
 MAX_HTML_KB = 120
 MAX_GLOSSARIO_KB = 200  # dicionário (DefinedTermSet) é uma página longa de propósito: 100+ verbetes; comprimido fica em ~45 KB (02/10)
+MAX_INDICE_KB = 160     # índice de indicações lista 80+ guias de produto com card e JSON-LD (lote 3 da Ultramel, 24/11); comprimido fica bem abaixo disso
 errors, warns = [], []
 def err(m): errors.append(m)
 def warn(m): warns.append(m)
@@ -34,7 +35,7 @@ titles, descs = Counter(), Counter()
 for url, s in public.items():
     own = url in ('/', '/linktree/')          # páginas com layout próprio
     kb = len(s.encode()) / 1024
-    teto = MAX_GLOSSARIO_KB if '"DefinedTermSet"' in s else MAX_HTML_KB
+    teto = MAX_GLOSSARIO_KB if '"DefinedTermSet"' in s else MAX_INDICE_KB if url == '/blog/indicacoes/' else MAX_HTML_KB
     if kb > teto: err(f'{url}: HTML com {kb:.0f} KB (máx {teto})')
     for bad in ('—', '→'):
         if bad in visible(s): err(f'{url}: texto com "{bad}" (a seta dos botões é CSS)')
