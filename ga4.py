@@ -6,6 +6,7 @@ Uso:
   python3 ga4.py --de 2026-10-01 --ate 2026-10-31   período exato
   python3 ga4.py paginas /blog/indicacoes/          páginas que contêm esse trecho
   python3 ga4.py origens /blog/indicacoes/          de onde veio quem viu essas páginas
+  python3 ga4.py botoes                   cliques do linktree por botão (evento click_bio, desde 23/11/2026)
   python3 ga4.py --json ...               saída em JSON (para outros scripts)
 A chave fica fora do repositório. Só leitura.
 """
@@ -41,7 +42,7 @@ def tabela(titulo, rows):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument('comando', nargs='?', default='resumo', choices=['resumo', 'paginas', 'origens'])
+    p.add_argument('comando', nargs='?', default='resumo', choices=['resumo', 'paginas', 'origens', 'botoes'])
     p.add_argument('trecho', nargs='?', help='trecho do caminho, ex.: /blog/indicacoes/')
     p.add_argument('--dias', type=int, default=28)
     p.add_argument('--de'); p.add_argument('--ate')
@@ -51,6 +52,18 @@ def main():
     hoje = datetime.date.today()
     ini = a.de or str(hoje - datetime.timedelta(days=a.dias - 1)); fim = a.ate or str(hoje)
     svc = servico()
+    if a.comando == 'botoes':
+        # a dimensão "botao" foi cadastrada em 23/11/2026; o GA4 não preenche cliques anteriores
+        r = svc.properties().runReport(property=PROPRIEDADE, body={
+            'dateRanges': [{'startDate': ini, 'endDate': fim}], 'dimensions': [{'name': 'customEvent:botao'}],
+            'metrics': [{'name': 'eventCount'}, {'name': 'totalUsers'}],
+            'dimensionFilter': {'filter': {'fieldName': 'eventName', 'stringFilter': {'value': 'click_bio'}}},
+            'orderBys': [{'metric': {'metricName': 'eventCount'}, 'desc': True}], 'limit': a.limite}).execute()
+        rows = [{'botao': x['dimensionValues'][0]['value'], 'cliques': int(x['metricValues'][0]['value']), 'usuarios': int(x['metricValues'][1]['value'])} for x in r.get('rows', [])]
+        if a.json: return print(json.dumps(rows, ensure_ascii=False, indent=1))
+        print(f"Cliques no linktree por botão · {ini} a {fim}\ncliques usuários")
+        for x in rows: print(f"{x['cliques']:>7} {x['usuarios']:>8}  {x['botao']}")
+        return
     out = {'periodo': [ini, fim], 'total': relatorio(svc, ini, fim, trecho=a.trecho)}
     if a.comando in ('resumo', 'paginas'): out['paginas'] = relatorio(svc, ini, fim, ['pagePath'], a.trecho, a.limite)
     if a.comando in ('resumo', 'origens'): out['origens'] = relatorio(svc, ini, fim, ['sessionSource', 'sessionMedium'], a.trecho, a.limite)
